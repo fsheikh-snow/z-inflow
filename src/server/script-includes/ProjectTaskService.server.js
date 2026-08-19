@@ -1,0 +1,146 @@
+var ProjectTaskService = Class.create();
+ProjectTaskService.prototype = {
+    initialize: function () {
+        this.access = new x_gzi_z_ppm.AccessService();
+        this.userService = new x_gzi_z_ppm.UserService();
+        this.viewData = new x_gzi_z_ppm.ViewDataService();
+    },
+
+    _serializeProject: function (gr) {
+        return {
+            sys_id: gr.getUniqueValue(),
+            workspace_id: gr.getValue('workspace_id'),
+            assignment_group: gr.getValue('assignment_group'),
+            name: gr.getValue('name'),
+            status: gr.getValue('status'),
+            notes: gr.getValue('notes'),
+            owner_id: gr.getValue('owner_id'),
+            start_date: gr.getValue('start_date'),
+            due_date: gr.getValue('due_date'),
+            priority: gr.getValue('priority'),
+            description: gr.getValue('description'),
+            project_key: gr.getValue('project_key'),
+            percent_complete: gr.getValue('percent_complete'),
+            sync_with_jira: gr.getValue('sync_with_jira') === 'true',
+        };
+    },
+
+    _serializeTask: function (gr, linkGr) {
+        return {
+            sys_id: gr.getUniqueValue(),
+            workspace_id: gr.getValue('workspace_id'),
+            assignee_id: gr.getValue('assignee_id'),
+            watch_list: gr.getValue('watch_list'),
+            name: gr.getValue('name'),
+            description: gr.getValue('description'),
+            notes: gr.getValue('notes'),
+            parent_task_id: gr.getValue('parent_task_id'),
+            start_date: gr.getValue('start_date'),
+            due_date: gr.getValue('due_date'),
+            completed: gr.getValue('completed') === 'true',
+            task_type: gr.getValue('task_type'),
+            approval_state: gr.getValue('approval_state'),
+            section_id: linkGr ? linkGr.getValue('section_id') : '',
+            order_index: linkGr ? linkGr.getValue('order_index') : '',
+        };
+    },
+
+    listProjects: function (workspaceId) {
+        var results = [];
+        var gr = new GlideRecord('x_gzi_z_ppm_project');
+        if (workspaceId) {
+            gr.addQuery('workspace_id', workspaceId);
+        }
+        gr.orderBy('name');
+        gr.query();
+        while (gr.next()) {
+            results.push(this._serializeProject(gr));
+        }
+        return results;
+    },
+
+    getProjectSections: function (projectId) {
+        var sections = [];
+        var gr = new GlideRecord('x_gzi_z_ppm_section');
+        gr.addQuery('project_id', projectId);
+        gr.orderBy('order_index');
+        gr.query();
+        while (gr.next()) {
+            sections.push({
+                sys_id: gr.getUniqueValue(),
+                name: gr.getValue('name'),
+                order_index: parseInt(gr.getValue('order_index'), 10) || 0,
+            });
+        }
+        return sections;
+    },
+
+    getProjectBoard: function (projectId) {
+        var columns = {};
+        var sections = this.getProjectSections(projectId);
+        for (var i = 0; i < sections.length; i++) {
+            columns[sections[i].sys_id] = {
+                section: sections[i],
+                tasks: [],
+            };
+        }
+        columns.unsectioned = { section: null, tasks: [] };
+
+        var pt = new GlideRecord('x_gzi_z_ppm_project_task');
+        pt.addQuery('project_id', projectId);
+        pt.orderBy('order_index');
+        pt.query();
+        while (pt.next()) {
+            var task = pt.task_id.getRefRecord();
+            if (!task.isValidRecord()) {
+                continue;
+            }
+            var sectionId = pt.getValue('section_id') || 'unsectioned';
+            if (!columns[sectionId]) {
+                columns.unsectioned.tasks.push(this._serializeTask(task, pt));
+            } else {
+                columns[sectionId].tasks.push(this._serializeTask(task, pt));
+            }
+        }
+        return { columns: columns };
+    },
+
+    getProjectTasks: function (projectId) {
+        var tasks = [];
+        var pt = new GlideRecord('x_gzi_z_ppm_project_task');
+        pt.addQuery('project_id', projectId);
+        pt.orderBy('order_index');
+        pt.query();
+        while (pt.next()) {
+            var task = pt.task_id.getRefRecord();
+            if (task.isValidRecord()) {
+                tasks.push(this._serializeTask(task, pt));
+            }
+        }
+        return tasks;
+    },
+
+    getTask: function (taskId) {
+        var gr = new GlideRecord('x_gzi_z_ppm_task');
+        if (!gr.get(taskId)) {
+            return null;
+        }
+        return this._serializeTask(gr, null);
+    },
+
+    getTaskProjects: function (taskId) {
+        var projects = [];
+        var pt = new GlideRecord('x_gzi_z_ppm_project_task');
+        pt.addQuery('task_id', taskId);
+        pt.query();
+        while (pt.next()) {
+            var project = pt.project_id.getRefRecord();
+            if (project.isValidRecord()) {
+                projects.push(this._serializeProject(project));
+            }
+        }
+        return projects;
+    },
+
+    type: 'ProjectTaskService',
+};
