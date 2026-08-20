@@ -288,12 +288,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '006db349fd244786afdbccbace92bdc7'
+                        key: {
+                            application_file: 'ee7cd12cd45b4c07a511c587305a8e7f'
+                            source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '0088d5942a3746c0b3df1b3e9147b29b'
                         key: {
                             name: 'x_gzi_zflow_custom_view_column'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '00a5c917656045f79e70085d7631457b'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_user_res_profile'
+                            col_name_string: 'user_id'
                         }
                     },
                     {
@@ -362,6 +378,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '07138e3133ba07509937d1382e5c7b66'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'name'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0754f63bb0324c0ba0ac62800e981ee5'
                         key: {
@@ -416,6 +449,38 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: '0b138e3133ba07509937d1382e5c7b12'
+                        key: {
+                            name: 'x_gzi_zflow_custom_view'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0b138e3133ba07509937d1382e5c7b69'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'project_id'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '0b15563e048a475081e9eb5de9eb2249'
                         key: {
@@ -460,6 +525,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '0c7bd464661f4f128b717f14238066a2'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_task_dependency'
+                            col_name_string: 'successor_task_id'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0c89dabe6e9e462abdc81be1ca83018a'
                         key: {
@@ -468,10 +541,26 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '0c9bc9cd948e458c82c3fbe9222ab8da'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_task'
+                            col_name_string: 'assignee_id'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '0d63f587a11b476b899db807e17d332e'
                         key: {
                             name: 'x_gzi_zflow_portfolio'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '0d79aacddf7a465fa96d9c60bb944ed9'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_proj_res_alloc'
+                            col_name_string: 'project_id'
                         }
                     },
                     {
@@ -549,6 +638,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '13138e3133ba07509937d1382e5c7b6c'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'user_id'
+                            position: '8'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '132c2526dddc4440a6ac569f95577842'
                         key: {
@@ -578,6 +684,39 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_portfolio'
                             element: 'color'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '14ca87674dc44445813e9232a93e727a'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_field_value'
+                            col_name_string: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '14e386f133ba07509937d1382e5c7bc9'
+                        key: {
+                            sys_ui_section: {
+                                id: '5ce38eb133ba07509937d1382e5c7be5'
+                                key: {
+                                    name: 'x_gzi_zflow_task_dependency'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '15a47b4c2e0c4eff9aeb2cecf79350f2'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_capacity_plan'
+                            col_name_string: 'portfolio_id'
                         }
                     },
                     {
@@ -625,6 +764,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '18e386f133ba07509937d1382e5c7bca'
+                        key: {
+                            sys_ui_section: {
+                                id: '5ce38eb133ba07509937d1382e5c7be5'
+                                key: {
+                                    name: 'x_gzi_zflow_task_dependency'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'dependency_type'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '1a4519a13cf14767989f0f316c360b47'
                         key: {
@@ -649,6 +805,14 @@ declare global {
                             value: 'month'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '1b5d879053d34c33aea4dda91198293a'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_task'
+                            col_name_string: 'workspace_id'
                         }
                     },
                     {
@@ -684,6 +848,23 @@ declare global {
                             value: 'on_track'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '1ce386f133ba07509937d1382e5c7bcb'
+                        key: {
+                            sys_ui_section: {
+                                id: '5ce38eb133ba07509937d1382e5c7be5'
+                                key: {
+                                    name: 'x_gzi_zflow_task_dependency'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'successor_task_id'
+                            position: '4'
                         }
                     },
                     {
@@ -758,6 +939,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '20691dffe4574249b1f1a8cca3f1f7b9'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_field_def'
+                            col_name_string: 'workspace_id'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '20931af42959447da7360892051237da'
                         key: {
@@ -788,6 +977,23 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_custom_view'
                             element: 'is_default'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2323067133ba07509937d1382e5c7b34'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'time_granularity'
+                            position: '7'
                         }
                     },
                     {
@@ -830,6 +1036,40 @@ declare global {
                         key: {
                             application_file: '1d3686cbdfd54d20a71a8faae6aae5a0'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2723067133ba07509937d1382e5c7b30'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'group_id'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2723067133ba07509937d1382e5c7b35'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '9'
                         }
                     },
                     {
@@ -896,6 +1136,40 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '2b23067133ba07509937d1382e5c7b2f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'name'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2b23067133ba07509937d1382e5c7b31'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '2b68d22f8223450eb868e8767c078df5'
                         deleted: true
@@ -957,6 +1231,31 @@ declare global {
                         id: '2ec233f6742840d795b8a75a14581c49'
                         key: {
                             name: 'x_gzi_zflow_custom_view_column'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '2ef2ae1f94564cc48439cc163a49b484'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_goal'
+                            col_name_string: 'owner_id'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2f23067133ba07509937d1382e5c7b32'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'workspace_id'
+                            position: '5'
                         }
                     },
                     {
@@ -1099,6 +1398,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '37c131c2316d424f8f9a480c477327c3'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_project_member'
+                            col_name_string: 'project_id'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '38889594aa7547f99ac78a4b93640d59'
                         key: {
@@ -1138,6 +1445,21 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_user_res_profile'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '39b3ceb133ba07509937d1382e5c7b00'
+                        key: {
+                            name: 'x_gzi_zflow_workspace'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -1311,6 +1633,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '421329d7e8d746d882e55e7ca1633058'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_view_column'
+                            col_name_string: 'view_id'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '42570db9396747b0a81217442723e32b'
                         key: {
@@ -1333,6 +1663,23 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_cust_field_setting'
                             element: 'portfolio_id'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '43138e3133ba07509937d1382e5c7b67'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'filter_query'
+                            position: '2'
                         }
                     },
                     {
@@ -1405,6 +1752,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '47877b90bfdc4bb8977adde6a1ce6718'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_capacity_plan'
+                            col_name_string: 'group_id'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '489486e43fb244c594218b521a31eefc'
                         key: {
@@ -1425,6 +1780,22 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_custom_view_column'
                             element: 'field_path'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '4af4023a74d848c6a55761b08f2abcdb'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_project'
+                            col_name_string: 'assignment_group'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '4cabc1aeca144d108123a0a499889f69'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_project_task'
+                            col_name_string: 'section_id'
                         }
                     },
                     {
@@ -1549,6 +1920,14 @@ declare global {
                             name: 'x_gzi_zflow_goal'
                             element: 'name'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '537307d3f12a44e6a3e0e1a2d9f5d2b4'
+                        key: {
+                            application_file: 'bd5eb67e526a4f79805ada1c45173286'
+                            source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
                         }
                     },
                     {
@@ -1706,6 +2085,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: '5ce38eb133ba07509937d1382e5c7be5'
+                        key: {
+                            name: 'x_gzi_zflow_task_dependency'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '5cee2413466b4dcbb22ee1a9a6c0a273'
                         key: {
@@ -1759,9 +2153,26 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '5f01aa682bf04edeaf4d8550e1c8caaf'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_gzi_zflow/main.js.map'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '5f138e3133ba07509937d1382e5c7b6c'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '9'
                         }
                     },
                     {
@@ -2110,6 +2521,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '77ca476744fe4ab0be63c011a9d26894'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_proj_res_alloc'
+                            col_name_string: 'user_id'
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '77ce7370247e4bbda8de272a4d0c8a01'
                         key: {
@@ -2202,6 +2621,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '7b730b8707eb485385fa439ff3133c39'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_project'
+                            col_name_string: 'owner_id'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '7b8508a505bd473f9110ba33cc7e4410'
                         key: {
@@ -2222,6 +2649,14 @@ declare global {
                         id: '7d36591a7ccd44d880e4250ee571f519'
                         key: {
                             name: 'x_gzi_zflow/main'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '7d6de009068d467d91c292eea8becfaf'
+                        key: {
+                            application_file: '2edb688f05014e9cb89b2f88a8a055d5'
+                            source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
                         }
                     },
                     {
@@ -2332,6 +2767,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '87138e3133ba07509937d1382e5c7b6a'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'portfolio_id'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '873f1edd9b0b4dd1b728d1f01156c9a7'
                         key: {
@@ -2346,6 +2798,14 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_workspace'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '892f3f3940f440ae84a7a6cba7e646d1'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_proj_res_alloc'
+                            col_name_string: 'role_id'
                         }
                     },
                     {
@@ -2459,6 +2919,31 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '8ec76b56d58a4cdd9255fb1c7b566b89'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_project_member'
+                            col_name_string: 'user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8f138e3133ba07509937d1382e5c7b67'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'group_by'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '8fa33cbb8f06475ba0e462dbacb9ec9a'
                         key: {
@@ -2488,6 +2973,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '90e386f133ba07509937d1382e5c7bcb'
+                        key: {
+                            sys_ui_section: {
+                                id: '5ce38eb133ba07509937d1382e5c7be5'
+                                key: {
+                                    name: 'x_gzi_zflow_task_dependency'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '910f70a91bc84b1888a525bb4bc9302a'
                         key: {
@@ -2510,6 +3012,14 @@ declare global {
                         id: '91fbd4ee975f4139bc2965ccaa98bf55'
                         key: {
                             name: 'x_gzi_zflow/PortfolioPage'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '920f96db893e4cdcae64b1da7ebe25cc'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_view'
+                            col_name_string: 'user_id'
                         }
                     },
                     {
@@ -2559,6 +3069,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '9400b6b1635c4a9ea1eaac6c4b0d0e33'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_capacity_plan'
+                            col_name_string: 'workspace_id'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '948a3a7daa6d47e48b8ac92884fbe960'
                         key: {
@@ -2576,6 +3094,23 @@ declare global {
                             name: 'x_gzi_zflow_portfolio'
                             element: 'workspace_id'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '94e386f133ba07509937d1382e5c7bcc'
+                        key: {
+                            sys_ui_section: {
+                                id: '5ce38eb133ba07509937d1382e5c7be5'
+                                key: {
+                                    name: 'x_gzi_zflow_task_dependency'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '5'
                         }
                     },
                     {
@@ -2641,12 +3176,45 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '997ad07780b344a3bcd708d50511033d'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_task'
+                            col_name_string: 'parent_task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '9a673b0788f7409e82895f74a53543d4'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_status_update'
+                            col_name_string: 'author_id'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '9aa8c385a3f342d0b1d6c9846118f391'
                         key: {
                             name: 'x_gzi_zflow_project_task'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '9b138e3133ba07509937d1382e5c7b6d'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'sort_config'
+                            position: '10'
                         }
                     },
                     {
@@ -2725,10 +3293,35 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '9ce386f133ba07509937d1382e5c7bc9'
+                        key: {
+                            sys_ui_section: {
+                                id: '5ce38eb133ba07509937d1382e5c7be5'
+                                key: {
+                                    name: 'x_gzi_zflow_task_dependency'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'predecessor_task_id'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '9da0fedc449949a68120dda2f9090fd6'
                         key: {
                             name: 'x_gzi_zflow_resource_role'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '9e93f76a89df4b3c8d901e2d2cb2f3bd'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_user_capacity'
+                            col_name_string: 'user_profile_id'
                         }
                     },
                     {
@@ -2764,6 +3357,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a323067133ba07509937d1382e5c7b32'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'owner_id'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: 'a4f02ba8f0794d7091bbae5ed4e066b6'
                         key: {
@@ -2788,6 +3398,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: 'a5b3e1655a474b08b78602d52f9deece'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_field_value'
+                            col_name_string: 'task_id'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'a6dd2b4f623d44f9adac274dfc557be0'
                         key: {
@@ -2803,6 +3421,23 @@ declare global {
                             name: 'x_gzi_zflow_portfolio'
                             element: 'color'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a723067133ba07509937d1382e5c7b33'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
                         }
                     },
                     {
@@ -2823,6 +3458,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: 'a787896d650c4670b55412589892cf5c'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_section'
+                            col_name_string: 'project_id'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: 'a7b33fbdadbf43ceb5d8a31bfaf223d9'
                         key: {
@@ -2835,6 +3478,14 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_status_update'
                             element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'a8d970b9d82144baba37f00e36ca3d7a'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_portfolio'
+                            col_name_string: 'owner_id'
                         }
                     },
                     {
@@ -2860,6 +3511,38 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_status_update'
                             element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ab23067133ba07509937d1382e5c7b34'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'portfolio_id'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'ab23cef1333a07509937d1382e5c7bdd'
+                        key: {
+                            name: 'x_gzi_zflow_capacity_plan'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -2928,6 +3611,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'af23067133ba07509937d1382e5c7b30'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab23cef1333a07509937d1382e5c7bdd'
+                                key: {
+                                    name: 'x_gzi_zflow_capacity_plan'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'filter_config'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: 'af3e67d9a5e546479e029e213afebbf5'
                         key: {
@@ -2987,6 +3687,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'b1b3ceb133ba07509937d1382e5c7b05'
+                        key: {
+                            sys_ui_section: {
+                                id: '39b3ceb133ba07509937d1382e5c7b00'
+                                key: {
+                                    name: 'x_gzi_zflow_workspace'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'name'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_choice_set'
                         id: 'b2d48103f6994a0382aebcf4cb1d65e4'
                         key: {
@@ -3011,11 +3728,27 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: 'b3a934c0e8354ab187a5583525e64a32'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_project'
+                            col_name_string: 'workspace_id'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'b3f3399a268d4d35bd6d0ce2d1f18269'
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'b3f3c6253e364ecfb7817b5d5389a8bd'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_view'
+                            col_name_string: 'portfolio_id'
                         }
                     },
                     {
@@ -3087,6 +3820,14 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_custom_view_column'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'b8d2a6e5082046d5b1a641a51affe2f8'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_view'
+                            col_name_string: 'project_id'
                         }
                     },
                     {
@@ -3176,7 +3917,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'bf73134a8ae94ef9bad763ce7a49b759'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
@@ -3273,6 +4014,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: 'c40f04a9a00c4534b06b6ef466519935'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_field_value'
+                            col_name_string: 'field_def_id'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'c449bd7a09d2417fa99782d6391c117b'
                         key: {
@@ -3287,6 +4036,14 @@ declare global {
                             name: 'x_gzi_zflow_status_update'
                             element: 'status'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'c4f379bdd19e42f69abc948a6acc4efc'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_cust_field_setting'
+                            col_name_string: 'portfolio_id'
                         }
                     },
                     {
@@ -3310,6 +4067,31 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'c7138e3133ba07509937d1382e5c7b1a'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'is_default'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'c7d2990a354342739be76733fb1ede5b'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_portfolio_project'
+                            col_name_string: 'added_by'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'c8238fb6acde495697d7be0a377fc29a'
                         key: {
@@ -3330,13 +4112,38 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'ca909d08f5e54afab69eecb4e6139833'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
                             value: 'backlog'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'caf7b5fc35a44b37bf21304a5b624539'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_custom_field_value'
+                            col_name_string: 'portfolio_id'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'cb138e3133ba07509937d1382e5c7b68'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '4'
                         }
                     },
                     {
@@ -3489,6 +4296,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: 'd12e0e15ded3467ab451976365767969'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_cust_field_setting'
+                            col_name_string: 'project_id'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd1fb171fb39641d9a6993d2bd465f074'
                         key: {
@@ -3524,6 +4339,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'd3138e3133ba07509937d1382e5c7b6b'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: 'd3228b473d364669babc11a5be3e2c64'
                         key: {
@@ -3535,6 +4367,23 @@ declare global {
                         id: 'd67048ce571c47deac36af9afcfefe47'
                         key: {
                             name: 'x_gzi_zflow_workspace'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'd7138e3133ba07509937d1382e5c7b6e'
+                        key: {
+                            sys_ui_section: {
+                                id: '0b138e3133ba07509937d1382e5c7b12'
+                                key: {
+                                    name: 'x_gzi_zflow_custom_view'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'view_type'
+                            position: '11'
                         }
                     },
                     {
@@ -3568,6 +4417,14 @@ declare global {
                             name: 'x_gzi_zflow_task'
                             element: 'name'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'd8b7d74d025f4b57a7213f31d5b74066'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_cust_field_setting'
+                            col_name_string: 'field_def_id'
                         }
                     },
                     {
@@ -3753,7 +4610,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'e62b635c77ff4a0583a3d9d79b7860ca'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
@@ -3841,6 +4698,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: 'eaec5691bef84fb18ab0cf0564fb8e56'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_user_res_profile'
+                            col_name_string: 'role_id'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'eb5ebff359db4fce9996c56073c402ef'
                         key: {
@@ -3857,6 +4722,14 @@ declare global {
                             value: 'low'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'ecebcb475a914a7ba3b385fa9b619659'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_capacity_plan'
+                            col_name_string: 'owner_id'
                         }
                     },
                     {
@@ -3934,6 +4807,14 @@ declare global {
                             name: 'x_gzi_zflow_status_update'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'f643b1ed0b3a44cc8d05e98f77accc60'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_goal'
+                            col_name_string: 'workspace_id'
                         }
                     },
                     {
@@ -4093,10 +4974,26 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: 'ff2aee219f5e4547b6a3311ee40c3444'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_portfolio'
+                            col_name_string: 'workspace_id'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: 'ff3876bc33a54c6b87b881aec6a27dd3'
                         key: {
                             name: 'x_gzi_zflow_workspace_user'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'ff9ffd81c6304e81aa10e75121104e79'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_task_dependency'
+                            col_name_string: 'predecessor_task_id'
                         }
                     },
                     {

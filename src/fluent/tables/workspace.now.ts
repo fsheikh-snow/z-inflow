@@ -10,4 +10,13 @@ export const x_gzi_zflow_workspace = Table({
     schema: {
         name: StringColumn({ label: 'Name', mandatory: true, maxLength: 255 }),
     },
+    actions: {
+        read: true,
+        update: false,
+        delete: false,
+        create: false,
+    },
+    allowClientScripts: false,
+    allowNewFields: false,
+    allowUiActions: false,
 })

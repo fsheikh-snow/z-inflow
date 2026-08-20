@@ -20,6 +20,7 @@ export const x_gzi_zflow_workspace_team = Table({
             mandatory: true,
             primary: true,
             cascadeRule: 'delete',
+            maxLength: 32,
         }),
         group_id: ReferenceColumn({
             label: 'Team',
@@ -27,6 +28,16 @@ export const x_gzi_zflow_workspace_team = Table({
             mandatory: true,
             primary: true,
             cascadeRule: 'delete',
+            maxLength: 32,
         }),
     },
+    actions: {
+        read: true,
+        update: false,
+        delete: false,
+        create: false,
+    },
+    allowClientScripts: false,
+    allowNewFields: false,
+    allowUiActions: false,
 })

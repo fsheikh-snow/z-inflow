@@ -20,6 +20,7 @@ export const x_gzi_zflow_workspace_user = Table({
             mandatory: true,
             primary: true,
             cascadeRule: 'delete',
+            maxLength: 32,
         }),
         user_id: ReferenceColumn({
             label: 'User',
@@ -27,6 +28,16 @@ export const x_gzi_zflow_workspace_user = Table({
             mandatory: true,
             primary: true,
             cascadeRule: 'delete',
+            maxLength: 32,
         }),
     },
+    actions: {
+        read: true,
+        update: false,
+        delete: false,
+        create: false,
+    },
+    allowClientScripts: false,
+    allowNewFields: false,
+    allowUiActions: false,
 })

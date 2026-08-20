@@ -12,6 +12,16 @@ export const x_gzi_zflow_task_dependency = Table({
             unique: true,
             element: ['predecessor_task_id', 'successor_task_id'],
         },
+        {
+            name: 'index',
+            unique: false,
+            element: 'predecessor_task_id',
+        },
+        {
+            name: 'index2',
+            unique: false,
+            element: 'successor_task_id',
+        },
     ],
     schema: {
         predecessor_task_id: ReferenceColumn({
@@ -19,12 +29,14 @@ export const x_gzi_zflow_task_dependency = Table({
             referenceTable: 'x_gzi_zflow_task',
             mandatory: true,
             cascadeRule: 'delete',
+            maxLength: 32,
         }),
         successor_task_id: ReferenceColumn({
             label: 'Successor Task',
             referenceTable: 'x_gzi_zflow_task',
             mandatory: true,
             cascadeRule: 'delete',
+            maxLength: 32,
         }),
         dependency_type: ChoiceColumn({
             label: 'Dependency Type',
@@ -32,11 +44,33 @@ export const x_gzi_zflow_task_dependency = Table({
             default: 'finish_to_start',
             dropdown: 'dropdown_without_none',
             choices: {
-                finish_to_start: 'Finish-to-Start',
-                start_to_start: 'Start-to-Start',
-                finish_to_finish: 'Finish-to-Finish',
-                start_to_finish: 'Start-to-Finish',
+                finish_to_start: {
+                    label: 'Finish to Start',
+                    sequence: 1,
+                },
+                start_to_start: {
+                    label: 'Start to Start',
+                    sequence: 2,
+                },
+                finish_to_finish: {
+                    label: 'Finish to Finish',
+                    sequence: 3,
+                },
+                start_to_finish: {
+                    label: 'Start to Finish',
+                    sequence: 4,
+                },
             },
+            maxLength: 40,
         }),
     },
+    actions: {
+        read: true,
+        update: false,
+        delete: false,
+        create: false,
+    },
+    allowClientScripts: false,
+    allowNewFields: false,
+    allowUiActions: false,
 })

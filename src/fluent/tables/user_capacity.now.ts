@@ -13,11 +13,29 @@ export const x_gzi_zflow_user_capacity = Table({
             mandatory: true,
             unique: true,
             cascadeRule: 'delete',
+            maxLength: 32,
         }),
         baseline_hours_per_week: IntegerColumn({
             label: 'Baseline Hours Per Week',
             mandatory: true,
             default: 40,
+            maxLength: 40,
         }),
     },
+    actions: {
+        read: true,
+        update: false,
+        delete: false,
+        create: false,
+    },
+    allowClientScripts: false,
+    allowNewFields: false,
+    allowUiActions: false,
+    index: [
+        {
+            name: 'index',
+            unique: true,
+            element: 'user_profile_id',
+        },
+    ],
 })

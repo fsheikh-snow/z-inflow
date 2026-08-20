@@ -23,52 +23,76 @@ export const x_gzi_zflow_task = Table({
             referenceTable: 'x_gzi_zflow_workspace',
             mandatory: true,
             cascadeRule: 'delete',
+            maxLength: 32,
         }),
         assignee_id: ReferenceColumn({
             label: 'Assignee',
             referenceTable: 'sys_user',
             cascadeRule: 'none',
+            maxLength: 32,
         }),
         watch_list: ListColumn({
             label: 'Collaborators',
             referenceTable: 'sys_user',
+            maxLength: 4000,
         }),
         comments: GenericColumn({
             label: 'Comments',
             columnType: 'journal_input',
+            maxLength: 40,
         }),
         work_notes: GenericColumn({
             label: 'Work Notes',
             columnType: 'journal_input',
+            maxLength: 40,
         }),
         name: StringColumn({ label: 'Name', mandatory: true, maxLength: 255 }),
-        description: HtmlColumn({ label: 'Description' }),
+        description: HtmlColumn({ label: 'Description', maxLength: 65536 }),
         notes: StringColumn({ label: 'Notes', maxLength: 4000 }),
         parent_task_id: ReferenceColumn({
             label: 'Parent Task',
             referenceTable: 'x_gzi_zflow_task',
             cascadeRule: 'none',
+            maxLength: 32,
         }),
-        start_date: DateColumn({ label: 'Start Date' }),
-        due_date: DateColumn({ label: 'Due Date' }),
-        completed: BooleanColumn({ label: 'Completed', default: false }),
+        start_date: DateColumn({ label: 'Start Date', maxLength: 40 }),
+        due_date: DateColumn({ label: 'Due Date', maxLength: 40 }),
+        completed: BooleanColumn({ label: 'Completed', default: false, maxLength: 40 }),
         status: ChoiceColumn({
             label: 'Status',
             dropdown: 'dropdown_with_none',
             default: 'open',
             choices: {
-                open: 'Open',
-                in_progress: 'In Progress',
-                complete: 'Complete',
+                open: {
+                    label: 'Open',
+                    sequence: 1,
+                },
+                in_progress: {
+                    label: 'In Progress',
+                    sequence: 2,
+                },
+                complete: {
+                    label: 'Complete',
+                    sequence: 3,
+                },
             },
         }),
         priority: ChoiceColumn({
             label: 'Priority',
             dropdown: 'dropdown_with_none',
             choices: {
-                high: 'High',
-                medium: 'Medium',
-                low: 'Low',
+                high: {
+                    label: 'High',
+                    sequence: 1,
+                },
+                medium: {
+                    label: 'Medium',
+                    sequence: 2,
+                },
+                low: {
+                    label: 'Low',
+                    sequence: 3,
+                },
             },
         }),
         task_type: ChoiceColumn({
@@ -76,19 +100,65 @@ export const x_gzi_zflow_task = Table({
             dropdown: 'dropdown_with_none',
             default: 'task',
             choices: {
-                task: 'Task',
-                milestone: 'Milestone',
-                approval: 'Approval',
+                task: {
+                    label: 'Task',
+                    sequence: 1,
+                },
+                milestone: {
+                    label: 'Milestone',
+                    sequence: 2,
+                },
+                approval: {
+                    label: 'Approval',
+                    sequence: 3,
+                },
             },
+            maxLength: 40,
         }),
         approval_state: ChoiceColumn({
             label: 'Approval State',
             dropdown: 'dropdown_with_none',
             choices: {
-                approve: 'Approve',
-                reject: 'Reject',
-                request_changes: 'Request Changes',
+                approve: {
+                    label: 'Approve',
+                    sequence: 1,
+                },
+                reject: {
+                    label: 'Reject',
+                    sequence: 2,
+                },
+                request_changes: {
+                    label: 'Request Changes',
+                    sequence: 3,
+                },
             },
+            maxLength: 40,
         }),
     },
+    actions: {
+        read: true,
+        update: false,
+        delete: false,
+        create: false,
+    },
+    allowClientScripts: false,
+    allowNewFields: false,
+    allowUiActions: false,
+    index: [
+        {
+            name: 'index',
+            unique: false,
+            element: 'workspace_id',
+        },
+        {
+            name: 'index2',
+            unique: false,
+            element: 'assignee_id',
+        },
+        {
+            name: 'index3',
+            unique: false,
+            element: 'parent_task_id',
+        },
+    ],
 })
