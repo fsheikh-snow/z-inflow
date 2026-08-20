@@ -23,7 +23,9 @@ export function sendJson(response: { setBody: (body: unknown) => void; setStatus
     if (status) {
         response.setStatus(status)
     }
-    response.setBody({ result: body })
+    // Do not wrap as { result: body } — Scripted REST already wraps setBody once.
+    // Double-wrapping made clients see { result: { result: […] } } and treat lists as [].
+    response.setBody(body)
 }
 
 export function sendError(response: { setBody: (body: unknown) => void; setStatus: (code: number) => void }, message: string, status: number) {

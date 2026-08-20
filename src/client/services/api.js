@@ -65,10 +65,30 @@ export async function apiRequest(path, options = {}) {
     const contentType = response.headers.get('content-type') || ''
     if (contentType.includes('application/json')) {
         const json = await response.json()
-        return json.result !== undefined ? json.result : json
+        return unwrapSnResult(json)
     }
 
     return response.text()
+}
+
+/**
+ * ServiceNow Scripted REST wraps setBody once as `{ result: … }`.
+ * Older sendJson also wrapped as `{ result: body }`, producing
+ * `{ result: { result: … } }`. Unwrap sole-key `result` wrappers so
+ * list/search callers always see the real payload (array or object).
+ */
+function unwrapSnResult(payload) {
+    let data = payload
+    while (
+        data &&
+        typeof data === 'object' &&
+        !Array.isArray(data) &&
+        Object.prototype.hasOwnProperty.call(data, 'result') &&
+        Object.keys(data).length === 1
+    ) {
+        data = data.result
+    }
+    return data
 }
 
 export { API_BASE }

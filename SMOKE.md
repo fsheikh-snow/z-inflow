@@ -55,6 +55,10 @@ Any **5xx** (or auth/hard failure) → exit code **1** and a PASS/FAIL table wit
 3. If smoke **FAIL** → read table output, fix server/REST, re-ship  
 4. If smoke **PASS** but UI still wrong → human browser check (below)
 
+## Console noise (not our app)
+
+Owner/search pastes that mention **`data-context.js` / `apiKey`**, **`auto-capture.js`**, or **`cache-buster`** are **not** from ZFlow. They come from ServiceNow platform Usage Insights / UXA telemetry and/or browser extensions. Ignore them when debugging the Owner picker; use `npm run smoke` and Network → `/users/search` instead.
+
 ## What still needs a human / browser
 
 - Visual layout, drag-and-drop, UXF/chrome chrome quirks, React client-only bugs that never hit REST
