@@ -165,7 +165,11 @@ export default function TaskForm({ mode = 'create', task, projectId, onClose, on
                 />
             </label>
 
-            {mutation.isError && <p className="project-create-error">{mutation.error.message}</p>}
+            {mutation.isError && (
+                <p className="project-create-error">
+                    {typeof mutation.error?.message === 'string' ? mutation.error.message : 'Could not save task'}
+                </p>
+            )}
 
             <div className="field-create-actions">
                 {onClose && (

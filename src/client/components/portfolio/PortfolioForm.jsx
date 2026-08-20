@@ -107,7 +107,13 @@ export default function PortfolioForm({ mode = 'create', portfolio, workspaceId,
                     />
                 </label>
 
-                {mutation.isError && <p className="project-create-error">{mutation.error.message}</p>}
+                {mutation.isError && (
+                    <p className="project-create-error">
+                        {typeof mutation.error?.message === 'string'
+                            ? mutation.error.message
+                            : 'Could not save portfolio'}
+                    </p>
+                )}
 
                 <div className="field-create-actions">
                     <button type="button" className="btn btn-ghost" onClick={onClose} disabled={mutation.isPending}>

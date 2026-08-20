@@ -10,6 +10,29 @@ function getAuthHeaders() {
     return headers
 }
 
+function coerceErrorMessage(value, fallback) {
+    if (value == null) {
+        return fallback
+    }
+    if (typeof value === 'string') {
+        return value
+    }
+    if (typeof value === 'number' || typeof value === 'boolean') {
+        return String(value)
+    }
+    if (typeof value === 'object') {
+        if (typeof value.message === 'string') {
+            return value.message
+        }
+        try {
+            return JSON.stringify(value)
+        } catch {
+            return fallback
+        }
+    }
+    return fallback
+}
+
 export async function apiRequest(path, options = {}) {
     const url = path.startsWith('http') ? path : `${API_BASE}${path}`
     const response = await fetch(url, {
@@ -25,7 +48,10 @@ export async function apiRequest(path, options = {}) {
         let message = `HTTP error ${response.status}`
         try {
             const errorData = await response.json()
-            message = errorData.error?.message || errorData.message || message
+            message = coerceErrorMessage(
+                errorData?.error?.message ?? errorData?.error ?? errorData?.message,
+                message
+            )
         } catch {
             // ignore parse errors
         }

@@ -1,26 +1,44 @@
 var ProjectTaskService = Class.create();
 ProjectTaskService.prototype = {
-    initialize: function () {
-        this.access = new x_gzi_zflow.AccessService();
-        this.userService = new x_gzi_zflow.UserService();
-        this.viewData = new x_gzi_zflow.ViewDataService();
+    // Lazy deps so listProjects works even if UserService/ViewDataService fail to construct.
+    initialize: function () {},
+
+    _access: function () {
+        if (!this.__access) {
+            this.__access = new x_gzi_zflow.AccessService();
+        }
+        return this.__access;
+    },
+
+    _userService: function () {
+        if (!this.__userService) {
+            this.__userService = new x_gzi_zflow.UserService();
+        }
+        return this.__userService;
+    },
+
+    _viewData: function () {
+        if (!this.__viewData) {
+            this.__viewData = new x_gzi_zflow.ViewDataService();
+        }
+        return this.__viewData;
     },
 
     _serializeProject: function (gr) {
         return {
             sys_id: gr.getUniqueValue(),
-            workspace_id: gr.getValue('workspace_id'),
-            assignment_group: gr.getValue('assignment_group'),
-            name: gr.getValue('name'),
-            status: gr.getValue('status'),
-            notes: gr.getValue('notes'),
-            owner_id: gr.getValue('owner_id'),
-            start_date: gr.getValue('start_date'),
-            due_date: gr.getValue('due_date'),
-            priority: gr.getValue('priority'),
-            description: gr.getValue('description'),
-            project_key: gr.getValue('project_key'),
-            percent_complete: gr.getValue('percent_complete'),
+            workspace_id: gr.getValue('workspace_id') || '',
+            assignment_group: gr.getValue('assignment_group') || '',
+            name: gr.getValue('name') || '',
+            status: gr.getValue('status') || '',
+            notes: gr.getValue('notes') || '',
+            owner_id: gr.getValue('owner_id') || '',
+            start_date: gr.getValue('start_date') || '',
+            due_date: gr.getValue('due_date') || '',
+            priority: gr.getValue('priority') || '',
+            description: gr.getValue('description') || '',
+            project_key: gr.getValue('project_key') || '',
+            percent_complete: gr.getValue('percent_complete') || '0',
             sync_with_jira: gr.getValue('sync_with_jira') === 'true',
         };
     },
@@ -49,30 +67,39 @@ ProjectTaskService.prototype = {
 
     listProjects: function (workspaceId) {
         var results = [];
-        var gr = new GlideRecord('x_gzi_zflow_project');
-        if (workspaceId) {
-            gr.addQuery('workspace_id', workspaceId);
-        }
-        gr.orderBy('name');
-        gr.query();
-        while (gr.next()) {
-            results.push(this._serializeProject(gr));
+        try {
+            var gr = new GlideRecord('x_gzi_zflow_project');
+            if (!gr.isValid()) {
+                gs.warn('ProjectTaskService.listProjects: table x_gzi_zflow_project is invalid');
+                return results;
+            }
+            if (workspaceId) {
+                gr.addQuery('workspace_id', workspaceId);
+            }
+            gr.orderBy('name');
+            gr.query();
+            while (gr.next()) {
+                results.push(this._serializeProject(gr));
+            }
+        } catch (e) {
+            gs.error('ProjectTaskService.listProjects failed: ' + (e && e.message ? e.message : e));
+            return [];
         }
         return results;
     },
 
     getProject: function (projectId) {
         var gr = new GlideRecord('x_gzi_zflow_project');
-        if (!gr.get(projectId)) {
+        if (!gr.isValid() || !gr.get(projectId)) {
             return null;
         }
         var project = this._serializeProject(gr);
         if (project.owner_id) {
-            var ownerMap = this.userService.getUsersByIds([project.owner_id]);
+            var ownerMap = this._userService().getUsersByIds([project.owner_id]);
             project.owner = ownerMap[project.owner_id] || null;
         }
         if (project.assignment_group) {
-            var groupMap = this.userService.getGroupsByIds([project.assignment_group]);
+            var groupMap = this._userService().getGroupsByIds([project.assignment_group]);
             project.team = groupMap[project.assignment_group] || null;
             project.assignment_group_name = project.team ? project.team.name : '';
         }
@@ -321,7 +348,7 @@ ProjectTaskService.prototype = {
         }
         var task = this._serializeTask(gr, null);
         if (task.assignee_id) {
-            var assigneeMap = this.userService.getUsersByIds([task.assignee_id]);
+            var assigneeMap = this._userService().getUsersByIds([task.assignee_id]);
             task.assignee = assigneeMap[task.assignee_id] || null;
         }
         return task;

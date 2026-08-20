@@ -1,9 +1,11 @@
-import { getPathParam, getQueryParam, parseBody, portfolioService, sendError, sendJson, viewDataService } from './helpers'
+import { getPathParam, getQueryParam, parseBody, portfolioService, safeList, sendError, sendJson, viewDataService } from './helpers'
 
 export function listPortfolios(request: any, response: any) {
-    const svc = portfolioService()
-    const workspaceId = getQueryParam(request, 'workspace_id')
-    sendJson(response, svc.listPortfolios(workspaceId))
+    safeList(response, 'listPortfolios', function () {
+        const svc = portfolioService()
+        const workspaceId = getQueryParam(request, 'workspace_id')
+        return svc.listPortfolios(workspaceId)
+    })
 }
 
 export function createPortfolio(request: any, response: any) {

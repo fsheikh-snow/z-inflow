@@ -29,7 +29,15 @@ export const queryKeys = {
 export function usePortfolios() {
     return useQuery({
         queryKey: queryKeys.portfolios,
-        queryFn: () => portfolioService.list(),
+        queryFn: async () => {
+            try {
+                const data = await portfolioService.list()
+                return Array.isArray(data) ? data : []
+            } catch {
+                return []
+            }
+        },
+        throwOnError: false,
     })
 }
 
@@ -100,7 +108,15 @@ export function useProject(projectId) {
 export function useProjects(params = {}) {
     return useQuery({
         queryKey: [...queryKeys.projects, params],
-        queryFn: () => projectService.list(params),
+        queryFn: async () => {
+            try {
+                const data = await projectService.list(params)
+                return Array.isArray(data) ? data : []
+            } catch {
+                return []
+            }
+        },
+        throwOnError: false,
     })
 }
 

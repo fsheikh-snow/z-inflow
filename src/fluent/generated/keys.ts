@@ -2165,6 +2165,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '5e7ca36cffbb45608193332b902d2cf5'
+                        deleted: true
                         key: {
                             application_file: 'd20dbb3984a841af80a74e38211e9fa6'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
@@ -2722,6 +2723,14 @@ declare global {
                         id: '8059d979766543b8b1e2cb9bac6e359b'
                         key: {
                             name: 'x_gzi_zflow_task_dependency'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '80bd782c13a24ec88f8e7372fe80d9e5'
+                        key: {
+                            application_file: 'b98483645745433fa11ca8f944c92b8e'
+                            source_artifact: '4e8e46929bde432790cfcb7104335322'
                         }
                     },
                     {
@@ -3884,6 +3893,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_lib_asset'
+                        id: 'b98483645745433fa11ca8f944c92b8e'
+                        key: {
+                            name: 'x_gzi_zflow/vendor-react-router--9560cb75'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'bb5b1d0a28104dada940258fa15167cf'
                         key: {
@@ -4364,6 +4380,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'd20dbb3984a841af80a74e38211e9fa6'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/vendor-react-router--424f1484'
                         }

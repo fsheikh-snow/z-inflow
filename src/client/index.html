@@ -2,10 +2,26 @@
 <head>
   <title>Z-Inflow PM Workspace</title>
 
-  <!-- Initialize globals and Include ServiceNow's required scripts -->
+  <!-- Strip platform UXF query params before now-ux-globals boots a second React
+       tree (ProjectDetail.jsdb / React #306). Our SPA uses hash routing only. -->
+  <script>
+    (function () {
+      try {
+        var url = new URL(window.location.href);
+        var view = url.searchParams.get('view');
+        var id = url.searchParams.get('id');
+        if (view || id === '-1') {
+          url.searchParams.delete('view');
+          url.searchParams.delete('id');
+          window.history.replaceState({}, '', url.pathname + url.search + url.hash);
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+
+  <!-- CSRF / session globals only — do not mount UXF pages into this BYOUI shell -->
   <sdk:now-ux-globals></sdk:now-ux-globals>
 
-  <!-- Include your React entry point -->
   <script src="./main.jsx" type="module"></script>
 </head>
 <body>
@@ -14,6 +30,6 @@
   <div id="pm-workspace-loading" style="font-family:sans-serif;padding:48px;color:#64748b;text-align:center">
     ZFlow / PM Workspace loading...
   </div>
-  <div id="root"></div>
+  <div id="root" data-pm-workspace-root="1"></div>
 </body>
 </html>

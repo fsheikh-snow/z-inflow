@@ -1,8 +1,10 @@
 import React, { Component, Suspense } from 'react'
 import QueryProvider from './providers/QueryProvider'
 import AppRoutes from './routes'
+import { errorText } from './components/shared/PageErrorBoundary'
 import './app.css'
 
+/** Top-level: catastrophic boot failures only. */
 class AppErrorBoundary extends Component {
     constructor(props) {
         super(props)
@@ -17,7 +19,10 @@ class AppErrorBoundary extends Component {
         if (this.state.error) {
             return (
                 <div className="empty-state">
-                    <p>PM Workspace failed to load: {this.state.error.message || String(this.state.error)}</p>
+                    <p>PM Workspace failed to load: {errorText(this.state.error)}</p>
+                    <button type="button" className="sidebar-link sidebar-link-action" onClick={() => window.location.reload()}>
+                        Reload
+                    </button>
                 </div>
             )
         }

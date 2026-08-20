@@ -1,9 +1,11 @@
-import { getPathParam, getQueryParam, parseBody, projectTaskService, sendError, sendJson } from './helpers'
+import { getPathParam, getQueryParam, parseBody, projectTaskService, safeList, sendError, sendJson } from './helpers'
 
 export function listProjects(request: any, response: any) {
-    const svc = projectTaskService()
-    const workspaceId = getQueryParam(request, 'workspace_id')
-    sendJson(response, svc.listProjects(workspaceId))
+    safeList(response, 'listProjects', function () {
+        const svc = projectTaskService()
+        const workspaceId = getQueryParam(request, 'workspace_id')
+        return svc.listProjects(workspaceId)
+    })
 }
 
 export function createProject(request: any, response: any) {

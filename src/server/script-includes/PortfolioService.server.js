@@ -1,45 +1,73 @@
 var PortfolioService = Class.create();
 PortfolioService.prototype = {
-    initialize: function () {
-        this.access = new x_gzi_zflow.AccessService();
-        this.viewData = new x_gzi_zflow.ViewDataService();
-        this.userService = new x_gzi_zflow.UserService();
+    // Lazy deps: listPortfolios must not fail if ViewDataService/UserService
+    // Script Includes are unavailable or throw during construction.
+    initialize: function () {},
+
+    _access: function () {
+        if (!this.__access) {
+            this.__access = new x_gzi_zflow.AccessService();
+        }
+        return this.__access;
+    },
+
+    _viewData: function () {
+        if (!this.__viewData) {
+            this.__viewData = new x_gzi_zflow.ViewDataService();
+        }
+        return this.__viewData;
+    },
+
+    _userService: function () {
+        if (!this.__userService) {
+            this.__userService = new x_gzi_zflow.UserService();
+        }
+        return this.__userService;
     },
 
     _serializePortfolio: function (gr) {
         return {
             sys_id: gr.getUniqueValue(),
-            workspace_id: gr.getValue('workspace_id'),
-            name: gr.getValue('name'),
-            owner_id: gr.getValue('owner_id'),
-            due_date: gr.getValue('due_date'),
-            description: gr.getValue('description'),
-            color: gr.getValue('color'),
+            workspace_id: gr.getValue('workspace_id') || '',
+            name: gr.getValue('name') || '',
+            owner_id: gr.getValue('owner_id') || '',
+            due_date: gr.getValue('due_date') || '',
+            description: gr.getValue('description') || '',
+            color: gr.getValue('color') || '',
         };
     },
 
     listPortfolios: function (workspaceId) {
         var results = [];
-        var gr = new GlideRecord('x_gzi_zflow_portfolio');
-        if (workspaceId) {
-            gr.addQuery('workspace_id', workspaceId);
-        }
-        gr.orderBy('name');
-        gr.query();
-        while (gr.next()) {
-            results.push(this._serializePortfolio(gr));
+        try {
+            var gr = new GlideRecord('x_gzi_zflow_portfolio');
+            if (!gr.isValid()) {
+                gs.warn('PortfolioService.listPortfolios: table x_gzi_zflow_portfolio is invalid');
+                return results;
+            }
+            if (workspaceId) {
+                gr.addQuery('workspace_id', workspaceId);
+            }
+            gr.orderBy('name');
+            gr.query();
+            while (gr.next()) {
+                results.push(this._serializePortfolio(gr));
+            }
+        } catch (e) {
+            gs.error('PortfolioService.listPortfolios failed: ' + (e && e.message ? e.message : e));
+            return [];
         }
         return results;
     },
 
     getPortfolio: function (portfolioId) {
         var gr = new GlideRecord('x_gzi_zflow_portfolio');
-        if (!gr.get(portfolioId)) {
+        if (!gr.isValid() || !gr.get(portfolioId)) {
             return null;
         }
         var portfolio = this._serializePortfolio(gr);
         if (portfolio.owner_id) {
-            var ownerMap = this.userService.getUsersByIds([portfolio.owner_id]);
+            var ownerMap = this._userService().getUsersByIds([portfolio.owner_id]);
             portfolio.owner = ownerMap[portfolio.owner_id] || null;
         }
         return portfolio;
@@ -107,7 +135,7 @@ PortfolioService.prototype = {
     },
 
     getTimeline: function (portfolioId) {
-        var data = this.viewData.getPortfolioViewData(portfolioId, this._defaultViewId(portfolioId));
+        var data = this._viewData().getPortfolioViewData(portfolioId, this._defaultViewId(portfolioId));
         if (!data) {
             return { items: [], start_date: null, end_date: null };
         }
@@ -143,7 +171,7 @@ PortfolioService.prototype = {
     },
 
     _getPortfolioRows: function (portfolioId) {
-        var data = this.viewData.getPortfolioViewData(portfolioId, this._defaultViewId(portfolioId));
+        var data = this._viewData().getPortfolioViewData(portfolioId, this._defaultViewId(portfolioId));
         return (data && data.rows) ? data.rows : [];
     },
 
@@ -282,13 +310,13 @@ PortfolioService.prototype = {
             });
         }
 
-        var users = this.userService.getUsersByIds(authorIds);
+        var users = this._userService().getUsersByIds(authorIds);
         for (var i = 0; i < updates.length; i++) {
             updates[i].author = users[updates[i].author_id] || null;
         }
 
         if (portfolio.owner_id) {
-            var ownerMap = this.userService.getUsersByIds([portfolio.owner_id]);
+            var ownerMap = this._userService().getUsersByIds([portfolio.owner_id]);
             portfolio.owner = ownerMap[portfolio.owner_id] || null;
         }
 
@@ -338,7 +366,7 @@ PortfolioService.prototype = {
         });
 
         var userIds = Object.keys(matrix);
-        var users = this.userService.getUsersByIds(userIds);
+        var users = this._userService().getUsersByIds(userIds);
         var people = [];
         for (var userId in matrix) {
             if (matrix.hasOwnProperty(userId)) {

@@ -12,9 +12,15 @@ const NAV_ITEMS = [
     { to: '/admin/rules', label: 'Automations', icon: '⚡' },
 ]
 
+function asList(data) {
+    return Array.isArray(data) ? data : []
+}
+
 export default function AppSidebar() {
-    const { data: portfolios = [] } = usePortfolios()
-    const { data: projects = [] } = useProjects()
+    const portfoliosQuery = usePortfolios()
+    const projectsQuery = useProjects()
+    const portfolios = asList(portfoliosQuery.data)
+    const projects = asList(projectsQuery.data)
     const navigate = useNavigate()
     const [showCreatePortfolio, setShowCreatePortfolio] = useState(false)
     const [showCreateProject, setShowCreateProject] = useState(false)
@@ -46,7 +52,7 @@ export default function AppSidebar() {
                     New project
                 </button>
                 {projects.length === 0 ? (
-                    <div className="sidebar-empty">No projects</div>
+                    <div className="sidebar-empty">{projectsQuery.isLoading ? 'Loading…' : 'No projects'}</div>
                 ) : (
                     projects.slice(0, 12).map((p) => (
                         <NavLink
@@ -55,7 +61,7 @@ export default function AppSidebar() {
                             className={({ isActive }) => `sidebar-link${isActive ? ' active' : ''}`}
                         >
                             <span className="sidebar-icon">•</span>
-                            {p.name}
+                            {typeof p.name === 'string' ? p.name : String(p.name || 'Untitled')}
                         </NavLink>
                     ))
                 )}
@@ -66,7 +72,7 @@ export default function AppSidebar() {
                     New portfolio
                 </button>
                 {portfolios.length === 0 ? (
-                    <div className="sidebar-empty">No portfolios</div>
+                    <div className="sidebar-empty">{portfoliosQuery.isLoading ? 'Loading…' : 'No portfolios'}</div>
                 ) : (
                     portfolios.map((p) => (
                         <NavLink
@@ -74,8 +80,8 @@ export default function AppSidebar() {
                             to={`/portfolios/${p.sys_id}`}
                             className={({ isActive }) => `sidebar-link${isActive ? ' active' : ''}`}
                         >
-                            <span className="sidebar-dot" style={{ background: p.color || '#6366f1' }} />
-                            {p.name}
+                            <span className="sidebar-dot" style={{ background: typeof p.color === 'string' && p.color ? p.color : '#6366f1' }} />
+                            {typeof p.name === 'string' ? p.name : String(p.name || 'Untitled')}
                         </NavLink>
                     ))
                 )}

@@ -1,8 +1,19 @@
 var ViewDataService = Class.create();
 ViewDataService.prototype = {
-    initialize: function () {
-        this.access = new x_gzi_zflow.AccessService();
-        this.userService = new x_gzi_zflow.UserService();
+    initialize: function () {},
+
+    _access: function () {
+        if (!this.__access) {
+            this.__access = new x_gzi_zflow.AccessService();
+        }
+        return this.__access;
+    },
+
+    _userService: function () {
+        if (!this.__userService) {
+            this.__userService = new x_gzi_zflow.UserService();
+        }
+        return this.__userService;
     },
 
     _getView: function (viewId) {
@@ -210,7 +221,7 @@ ViewDataService.prototype = {
             });
         }
 
-        var users = this.userService.getUsersByIds(userIds);
+        var users = this._userService().getUsersByIds(userIds);
         for (var i = 0; i < rows.length; i++) {
             rows[i].owner = users[rows[i].owner_id] || null;
         }

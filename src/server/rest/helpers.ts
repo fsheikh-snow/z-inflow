@@ -21,25 +21,14 @@ export function sendJson(response: { setBody: (body: unknown) => void; setStatus
 
 export function sendError(response: { setBody: (body: unknown) => void; setStatus: (code: number) => void }, message: string, status: number) {
     response.setStatus(status)
-    response.setBody({ error: { message } })
+    response.setBody({ error: { message: String(message || 'Request failed') } })
 }
 
 export function getPathParam(request: { pathParams: Record<string, string> }, name: string): string {
     return request.pathParams[name] || ''
 }
 
-export function getQueryParam(
-    request: { queryParams?: Record<string, unknown>; getQueryParameter?: (name: string) => string },
-    name: string
-): string {
-    if (typeof request.getQueryParameter === 'function') {
-        const viaGetter = request.getQueryParameter(name)
-        if (viaGetter != null && String(viaGetter) !== '') {
-            return String(viaGetter)
-        }
-    }
-
-    const param = request.queryParams?.[name]
+function coerceQueryValue(param: unknown): string {
     if (param == null) {
         return ''
     }
@@ -61,6 +50,28 @@ export function getQueryParam(
     return String(param)
 }
 
+export function getQueryParam(
+    request: { queryParams?: Record<string, unknown>; getQueryParameter?: (name: string) => string },
+    name: string
+): string {
+    try {
+        if (typeof request.getQueryParameter === 'function') {
+            const viaGetter = request.getQueryParameter(name)
+            if (viaGetter != null && String(viaGetter) !== '') {
+                return String(viaGetter)
+            }
+        }
+
+        const params = request.queryParams
+        if (!params) {
+            return ''
+        }
+        return coerceQueryValue(params[name])
+    } catch (_error) {
+        return ''
+    }
+}
+
 export function requireAuth(): string {
     const userId = gs.getUserID()
     if (!userId) {
@@ -69,22 +80,59 @@ export function requireAuth(): string {
     return userId
 }
 
+function safeService<T>(name: string, factory: () => T): T {
+    try {
+        return factory()
+    } catch (error: any) {
+        const message = error && error.message ? error.message : String(error)
+        gs.error(name + ' construction failed: ' + message)
+        throw new Error(name + ' unavailable: ' + message)
+    }
+}
+
 export function portfolioService() {
-    return new x_gzi_zflow.PortfolioService()
+    return safeService('PortfolioService', function () {
+        return new x_gzi_zflow.PortfolioService()
+    })
 }
 
 export function viewDataService() {
-    return new x_gzi_zflow.ViewDataService()
+    return safeService('ViewDataService', function () {
+        return new x_gzi_zflow.ViewDataService()
+    })
 }
 
 export function projectTaskService() {
-    return new x_gzi_zflow.ProjectTaskService()
+    return safeService('ProjectTaskService', function () {
+        return new x_gzi_zflow.ProjectTaskService()
+    })
 }
 
 export function capacityService() {
-    return new x_gzi_zflow.CapacityService()
+    return safeService('CapacityService', function () {
+        return new x_gzi_zflow.CapacityService()
+    })
 }
 
 export function userService() {
-    return new x_gzi_zflow.UserService()
+    return safeService('UserService', function () {
+        return new x_gzi_zflow.UserService()
+    })
+}
+
+/** List endpoints: never bubble uncaught exceptions as opaque 500s. */
+export function safeList(
+    response: { setBody: (body: unknown) => void; setStatus: (code: number) => void },
+    label: string,
+    fn: () => unknown
+) {
+    try {
+        const data = fn()
+        sendJson(response, Array.isArray(data) ? data : [])
+    } catch (error: any) {
+        const message = error && error.message ? String(error.message) : String(error || label + ' failed')
+        gs.error(label + ': ' + message)
+        // Prefer empty list over hard-failing the SPA shell.
+        sendJson(response, [])
+    }
 }

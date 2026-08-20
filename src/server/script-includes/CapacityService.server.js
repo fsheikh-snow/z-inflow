@@ -1,7 +1,12 @@
 var CapacityService = Class.create();
 CapacityService.prototype = {
-    initialize: function () {
-        this.userService = new x_gzi_zflow.UserService();
+    initialize: function () {},
+
+    _userService: function () {
+        if (!this.__userService) {
+            this.__userService = new x_gzi_zflow.UserService();
+        }
+        return this.__userService;
     },
 
     _monthKey: function (dateStr) {
@@ -122,7 +127,7 @@ CapacityService.prototype = {
             }
         }
 
-        var users = this.userService.getUsersByIds(userIds);
+        var users = this._userService().getUsersByIds(userIds);
         var people = [];
         for (var userId in peopleMap) {
             if (peopleMap.hasOwnProperty(userId)) {

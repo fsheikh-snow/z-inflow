@@ -213,7 +213,13 @@ export default function TaskDetailPanel({ task, projectId, onClose, onUpdate }) 
                     </div>
                 )}
 
-                {updateMutation.isError && <p className="project-create-error">{updateMutation.error.message}</p>}
+                {updateMutation.isError && (
+                    <p className="project-create-error">
+                        {typeof updateMutation.error?.message === 'string'
+                            ? updateMutation.error.message
+                            : 'Could not update task'}
+                    </p>
+                )}
             </div>
 
             <div className="task-detail-footer">

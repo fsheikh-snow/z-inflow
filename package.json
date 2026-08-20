@@ -12,7 +12,9 @@
         "deploy": "now-sdk install",
         "transform": "now-sdk transform",
         "types": "now-sdk dependencies",
-        "dev": "now-sdk run dev"
+        "dev": "now-sdk run dev",
+        "smoke": "node scripts/smoke-test.mjs",
+        "ship": "npm run build && npm run deploy && npm run smoke"
     },
     "devDependencies": {
         "@servicenow/sdk": "4.10.1",

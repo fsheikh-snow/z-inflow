@@ -7,7 +7,12 @@
 ```bash
 npm run build && npm run deploy
 # same as: now-sdk build && now-sdk install
+
+# Prefer the ship loop (build + deploy + API/HTML smoke):
+npm run ship
 ```
+
+After deploy, Cursor should run **`npm run smoke`** (or `npm run ship`) instead of asking the user to paste Chrome console logs. Agents cannot see the user's browser session; smoke covers REST 5xx and workspace fatal banners. See **[SMOKE.md](./SMOKE.md)**.
 
 Requirements:
 
