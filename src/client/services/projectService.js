@@ -11,6 +11,27 @@ export const projectService = {
         return apiRequest(`/projects/${id}`)
     },
 
+    create(data) {
+        return apiRequest('/projects', {
+            method: 'POST',
+            body: JSON.stringify(data),
+        })
+    },
+
+    update(id, data) {
+        return apiRequest(`/projects/${id}`, {
+            method: 'PATCH',
+            body: JSON.stringify(data),
+        })
+    },
+
+    createTask(projectId, data) {
+        return apiRequest(`/projects/${projectId}/tasks`, {
+            method: 'POST',
+            body: JSON.stringify(data),
+        })
+    },
+
     getSections(projectId) {
         return apiRequest(`/projects/${projectId}/sections`)
     },

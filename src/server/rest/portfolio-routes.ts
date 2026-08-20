@@ -6,6 +6,40 @@ export function listPortfolios(request: any, response: any) {
     sendJson(response, svc.listPortfolios(workspaceId))
 }
 
+export function createPortfolio(request: any, response: any) {
+    const body = parseBody(request)
+    const svc = portfolioService()
+    const portfolio = svc.createPortfolio(body)
+    if (!portfolio) {
+        sendError(response, 'Unable to create portfolio. Name and workspace are required.', 400)
+        return
+    }
+    sendJson(response, portfolio, 201)
+}
+
+export function updatePortfolio(request: any, response: any) {
+    const portfolioId = getPathParam(request, 'id')
+    const body = parseBody(request)
+    const svc = portfolioService()
+    const portfolio = svc.updatePortfolio(portfolioId, body)
+    if (!portfolio) {
+        sendError(response, 'Portfolio not found', 404)
+        return
+    }
+    sendJson(response, portfolio)
+}
+
+export function getPortfolio(request: any, response: any) {
+    const portfolioId = getPathParam(request, 'id')
+    const svc = portfolioService()
+    const portfolio = svc.getPortfolio(portfolioId)
+    if (!portfolio) {
+        sendError(response, 'Portfolio not found', 404)
+        return
+    }
+    sendJson(response, portfolio)
+}
+
 export function getPortfolioViews(request: any, response: any) {
     const portfolioId = getPathParam(request, 'id')
     const viewSvc = viewDataService()
@@ -67,7 +101,7 @@ export function linkPortfolioProject(request: any, response: any) {
 
 export function unlinkPortfolioProject(request: any, response: any) {
     const portfolioId = getPathParam(request, 'id')
-    const projectId = getQueryParam(request, 'project_id')
+    const projectId = getPathParam(request, 'projectId') || getQueryParam(request, 'project_id')
     if (!projectId) {
         sendError(response, 'project_id is required', 400)
         return

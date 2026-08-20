@@ -85,6 +85,14 @@
     color: #fff;
 }
 
+.sidebar-link-action {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
 .sidebar-icon {
     font-size: 14px;
     width: 18px;

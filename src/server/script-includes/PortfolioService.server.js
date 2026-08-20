@@ -37,37 +37,196 @@ PortfolioService.prototype = {
         if (!gr.get(portfolioId)) {
             return null;
         }
-        return this._serializePortfolio(gr);
+        var portfolio = this._serializePortfolio(gr);
+        if (portfolio.owner_id) {
+            var ownerMap = this.userService.getUsersByIds([portfolio.owner_id]);
+            portfolio.owner = ownerMap[portfolio.owner_id] || null;
+        }
+        return portfolio;
+    },
+
+    createPortfolio: function (data) {
+        var name = String(data.name || '').trim();
+        var workspaceId = String(data.workspace_id || '');
+        if (!name || !workspaceId) {
+            return null;
+        }
+
+        var gr = new GlideRecord('x_gzi_zflow_portfolio');
+        gr.initialize();
+        gr.setValue('name', name);
+        gr.setValue('workspace_id', workspaceId);
+
+        var optionalFields = ['owner_id', 'due_date', 'description', 'color'];
+        for (var i = 0; i < optionalFields.length; i++) {
+            var field = optionalFields[i];
+            if (data[field] !== undefined && data[field] !== null && String(data[field]) !== '') {
+                gr.setValue(field, String(data[field]));
+            }
+        }
+
+        var sysId = gr.insert();
+        if (!sysId) {
+            return null;
+        }
+        return this.getPortfolio(sysId);
+    },
+
+    updatePortfolio: function (portfolioId, data) {
+        var gr = new GlideRecord('x_gzi_zflow_portfolio');
+        if (!gr.get(portfolioId)) {
+            return null;
+        }
+
+        var fields = ['name', 'owner_id', 'due_date', 'description', 'color'];
+        for (var i = 0; i < fields.length; i++) {
+            var field = fields[i];
+            if (data[field] !== undefined) {
+                gr.setValue(field, String(data[field] || ''));
+            }
+        }
+        gr.update();
+        return this.getPortfolio(portfolioId);
     },
 
     getTimeline: function (portfolioId) {
         var data = this.viewData.getPortfolioViewData(portfolioId, this._defaultViewId(portfolioId));
         if (!data) {
-            return { bars: [] };
+            return { items: [], start_date: null, end_date: null };
+        }
+        var items = data.rows.map(function (row) {
+            return {
+                sys_id: row.sys_id,
+                name: row.name,
+                project_key: row.project_key,
+                start_date: row.start_date,
+                due_date: row.due_date,
+                end_date: row.due_date,
+                priority: row.priority,
+                status: row.status,
+            };
+        });
+        var startDate = null;
+        var endDate = null;
+        for (var i = 0; i < items.length; i++) {
+            var itemStart = items[i].start_date;
+            var itemEnd = items[i].due_date || items[i].end_date;
+            if (itemStart && (!startDate || itemStart < startDate)) {
+                startDate = itemStart;
+            }
+            if (itemEnd && (!endDate || itemEnd > endDate)) {
+                endDate = itemEnd;
+            }
         }
         return {
-            bars: data.rows.map(function (row) {
-                return {
-                    sys_id: row.sys_id,
-                    name: row.name,
-                    project_key: row.project_key,
-                    start_date: row.start_date,
-                    due_date: row.due_date,
-                    priority: row.priority,
-                    status: row.status,
-                };
-            }),
+            items: items,
+            start_date: startDate,
+            end_date: endDate,
         };
     },
 
-    getDashboard: function (portfolioId) {
-        var rows = this.viewData.getPortfolioViewData(portfolioId, this._defaultViewId(portfolioId));
-        var summary = { total: 0, on_track: 0, at_risk: 0, off_track: 0 };
-        if (!rows) {
-            return summary;
+    _getPortfolioRows: function (portfolioId) {
+        var data = this.viewData.getPortfolioViewData(portfolioId, this._defaultViewId(portfolioId));
+        return (data && data.rows) ? data.rows : [];
+    },
+
+    _getProjectRagMap: function (projectIds) {
+        var ragMap = {};
+        if (!projectIds || !projectIds.length) {
+            return ragMap;
         }
-        summary.total = rows.rows.length;
-        return summary;
+        var gr = new GlideRecord('x_gzi_zflow_status_update');
+        gr.addQuery('entity_type', 'project');
+        gr.addQuery('entity_id', 'IN', projectIds.join(','));
+        gr.orderByDesc('sys_created_on');
+        gr.query();
+        while (gr.next()) {
+            var entityId = gr.getValue('entity_id');
+            if (!ragMap[entityId]) {
+                ragMap[entityId] = gr.getValue('status') || 'no_recent_updates';
+            }
+        }
+        return ragMap;
+    },
+
+    _countRag: function (rows, ragMap) {
+        var counts = { on_track: 0, at_risk: 0, off_track: 0, no_updates: 0 };
+        for (var i = 0; i < rows.length; i++) {
+            var rag = ragMap[rows[i].sys_id] || 'no_recent_updates';
+            if (rag === 'on_track') {
+                counts.on_track++;
+            } else if (rag === 'at_risk') {
+                counts.at_risk++;
+            } else if (rag === 'off_track') {
+                counts.off_track++;
+            } else {
+                counts.no_updates++;
+            }
+        }
+        return counts;
+    },
+
+    _formatDayLabel: function (dateStr) {
+        if (!dateStr) {
+            return null;
+        }
+        var parts = String(dateStr).split('-');
+        if (parts.length < 3) {
+            return String(dateStr);
+        }
+        var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var monthIndex = parseInt(parts[1], 10) - 1;
+        if (monthIndex < 0 || monthIndex > 11) {
+            return String(dateStr);
+        }
+        return monthNames[monthIndex] + ' ' + parseInt(parts[2], 10);
+    },
+
+    getDashboard: function (portfolioId) {
+        var rows = this._getPortfolioRows(portfolioId);
+        var projectIds = rows.map(function (row) {
+            return row.sys_id;
+        });
+        var ragMap = this._getProjectRagMap(projectIds);
+        var ragCounts = this._countRag(rows, ragMap);
+
+        var priorityLabels = {
+            high: 'High',
+            strategic: 'Strategic',
+            medium: 'Medium',
+            low: 'Low',
+        };
+        var priorityCounts = {};
+        for (var i = 0; i < rows.length; i++) {
+            var priority = rows[i].priority || 'none';
+            priorityCounts[priority] = (priorityCounts[priority] || 0) + 1;
+        }
+        var priorityBreakdown = [];
+        for (var key in priorityCounts) {
+            if (priorityCounts.hasOwnProperty(key)) {
+                priorityBreakdown.push({
+                    name: priorityLabels[key] || key,
+                    value: priorityCounts[key],
+                });
+            }
+        }
+        priorityBreakdown.sort(function (a, b) {
+            return String(a.name).localeCompare(String(b.name));
+        });
+
+        return {
+            total_projects: rows.length,
+            on_track: ragCounts.on_track,
+            at_risk: ragCounts.at_risk,
+            off_track: ragCounts.off_track,
+            status_breakdown: [
+                { name: 'On track', value: ragCounts.on_track },
+                { name: 'At risk', value: ragCounts.at_risk },
+                { name: 'Off track', value: ragCounts.off_track },
+                { name: 'No updates', value: ragCounts.no_updates },
+            ],
+            priority_breakdown: priorityBreakdown,
+        };
     },
 
     getProgress: function (portfolioId) {
@@ -75,7 +234,16 @@ PortfolioService.prototype = {
         if (!portfolio) {
             return null;
         }
+
+        var rows = this._getPortfolioRows(portfolioId);
+        var projectIds = rows.map(function (row) {
+            return row.sys_id;
+        });
+        var ragMap = this._getProjectRagMap(projectIds);
+        var ragCounts = this._countRag(rows, ragMap);
+
         var updates = [];
+        var authorIds = [];
         var gr = new GlideRecord('x_gzi_zflow_status_update');
         gr.addQuery('entity_type', 'portfolio');
         gr.addQuery('entity_id', portfolioId);
@@ -83,22 +251,42 @@ PortfolioService.prototype = {
         gr.setLimit(20);
         gr.query();
         while (gr.next()) {
+            var authorId = gr.getValue('author_id');
+            if (authorId) {
+                authorIds.push(authorId);
+            }
             updates.push({
                 sys_id: gr.getUniqueValue(),
-                text: gr.getValue('text'),
-                status: gr.getValue('status'),
-                author_id: gr.getValue('author_id'),
-                sys_created_on: gr.getValue('sys_created_on'),
+                body: gr.getValue('text'),
+                summary: gr.getValue('text'),
+                rag: gr.getValue('status'),
+                author_id: authorId,
+                created_at: gr.getValue('sys_created_on'),
             });
         }
+
+        var users = this.userService.getUsersByIds(authorIds);
+        for (var i = 0; i < updates.length; i++) {
+            updates[i].author = users[updates[i].author_id] || null;
+        }
+
+        if (portfolio.owner_id) {
+            var ownerMap = this.userService.getUsersByIds([portfolio.owner_id]);
+            portfolio.owner = ownerMap[portfolio.owner_id] || null;
+        }
+
         return {
             portfolio: portfolio,
             status_updates: updates,
+            on_track: ragCounts.on_track,
+            at_risk: ragCounts.at_risk,
+            total: rows.length,
         };
     },
 
     getWorkload: function (portfolioId) {
         var matrix = {};
+        var daySet = {};
         var pp = new GlideRecord('x_gzi_zflow_portfolio_project');
         pp.addQuery('portfolio_id', portfolioId);
         pp.query();
@@ -112,17 +300,43 @@ PortfolioService.prototype = {
                     continue;
                 }
                 var assignee = task.getValue('assignee_id');
-                var dueDate = task.getValue('due_date') || 'unscheduled';
-                if (!assignee) {
+                var dueDate = task.getValue('due_date');
+                if (!assignee || !dueDate) {
                     continue;
                 }
+                var dayLabel = this._formatDayLabel(dueDate);
+                if (!dayLabel) {
+                    continue;
+                }
+                daySet[dayLabel] = dueDate;
                 if (!matrix[assignee]) {
                     matrix[assignee] = {};
                 }
-                matrix[assignee][dueDate] = (matrix[assignee][dueDate] || 0) + 1;
+                matrix[assignee][dayLabel] = (matrix[assignee][dayLabel] || 0) + 1;
             }
         }
-        return { matrix: matrix };
+
+        var days = Object.keys(daySet).sort(function (a, b) {
+            return String(daySet[a]).localeCompare(String(daySet[b]));
+        });
+
+        var userIds = Object.keys(matrix);
+        var users = this.userService.getUsersByIds(userIds);
+        var people = [];
+        for (var userId in matrix) {
+            if (matrix.hasOwnProperty(userId)) {
+                people.push({
+                    sys_id: userId,
+                    name: (users[userId] && users[userId].name) || userId,
+                    tasks: matrix[userId],
+                });
+            }
+        }
+        people.sort(function (a, b) {
+            return String(a.name).localeCompare(String(b.name));
+        });
+
+        return { people: people, days: days };
     },
 
     linkProject: function (portfolioId, projectId) {

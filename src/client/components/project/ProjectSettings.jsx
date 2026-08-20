@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import UserChip from '../shared/UserChip'
+import ProjectForm from './ProjectForm'
 import './project.css'
 
 export default function ProjectSettings({ project, members = [] }) {
+    const [showEdit, setShowEdit] = useState(false)
+
     return (
         <div className="project-settings">
             <section className="settings-section">
-                <h3>General</h3>
+                <div className="settings-section-header">
+                    <h3>General</h3>
+                    <button type="button" className="btn btn-ghost" onClick={() => setShowEdit(true)}>
+                        Edit
+                    </button>
+                </div>
                 <dl className="settings-fields">
                     <div className="settings-field">
                         <dt>Project name</dt>
@@ -23,8 +31,20 @@ export default function ProjectSettings({ project, members = [] }) {
                         </dd>
                     </div>
                     <div className="settings-field">
+                        <dt>Status</dt>
+                        <dd>{project?.status || '—'}</dd>
+                    </div>
+                    <div className="settings-field">
+                        <dt>Priority</dt>
+                        <dd>{project?.priority || '—'}</dd>
+                    </div>
+                    <div className="settings-field">
+                        <dt>Due date</dt>
+                        <dd>{project?.due_date || '—'}</dd>
+                    </div>
+                    <div className="settings-field">
                         <dt>Team</dt>
-                        <dd>{project?.team?.name || project?.assignment_group?.name || '—'}</dd>
+                        <dd>{project?.team?.name || project?.assignment_group_name || '—'}</dd>
                     </div>
                 </dl>
             </section>
@@ -52,6 +72,10 @@ export default function ProjectSettings({ project, members = [] }) {
                     Sync with Jira
                 </label>
             </section>
+
+            {showEdit && (
+                <ProjectForm mode="edit" project={project} onClose={() => setShowEdit(false)} onSaved={() => setShowEdit(false)} />
+            )}
         </div>
     )
 }

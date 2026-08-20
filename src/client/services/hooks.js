@@ -23,6 +23,7 @@ export const queryKeys = {
     capacityGrid: (id) => ['capacity', 'plans', id, 'grid'],
     customFields: ['custom-fields'],
     userSearch: (q) => ['users', 'search', q],
+    groupSearch: (q) => ['groups', 'search', q],
 }
 
 export function usePortfolios() {
@@ -96,6 +97,67 @@ export function useProject(projectId) {
     })
 }
 
+export function useCreateProject(portfolioId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (data) => projectService.create(data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projects })
+            if (portfolioId) {
+                queryClient.invalidateQueries({ queryKey: queryKeys.portfolio(portfolioId) })
+                queryClient.invalidateQueries({ queryKey: queryKeys.portfolioViews(portfolioId) })
+                queryClient.invalidateQueries({ queryKey: queryKeys.portfolioTimeline(portfolioId) })
+                queryClient.invalidateQueries({ queryKey: queryKeys.portfolioDashboard(portfolioId) })
+                queryClient.invalidateQueries({ queryKey: queryKeys.portfolioProgress(portfolioId) })
+                queryClient.invalidateQueries({ queryKey: queryKeys.portfolioWorkload(portfolioId) })
+            }
+        },
+    })
+}
+
+export function useUpdateProject(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (data) => projectService.update(projectId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.project(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projects })
+        },
+    })
+}
+
+export function useCreatePortfolio() {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (data) => portfolioService.create(data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolios })
+        },
+    })
+}
+
+export function useUpdatePortfolio(portfolioId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (data) => portfolioService.update(portfolioId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolio(portfolioId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolios })
+        },
+    })
+}
+
+export function useCreateTask(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (data) => projectService.createTask(projectId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectTasks(projectId) })
+        },
+    })
+}
+
 export function useProjectBoard(projectId) {
     return useQuery({
         queryKey: queryKeys.projectBoard(projectId),
@@ -159,6 +221,14 @@ export function useUserSearch(query) {
     return useQuery({
         queryKey: queryKeys.userSearch(query),
         queryFn: () => userService.search(query),
+        enabled: query.length >= 2,
+    })
+}
+
+export function useGroupSearch(query) {
+    return useQuery({
+        queryKey: queryKeys.groupSearch(query),
+        queryFn: () => userService.searchGroups(query),
         enabled: query.length >= 2,
     })
 }

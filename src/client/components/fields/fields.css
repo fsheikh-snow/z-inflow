@@ -1,0 +1,102 @@
+.field-control {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #334155;
+    background: #fff;
+}
+
+.field-control:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+.user-picker,
+.group-picker {
+    position: relative;
+}
+
+.user-picker-input,
+.group-picker-input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #334155;
+    background: #fff;
+}
+
+.user-picker-selected,
+.group-picker-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background: #f8fafc;
+}
+
+.user-picker-clear,
+.group-picker-clear {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.user-picker-results,
+.group-picker-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 4px 0 0;
+    padding: 4px 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.user-picker-option,
+.group-picker-option {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-picker-option:hover,
+.group-picker-option:hover {
+    background: #f1f5f9;
+}
+
+.user-picker-status,
+.group-picker-status {
+    padding: 8px 12px;
+    color: #94a3b8;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.group-picker-name {
+    font-size: 14px;
+    color: #334155;
+}

@@ -6,6 +6,11 @@ export const userService = {
         return apiRequest(`/users/search?${search}`)
     },
 
+    searchGroups(query) {
+        const search = new URLSearchParams({ q: query }).toString()
+        return apiRequest(`/groups/search?${search}`)
+    },
+
     getTeamMembers(teamId) {
         return apiRequest(`/teams/${teamId}/members`)
     },

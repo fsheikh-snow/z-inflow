@@ -9,6 +9,20 @@ export const portfolioService = {
         return apiRequest(`/portfolios/${id}`)
     },
 
+    create(data) {
+        return apiRequest('/portfolios', {
+            method: 'POST',
+            body: JSON.stringify(data),
+        })
+    },
+
+    update(id, data) {
+        return apiRequest(`/portfolios/${id}`, {
+            method: 'PATCH',
+            body: JSON.stringify(data),
+        })
+    },
+
     getViews(portfolioId) {
         return apiRequest(`/portfolios/${portfolioId}/views`)
     },

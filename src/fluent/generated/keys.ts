@@ -37,9 +37,21 @@ declare global {
                         table: 'sys_script_include'
                         id: 'b4508803cf3d4b84a24c99d572f09778'
                     }
+                    'route-automations-get': {
+                        table: 'sys_ws_operation'
+                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f601'
+                    }
+                    'route-capacity-plan-allocation-patch': {
+                        table: 'sys_ws_operation'
+                        id: '3471788d48e54e2289302c0874bbf39a'
+                    }
                     'route-capacity-plan-allocations-get': {
                         table: 'sys_ws_operation'
                         id: '66a38338e38d4d87902c7b7b7da10c8a'
+                    }
+                    'route-capacity-plan-get': {
+                        table: 'sys_ws_operation'
+                        id: '95f6c44c969e4622b2cb4c130d74ad4f'
                     }
                     'route-capacity-plan-grid-get': {
                         table: 'sys_ws_operation'
@@ -61,9 +73,25 @@ declare global {
                         table: 'sys_ws_operation'
                         id: '26fa643fbe1f4965a9cb4308d154149b'
                     }
+                    'route-groups-search-get': {
+                        table: 'sys_ws_operation'
+                        id: 'fcb609ee42954c75b01f9d54f64324a1'
+                    }
+                    'route-intake-forms-get': {
+                        table: 'sys_ws_operation'
+                        id: 'b2c3d4e5f6a74890b1c2d3e4f5a6b702'
+                    }
                     'route-portfolio-dashboard-get': {
                         table: 'sys_ws_operation'
                         id: 'cfc3fc83f8a04f88bb9777775a42a900'
+                    }
+                    'route-portfolio-get': {
+                        table: 'sys_ws_operation'
+                        id: '4af1aa4c77134adf975c04ec71302a9b'
+                    }
+                    'route-portfolio-patch': {
+                        table: 'sys_ws_operation'
+                        id: '82d88f86f7b34a4784ce182854a5e134'
                     }
                     'route-portfolio-progress-get': {
                         table: 'sys_ws_operation'
@@ -97,9 +125,25 @@ declare global {
                         table: 'sys_ws_operation'
                         id: 'e27407735cb549909926d9665c1404be'
                     }
+                    'route-portfolios-post': {
+                        table: 'sys_ws_operation'
+                        id: '65e43d30b6d44e51ab73e55d57d07e35'
+                    }
                     'route-project-board-get': {
                         table: 'sys_ws_operation'
                         id: 'e5e19f6011de4c1099943e07fd9220ba'
+                    }
+                    'route-project-board-patch': {
+                        table: 'sys_ws_operation'
+                        id: '62df5d565e354851a3dd779e219e58b4'
+                    }
+                    'route-project-get': {
+                        table: 'sys_ws_operation'
+                        id: '924ba6cb6433418cbe5224958b038b21'
+                    }
+                    'route-project-patch': {
+                        table: 'sys_ws_operation'
+                        id: '3c84f157f263422dbe88c9c5da4773b8'
                     }
                     'route-project-portfolios-get': {
                         table: 'sys_ws_operation'
@@ -113,13 +157,25 @@ declare global {
                         table: 'sys_ws_operation'
                         id: '8c6c46b606634a3fb632c61564d12a8e'
                     }
+                    'route-project-tasks-post': {
+                        table: 'sys_ws_operation'
+                        id: '615db9eb539849b9a0cc4e927bfdadee'
+                    }
                     'route-projects-get': {
                         table: 'sys_ws_operation'
                         id: '056e0592d4724bf7a47cd1b4c1c69a02'
                     }
+                    'route-projects-post': {
+                        table: 'sys_ws_operation'
+                        id: '64256419fe7b4445814c6db139ecf8c9'
+                    }
                     'route-task-get': {
                         table: 'sys_ws_operation'
                         id: '742799610a874ab1b953054aef7a0c9f'
+                    }
+                    'route-task-patch': {
+                        table: 'sys_ws_operation'
+                        id: 'a423e7aa04044a5c8b0e3a474aac79fb'
                     }
                     'route-task-projects-get': {
                         table: 'sys_ws_operation'
@@ -137,6 +193,10 @@ declare global {
                         table: 'sys_ws_operation'
                         id: '2748ece1d8974df4b4e3a4960c9dfb3f'
                     }
+                    'route-view-patch': {
+                        table: 'sys_ws_operation'
+                        id: '1f32143f84854bc8bb250ac9e31b4090'
+                    }
                     'src_server_business-rules_enforce-eav-xor_ts': {
                         table: 'sys_module'
                         id: '581d507d2f404750941cd7979b1389bd'
@@ -148,6 +208,10 @@ declare global {
                     'src_server_rest_capacity-routes_ts': {
                         table: 'sys_module'
                         id: 'd16dfe64d746440b926108344e71c2e2'
+                    }
+                    'src_server_rest_config-routes_ts': {
+                        table: 'sys_module'
+                        id: 'c3d4e5f6a7b84901c2d3e4f5a6b7c803'
                     }
                     src_server_rest_helpers_ts: {
                         table: 'sys_module'
@@ -239,6 +303,17 @@ declare global {
                             name: 'x_gzi_zflow_goal'
                             element: 'status'
                             value: 'on_hold'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '040ece2250ec48c091ce3d84b1601567'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'priority'
+                            value: 'high'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
@@ -601,6 +676,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '1cb0b5bf3cd54206b1c11a40706461b2'
+                        key: {
+                            name: 'x_gzi_zflow_project'
+                            element: 'status'
+                            value: 'on_track'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '1d3686cbdfd54d20a71a8faae6aae5a0'
                         deleted: true
@@ -754,6 +840,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '28b50b243a854e87abc46eb10712c0cd'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'status'
+                            value: 'open'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '28fa4dc7cbb54923aa92d07dfe57b5f4'
                         key: {
@@ -877,6 +974,17 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_goal'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '30bbb13cf1a94a55b8833a26dfafb1c3'
+                        key: {
+                            name: 'x_gzi_zflow_project'
+                            element: 'status'
+                            value: 'at_risk'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1203,6 +1311,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '42570db9396747b0a81217442723e32b'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'status'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '42f1d1cc28484c5a91460ac68add1a95'
                         key: {
@@ -1355,6 +1471,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '4ee2d870c4804876bd1f079570afe669'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/rules'
                         }
@@ -1480,6 +1597,17 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: '55743e16bfd646adb50f6321f0779ab3'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'status'
+                            value: 'complete'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: '55cbb29c55ea4b90b066550d1065bc2f'
                         key: {
                             name: 'x_gzi_zflow_project'
@@ -1503,6 +1631,17 @@ declare global {
                         deleted: true
                         key: {
                             name: 'x_gzi_zflow/rules.js.map'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '57c081c181b04e9d9db2ae9f23d67363'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'status'
+                            value: 'in_progress'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1610,6 +1749,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '5e7ca36cffbb45608193332b902d2cf5'
+                        key: {
+                            application_file: 'd20dbb3984a841af80a74e38211e9fa6'
+                            source_artifact: '4e8e46929bde432790cfcb7104335322'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '5f01aa682bf04edeaf4d8550e1c8caaf'
                         deleted: true
@@ -1643,6 +1790,14 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_portfolio_project'
                             element: 'order_index'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '62d1f5b83f5543bf8a2ea2ac14aa95ff'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'status'
                         }
                     },
                     {
@@ -1895,6 +2050,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: '7183f5bc0e22449c86a023f3dd9a1078'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'priority'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '71fa15924e8a48deb01005f5ef30ee06'
                         key: {
@@ -2016,6 +2179,17 @@ declare global {
                         id: '7a25bd2bd8854ee3b443829183646574'
                         key: {
                             name: 'x_gzi_zflow_user_res_profile'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '7aba6a80993a4de48bae8a800c7ca06a'
+                        key: {
+                            name: 'x_gzi_zflow_project'
+                            element: 'status'
+                            value: 'off_track'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -2256,6 +2430,13 @@ declare global {
                     },
                     {
                         table: 'sys_ux_lib_asset'
+                        id: '8d8c8055cdcf4a28ad3a0a370c83f14f'
+                        key: {
+                            name: 'x_gzi_zflow/ProjectForm'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
                         id: '8de2b203dfe243bfb219b6fef55450a9'
                         key: {
                             name: 'x_gzi_zflow/MyTasksPage'
@@ -2407,6 +2588,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '96577bb41f3c4752acc496d3c8d700fb'
+                        deleted: true
                         key: {
                             application_file: 'cd7704c4b4154feab853217f8ce9e354'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
@@ -2994,6 +3176,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'bf73134a8ae94ef9bad763ce7a49b759'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
@@ -3028,10 +3211,30 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'c27d9c102baa44108926470a7bc86d0e'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'priority'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: 'c2b48786a5b549e7af2db008511522fd'
                         key: {
                             name: 'x_gzi_zflow_workspace_team'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'c2eea0d062864f09af441c2314291a97'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'priority'
+                            value: 'medium'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -3064,6 +3267,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'c409d99c45f346459dc538b16e94f847'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/VirtualizedGantt'
                         }
@@ -3081,6 +3285,15 @@ declare global {
                         id: 'c4a984f17835441699eab6055cc32e12'
                         key: {
                             name: 'x_gzi_zflow_status_update'
+                            element: 'status'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'c53b4c64a7f34b9385a879fbce206752'
+                        key: {
+                            name: 'x_gzi_zflow_task'
                             element: 'status'
                             language: 'en'
                         }
@@ -3117,6 +3330,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'ca909d08f5e54afab69eecb4e6139833'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
@@ -3181,6 +3395,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'cd7704c4b4154feab853217f8ce9e354'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/vendor-react-router--bd0ba048'
                         }
@@ -3280,6 +3495,13 @@ declare global {
                             name: 'x_gzi_zflow_status_update'
                             element: 'author_id'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'd20dbb3984a841af80a74e38211e9fa6'
+                        key: {
+                            name: 'x_gzi_zflow/vendor-react-router--424f1484'
                         }
                     },
                     {
@@ -3531,6 +3753,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'e62b635c77ff4a0583a3d9d79b7860ca'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
@@ -3548,6 +3771,14 @@ declare global {
                             value: 'list'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'e6f24c4d9b23458e8f75e613ffe76ba2'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'priority'
                         }
                     },
                     {
@@ -3615,6 +3846,17 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_status_update'
                             element: 'text'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'ebba485e932248c3998c4179fb10f5d2'
+                        key: {
+                            name: 'x_gzi_zflow_task'
+                            element: 'priority'
+                            value: 'low'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {

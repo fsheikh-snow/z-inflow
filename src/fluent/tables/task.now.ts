@@ -52,6 +52,25 @@ export const x_gzi_zflow_task = Table({
         start_date: DateColumn({ label: 'Start Date' }),
         due_date: DateColumn({ label: 'Due Date' }),
         completed: BooleanColumn({ label: 'Completed', default: false }),
+        status: ChoiceColumn({
+            label: 'Status',
+            dropdown: 'dropdown_with_none',
+            default: 'open',
+            choices: {
+                open: 'Open',
+                in_progress: 'In Progress',
+                complete: 'Complete',
+            },
+        }),
+        priority: ChoiceColumn({
+            label: 'Priority',
+            dropdown: 'dropdown_with_none',
+            choices: {
+                high: 'High',
+                medium: 'Medium',
+                low: 'Low',
+            },
+        }),
         task_type: ChoiceColumn({
             label: 'Task Type',
             dropdown: 'dropdown_with_none',

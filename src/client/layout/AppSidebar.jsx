@@ -1,6 +1,7 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { usePortfolios } from '../services/hooks'
+import PortfolioForm from '../components/portfolio/PortfolioForm'
 import './layout.css'
 
 const NAV_ITEMS = [
@@ -12,6 +13,9 @@ const NAV_ITEMS = [
 
 export default function AppSidebar() {
     const { data: portfolios = [] } = usePortfolios()
+    const navigate = useNavigate()
+    const [showCreatePortfolio, setShowCreatePortfolio] = useState(false)
+    const defaultWorkspaceId = portfolios[0]?.workspace_id
 
     return (
         <aside className="app-sidebar">
@@ -30,6 +34,10 @@ export default function AppSidebar() {
                 ))}
 
                 <div className="sidebar-section-label">Portfolios</div>
+                <button type="button" className="sidebar-link sidebar-link-action" onClick={() => setShowCreatePortfolio(true)}>
+                    <span className="sidebar-icon">+</span>
+                    New portfolio
+                </button>
                 {portfolios.length === 0 ? (
                     <div className="sidebar-empty">No portfolios</div>
                 ) : (
@@ -61,6 +69,17 @@ export default function AppSidebar() {
                     </NavLink>
                 ))}
             </nav>
+            {showCreatePortfolio && (
+                <PortfolioForm
+                    mode="create"
+                    workspaceId={defaultWorkspaceId}
+                    onClose={() => setShowCreatePortfolio(false)}
+                    onSaved={(portfolio) => {
+                        setShowCreatePortfolio(false)
+                        navigate(`/portfolios/${portfolio.sys_id}`)
+                    }}
+                />
+            )}
         </aside>
     )
 }

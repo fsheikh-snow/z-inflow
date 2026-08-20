@@ -8,6 +8,7 @@ import DynamicDataGrid from '../../components/grid/DynamicDataGrid'
 import KanbanBoard from '../../components/board/KanbanBoard'
 import VirtualizedGantt from '../../components/gantt/VirtualizedGantt'
 import TaskDetailPanel from '../../components/project/TaskDetailPanel'
+import TaskForm from '../../components/project/TaskForm'
 import ProjectSettings from '../../components/project/ProjectSettings'
 import { useProject, useProjectBoard, useProjectTasks, useReorderBoard } from '../../services/hooks'
 
@@ -22,6 +23,7 @@ export default function ProjectPage() {
     const { projectId } = useParams()
     const [activeTab, setActiveTab] = useState('list')
     const [selectedTask, setSelectedTask] = useState(null)
+    const [showCreateTask, setShowCreateTask] = useState(false)
 
     const { data: project } = useProject(projectId)
     const { data: board, isLoading: boardLoading } = useProjectBoard(projectId)
@@ -91,9 +93,27 @@ export default function ProjectPage() {
                 ]}
             />
             <EntityTabBar tabs={PROJECT_TABS} activeTab={activeTab} onTabChange={setActiveTab} />
-            <ViewToolbar onAddWork={() => {}} onFilter={() => {}} onSort={() => {}} onGroup={() => {}} />
+            <ViewToolbar onAddWork={() => setShowCreateTask(true)} onFilter={() => {}} onSort={() => {}} onGroup={() => {}} />
             <div className="page-content">{renderTabContent()}</div>
-            <TaskDetailPanel task={selectedTask} onClose={() => setSelectedTask(null)} />
+            <TaskDetailPanel
+                task={selectedTask}
+                projectId={projectId}
+                onClose={() => setSelectedTask(null)}
+                onUpdate={setSelectedTask}
+            />
+            {showCreateTask && (
+                <div className="field-create-modal">
+                    <TaskForm
+                        mode="create"
+                        projectId={projectId}
+                        onClose={() => setShowCreateTask(false)}
+                        onSaved={(task) => {
+                            setShowCreateTask(false)
+                            setSelectedTask(task)
+                        }}
+                    />
+                </div>
+            )}
         </>
     )
 }

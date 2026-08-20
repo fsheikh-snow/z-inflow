@@ -247,6 +247,17 @@
     font-weight: 600;
 }
 
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.about-header .about-title {
+    margin: 0;
+}
+
 .about-fields {
     margin: 0 0 16px;
 }

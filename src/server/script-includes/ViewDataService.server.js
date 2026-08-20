@@ -87,6 +87,93 @@ ViewDataService.prototype = {
         return values;
     },
 
+    _statusLabels: {
+        on_track: 'On Track',
+        at_risk: 'At Risk',
+        off_track: 'Off Track',
+        complete: 'Complete',
+        on_hold: 'On Hold',
+    },
+
+    _priorityLabels: {
+        high: 'High',
+        strategic: 'Strategic',
+        medium: 'Medium',
+        low: 'Low',
+    },
+
+    _laneOrder: function (groupBy) {
+        if (groupBy === 'priority') {
+            return ['strategic', 'high', 'medium', 'low', 'none'];
+        }
+        return ['on_track', 'at_risk', 'off_track', 'on_hold', 'complete', 'none'];
+    },
+
+    _buildPortfolioLanes: function (rows, groupBy) {
+        var field = groupBy === 'priority' ? 'priority' : 'status';
+        var labels = field === 'priority' ? this._priorityLabels : this._statusLabels;
+        var laneMap = {};
+        var order = this._laneOrder(field);
+
+        for (var i = 0; i < order.length; i++) {
+            var key = order[i];
+            laneMap[key] = {
+                id: key,
+                status: key,
+                label: labels[key] || (key === 'none' ? 'Unassigned' : key),
+                projects: [],
+            };
+        }
+
+        for (var j = 0; j < rows.length; j++) {
+            var row = rows[j];
+            var value = row[field] || 'none';
+            if (!laneMap[value]) {
+                laneMap[value] = {
+                    id: value,
+                    status: value,
+                    label: labels[value] || value,
+                    projects: [],
+                };
+            }
+            laneMap[value].projects.push(row);
+        }
+
+        var lanes = [];
+        var seen = {};
+        for (var k = 0; k < order.length; k++) {
+            if (laneMap[order[k]]) {
+                lanes.push(laneMap[order[k]]);
+                seen[order[k]] = true;
+            }
+        }
+        for (var laneKey in laneMap) {
+            if (laneMap.hasOwnProperty(laneKey) && !seen[laneKey]) {
+                lanes.push(laneMap[laneKey]);
+            }
+        }
+        return lanes;
+    },
+
+    updateView: function (viewId, data) {
+        var gr = this._getView(viewId);
+        if (!gr) {
+            return null;
+        }
+        var fields = ['name', 'filter_query', 'sort_config', 'group_by', 'view_type'];
+        for (var i = 0; i < fields.length; i++) {
+            var field = fields[i];
+            if (data[field] !== undefined) {
+                gr.setValue(field, String(data[field]));
+            }
+        }
+        if (data.is_default !== undefined) {
+            gr.setValue('is_default', data.is_default ? 'true' : 'false');
+        }
+        gr.update();
+        return this._serializeView(gr);
+    },
+
     getPortfolioViewData: function (portfolioId, viewId) {
         var view = this.getView(viewId);
         if (!view || view.portfolio_id !== portfolioId) {
@@ -128,10 +215,16 @@ ViewDataService.prototype = {
             rows[i].owner = users[rows[i].owner_id] || null;
         }
 
-        return {
+        var result = {
             view: view,
             rows: rows,
         };
+
+        if (view.view_type === 'kanban' || view.view_type === 'board' || view.view_type === 'list') {
+            result.lanes = this._buildPortfolioLanes(rows, view.group_by || 'status');
+        }
+
+        return result;
     },
 
     type: 'ViewDataService',

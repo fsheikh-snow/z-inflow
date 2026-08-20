@@ -1,10 +1,22 @@
 import { GlideRecord } from '@servicenow/glide'
-import { getPathParam, parseBody, sendError, sendJson, viewDataService } from './helpers'
+import { getPathParam, getQueryParam, parseBody, sendError, sendJson, viewDataService } from './helpers'
 
 export function getView(request: any, response: any) {
     const viewId = getPathParam(request, 'id')
     const svc = viewDataService()
     const view = svc.getView(viewId)
+    if (!view) {
+        sendError(response, 'View not found', 404)
+        return
+    }
+    sendJson(response, view)
+}
+
+export function updateView(request: any, response: any) {
+    const viewId = getPathParam(request, 'id')
+    const body = parseBody(request)
+    const svc = viewDataService()
+    const view = svc.updateView(viewId, body)
     if (!view) {
         sendError(response, 'View not found', 404)
         return
@@ -30,11 +42,13 @@ export function listCustomFields(request: any, response: any) {
 }
 
 export function listCustomFieldValues(request: any, response: any) {
-    const body = parseBody(request)
+    const taskId = getQueryParam(request, 'task_id')
+    const projectId = getQueryParam(request, 'project_id')
+    const portfolioId = getQueryParam(request, 'portfolio_id')
     const gr = new GlideRecord('x_gzi_zflow_custom_field_value')
-    if (body.task_id) gr.addQuery('task_id', String(body.task_id))
-    if (body.project_id) gr.addQuery('project_id', String(body.project_id))
-    if (body.portfolio_id) gr.addQuery('portfolio_id', String(body.portfolio_id))
+    if (taskId) gr.addQuery('task_id', taskId)
+    if (projectId) gr.addQuery('project_id', projectId)
+    if (portfolioId) gr.addQuery('portfolio_id', portfolioId)
     gr.query()
     const results = []
     while (gr.next()) {

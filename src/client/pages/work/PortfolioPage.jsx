@@ -10,6 +10,7 @@ import PortfolioKanbanGrid from '../../components/portfolio/PortfolioKanbanGrid'
 import VirtualizedGantt from '../../components/gantt/VirtualizedGantt'
 import PortfolioProgressView from '../../components/portfolio/PortfolioProgressView'
 import PortfolioWorkloadGrid from '../../components/portfolio/PortfolioWorkloadGrid'
+import ProjectCreateForm from '../../components/project/ProjectCreateForm'
 
 const PortfolioDashboardWidgets = lazy(() => import('../../components/portfolio/PortfolioDashboardWidgets'))
 import {
@@ -36,6 +37,7 @@ export default function PortfolioPage() {
     const navigate = useNavigate()
     const [activeTab, setActiveTab] = useState('list')
     const [showColumnEditor, setShowColumnEditor] = useState(false)
+    const [showCreateProject, setShowCreateProject] = useState(false)
 
     const { data: portfolio } = usePortfolio(portfolioId)
     const { data: views = [] } = usePortfolioViews(portfolioId)
@@ -104,7 +106,7 @@ export default function PortfolioPage() {
             />
             <EntityTabBar tabs={PORTFOLIO_TABS} activeTab={activeTab} onTabChange={setActiveTab} onAddTab={() => setShowColumnEditor(true)} />
             <ViewToolbar
-                onAddWork={() => {}}
+                onAddWork={() => setShowCreateProject(true)}
                 onFilter={() => {}}
                 onSort={() => {}}
                 onGroup={() => {}}
@@ -118,6 +120,13 @@ export default function PortfolioPage() {
                 )}
                 {renderTabContent()}
             </div>
+            {showCreateProject && (
+                <ProjectCreateForm
+                    portfolio={portfolio}
+                    onClose={() => setShowCreateProject(false)}
+                    onSaved={(project) => navigate(`/projects/${project.sys_id}`)}
+                />
+            )}
         </>
     )
 }

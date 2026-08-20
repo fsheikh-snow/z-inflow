@@ -145,3 +145,41 @@
     font-size: 14px;
     cursor: pointer;
 }
+
+.project-create-form {
+    width: 440px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.project-create-error {
+    margin: 0 0 12px;
+    color: #dc2626;
+    font-size: 13px;
+}
+
+.settings-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.settings-section-header h3 {
+    margin: 0;
+}
+
+.task-detail-title-input {
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.task-detail-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 16px 24px;
+    border-top: 1px solid #e2e8f0;
+}
