@@ -13,8 +13,9 @@
         "transform": "now-sdk transform",
         "types": "now-sdk dependencies",
         "dev": "now-sdk run dev",
-        "smoke": "node scripts/smoke-test.mjs",
-        "ship": "npm run build && npm run deploy && npm run smoke"
+        "audit:modules": "node scripts/audit-server-modules.mjs",
+        "smoke": "npm run audit:modules && node scripts/smoke-test.mjs",
+        "ship": "npm run audit:modules && npm run build && npm run deploy && npm run smoke"
     },
     "devDependencies": {
         "@servicenow/sdk": "4.10.1",

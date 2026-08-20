@@ -38,6 +38,16 @@ Smoke hits (auth = same now-sdk keychain as deploy):
 
 Any **5xx** (or auth/hard failure) → exit code **1** and a PASS/FAIL table with status + body snippet.
 
+`npm run smoke` / `npm run ship` first run **`npm run audit:modules`** so extensionless relative imports and illegal `new x_gzi_zflow.*` in ES modules fail before hitting the instance.
+
+### Diagnosing REST 500s
+
+| Body / syslog hint | Likely cause | Fix |
+|--------------------|--------------|-----|
+| `ModuleResolutionException` for `…/src/server/rest/helpers` (no `.ts`) | Relative import `./helpers` without extension | Use `./helpers.ts` (see **BUILD_AGENT.md** § Fluent module resolution) |
+| `"x_gzi_zflow" is not defined` | ES module used `new x_gzi_zflow.UserService()` | `import { UserService } from '@servicenow/glide/x_gzi_zflow'` |
+| Empty `result: []` on list routes with syslog errors | `safeList` swallowed a construction/list error | Check syslog; do not treat empty list as healthy without smoke on a non-`safeList` route (e.g. users/search) |
+
 ## Ideal loop (no console paste)
 
 1. Cursor: fix code  
