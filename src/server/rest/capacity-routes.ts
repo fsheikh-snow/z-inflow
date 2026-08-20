@@ -53,10 +53,14 @@ export function updateCapacityPlanAllocation(request: any, response: any) {
 }
 
 export function searchUsers(request: any, response: any) {
-    const svc = userService()
-    const query = getQueryParam(request, 'q')
-    const limit = getQueryParam(request, 'limit')
-    sendJson(response, svc.searchUsers(query, limit))
+    try {
+        const svc = userService()
+        const query = getQueryParam(request, 'q') || getQueryParam(request, 'query') || ''
+        const limit = getQueryParam(request, 'limit')
+        sendJson(response, svc.searchUsers(query, limit))
+    } catch (error: any) {
+        sendError(response, error?.message || 'User search failed', 500)
+    }
 }
 
 export function searchGroups(request: any, response: any) {

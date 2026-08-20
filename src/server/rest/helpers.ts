@@ -28,9 +28,37 @@ export function getPathParam(request: { pathParams: Record<string, string> }, na
     return request.pathParams[name] || ''
 }
 
-export function getQueryParam(request: { queryParams: Record<string, { firstOrNull?: () => string }> }, name: string): string {
-    const param = request.queryParams[name]
-    return param && param.firstOrNull ? param.firstOrNull() || '' : ''
+export function getQueryParam(
+    request: { queryParams?: Record<string, unknown>; getQueryParameter?: (name: string) => string },
+    name: string
+): string {
+    if (typeof request.getQueryParameter === 'function') {
+        const viaGetter = request.getQueryParameter(name)
+        if (viaGetter != null && String(viaGetter) !== '') {
+            return String(viaGetter)
+        }
+    }
+
+    const param = request.queryParams?.[name]
+    if (param == null) {
+        return ''
+    }
+    if (typeof param === 'string' || typeof param === 'number' || typeof param === 'boolean') {
+        return String(param)
+    }
+    if (typeof param === 'object') {
+        const withFirst = param as { firstOrNull?: () => string; get?: (i: number) => string; 0?: string }
+        if (typeof withFirst.firstOrNull === 'function') {
+            return withFirst.firstOrNull() || ''
+        }
+        if (typeof withFirst.get === 'function') {
+            return String(withFirst.get(0) || '')
+        }
+        if (withFirst[0] != null) {
+            return String(withFirst[0])
+        }
+    }
+    return String(param)
 }
 
 export function requireAuth(): string {

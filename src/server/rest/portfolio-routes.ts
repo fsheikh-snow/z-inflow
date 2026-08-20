@@ -11,7 +11,7 @@ export function createPortfolio(request: any, response: any) {
     const svc = portfolioService()
     const portfolio = svc.createPortfolio(body)
     if (!portfolio) {
-        sendError(response, 'Unable to create portfolio. Name and workspace are required.', 400)
+        sendError(response, 'Unable to create portfolio. Name is required, and a workspace must be resolvable.', 400)
         return
     }
     sendJson(response, portfolio, 201)

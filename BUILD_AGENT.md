@@ -2,7 +2,7 @@
 
 ## Primary deploy path (laptop SDK)
 
-Deploy from your laptop. This avoids Build Agent per-file **Allow** prompts.
+**Laptop install is the primary deploy path.** After pulling or pushing to `main`, run deploy from your machine — do not wait on Build Agent.
 
 ```bash
 npm run build && npm run deploy
@@ -17,9 +17,9 @@ Requirements:
 
 Scope is **`x_gzi_zflow`** (not `x_gzi_z_ppm`). Workspace UI: `x_gzi_zflow_workspace.do`.
 
-## Build Agent (optional)
+## Build Agent (optional fallback)
 
-Build Agent is for coding help on the instance, **not** required for install. Prefer laptop `npm run deploy`.
+Build Agent is for coding help on the instance only. Prefer laptop `npm run deploy` for every install.
 
 GitHub → Build Agent pull/rebuild is a **fallback only** (e.g. when laptop install is blocked). Expect per-file **Allow** prompts; there is no reliable batch-trust setting we control.
 

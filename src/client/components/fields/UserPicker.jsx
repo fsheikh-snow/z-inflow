@@ -3,11 +3,22 @@ import { useUserSearch } from '../../services/hooks'
 import UserChip from '../shared/UserChip'
 import './fields.css'
 
+function formatUserLabel(user) {
+    const name = user.name || user.user_name || 'Unknown'
+    if (user.email) {
+        return `${name} — ${user.email}`
+    }
+    if (user.user_name && user.name) {
+        return `${name} (${user.user_name})`
+    }
+    return name
+}
+
 export default function UserPicker({ value, selectedUser, onChange, placeholder = 'Search users…', id, clearLabel = 'Clear user' }) {
     const [query, setQuery] = useState('')
     const [open, setOpen] = useState(false)
     const containerRef = useRef(null)
-    const { data: results = [], isFetching } = useUserSearch(query)
+    const { data: results = [], isFetching, isError, error } = useUserSearch(query)
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -34,7 +45,7 @@ export default function UserPicker({ value, selectedUser, onChange, placeholder 
         <div className="user-picker" ref={containerRef}>
             {value && selectedUser ? (
                 <div className="user-picker-selected">
-                    <UserChip user={selectedUser} />
+                    <UserChip user={selectedUser} showEmail />
                     <button type="button" className="user-picker-clear" onClick={handleClear} aria-label={clearLabel}>
                         ×
                     </button>
@@ -57,20 +68,26 @@ export default function UserPicker({ value, selectedUser, onChange, placeholder 
                     {open && query.length >= 2 && (
                         <ul className="user-picker-results" role="listbox">
                             {isFetching && <li className="user-picker-status">Searching…</li>}
-                            {!isFetching && results.length === 0 && (
+                            {!isFetching && isError && (
+                                <li className="user-picker-status">
+                                    Search failed{error?.message ? `: ${error.message}` : ''}
+                                </li>
+                            )}
+                            {!isFetching && !isError && results.length === 0 && (
                                 <li className="user-picker-status">No users found</li>
                             )}
-                            {results.map((user) => (
-                                <li key={user.sys_id}>
-                                    <button
-                                        type="button"
-                                        className="user-picker-option"
-                                        onClick={() => handleSelect(user)}
-                                    >
-                                        <UserChip user={user} />
-                                    </button>
-                                </li>
-                            ))}
+                            {!isError &&
+                                results.map((user) => (
+                                    <li key={user.sys_id}>
+                                        <button
+                                            type="button"
+                                            className="user-picker-option"
+                                            onClick={() => handleSelect(user)}
+                                        >
+                                            <span className="user-picker-option-main">{formatUserLabel(user)}</span>
+                                        </button>
+                                    </li>
+                                ))}
                         </ul>
                     )}
                 </>

@@ -88,6 +88,13 @@
     background: #f1f5f9;
 }
 
+.user-picker-option-main {
+    display: block;
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.35;
+}
+
 .user-picker-status,
 .group-picker-status {
     padding: 8px 12px;

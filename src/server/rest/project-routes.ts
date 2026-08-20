@@ -11,7 +11,7 @@ export function createProject(request: any, response: any) {
     const svc = projectTaskService()
     const project = svc.createProject(body)
     if (!project) {
-        sendError(response, 'Unable to create project. Name, workspace, and team are required.', 400)
+        sendError(response, 'Unable to create project. Name is required, and a workspace/team must be resolvable.', 400)
         return
     }
     sendJson(response, project, 201)

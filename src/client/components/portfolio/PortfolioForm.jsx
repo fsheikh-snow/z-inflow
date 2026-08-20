@@ -10,7 +10,6 @@ const EMPTY_FORM = {
     owner_id: '',
     due_date: '',
     description: '',
-    color: '#6366f1',
 }
 
 function buildInitialForm(portfolio) {
@@ -20,7 +19,6 @@ function buildInitialForm(portfolio) {
         owner_id: portfolio.owner_id || portfolio.owner?.sys_id || '',
         due_date: portfolio.due_date || '',
         description: portfolio.description || '',
-        color: portfolio.color || '#6366f1',
     }
 }
 
@@ -30,7 +28,6 @@ function buildPayload(form, workspaceId) {
     if (form.owner_id) payload.owner_id = form.owner_id
     if (form.due_date) payload.due_date = form.due_date
     if (form.description.trim()) payload.description = form.description.trim()
-    if (form.color) payload.color = form.color
     return payload
 }
 
@@ -95,17 +92,6 @@ export default function PortfolioForm({ mode = 'create', portfolio, workspaceId,
                         id="portfolio-due-date"
                         value={form.due_date}
                         onChange={(value) => setField('due_date', value)}
-                    />
-                </label>
-
-                <label htmlFor="portfolio-color">
-                    Color
-                    <input
-                        id="portfolio-color"
-                        type="color"
-                        className="field-control"
-                        value={form.color}
-                        onChange={(e) => setField('color', e.target.value)}
                     />
                 </label>
 

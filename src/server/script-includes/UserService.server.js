@@ -7,18 +7,23 @@ UserService.prototype = {
             sys_id: gr.getUniqueValue(),
             name: gr.getValue('name'),
             email: gr.getValue('email'),
+            user_name: gr.getValue('user_name'),
             title: gr.getValue('title'),
-            avatar: gr.getValue('avatar'),
+            avatar: gr.getValue('avatar') || gr.getValue('photo'),
         };
     },
 
     searchUsers: function (query, limit) {
         limit = parseInt(limit, 10) || 20;
         var results = [];
+        var q = String(query == null ? '' : query).trim();
         var gr = new GlideRecord('sys_user');
         gr.addActiveQuery();
-        if (query) {
-            gr.addEncodedQuery('nameLIKE' + query + '^ORemailLIKE' + query);
+        if (q) {
+            // Search display name, email, and login — CONTAINS avoids encoded-query edge cases
+            var qc = gr.addQuery('name', 'CONTAINS', q);
+            qc.addOrCondition('email', 'CONTAINS', q);
+            qc.addOrCondition('user_name', 'CONTAINS', q);
         }
         gr.setLimit(limit);
         gr.orderBy('name');
@@ -70,9 +75,10 @@ UserService.prototype = {
     searchGroups: function (query, limit) {
         limit = parseInt(limit, 10) || 20;
         var results = [];
+        var q = String(query == null ? '' : query).trim();
         var gr = new GlideRecord('sys_user_group');
-        if (query) {
-            gr.addEncodedQuery('nameLIKE' + query);
+        if (q) {
+            gr.addQuery('name', 'CONTAINS', q);
         }
         gr.setLimit(limit);
         gr.orderBy('name');

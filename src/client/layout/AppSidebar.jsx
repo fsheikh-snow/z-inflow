@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import { usePortfolios } from '../services/hooks'
+import { usePortfolios, useProjects } from '../services/hooks'
 import PortfolioForm from '../components/portfolio/PortfolioForm'
+import ProjectForm from '../components/project/ProjectForm'
 import './layout.css'
 
 const NAV_ITEMS = [
@@ -13,9 +14,11 @@ const NAV_ITEMS = [
 
 export default function AppSidebar() {
     const { data: portfolios = [] } = usePortfolios()
+    const { data: projects = [] } = useProjects()
     const navigate = useNavigate()
     const [showCreatePortfolio, setShowCreatePortfolio] = useState(false)
-    const defaultWorkspaceId = portfolios[0]?.workspace_id
+    const [showCreateProject, setShowCreateProject] = useState(false)
+    const defaultWorkspaceId = portfolios[0]?.workspace_id || projects[0]?.workspace_id
 
     return (
         <aside className="app-sidebar">
@@ -32,6 +35,30 @@ export default function AppSidebar() {
                         {item.label}
                     </NavLink>
                 ))}
+
+                <div className="sidebar-section-label">Projects</div>
+                <NavLink to="/projects" end className={({ isActive }) => `sidebar-link${isActive ? ' active' : ''}`}>
+                    <span className="sidebar-icon">📁</span>
+                    All projects
+                </NavLink>
+                <button type="button" className="sidebar-link sidebar-link-action" onClick={() => setShowCreateProject(true)}>
+                    <span className="sidebar-icon">+</span>
+                    New project
+                </button>
+                {projects.length === 0 ? (
+                    <div className="sidebar-empty">No projects</div>
+                ) : (
+                    projects.slice(0, 12).map((p) => (
+                        <NavLink
+                            key={p.sys_id}
+                            to={`/projects/${p.sys_id}`}
+                            className={({ isActive }) => `sidebar-link${isActive ? ' active' : ''}`}
+                        >
+                            <span className="sidebar-icon">•</span>
+                            {p.name}
+                        </NavLink>
+                    ))
+                )}
 
                 <div className="sidebar-section-label">Portfolios</div>
                 <button type="button" className="sidebar-link sidebar-link-action" onClick={() => setShowCreatePortfolio(true)}>
@@ -77,6 +104,17 @@ export default function AppSidebar() {
                     onSaved={(portfolio) => {
                         setShowCreatePortfolio(false)
                         navigate(`/portfolios/${portfolio.sys_id}`)
+                    }}
+                />
+            )}
+            {showCreateProject && (
+                <ProjectForm
+                    mode="create"
+                    workspaceId={defaultWorkspaceId}
+                    onClose={() => setShowCreateProject(false)}
+                    onSaved={(project) => {
+                        setShowCreateProject(false)
+                        navigate(`/projects/${project.sys_id}`)
                     }}
                 />
             )}

@@ -79,6 +79,23 @@ ProjectTaskService.prototype = {
         return project;
     },
 
+    _resolveWorkspaceId: function (workspaceId) {
+        if (workspaceId) {
+            return workspaceId;
+        }
+        var gr = new GlideRecord('x_gzi_zflow_workspace');
+        gr.orderBy('sys_created_on');
+        gr.setLimit(1);
+        gr.query();
+        if (gr.next()) {
+            return gr.getUniqueValue();
+        }
+        var created = new GlideRecord('x_gzi_zflow_workspace');
+        created.initialize();
+        created.setValue('name', 'Default Workspace');
+        return created.insert() || '';
+    },
+
     _getDefaultTeam: function (workspaceId) {
         if (!workspaceId) {
             return '';
@@ -93,14 +110,29 @@ ProjectTaskService.prototype = {
         return '';
     },
 
+    _getAnyTeam: function () {
+        var gr = new GlideRecord('sys_user_group');
+        gr.setLimit(1);
+        gr.orderBy('name');
+        gr.query();
+        if (gr.next()) {
+            return gr.getUniqueValue();
+        }
+        return '';
+    },
+
     createProject: function (data) {
         var name = String(data.name || '').trim();
-        var workspaceId = String(data.workspace_id || '');
+        var workspaceId = this._resolveWorkspaceId(String(data.workspace_id || ''));
         if (!name || !workspaceId) {
             return null;
         }
 
-        var assignmentGroup = String(data.assignment_group || '') || this._getDefaultTeam(workspaceId);
+        // Portfolio is optional — projects can be standalone
+        var assignmentGroup =
+            String(data.assignment_group || '') ||
+            this._getDefaultTeam(workspaceId) ||
+            this._getAnyTeam();
         if (!assignmentGroup) {
             return null;
         }

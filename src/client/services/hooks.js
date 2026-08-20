@@ -97,6 +97,13 @@ export function useProject(projectId) {
     })
 }
 
+export function useProjects(params = {}) {
+    return useQuery({
+        queryKey: [...queryKeys.projects, params],
+        queryFn: () => projectService.list(params),
+    })
+}
+
 export function useCreateProject(portfolioId) {
     const queryClient = useQueryClient()
     return useMutation({

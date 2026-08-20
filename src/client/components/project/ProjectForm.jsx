@@ -38,6 +38,7 @@ function buildInitialForm(project) {
 function buildPayload(form, { workspaceId, portfolioId } = {}) {
     const payload = { name: form.name.trim() }
     if (workspaceId) payload.workspace_id = workspaceId
+    // portfolio_id is optional — omit for standalone projects
     if (portfolioId) payload.portfolio_id = portfolioId
 
     const optionalFields = [
@@ -58,7 +59,7 @@ function buildPayload(form, { workspaceId, portfolioId } = {}) {
     return payload
 }
 
-export default function ProjectForm({ mode = 'create', project, portfolio, onClose, onSaved }) {
+export default function ProjectForm({ mode = 'create', project, portfolio, workspaceId, onClose, onSaved }) {
     const isEdit = mode === 'edit'
     const [form, setForm] = useState(() => buildInitialForm(project))
     const [owner, setOwner] = useState(project?.owner || null)
@@ -76,9 +77,15 @@ export default function ProjectForm({ mode = 'create', project, portfolio, onClo
         event.preventDefault()
         if (!form.name.trim()) return
 
+        const resolvedWorkspace =
+            workspaceId || portfolio?.workspace_id || project?.workspace_id || undefined
+
         const payload = isEdit
             ? buildPayload(form)
-            : buildPayload(form, { workspaceId: portfolio?.workspace_id, portfolioId: portfolio?.sys_id })
+            : buildPayload(form, {
+                  workspaceId: resolvedWorkspace,
+                  portfolioId: portfolio?.sys_id,
+              })
 
         const saved = await mutation.mutateAsync(payload)
         onSaved?.(saved)

@@ -2,13 +2,13 @@ import { apiRequest } from './api'
 
 export const userService = {
     search(query) {
-        const search = new URLSearchParams({ q: query }).toString()
-        return apiRequest(`/users/search?${search}`)
+        const search = new URLSearchParams({ q: String(query || '').trim() }).toString()
+        return apiRequest(`/users/search?${search}`).then((data) => (Array.isArray(data) ? data : []))
     },
 
     searchGroups(query) {
-        const search = new URLSearchParams({ q: query }).toString()
-        return apiRequest(`/groups/search?${search}`)
+        const search = new URLSearchParams({ q: String(query || '').trim() }).toString()
+        return apiRequest(`/groups/search?${search}`).then((data) => (Array.isArray(data) ? data : []))
     },
 
     getTeamMembers(teamId) {

@@ -25,6 +25,10 @@ declare global {
                         table: 'sys_script_include'
                         id: 'bc8afd28061f4e0e9330c9693d16b997'
                     }
+                    f823ce3133ba07509937d1382e5c7bfa: {
+                        table: 'sys_app_info'
+                        id: 'f823ce3133ba07509937d1382e5c7bfa'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: '9e1a9cf0e1f24986a1af1b57dc9439e1'
@@ -290,6 +294,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '006db349fd244786afdbccbace92bdc7'
+                        deleted: true
                         key: {
                             application_file: 'ee7cd12cd45b4c07a511c587305a8e7f'
                             source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
@@ -307,6 +312,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '00a5c917656045f79e70085d7631457b'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_user_res_profile'
                             col_name_string: 'user_id'
@@ -527,6 +533,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '0c7bd464661f4f128b717f14238066a2'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_task_dependency'
                             col_name_string: 'successor_task_id'
@@ -543,6 +550,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '0c9bc9cd948e458c82c3fbe9222ab8da'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_task'
                             col_name_string: 'assignee_id'
@@ -558,6 +566,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '0d79aacddf7a465fa96d9c60bb944ed9'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_proj_res_alloc'
                             col_name_string: 'project_id'
@@ -689,6 +698,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '14ca87674dc44445813e9232a93e727a'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_field_value'
                             col_name_string: 'project_id'
@@ -714,6 +724,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '15a47b4c2e0c4eff9aeb2cecf79350f2'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_capacity_plan'
                             col_name_string: 'portfolio_id'
@@ -810,6 +821,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '1b5d879053d34c33aea4dda91198293a'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_task'
                             col_name_string: 'workspace_id'
@@ -941,6 +953,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '20691dffe4574249b1f1a8cca3f1f7b9'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_field_def'
                             col_name_string: 'workspace_id'
@@ -1236,6 +1249,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '2ef2ae1f94564cc48439cc163a49b484'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_goal'
                             col_name_string: 'owner_id'
@@ -1400,6 +1414,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '37c131c2316d424f8f9a480c477327c3'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_project_member'
                             col_name_string: 'project_id'
@@ -1635,6 +1650,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '421329d7e8d746d882e55e7ca1633058'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_view_column'
                             col_name_string: 'view_id'
@@ -1754,6 +1770,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '47877b90bfdc4bb8977adde6a1ce6718'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_capacity_plan'
                             col_name_string: 'group_id'
@@ -1785,6 +1802,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '4af4023a74d848c6a55761b08f2abcdb'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_project'
                             col_name_string: 'assignment_group'
@@ -1793,6 +1811,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '4cabc1aeca144d108123a0a499889f69'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_project_task'
                             col_name_string: 'section_id'
@@ -1925,6 +1944,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '537307d3f12a44e6a3e0e1a2d9f5d2b4'
+                        deleted: true
                         key: {
                             application_file: 'bd5eb67e526a4f79805ada1c45173286'
                             source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
@@ -2153,7 +2173,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '5f01aa682bf04edeaf4d8550e1c8caaf'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/main.js.map'
                         }
@@ -2523,6 +2543,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '77ca476744fe4ab0be63c011a9d26894'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_proj_res_alloc'
                             col_name_string: 'user_id'
@@ -2623,6 +2644,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '7b730b8707eb485385fa439ff3133c39'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_project'
                             col_name_string: 'owner_id'
@@ -2646,6 +2668,13 @@ declare global {
                     },
                     {
                         table: 'sys_ux_lib_asset'
+                        id: '7c98e1b761ed4ff7af34bd72ff4e95af'
+                        key: {
+                            name: 'x_gzi_zflow/ProjectsPage'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
                         id: '7d36591a7ccd44d880e4250ee571f519'
                         key: {
                             name: 'x_gzi_zflow/main'
@@ -2654,6 +2683,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '7d6de009068d467d91c292eea8becfaf'
+                        deleted: true
                         key: {
                             application_file: '2edb688f05014e9cb89b2f88a8a055d5'
                             source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
@@ -2803,6 +2833,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '892f3f3940f440ae84a7a6cba7e646d1'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_proj_res_alloc'
                             col_name_string: 'role_id'
@@ -2891,6 +2922,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '8d8c8055cdcf4a28ad3a0a370c83f14f'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/ProjectForm'
                         }
@@ -2921,6 +2953,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '8ec76b56d58a4cdd9255fb1c7b566b89'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_project_member'
                             col_name_string: 'user_id'
@@ -3017,6 +3050,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '920f96db893e4cdcae64b1da7ebe25cc'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_view'
                             col_name_string: 'user_id'
@@ -3071,6 +3105,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '9400b6b1635c4a9ea1eaac6c4b0d0e33'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_capacity_plan'
                             col_name_string: 'workspace_id'
@@ -3178,6 +3213,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '997ad07780b344a3bcd708d50511033d'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_task'
                             col_name_string: 'parent_task_id'
@@ -3186,6 +3222,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '9a673b0788f7409e82895f74a53543d4'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_status_update'
                             col_name_string: 'author_id'
@@ -3319,6 +3356,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: '9e93f76a89df4b3c8d901e2d2cb2f3bd'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_user_capacity'
                             col_name_string: 'user_profile_id'
@@ -3400,6 +3438,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'a5b3e1655a474b08b78602d52f9deece'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_field_value'
                             col_name_string: 'task_id'
@@ -3460,6 +3499,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'a787896d650c4670b55412589892cf5c'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_section'
                             col_name_string: 'project_id'
@@ -3483,6 +3523,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'a8d970b9d82144baba37f00e36ca3d7a'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_portfolio'
                             col_name_string: 'owner_id'
@@ -3730,6 +3771,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'b3a934c0e8354ab187a5583525e64a32'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_project'
                             col_name_string: 'workspace_id'
@@ -3746,6 +3788,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'b3f3c6253e364ecfb7817b5d5389a8bd'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_view'
                             col_name_string: 'portfolio_id'
@@ -3825,6 +3868,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'b8d2a6e5082046d5b1a641a51affe2f8'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_view'
                             col_name_string: 'project_id'
@@ -3917,7 +3961,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'bf73134a8ae94ef9bad763ce7a49b759'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
@@ -4008,7 +4052,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'c409d99c45f346459dc538b16e94f847'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_gzi_zflow/VirtualizedGantt'
                         }
@@ -4016,6 +4060,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'c40f04a9a00c4534b06b6ef466519935'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_field_value'
                             col_name_string: 'field_def_id'
@@ -4041,6 +4086,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'c4f379bdd19e42f69abc948a6acc4efc'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_cust_field_setting'
                             col_name_string: 'portfolio_id'
@@ -4086,6 +4132,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'c7d2990a354342739be76733fb1ede5b'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_portfolio_project'
                             col_name_string: 'added_by'
@@ -4112,7 +4159,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'ca909d08f5e54afab69eecb4e6139833'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
@@ -4124,6 +4171,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'caf7b5fc35a44b37bf21304a5b624539'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_custom_field_value'
                             col_name_string: 'portfolio_id'
@@ -4298,6 +4346,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'd12e0e15ded3467ab451976365767969'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_cust_field_setting'
                             col_name_string: 'project_id'
@@ -4422,6 +4471,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'd8b7d74d025f4b57a7213f31d5b74066'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_cust_field_setting'
                             col_name_string: 'field_def_id'
@@ -4610,7 +4660,7 @@ declare global {
                     {
                         table: 'sys_choice'
                         id: 'e62b635c77ff4a0583a3d9d79b7860ca'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow_project'
                             element: 'status'
@@ -4700,6 +4750,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'eaec5691bef84fb18ab0cf0564fb8e56'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_user_res_profile'
                             col_name_string: 'role_id'
@@ -4727,6 +4778,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'ecebcb475a914a7ba3b385fa9b619659'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_capacity_plan'
                             col_name_string: 'owner_id'
@@ -4812,6 +4864,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'f643b1ed0b3a44cc8d05e98f77accc60'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_goal'
                             col_name_string: 'workspace_id'
@@ -4976,6 +5029,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'ff2aee219f5e4547b6a3311ee40c3444'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_portfolio'
                             col_name_string: 'workspace_id'
@@ -4991,6 +5045,7 @@ declare global {
                     {
                         table: 'sys_index'
                         id: 'ff9ffd81c6304e81aa10e75121104e79'
+                        deleted: true
                         key: {
                             logical_table_name: 'x_gzi_zflow_task_dependency'
                             col_name_string: 'predecessor_task_id'

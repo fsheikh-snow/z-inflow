@@ -45,9 +45,26 @@ PortfolioService.prototype = {
         return portfolio;
     },
 
+    _resolveWorkspaceId: function (workspaceId) {
+        if (workspaceId) {
+            return workspaceId;
+        }
+        var gr = new GlideRecord('x_gzi_zflow_workspace');
+        gr.orderBy('sys_created_on');
+        gr.setLimit(1);
+        gr.query();
+        if (gr.next()) {
+            return gr.getUniqueValue();
+        }
+        var created = new GlideRecord('x_gzi_zflow_workspace');
+        created.initialize();
+        created.setValue('name', 'Default Workspace');
+        return created.insert() || '';
+    },
+
     createPortfolio: function (data) {
         var name = String(data.name || '').trim();
-        var workspaceId = String(data.workspace_id || '');
+        var workspaceId = this._resolveWorkspaceId(String(data.workspace_id || ''));
         if (!name || !workspaceId) {
             return null;
         }
