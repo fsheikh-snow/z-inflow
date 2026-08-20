@@ -1,4 +1,4 @@
-import { sendJson } from './helpers'
+import { sendJson } from './helpers.ts'
 
 export function listAutomations(_request: any, response: any) {
     sendJson(response, [])

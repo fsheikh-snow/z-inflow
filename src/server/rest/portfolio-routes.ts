@@ -1,4 +1,4 @@
-import { getPathParam, getQueryParam, parseBody, portfolioService, safeList, sendError, sendJson, viewDataService } from './helpers'
+import { getPathParam, getQueryParam, parseBody, portfolioService, safeList, sendError, sendJson, viewDataService } from './helpers.ts'
 
 export function listPortfolios(request: any, response: any) {
     safeList(response, 'listPortfolios', function () {

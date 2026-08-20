@@ -1,5 +1,5 @@
 import { GlideRecord } from '@servicenow/glide'
-import { getPathParam, getQueryParam, parseBody, sendError, sendJson, viewDataService } from './helpers'
+import { getPathParam, getQueryParam, parseBody, sendError, sendJson, viewDataService } from './helpers.ts'
 
 export function getView(request: any, response: any) {
     const viewId = getPathParam(request, 'id')

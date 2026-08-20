@@ -1,4 +1,4 @@
-import { capacityService, getPathParam, getQueryParam, parseBody, sendError, sendJson, userService } from './helpers'
+import { capacityService, getPathParam, getQueryParam, parseBody, sendError, sendJson, userService } from './helpers.ts'
 
 export function listCapacityPlans(request: any, response: any) {
     const svc = capacityService()

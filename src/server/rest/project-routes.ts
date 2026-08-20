@@ -1,4 +1,4 @@
-import { getPathParam, getQueryParam, parseBody, projectTaskService, safeList, sendError, sendJson } from './helpers'
+import { getPathParam, getQueryParam, parseBody, projectTaskService, safeList, sendError, sendJson } from './helpers.ts'
 
 export function listProjects(request: any, response: any) {
     safeList(response, 'listProjects', function () {
