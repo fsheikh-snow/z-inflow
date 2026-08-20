@@ -1,14 +1,15 @@
-import React, { lazy } from 'react'
+import React from 'react'
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import AppShell from './layout/AppShell'
-
-const PortfolioPage = lazy(() => import('./pages/work/PortfolioPage'))
-const ProjectsPage = lazy(() => import('./pages/work/ProjectsPage'))
-const ProjectPage = lazy(() => import('./pages/work/ProjectPage'))
-const MyTasksPage = lazy(() => import('./pages/work/MyTasksPage'))
-const CapacityPlanPage = lazy(() => import('./pages/strategy/CapacityPlanPage'))
-const RuleBuilderPage = lazy(() => import('./pages/admin/RuleBuilderPage'))
-const FieldLibraryPage = lazy(() => import('./pages/admin/FieldLibraryPage'))
+// Static page imports (not React.lazy): SN jsdbx chunks cannot share minified named
+// exports from main.jsdbx, which broke lazy route chunks (missing export 'l'/'w').
+import PortfolioPage from './pages/work/PortfolioPage'
+import ProjectsPage from './pages/work/ProjectsPage'
+import ProjectPage from './pages/work/ProjectPage'
+import MyTasksPage from './pages/work/MyTasksPage'
+import CapacityPlanPage from './pages/strategy/CapacityPlanPage'
+import RuleBuilderPage from './pages/admin/RuleBuilderPage'
+import FieldLibraryPage from './pages/admin/FieldLibraryPage'
 
 export default function AppRoutes() {
     return (

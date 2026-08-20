@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from 'react'
+import React, { Component } from 'react'
 import QueryProvider from './providers/QueryProvider'
 import AppRoutes from './routes'
 import { errorText } from './components/shared/PageErrorBoundary'
@@ -30,21 +30,11 @@ class AppErrorBoundary extends Component {
     }
 }
 
-function BootFallback() {
-    return (
-        <div className="empty-state">
-            <p>Loading workspace…</p>
-        </div>
-    )
-}
-
 export default function App() {
     return (
         <AppErrorBoundary>
             <QueryProvider>
-                <Suspense fallback={<BootFallback />}>
-                    <AppRoutes />
-                </Suspense>
+                <AppRoutes />
             </QueryProvider>
         </AppErrorBoundary>
     )

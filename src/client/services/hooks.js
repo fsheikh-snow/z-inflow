@@ -57,43 +57,43 @@ export function usePortfolioViews(portfolioId) {
     })
 }
 
-export function usePortfolioViewData(portfolioId, viewId) {
+export function usePortfolioViewData(portfolioId, viewId, options = {}) {
     return useQuery({
         queryKey: queryKeys.portfolioViewData(portfolioId, viewId),
         queryFn: () => portfolioService.getViewData(portfolioId, viewId),
-        enabled: Boolean(portfolioId && viewId),
+        enabled: Boolean(portfolioId && viewId) && (options.enabled ?? true),
     })
 }
 
-export function usePortfolioTimeline(portfolioId) {
+export function usePortfolioTimeline(portfolioId, options = {}) {
     return useQuery({
         queryKey: queryKeys.portfolioTimeline(portfolioId),
         queryFn: () => portfolioService.getTimeline(portfolioId),
-        enabled: Boolean(portfolioId),
+        enabled: Boolean(portfolioId) && (options.enabled ?? true),
     })
 }
 
-export function usePortfolioDashboard(portfolioId) {
+export function usePortfolioDashboard(portfolioId, options = {}) {
     return useQuery({
         queryKey: queryKeys.portfolioDashboard(portfolioId),
         queryFn: () => portfolioService.getDashboard(portfolioId),
-        enabled: Boolean(portfolioId),
+        enabled: Boolean(portfolioId) && (options.enabled ?? true),
     })
 }
 
-export function usePortfolioProgress(portfolioId) {
+export function usePortfolioProgress(portfolioId, options = {}) {
     return useQuery({
         queryKey: queryKeys.portfolioProgress(portfolioId),
         queryFn: () => portfolioService.getProgress(portfolioId),
-        enabled: Boolean(portfolioId),
+        enabled: Boolean(portfolioId) && (options.enabled ?? true),
     })
 }
 
-export function usePortfolioWorkload(portfolioId) {
+export function usePortfolioWorkload(portfolioId, options = {}) {
     return useQuery({
         queryKey: queryKeys.portfolioWorkload(portfolioId),
         queryFn: () => portfolioService.getWorkload(portfolioId),
-        enabled: Boolean(portfolioId),
+        enabled: Boolean(portfolioId) && (options.enabled ?? true),
     })
 }
 

@@ -1,11 +1,37 @@
-import React from 'react'
-import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts'
+import React, { useEffect, useState } from 'react'
 import './portfolio.css'
 
 const STATUS_COLORS = ['#22c55e', '#f59e0b', '#ef4444', '#94a3b8']
 
+/**
+ * Load recharts only when the Dashboard tab mounts.
+ * Dynamic import of the vendor package (main → recharts chunk) is SN-safe;
+ * React.lazy of local page modules (chunk → main named exports) is not.
+ */
+function useRecharts() {
+    const [recharts, setRecharts] = useState(null)
+
+    useEffect(() => {
+        let cancelled = false
+        import('recharts').then((mod) => {
+            if (!cancelled) setRecharts(mod)
+        })
+        return () => {
+            cancelled = true
+        }
+    }, [])
+
+    return recharts
+}
+
 export default function PortfolioDashboardWidgets({ data, loading }) {
-    if (loading) return <div className="portfolio-loading">Loading dashboard…</div>
+    const recharts = useRecharts()
+
+    if (loading || !recharts) {
+        return <div className="portfolio-loading">Loading dashboard…</div>
+    }
+
+    const { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } = recharts
 
     const statusBreakdown = data?.status_breakdown || [
         { name: 'On track', value: 0 },

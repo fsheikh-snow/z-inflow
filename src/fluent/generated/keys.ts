@@ -509,6 +509,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '0ba2ba10d8fb472890522ab88ad1b417'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/CapacityPlanPage'
                         }
@@ -1573,6 +1574,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_lib_asset'
+                        id: '3d11aa90ab7f4d43bdb477949d00a13b'
+                        deleted: true
+                        key: {
+                            name: 'x_gzi_zflow/vendor-react-dom--74c096a2'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '3db08c65863e4762a6b596b0e970f06c'
                         key: {
@@ -1787,6 +1796,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '48fc9c65b07d472ab2a009075892488c'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/RuleBuilderPage'
                         }
@@ -2315,6 +2325,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_lib_asset'
+                        id: '6884c59aa62d4204b6bd94ce560cba08'
+                        key: {
+                            name: 'x_gzi_zflow/index'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '69b673f72e494976b69481e5fc0a1f16'
                         key: {
@@ -2333,6 +2350,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '6a33538302cf45cd8a1f84f880ad5d7a'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/PortfolioDashboardWidgets'
                         }
@@ -2520,6 +2538,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '754516dcdfcf433bacc32e375807a928'
+                        deleted: false
                         key: {
                             application_file: 'a7b33fbdadbf43ceb5d8a31bfaf223d9'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
@@ -2670,6 +2689,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '7c98e1b761ed4ff7af34bd72ff4e95af'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/ProjectsPage'
                         }
@@ -2728,6 +2748,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '80bd782c13a24ec88f8e7372fe80d9e5'
+                        deleted: true
                         key: {
                             application_file: 'b98483645745433fa11ca8f944c92b8e'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
@@ -2939,6 +2960,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '8de2b203dfe243bfb219b6fef55450a9'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/MyTasksPage'
                         }
@@ -3052,6 +3074,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '91fbd4ee975f4139bc2965ccaa98bf55'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/PortfolioPage'
                         }
@@ -3423,6 +3446,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'a4f02ba8f0794d7091bbae5ed4e066b6'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/ProjectPage'
                         }
@@ -3517,6 +3541,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'a7b33fbdadbf43ceb5d8a31bfaf223d9'
+                        deleted: false
                         key: {
                             name: 'x_gzi_zflow/vendor-react-dom--d9c8d218'
                         }
@@ -3680,6 +3705,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'af3e67d9a5e546479e029e213afebbf5'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/FieldLibraryPage'
                         }
@@ -3687,6 +3713,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'afe8f4fd68a4459cbfb35e54cbbda1d4'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/BreadcrumbBar'
                         }
@@ -3895,6 +3922,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'b98483645745433fa11ca8f944c92b8e'
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/vendor-react-router--9560cb75'
                         }
@@ -4012,6 +4040,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'c24df5cce95d42c4a1bb2364f5730b7d'
+                        key: {
+                            application_file: 'cf781f6abe8b400b9f173086e544e1f3'
+                            source_artifact: '4e8e46929bde432790cfcb7104335322'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'c27d9c102baa44108926470a7bc86d0e'
                         key: {
@@ -4068,7 +4104,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'c409d99c45f346459dc538b16e94f847'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_gzi_zflow/VirtualizedGantt'
                         }
@@ -4305,6 +4341,13 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_section'
                             element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'cf781f6abe8b400b9f173086e544e1f3'
+                        key: {
+                            name: 'x_gzi_zflow/vendor-react-router--b9021bf5'
                         }
                     },
                     {
@@ -4920,6 +4963,15 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_workspace_user'
                             element: 'workspace_id'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'f85a5a71d0aa4a18bd3b755ee4590e74'
+                        deleted: true
+                        key: {
+                            application_file: '3d11aa90ab7f4d43bdb477949d00a13b'
+                            source_artifact: '4e8e46929bde432790cfcb7104335322'
                         }
                     },
                     {

@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from 'react'
+import React, { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import TopBar from '../../layout/TopBar'
 import BreadcrumbBar from '../../layout/BreadcrumbBar'
@@ -10,9 +10,8 @@ import PortfolioKanbanGrid from '../../components/portfolio/PortfolioKanbanGrid'
 import VirtualizedGantt from '../../components/gantt/VirtualizedGantt'
 import PortfolioProgressView from '../../components/portfolio/PortfolioProgressView'
 import PortfolioWorkloadGrid from '../../components/portfolio/PortfolioWorkloadGrid'
+import PortfolioDashboardWidgets from '../../components/portfolio/PortfolioDashboardWidgets'
 import ProjectCreateForm from '../../components/project/ProjectCreateForm'
-
-const PortfolioDashboardWidgets = lazy(() => import('../../components/portfolio/PortfolioDashboardWidgets'))
 import {
     usePortfolio,
     usePortfolioViews,
@@ -43,11 +42,22 @@ export default function PortfolioPage() {
     const { data: views = [] } = usePortfolioViews(portfolioId)
     const defaultViewId = views[0]?.sys_id
 
-    const { data: viewData, isLoading: viewLoading } = usePortfolioViewData(portfolioId, defaultViewId)
-    const { data: timeline, isLoading: timelineLoading } = usePortfolioTimeline(portfolioId)
-    const { data: dashboard, isLoading: dashboardLoading } = usePortfolioDashboard(portfolioId)
-    const { data: progress, isLoading: progressLoading } = usePortfolioProgress(portfolioId)
-    const { data: workload, isLoading: workloadLoading } = usePortfolioWorkload(portfolioId)
+    const needsViewData = activeTab === 'list' || activeTab === 'kanban'
+    const { data: viewData, isLoading: viewLoading } = usePortfolioViewData(portfolioId, defaultViewId, {
+        enabled: needsViewData,
+    })
+    const { data: timeline, isLoading: timelineLoading } = usePortfolioTimeline(portfolioId, {
+        enabled: activeTab === 'timeline',
+    })
+    const { data: dashboard, isLoading: dashboardLoading } = usePortfolioDashboard(portfolioId, {
+        enabled: activeTab === 'dashboard',
+    })
+    const { data: progress, isLoading: progressLoading } = usePortfolioProgress(portfolioId, {
+        enabled: activeTab === 'progress',
+    })
+    const { data: workload, isLoading: workloadLoading } = usePortfolioWorkload(portfolioId, {
+        enabled: activeTab === 'workload',
+    })
 
     const renderTabContent = () => {
         switch (activeTab) {
@@ -81,11 +91,7 @@ export default function PortfolioPage() {
                     />
                 )
             case 'dashboard':
-                return (
-                    <Suspense fallback={<div className="portfolio-loading">Loading dashboard…</div>}>
-                        <PortfolioDashboardWidgets data={dashboard} loading={dashboardLoading} />
-                    </Suspense>
-                )
+                return <PortfolioDashboardWidgets data={dashboard} loading={dashboardLoading} />
             case 'progress':
                 return <PortfolioProgressView data={progress} loading={progressLoading} />
             case 'workload':
