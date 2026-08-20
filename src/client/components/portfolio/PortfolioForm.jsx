@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
-import UserPicker from '../fields/UserPicker'
 import DateField from '../fields/DateField'
+import MembersEditor, { membersToPayload, primaryOwnerId } from '../shared/MembersEditor'
 import { useCreatePortfolio, useUpdatePortfolio } from '../../services/hooks'
 import '../../components/rules/rules.css'
 import '../project/project.css'
 
 const EMPTY_FORM = {
     name: '',
-    owner_id: '',
     due_date: '',
     description: '',
 }
@@ -16,25 +15,48 @@ function buildInitialForm(portfolio) {
     if (!portfolio) return EMPTY_FORM
     return {
         name: portfolio.name || '',
-        owner_id: portfolio.owner_id || portfolio.owner?.sys_id || '',
         due_date: portfolio.due_date || '',
         description: portfolio.description || '',
     }
 }
 
-function buildPayload(form, workspaceId) {
+function buildInitialMembers(portfolio) {
+    if (Array.isArray(portfolio?.members) && portfolio.members.length) {
+        return portfolio.members
+    }
+    const ownerId = portfolio?.owner_id || portfolio?.owner?.sys_id
+    if (ownerId) {
+        return [
+            {
+                user_id: ownerId,
+                role: 'owner',
+                user: portfolio.owner || null,
+            },
+        ]
+    }
+    return []
+}
+
+function buildPayload(form, members, workspaceId) {
     const payload = { name: form.name.trim() }
     if (workspaceId) payload.workspace_id = workspaceId
-    if (form.owner_id) payload.owner_id = form.owner_id
     if (form.due_date) payload.due_date = form.due_date
     if (form.description.trim()) payload.description = form.description.trim()
+
+    const memberPayload = membersToPayload(members)
+    payload.members = memberPayload
+    const ownerId = primaryOwnerId(members)
+    if (ownerId) {
+        payload.owner_id = ownerId
+    }
+
     return payload
 }
 
 export default function PortfolioForm({ mode = 'create', portfolio, workspaceId, onClose, onSaved }) {
     const isEdit = mode === 'edit'
     const [form, setForm] = useState(() => buildInitialForm(portfolio))
-    const [owner, setOwner] = useState(portfolio?.owner || null)
+    const [members, setMembers] = useState(() => buildInitialMembers(portfolio))
 
     const createMutation = useCreatePortfolio()
     const updateMutation = useUpdatePortfolio(portfolio?.sys_id)
@@ -48,7 +70,7 @@ export default function PortfolioForm({ mode = 'create', portfolio, workspaceId,
         event.preventDefault()
         if (!form.name.trim()) return
 
-        const payload = buildPayload(form, workspaceId || portfolio?.workspace_id)
+        const payload = buildPayload(form, members, workspaceId || portfolio?.workspace_id)
         const saved = await mutation.mutateAsync(payload)
         onSaved?.(saved)
         onClose?.()
@@ -73,18 +95,7 @@ export default function PortfolioForm({ mode = 'create', portfolio, workspaceId,
                     />
                 </label>
 
-                <label htmlFor="portfolio-owner">
-                    Owner
-                    <UserPicker
-                        id="portfolio-owner"
-                        value={form.owner_id}
-                        selectedUser={owner}
-                        onChange={(ownerId, user) => {
-                            setField('owner_id', ownerId)
-                            setOwner(user)
-                        }}
-                    />
-                </label>
+                <MembersEditor members={members} onChange={setMembers} disabled={mutation.isPending} />
 
                 <label htmlFor="portfolio-due-date">
                     Due date

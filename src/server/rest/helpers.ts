@@ -2,6 +2,7 @@
 import { gs } from '@servicenow/glide'
 import {
     CapacityService,
+    MemberService,
     PortfolioService,
     ProjectTaskService,
     UserService,
@@ -126,6 +127,12 @@ export function capacityService() {
 export function userService() {
     return safeService('UserService', function () {
         return new UserService()
+    })
+}
+
+export function memberService() {
+    return safeService('MemberService', function () {
+        return new MemberService()
     })
 }
 

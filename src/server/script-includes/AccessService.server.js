@@ -2,7 +2,7 @@ var AccessService = Class.create();
 AccessService.prototype = {
     initialize: function () {},
 
-    _hasRole: function (projectId, userId, roles) {
+    _hasProjectRole: function (projectId, userId, roles) {
         if (!projectId || !userId) {
             return false;
         }
@@ -15,19 +15,35 @@ AccessService.prototype = {
         return gr.hasNext();
     },
 
+    _hasPortfolioRole: function (portfolioId, userId, roles) {
+        if (!portfolioId || !userId) {
+            return false;
+        }
+        var gr = new GlideRecord('x_gzi_zflow_portfolio_member');
+        if (!gr.isValid()) {
+            return false;
+        }
+        gr.addQuery('portfolio_id', portfolioId);
+        gr.addQuery('user_id', userId);
+        gr.addQuery('role', 'IN', roles.join(','));
+        gr.setLimit(1);
+        gr.query();
+        return gr.hasNext();
+    },
+
     canReadProject: function (projectId, userId) {
         userId = userId || gs.getUserID();
-        return this._hasRole(projectId, userId, ['owner', 'editor', 'commenter', 'viewer']);
+        return this._hasProjectRole(projectId, userId, ['owner', 'editor', 'commenter', 'viewer']);
     },
 
     canWriteProject: function (projectId, userId) {
         userId = userId || gs.getUserID();
-        return this._hasRole(projectId, userId, ['owner', 'editor']);
+        return this._hasProjectRole(projectId, userId, ['owner', 'editor']);
     },
 
     canManageProject: function (projectId, userId) {
         userId = userId || gs.getUserID();
-        return this._hasRole(projectId, userId, ['owner']);
+        return this._hasProjectRole(projectId, userId, ['owner']);
     },
 
     canReadPortfolio: function (portfolioId, userId) {
@@ -35,6 +51,10 @@ AccessService.prototype = {
         if (!portfolioId) {
             return false;
         }
+        if (this._hasPortfolioRole(portfolioId, userId, ['owner', 'editor', 'commenter', 'viewer'])) {
+            return true;
+        }
+        // Fallback: membership on any linked project still grants portfolio read
         var pp = new GlideRecord('x_gzi_zflow_portfolio_project');
         pp.addQuery('portfolio_id', portfolioId);
         pp.query();
@@ -44,6 +64,16 @@ AccessService.prototype = {
             }
         }
         return false;
+    },
+
+    canWritePortfolio: function (portfolioId, userId) {
+        userId = userId || gs.getUserID();
+        return this._hasPortfolioRole(portfolioId, userId, ['owner', 'editor']);
+    },
+
+    canManagePortfolio: function (portfolioId, userId) {
+        userId = userId || gs.getUserID();
+        return this._hasPortfolioRole(portfolioId, userId, ['owner']);
     },
 
     type: 'AccessService',

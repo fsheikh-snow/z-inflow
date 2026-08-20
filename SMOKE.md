@@ -36,6 +36,13 @@ Smoke hits (auth = same now-sdk keychain as deploy):
 - `GET /api/x_gzi_zflow/v1/users/search?q=a`
 - `GET /x_gzi_zflow_workspace.do` — fails on HTTP 5xx or body text `PM Workspace failed`
 
+After creating a project/portfolio, optionally verify members:
+
+- `GET /api/x_gzi_zflow/v1/projects/{id}/members`
+- `GET /api/x_gzi_zflow/v1/portfolios/{id}/members`
+
+(`POST/PATCH/DELETE …/members` are available; smoke list endpoints stay read-only.)
+
 Any **5xx** (or auth/hard failure) → exit code **1** and a PASS/FAIL table with status + body snippet.
 
 `npm run smoke` / `npm run ship` first run **`npm run audit:modules`** so extensionless relative imports and illegal `new x_gzi_zflow.*` in ES modules fail before hitting the instance.

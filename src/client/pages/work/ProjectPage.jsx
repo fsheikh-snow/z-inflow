@@ -75,7 +75,7 @@ export default function ProjectPage() {
                     />
                 )
             case 'settings':
-                return <ProjectSettings project={project} members={board?.members || []} />
+                return <ProjectSettings project={project} />
             default:
                 return null
         }

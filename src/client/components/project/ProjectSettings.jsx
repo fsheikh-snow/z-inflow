@@ -1,10 +1,23 @@
 import React, { useState } from 'react'
 import UserChip from '../shared/UserChip'
+import MembersEditor from '../shared/MembersEditor'
 import ProjectForm from './ProjectForm'
+import {
+    useProjectMembers,
+    useAddProjectMember,
+    useUpdateProjectMember,
+    useRemoveProjectMember,
+} from '../../services/hooks'
 import './project.css'
 
-export default function ProjectSettings({ project, members = [] }) {
+export default function ProjectSettings({ project }) {
     const [showEdit, setShowEdit] = useState(false)
+    const projectId = project?.sys_id
+    const { data: members = [], isLoading: membersLoading } = useProjectMembers(projectId)
+    const addMember = useAddProjectMember(projectId)
+    const updateMember = useUpdateProjectMember(projectId)
+    const removeMember = useRemoveProjectMember(projectId)
+    const busy = addMember.isPending || updateMember.isPending || removeMember.isPending
 
     return (
         <div className="project-settings">
@@ -25,7 +38,7 @@ export default function ProjectSettings({ project, members = [] }) {
                         <dd>{project?.project_key || '—'}</dd>
                     </div>
                     <div className="settings-field">
-                        <dt>Owner</dt>
+                        <dt>Primary owner</dt>
                         <dd>
                             <UserChip user={project?.owner} />
                         </dd>
@@ -50,18 +63,28 @@ export default function ProjectSettings({ project, members = [] }) {
             </section>
 
             <section className="settings-section">
-                <h3>Members</h3>
-                {members.length === 0 ? (
-                    <p className="settings-empty">No members configured.</p>
+                <h3>Share / Members</h3>
+                {membersLoading ? (
+                    <p className="settings-empty">Loading members…</p>
                 ) : (
-                    <ul className="settings-members">
-                        {members.map((m) => (
-                            <li key={m.sys_id}>
-                                <UserChip user={m.user || m} />
-                                <span className="member-role">{m.role || 'Member'}</span>
-                            </li>
-                        ))}
-                    </ul>
+                    <MembersEditor
+                        title=""
+                        hint="People with access to this project. Multiple owners are allowed."
+                        members={members}
+                        liveMode
+                        disabled={busy}
+                        onAdd={async (entry) => {
+                            await addMember.mutateAsync({ user_id: entry.user_id, role: entry.role })
+                        }}
+                        onRoleChange={async (member, role) => {
+                            if (!member?.sys_id) return
+                            await updateMember.mutateAsync({ memberId: member.sys_id, role })
+                        }}
+                        onRemove={async (member) => {
+                            if (!member?.sys_id) return
+                            await removeMember.mutateAsync(member.sys_id)
+                        }}
+                    />
                 )}
             </section>
 
@@ -74,7 +97,12 @@ export default function ProjectSettings({ project, members = [] }) {
             </section>
 
             {showEdit && (
-                <ProjectForm mode="edit" project={project} onClose={() => setShowEdit(false)} onSaved={() => setShowEdit(false)} />
+                <ProjectForm
+                    mode="edit"
+                    project={{ ...project, members }}
+                    onClose={() => setShowEdit(false)}
+                    onSaved={() => setShowEdit(false)}
+                />
             )}
         </div>
     )

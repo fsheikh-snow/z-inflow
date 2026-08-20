@@ -61,4 +61,28 @@ export const portfolioService = {
             method: 'DELETE',
         })
     },
+
+    listMembers(portfolioId) {
+        return apiRequest(`/portfolios/${portfolioId}/members`)
+    },
+
+    addMember(portfolioId, data) {
+        return apiRequest(`/portfolios/${portfolioId}/members`, {
+            method: 'POST',
+            body: JSON.stringify(data),
+        })
+    },
+
+    updateMember(portfolioId, memberId, data) {
+        return apiRequest(`/portfolios/${portfolioId}/members/${memberId}`, {
+            method: 'PATCH',
+            body: JSON.stringify(data),
+        })
+    },
+
+    removeMember(portfolioId, memberId) {
+        return apiRequest(`/portfolios/${portfolioId}/members/${memberId}`, {
+            method: 'DELETE',
+        })
+    },
 }

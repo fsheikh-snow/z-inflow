@@ -2,6 +2,7 @@ import React, { useRef, useMemo } from 'react'
 import { useVirtualizer } from '@tanstack/react-virtual'
 import TimelineHeader from './TimelineHeader'
 import './gantt.css'
+import '../shared/members.css'
 
 const PRIORITY_COLORS = {
     high: '#ef4444',
@@ -45,6 +46,19 @@ export default function VirtualizedGantt({ mode = 'project', items = [], startDa
 
     if (loading) {
         return <div className="gantt-loading">Loading timeline…</div>
+    }
+
+    if (!items.length) {
+        const entity = mode === 'task' ? 'tasks' : 'projects'
+        return (
+            <div className="gantt-empty empty-state">
+                <p>No {entity} with dates to show on the timeline.</p>
+                <p className="gantt-empty-hint">
+                    Add {entity} and set start/due dates to populate this view. Empty timelines are expected when the
+                    portfolio or project has no dated work yet.
+                </p>
+            </div>
+        )
     }
 
     return (

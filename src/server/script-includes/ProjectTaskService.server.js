@@ -24,6 +24,13 @@ ProjectTaskService.prototype = {
         return this.__viewData;
     },
 
+    _members: function () {
+        if (!this.__members) {
+            this.__members = new x_gzi_zflow.MemberService();
+        }
+        return this.__members;
+    },
+
     _serializeProject: function (gr) {
         return {
             sys_id: gr.getUniqueValue(),
@@ -103,6 +110,7 @@ ProjectTaskService.prototype = {
             project.team = groupMap[project.assignment_group] || null;
             project.assignment_group_name = project.team ? project.team.name : '';
         }
+        project.members = this._members().listMembers('project', projectId);
         return project;
     },
 
@@ -148,6 +156,47 @@ ProjectTaskService.prototype = {
         return '';
     },
 
+    /**
+     * Auto-generate a short project key from the name (e.g. "Launch Portal" → "LAU").
+     * Falls back to PIT-### sequence when slug would be empty/collision.
+     */
+    _generateProjectKey: function (name) {
+        var slug = String(name || '')
+            .replace(/[^A-Za-z0-9]+/g, ' ')
+            .trim()
+            .toUpperCase();
+        var words = slug ? slug.split(/\s+/) : [];
+        var base = '';
+        if (words.length >= 2) {
+            base = words
+                .slice(0, 3)
+                .map(function (w) {
+                    return w.charAt(0);
+                })
+                .join('');
+        } else if (words.length === 1) {
+            base = words[0].substring(0, 3);
+        }
+        if (!base || base.length < 2) {
+            base = 'PIT';
+        }
+
+        var candidate = base;
+        var n = 1;
+        while (n < 1000) {
+            var check = new GlideRecord('x_gzi_zflow_project');
+            check.addQuery('project_key', candidate);
+            check.setLimit(1);
+            check.query();
+            if (!check.hasNext()) {
+                return candidate;
+            }
+            n++;
+            candidate = base + '-' + n;
+        }
+        return base + '-' + new GlideDateTime().getNumericValue();
+    },
+
     createProject: function (data) {
         var name = String(data.name || '').trim();
         var workspaceId = this._resolveWorkspaceId(String(data.workspace_id || ''));
@@ -170,7 +219,13 @@ ProjectTaskService.prototype = {
         gr.setValue('workspace_id', workspaceId);
         gr.setValue('assignment_group', assignmentGroup);
 
-        var optionalFields = ['owner_id', 'status', 'priority', 'start_date', 'due_date', 'notes', 'description', 'project_key'];
+        var projectKey = String(data.project_key || '').trim();
+        if (!projectKey) {
+            projectKey = this._generateProjectKey(name);
+        }
+        gr.setValue('project_key', projectKey);
+
+        var optionalFields = ['owner_id', 'status', 'priority', 'start_date', 'due_date', 'notes', 'description'];
         for (var i = 0; i < optionalFields.length; i++) {
             var field = optionalFields[i];
             if (data[field] !== undefined && data[field] !== null && String(data[field]) !== '') {
@@ -189,6 +244,7 @@ ProjectTaskService.prototype = {
             portfolioService.linkProject(portfolioId, sysId);
         }
 
+        this._members().seedMembers('project', sysId, data);
         return this.getProject(sysId);
     },
 
@@ -217,6 +273,11 @@ ProjectTaskService.prototype = {
             }
         }
         gr.update();
+
+        if (data.members !== undefined) {
+            this._members().setMembers('project', projectId, data.members);
+        }
+
         return this.getProject(projectId);
     },
 
@@ -323,7 +384,10 @@ ProjectTaskService.prototype = {
             var target = columnById[sectionId] || unsectioned;
             target.tasks.push(this._serializeTask(task, pt));
         }
-        return { columns: columns, members: [] };
+        return {
+            columns: columns,
+            members: this._members().listMembers('project', projectId),
+        };
     },
 
     getProjectTasks: function (projectId) {

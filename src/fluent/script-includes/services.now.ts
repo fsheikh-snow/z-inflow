@@ -5,7 +5,15 @@ export const AccessService = ScriptInclude({
     $id: Now.ID['access-service'],
     name: 'AccessService',
     script: Now.include('../../server/script-includes/AccessService.server.js'),
-    description: 'Project and portfolio access checks via PROJECT_MEMBER roles',
+    description: 'Project and portfolio access checks via PROJECT_MEMBER / PORTFOLIO_MEMBER roles',
+    accessibleFrom: 'package_private',
+})
+
+export const MemberService = ScriptInclude({
+    $id: Now.ID['member-service'],
+    name: 'MemberService',
+    script: Now.include('../../server/script-includes/MemberService.server.js'),
+    description: 'Project and portfolio member CRUD with role sync to owner_id',
     accessibleFrom: 'package_private',
 })
 

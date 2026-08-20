@@ -4,6 +4,18 @@ declare module '@servicenow/glide/x_gzi_zflow' {
         canWriteProject(projectId: string, userId?: string): boolean
         canManageProject(projectId: string, userId?: string): boolean
         canReadPortfolio(portfolioId: string, userId?: string): boolean
+        canWritePortfolio(portfolioId: string, userId?: string): boolean
+        canManagePortfolio(portfolioId: string, userId?: string): boolean
+    }
+
+    export class MemberService {
+        listMembers(entityType: string, entityId: string): unknown[]
+        getMember(entityType: string, memberId: string): Record<string, unknown> | null
+        addMember(entityType: string, entityId: string, data: Record<string, unknown>): Record<string, unknown> | null
+        updateMember(entityType: string, memberId: string, data: Record<string, unknown>): Record<string, unknown> | null
+        removeMember(entityType: string, memberId: string): boolean
+        setMembers(entityType: string, entityId: string, members: unknown[]): unknown[]
+        seedMembers(entityType: string, entityId: string, data: Record<string, unknown>): unknown[]
     }
 
     export class UserService {

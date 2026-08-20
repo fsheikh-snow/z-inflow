@@ -19,6 +19,8 @@ export const queryKeys = {
     projectBoard: (id) => ['projects', id, 'board'],
     projectTasks: (id) => ['projects', id, 'tasks'],
     projectPortfolios: (id) => ['projects', id, 'portfolios'],
+    projectMembers: (id) => ['projects', id, 'members'],
+    portfolioMembers: (id) => ['portfolios', id, 'members'],
     capacityPlans: ['capacity', 'plans'],
     capacityGrid: (id) => ['capacity', 'plans', id, 'grid'],
     customFields: ['custom-fields'],
@@ -145,6 +147,8 @@ export function useUpdateProject(projectId) {
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: queryKeys.project(projectId) })
             queryClient.invalidateQueries({ queryKey: queryKeys.projects })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectMembers(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
         },
     })
 }
@@ -166,6 +170,98 @@ export function useUpdatePortfolio(portfolioId) {
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: queryKeys.portfolio(portfolioId) })
             queryClient.invalidateQueries({ queryKey: queryKeys.portfolios })
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolioMembers(portfolioId) })
+        },
+    })
+}
+
+export function useProjectMembers(projectId) {
+    return useQuery({
+        queryKey: queryKeys.projectMembers(projectId),
+        queryFn: async () => {
+            const data = await projectService.listMembers(projectId)
+            return Array.isArray(data) ? data : []
+        },
+        enabled: Boolean(projectId),
+    })
+}
+
+export function useAddProjectMember(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (data) => projectService.addMember(projectId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectMembers(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.project(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+        },
+    })
+}
+
+export function useUpdateProjectMember(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: ({ memberId, ...data }) => projectService.updateMember(projectId, memberId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectMembers(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.project(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+        },
+    })
+}
+
+export function useRemoveProjectMember(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (memberId) => projectService.removeMember(projectId, memberId),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectMembers(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.project(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+        },
+    })
+}
+
+export function usePortfolioMembers(portfolioId) {
+    return useQuery({
+        queryKey: queryKeys.portfolioMembers(portfolioId),
+        queryFn: async () => {
+            const data = await portfolioService.listMembers(portfolioId)
+            return Array.isArray(data) ? data : []
+        },
+        enabled: Boolean(portfolioId),
+    })
+}
+
+export function useAddPortfolioMember(portfolioId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (data) => portfolioService.addMember(portfolioId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolioMembers(portfolioId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolio(portfolioId) })
+        },
+    })
+}
+
+export function useUpdatePortfolioMember(portfolioId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: ({ memberId, ...data }) => portfolioService.updateMember(portfolioId, memberId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolioMembers(portfolioId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolio(portfolioId) })
+        },
+    })
+}
+
+export function useRemovePortfolioMember(portfolioId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (memberId) => portfolioService.removeMember(portfolioId, memberId),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolioMembers(portfolioId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.portfolio(portfolioId) })
         },
     })
 }

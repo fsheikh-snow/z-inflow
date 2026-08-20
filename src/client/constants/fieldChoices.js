@@ -35,3 +35,10 @@ export const TASK_TYPE_CHOICES = [
     { value: 'milestone', label: 'Milestone' },
     { value: 'approval', label: 'Approval' },
 ]
+
+export const MEMBER_ROLE_CHOICES = [
+    { value: 'owner', label: 'Owner' },
+    { value: 'editor', label: 'Editor' },
+    { value: 'commenter', label: 'Commenter' },
+    { value: 'viewer', label: 'Viewer' },
+]

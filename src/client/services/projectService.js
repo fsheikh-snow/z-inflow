@@ -50,6 +50,30 @@ export const projectService = {
         return apiRequest(`/projects/${projectId}/portfolios`)
     },
 
+    listMembers(projectId) {
+        return apiRequest(`/projects/${projectId}/members`)
+    },
+
+    addMember(projectId, data) {
+        return apiRequest(`/projects/${projectId}/members`, {
+            method: 'POST',
+            body: JSON.stringify(data),
+        })
+    },
+
+    updateMember(projectId, memberId, data) {
+        return apiRequest(`/projects/${projectId}/members/${memberId}`, {
+            method: 'PATCH',
+            body: JSON.stringify(data),
+        })
+    },
+
+    removeMember(projectId, memberId) {
+        return apiRequest(`/projects/${projectId}/members/${memberId}`, {
+            method: 'DELETE',
+        })
+    },
+
     updateTask(taskId, data) {
         return apiRequest(`/tasks/${taskId}`, {
             method: 'PATCH',

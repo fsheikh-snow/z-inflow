@@ -25,6 +25,13 @@ PortfolioService.prototype = {
         return this.__userService;
     },
 
+    _members: function () {
+        if (!this.__members) {
+            this.__members = new x_gzi_zflow.MemberService();
+        }
+        return this.__members;
+    },
+
     _serializePortfolio: function (gr) {
         return {
             sys_id: gr.getUniqueValue(),
@@ -70,6 +77,7 @@ PortfolioService.prototype = {
             var ownerMap = this._userService().getUsersByIds([portfolio.owner_id]);
             portfolio.owner = ownerMap[portfolio.owner_id] || null;
         }
+        portfolio.members = this._members().listMembers('portfolio', portfolioId);
         return portfolio;
     },
 
@@ -114,6 +122,7 @@ PortfolioService.prototype = {
         if (!sysId) {
             return null;
         }
+        this._members().seedMembers('portfolio', sysId, data);
         return this.getPortfolio(sysId);
     },
 
@@ -131,6 +140,11 @@ PortfolioService.prototype = {
             }
         }
         gr.update();
+
+        if (data.members !== undefined) {
+            this._members().setMembers('portfolio', portfolioId, data.members);
+        }
+
         return this.getPortfolio(portfolioId);
     },
 

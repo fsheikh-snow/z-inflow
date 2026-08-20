@@ -47,6 +47,16 @@ import {
     getTeamMembers,
 } from '../../server/rest/capacity-routes'
 import { listAutomations, listIntakeForms } from '../../server/rest/config-routes'
+import {
+    listProjectMembers,
+    addProjectMember,
+    updateProjectMember,
+    removeProjectMember,
+    listPortfolioMembers,
+    addPortfolioMember,
+    updatePortfolioMember,
+    removePortfolioMember,
+} from '../../server/rest/member-routes'
 
 RestApi({
     $id: Now.ID['z-inflow-rest-api'],
@@ -74,6 +84,14 @@ RestApi({
         { $id: Now.ID['route-projects-post'], name: 'Create Project', method: 'POST', path: '/projects', script: createProject },
         { $id: Now.ID['route-project-get'], name: 'Get Project', method: 'GET', path: '/projects/{id}', script: getProject },
         { $id: Now.ID['route-project-patch'], name: 'Update Project', method: 'PATCH', path: '/projects/{id}', script: updateProject },
+        { $id: Now.ID['route-project-members-get'], name: 'List Project Members', method: 'GET', path: '/projects/{id}/members', script: listProjectMembers },
+        { $id: Now.ID['route-project-members-post'], name: 'Add Project Member', method: 'POST', path: '/projects/{id}/members', script: addProjectMember },
+        { $id: Now.ID['route-project-member-patch'], name: 'Update Project Member', method: 'PATCH', path: '/projects/{id}/members/{memberId}', script: updateProjectMember },
+        { $id: Now.ID['route-project-member-delete'], name: 'Remove Project Member', method: 'DELETE', path: '/projects/{id}/members/{memberId}', script: removeProjectMember },
+        { $id: Now.ID['route-portfolio-members-get'], name: 'List Portfolio Members', method: 'GET', path: '/portfolios/{id}/members', script: listPortfolioMembers },
+        { $id: Now.ID['route-portfolio-members-post'], name: 'Add Portfolio Member', method: 'POST', path: '/portfolios/{id}/members', script: addPortfolioMember },
+        { $id: Now.ID['route-portfolio-member-patch'], name: 'Update Portfolio Member', method: 'PATCH', path: '/portfolios/{id}/members/{memberId}', script: updatePortfolioMember },
+        { $id: Now.ID['route-portfolio-member-delete'], name: 'Remove Portfolio Member', method: 'DELETE', path: '/portfolios/{id}/members/{memberId}', script: removePortfolioMember },
         { $id: Now.ID['route-project-sections-get'], name: 'Project Sections', method: 'GET', path: '/projects/{id}/sections', script: getProjectSections },
         { $id: Now.ID['route-project-board-get'], name: 'Project Board', method: 'GET', path: '/projects/{id}/board', script: getProjectBoard },
         { $id: Now.ID['route-project-board-patch'], name: 'Reorder Board', method: 'PATCH', path: '/projects/{id}/board', script: reorderBoard },

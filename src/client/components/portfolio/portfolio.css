@@ -290,6 +290,19 @@
     font-style: italic;
 }
 
+.about-members {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.about-members-title {
+    margin: 0 0 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
 .about-empty {
     color: #94a3b8;
     font-style: italic;

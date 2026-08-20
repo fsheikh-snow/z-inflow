@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import UserPicker from '../fields/UserPicker'
 import GroupPicker from '../fields/GroupPicker'
 import ChoiceSelect from '../fields/ChoiceSelect'
 import DateField from '../fields/DateField'
+import MembersEditor, { membersToPayload, primaryOwnerId } from '../shared/MembersEditor'
 import { PROJECT_PRIORITY_CHOICES, PROJECT_STATUS_CHOICES } from '../../constants/fieldChoices'
 import { useCreateProject, useUpdateProject } from '../../services/hooks'
 import '../../components/rules/rules.css'
@@ -11,7 +11,6 @@ import './project.css'
 const EMPTY_FORM = {
     name: '',
     project_key: '',
-    owner_id: '',
     assignment_group: '',
     status: '',
     priority: '',
@@ -25,7 +24,6 @@ function buildInitialForm(project) {
     return {
         name: project.name || '',
         project_key: project.project_key || '',
-        owner_id: project.owner_id || project.owner?.sys_id || '',
         assignment_group: project.assignment_group || project.team?.sys_id || '',
         status: project.status || '',
         priority: project.priority || '',
@@ -35,35 +33,51 @@ function buildInitialForm(project) {
     }
 }
 
-function buildPayload(form, { workspaceId, portfolioId } = {}) {
+function buildInitialMembers(project) {
+    if (Array.isArray(project?.members) && project.members.length) {
+        return project.members
+    }
+    const ownerId = project?.owner_id || project?.owner?.sys_id
+    if (ownerId) {
+        return [
+            {
+                user_id: ownerId,
+                role: 'owner',
+                user: project.owner || null,
+            },
+        ]
+    }
+    return []
+}
+
+function buildPayload(form, members, { workspaceId, portfolioId } = {}) {
     const payload = { name: form.name.trim() }
     if (workspaceId) payload.workspace_id = workspaceId
-    // portfolio_id is optional — omit for standalone projects
     if (portfolioId) payload.portfolio_id = portfolioId
 
-    const optionalFields = [
-        'project_key',
-        'owner_id',
-        'assignment_group',
-        'status',
-        'priority',
-        'start_date',
-        'due_date',
-        'notes',
-    ]
+    const optionalFields = ['project_key', 'assignment_group', 'status', 'priority', 'start_date', 'due_date', 'notes']
     for (const field of optionalFields) {
         if (form[field]) {
             payload[field] = form[field]
         }
     }
+
+    const memberPayload = membersToPayload(members)
+    payload.members = memberPayload
+    const ownerId = primaryOwnerId(members)
+    if (ownerId) {
+        payload.owner_id = ownerId
+    }
+
     return payload
 }
 
 export default function ProjectForm({ mode = 'create', project, portfolio, workspaceId, onClose, onSaved }) {
     const isEdit = mode === 'edit'
     const [form, setForm] = useState(() => buildInitialForm(project))
-    const [owner, setOwner] = useState(project?.owner || null)
+    const [members, setMembers] = useState(() => buildInitialMembers(project))
     const [team, setTeam] = useState(project?.team || project?.assignment_group_obj || null)
+    const [showAdvanced, setShowAdvanced] = useState(Boolean(project?.project_key))
 
     const createMutation = useCreateProject(portfolio?.sys_id)
     const updateMutation = useUpdateProject(project?.sys_id)
@@ -81,8 +95,8 @@ export default function ProjectForm({ mode = 'create', project, portfolio, works
             workspaceId || portfolio?.workspace_id || project?.workspace_id || undefined
 
         const payload = isEdit
-            ? buildPayload(form)
-            : buildPayload(form, {
+            ? buildPayload(form, members)
+            : buildPayload(form, members, {
                   workspaceId: resolvedWorkspace,
                   portfolioId: portfolio?.sys_id,
               })
@@ -111,30 +125,7 @@ export default function ProjectForm({ mode = 'create', project, portfolio, works
                     />
                 </label>
 
-                <label htmlFor="project-key">
-                    Project key
-                    <input
-                        id="project-key"
-                        type="text"
-                        className="field-control"
-                        value={form.project_key}
-                        onChange={(e) => setField('project_key', e.target.value)}
-                        placeholder="Optional key"
-                    />
-                </label>
-
-                <label htmlFor="project-owner">
-                    Owner
-                    <UserPicker
-                        id="project-owner"
-                        value={form.owner_id}
-                        selectedUser={owner}
-                        onChange={(ownerId, user) => {
-                            setField('owner_id', ownerId)
-                            setOwner(user)
-                        }}
-                    />
-                </label>
+                <MembersEditor members={members} onChange={setMembers} disabled={mutation.isPending} />
 
                 <label htmlFor="project-team">
                     Team
@@ -198,6 +189,29 @@ export default function ProjectForm({ mode = 'create', project, portfolio, works
                         placeholder="Optional notes"
                     />
                 </label>
+
+                <button
+                    type="button"
+                    className="btn btn-ghost project-advanced-toggle"
+                    onClick={() => setShowAdvanced((v) => !v)}
+                >
+                    {showAdvanced ? 'Hide advanced' : 'Advanced options'}
+                </button>
+
+                {showAdvanced && (
+                    <label htmlFor="project-key">
+                        Project key
+                        <input
+                            id="project-key"
+                            type="text"
+                            className="field-control"
+                            value={form.project_key}
+                            onChange={(e) => setField('project_key', e.target.value)}
+                            placeholder={isEdit ? 'Override key' : 'Auto-generated if blank'}
+                        />
+                        <span className="field-hint">Leave blank on create to auto-generate from the project name.</span>
+                    </label>
+                )}
 
                 {mutation.isError && (
                     <p className="project-create-error">

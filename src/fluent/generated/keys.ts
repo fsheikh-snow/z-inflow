@@ -29,6 +29,10 @@ declare global {
                         table: 'sys_app_info'
                         id: 'f823ce3133ba07509937d1382e5c7bfa'
                     }
+                    'member-service': {
+                        table: 'sys_script_include'
+                        id: 'a4525a9317c142d99178ffab73fb16d8'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: '9e1a9cf0e1f24986a1af1b57dc9439e1'
@@ -93,6 +97,22 @@ declare global {
                         table: 'sys_ws_operation'
                         id: '4af1aa4c77134adf975c04ec71302a9b'
                     }
+                    'route-portfolio-member-delete': {
+                        table: 'sys_ws_operation'
+                        id: '1e7a23a6e35b4a7cb6c56e99c28e24ff'
+                    }
+                    'route-portfolio-member-patch': {
+                        table: 'sys_ws_operation'
+                        id: '79caf851235244bdaca7074a24f07ded'
+                    }
+                    'route-portfolio-members-get': {
+                        table: 'sys_ws_operation'
+                        id: '01f109016c6c48c88ed2492081eac0f9'
+                    }
+                    'route-portfolio-members-post': {
+                        table: 'sys_ws_operation'
+                        id: '13623f850e714f89aee5feeb9b989556'
+                    }
                     'route-portfolio-patch': {
                         table: 'sys_ws_operation'
                         id: '82d88f86f7b34a4784ce182854a5e134'
@@ -144,6 +164,22 @@ declare global {
                     'route-project-get': {
                         table: 'sys_ws_operation'
                         id: '924ba6cb6433418cbe5224958b038b21'
+                    }
+                    'route-project-member-delete': {
+                        table: 'sys_ws_operation'
+                        id: '612fdcd2eb9e462db5bb3e789105cb68'
+                    }
+                    'route-project-member-patch': {
+                        table: 'sys_ws_operation'
+                        id: 'a38b57bb57394709870ecfdd1c877e1d'
+                    }
+                    'route-project-members-get': {
+                        table: 'sys_ws_operation'
+                        id: '015c85d385c34ac0800b2c0e9213893a'
+                    }
+                    'route-project-members-post': {
+                        table: 'sys_ws_operation'
+                        id: '74936f11d89943beb14e54d03905129c'
                     }
                     'route-project-patch': {
                         table: 'sys_ws_operation'
@@ -221,6 +257,10 @@ declare global {
                         table: 'sys_module'
                         id: '634584b0d581430b8124d18e299b0120'
                     }
+                    'src_server_rest_member-routes_ts': {
+                        table: 'sys_module'
+                        id: '444db5cea7b84e488d3e688c78c3fa7b'
+                    }
                     'src_server_rest_portfolio-routes_ts': {
                         table: 'sys_module'
                         id: '22af65307a3d4da1a442be0292a50abe'
@@ -240,6 +280,10 @@ declare global {
                     'src_server_script-includes_CapacityService_server_js': {
                         table: 'sys_module'
                         id: '3bba0f50b8a947268d4c4991890b74eb'
+                    }
+                    'src_server_script-includes_MemberService_server_js': {
+                        table: 'sys_module'
+                        id: 'e546befa87574cc2b415af5799ecbe20'
                     }
                     'src_server_script-includes_PortfolioService_server_js': {
                         table: 'sys_module'
@@ -341,6 +385,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '04ed1c659a4b42fd8b08a9a5004f5aa7'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'user_id'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '05d24bfad31d444bb95ca182705dceeb'
                         key: {
@@ -373,6 +425,13 @@ declare global {
                             name: 'x_gzi_zflow_portfolio_project'
                             element: 'order_index'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '06d977b9a6bb42ebb642ed1025c51360'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
                         }
                     },
                     {
@@ -678,6 +737,17 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_task'
                             element: 'description'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '1374a928566547d283c09ffe198b742b'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'role'
+                            value: 'viewer'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1657,6 +1727,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: '417a1eebe1dc404194a1bfe03414458c'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'role'
+                        }
+                    },
+                    {
                         table: 'sys_index'
                         id: '421329d7e8d746d882e55e7ca1633058'
                         deleted: true
@@ -1816,6 +1894,14 @@ declare global {
                         key: {
                             logical_table_name: 'x_gzi_zflow_project'
                             col_name_string: 'assignment_group'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '4b91f53979b54b4f8adf7108ffabf242'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'NULL'
                         }
                     },
                     {
@@ -2417,6 +2503,26 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '6c3f0dcfe89447669a256cf3914668b7'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'role'
+                            value: 'editor'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '6c9565723b714ad191ff4b01ccbe264f'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'portfolio_id'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '6cb76cb6222144eb8c6837f40a28d709'
                         key: {
@@ -2431,6 +2537,17 @@ declare global {
                             name: 'x_gzi_zflow_task'
                             element: 'task_type'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '6d4d042a9ed4426f8134be848e25cf6d'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'role'
+                            value: 'commenter'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -2819,6 +2936,15 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: '8594057db13042b6bde59176298eb374'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: '85d45679d48d4f57b0390942dd276bda'
                         key: {
                             name: 'x_gzi_zflow_proj_res_alloc'
@@ -2893,6 +3019,14 @@ declare global {
                         id: '8b2386927b8a40f48c4fdb7cfda8884e'
                         key: {
                             name: 'x_gzi_zflow_custom_field_value'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '8b23d5ac42084027bec594284ef1d425'
+                        key: {
+                            logical_table_name: 'x_gzi_zflow_portfolio_member'
+                            col_name_string: 'portfolio_id,user_id'
                         }
                     },
                     {
@@ -3243,6 +3377,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '98e6b303356a4d1bb1fd6aa2b2ff94ad'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'role'
+                        }
+                    },
+                    {
                         table: 'sys_index'
                         id: '997ad07780b344a3bcd708d50511033d'
                         deleted: true
@@ -3544,6 +3686,15 @@ declare global {
                         deleted: false
                         key: {
                             name: 'x_gzi_zflow/vendor-react-dom--d9c8d218'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a7c03fd0abcd419e9dd9878d5edd6265'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'user_id'
+                            language: 'en'
                         }
                     },
                     {
@@ -3875,6 +4026,13 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_custom_field_def'
                             element: 'type'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'b705d50b27624fee9040b958ec946991'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
                         }
                     },
                     {
@@ -4282,6 +4440,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'ccbfb2c155664e31ab6288ae8ef3f835'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'portfolio_id'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'cd340fb3551f4a0494fa6575f9082a4e'
                         key: {
@@ -4472,6 +4638,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'd36c24c3c71546c4a7d524e38d0c3990'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'role'
+                            value: 'owner'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: 'd67048ce571c47deac36af9afcfefe47'
                         key: {
@@ -4604,6 +4781,15 @@ declare global {
                         key: {
                             name: 'x_gzi_zflow_proj_res_alloc'
                             element: 'allocation_percentage'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'dfe72d1f224844b4849e78ea4598fe95'
+                        key: {
+                            name: 'x_gzi_zflow_portfolio_member'
+                            element: 'role'
+                            language: 'en'
                         }
                     },
                     {

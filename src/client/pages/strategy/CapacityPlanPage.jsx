@@ -42,9 +42,20 @@ export default function CapacityPlanPage() {
 
                 {isLoading ? (
                     <p className="portfolio-loading">Loading capacity grid…</p>
+                ) : !activePlan ? (
+                    <div className="empty-state">
+                        <p>No capacity plan yet.</p>
+                        <p className="gantt-empty-hint">
+                            Create a capacity plan record (with people/project allocations) to use this view. With zero
+                            plans the page stays empty by design.
+                        </p>
+                    </div>
                 ) : rows.length === 0 ? (
                     <div className="empty-state">
-                        <p>No capacity data available. Create a capacity plan to get started.</p>
+                        <p>Capacity plan has no allocations yet.</p>
+                        <p className="gantt-empty-hint">
+                            Add people or project allocations to “{activePlan.name}” to see the grid.
+                        </p>
                     </div>
                 ) : (
                     <div className="capacity-grid-wrapper">
