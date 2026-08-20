@@ -109,7 +109,7 @@ export default function AppSidebar() {
                     onClose={() => setShowCreatePortfolio(false)}
                     onSaved={(portfolio) => {
                         setShowCreatePortfolio(false)
-                        navigate(`/portfolios/${portfolio.sys_id}`)
+                        if (portfolio?.sys_id) navigate(`/portfolios/${portfolio.sys_id}`)
                     }}
                 />
             )}
@@ -120,7 +120,7 @@ export default function AppSidebar() {
                     onClose={() => setShowCreateProject(false)}
                     onSaved={(project) => {
                         setShowCreateProject(false)
-                        navigate(`/projects/${project.sys_id}`)
+                        if (project?.sys_id) navigate(`/projects/${project.sys_id}`)
                     }}
                 />
             )}

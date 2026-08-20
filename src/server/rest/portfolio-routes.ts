@@ -9,14 +9,22 @@ export function listPortfolios(request: any, response: any) {
 }
 
 export function createPortfolio(request: any, response: any) {
-    const body = parseBody(request)
-    const svc = portfolioService()
-    const portfolio = svc.createPortfolio(body)
-    if (!portfolio) {
-        sendError(response, 'Unable to create portfolio. Name is required, and a workspace must be resolvable.', 400)
-        return
+    try {
+        const body = parseBody(request)
+        const svc = portfolioService()
+        if (!svc || typeof svc.createPortfolio !== 'function') {
+            sendError(response, 'PortfolioService.createPortfolio is not available on the Script Include instance.', 500)
+            return
+        }
+        const portfolio = svc.createPortfolio(body)
+        if (!portfolio) {
+            sendError(response, 'Unable to create portfolio. Name is required, and a workspace must be resolvable.', 400)
+            return
+        }
+        sendJson(response, portfolio, 201)
+    } catch (error: any) {
+        sendError(response, error && error.message ? String(error.message) : String(error || 'Create portfolio failed'), 500)
     }
-    sendJson(response, portfolio, 201)
 }
 
 export function updatePortfolio(request: any, response: any) {

@@ -1,7 +1,24 @@
 var ProjectTaskService = Class.create();
 ProjectTaskService.prototype = {
     // Lazy deps so listProjects works even if UserService/ViewDataService fail to construct.
-    initialize: function () {},
+    initialize: function () {
+        this._bindClassMethods();
+    },
+
+    _bindClassMethods: function () {
+        var proto = ProjectTaskService.prototype;
+        for (var name in proto) {
+            if (!proto.hasOwnProperty(name)) {
+                continue;
+            }
+            if (name === 'initialize' || name === '_bindClassMethods' || name === 'type' || name === 'constructor') {
+                continue;
+            }
+            if (typeof proto[name] === 'function' && typeof this[name] !== 'function') {
+                this[name] = proto[name];
+            }
+        }
+    },
 
     _access: function () {
         if (!this.__access) {
@@ -156,6 +173,21 @@ ProjectTaskService.prototype = {
         return '';
     },
 
+    _ensureAssignmentGroup: function (workspaceId, requested) {
+        if (requested) {
+            return requested;
+        }
+        var existing = this._getDefaultTeam(workspaceId) || this._getAnyTeam();
+        if (existing) {
+            return existing;
+        }
+        var gr = new GlideRecord('sys_user_group');
+        gr.initialize();
+        gr.setValue('name', 'Inflow');
+        gr.setValue('active', 'true');
+        return gr.insert() || '';
+    },
+
     /**
      * Auto-generate a short project key from the name (e.g. "Launch Portal" → "LAU").
      * Falls back to PIT-### sequence when slug would be empty/collision.
@@ -205,11 +237,9 @@ ProjectTaskService.prototype = {
         }
 
         // Portfolio is optional — projects can be standalone
-        var assignmentGroup =
-            String(data.assignment_group || '') ||
-            this._getDefaultTeam(workspaceId) ||
-            this._getAnyTeam();
+        var assignmentGroup = this._ensureAssignmentGroup(workspaceId, String(data.assignment_group || ''));
         if (!assignmentGroup) {
+            gs.warn('ProjectTaskService.createProject: no assignment_group available');
             return null;
         }
 
@@ -488,5 +518,6 @@ ProjectTaskService.prototype = {
         return this.getProjectBoard(projectId);
     },
 
+    constructor: ProjectTaskService,
     type: 'ProjectTaskService',
 };

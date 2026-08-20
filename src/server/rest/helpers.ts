@@ -90,6 +90,107 @@ export function requireAuth(): string {
     return userId
 }
 
+function hasFn(obj: unknown, name: string): boolean {
+    return Boolean(obj && typeof (obj as Record<string, unknown>)[name] === 'function')
+}
+
+function copyPrototypeFns(target: Record<string, unknown>, proto: Record<string, unknown> | null | undefined) {
+    if (!target || !proto) {
+        return target
+    }
+    for (const key in proto) {
+        if (!Object.prototype.hasOwnProperty.call(proto, key)) {
+            continue
+        }
+        if (typeof proto[key] === 'function' && typeof target[key] !== 'function') {
+            target[key] = proto[key]
+        }
+    }
+    return target
+}
+
+/**
+ * ES module `new ScriptInclude()` can yield a blank host object `[object Object]`
+ * whose prototype chain does not include Class.create methods. Probe, then
+ * reconstruct from `.prototype` or use the import if it already has methods.
+ */
+function instantiateScriptInclude<T>(Imported: unknown, className: string, probeMethod: string): T {
+    const nested =
+        Imported &&
+        typeof Imported === 'object' &&
+        !hasFn(Imported, probeMethod) &&
+        typeof (Imported as Record<string, unknown>)[className] === 'function'
+            ? (Imported as Record<string, unknown>)[className]
+            : Imported
+
+    let instance: unknown = null
+    if (typeof nested === 'function') {
+        try {
+            instance = new (nested as new () => unknown)()
+        } catch (_error) {
+            instance = null
+        }
+        if (hasFn(instance, probeMethod)) {
+            return instance as T
+        }
+        const proto = (nested as { prototype?: Record<string, unknown> }).prototype
+        if (instance && proto) {
+            copyPrototypeFns(instance as Record<string, unknown>, proto)
+            if (hasFn(instance, probeMethod)) {
+                return instance as T
+            }
+        }
+        if (proto) {
+            const created = Object.create(proto) as Record<string, unknown>
+            if (typeof created.initialize === 'function') {
+                try {
+                    created.initialize()
+                } catch (_error) {
+                    // prototype bag may not need initialize
+                }
+            }
+            copyPrototypeFns(created, proto)
+            if (hasFn(created, probeMethod)) {
+                return created as T
+            }
+        }
+        if (hasFn(nested, probeMethod)) {
+            return nested as T
+        }
+    }
+
+    if (hasFn(nested, probeMethod)) {
+        return nested as T
+    }
+
+    const proto = nested && (nested as { prototype?: Record<string, unknown> }).prototype
+    if (proto && hasFn(proto, probeMethod)) {
+        const created = Object.create(proto) as Record<string, unknown>
+        if (typeof created.initialize === 'function') {
+            try {
+                created.initialize()
+            } catch (_error) {
+                // ignore
+            }
+        }
+        copyPrototypeFns(created, proto)
+        if (hasFn(created, probeMethod)) {
+            return created as T
+        }
+    }
+
+    throw new Error(
+        className +
+            ' has no ' +
+            probeMethod +
+            ' (typeof=' +
+            typeof nested +
+            '). Redeploy Script Include ' +
+            className +
+            '.'
+    )
+}
+
 function safeService<T>(name: string, factory: () => T): T {
     try {
         return factory()
@@ -102,37 +203,53 @@ function safeService<T>(name: string, factory: () => T): T {
 
 export function portfolioService() {
     return safeService('PortfolioService', function () {
-        return new PortfolioService()
+        return instantiateScriptInclude<InstanceType<typeof PortfolioService>>(
+            PortfolioService,
+            'PortfolioService',
+            'createPortfolio'
+        )
     })
 }
 
 export function viewDataService() {
     return safeService('ViewDataService', function () {
-        return new ViewDataService()
+        return instantiateScriptInclude<InstanceType<typeof ViewDataService>>(
+            ViewDataService,
+            'ViewDataService',
+            'getPortfolioViews'
+        )
     })
 }
 
 export function projectTaskService() {
     return safeService('ProjectTaskService', function () {
-        return new ProjectTaskService()
+        return instantiateScriptInclude<InstanceType<typeof ProjectTaskService>>(
+            ProjectTaskService,
+            'ProjectTaskService',
+            'createProject'
+        )
     })
 }
 
 export function capacityService() {
     return safeService('CapacityService', function () {
-        return new CapacityService()
+        return instantiateScriptInclude<InstanceType<typeof CapacityService>>(
+            CapacityService,
+            'CapacityService',
+            'listPlans'
+        )
     })
 }
 
 export function userService() {
     return safeService('UserService', function () {
-        return new UserService()
+        return instantiateScriptInclude<InstanceType<typeof UserService>>(UserService, 'UserService', 'searchUsers')
     })
 }
 
 export function memberService() {
     return safeService('MemberService', function () {
-        return new MemberService()
+        return instantiateScriptInclude<InstanceType<typeof MemberService>>(MemberService, 'MemberService', 'seedMembers')
     })
 }
 

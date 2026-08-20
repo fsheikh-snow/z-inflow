@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import TopBar from '../../layout/TopBar'
 import BreadcrumbBar from '../../layout/BreadcrumbBar'
+import ProjectForm from '../../components/project/ProjectForm'
 import { useProjects } from '../../services/hooks'
 import { PROJECT_STATUS_CHOICES, PROJECT_PRIORITY_CHOICES } from '../../constants/fieldChoices'
 
@@ -14,10 +15,19 @@ function choiceLabel(choices, value) {
 export default function ProjectsPage() {
     const navigate = useNavigate()
     const { data: projects = [], isLoading, isError, error } = useProjects()
+    const [showCreate, setShowCreate] = useState(false)
+    const defaultWorkspaceId = projects[0]?.workspace_id
 
     return (
         <>
-            <TopBar title="Projects" />
+            <TopBar
+                title="Projects"
+                actions={
+                    <button type="button" className="btn btn-primary" onClick={() => setShowCreate(true)}>
+                        + New project
+                    </button>
+                }
+            />
             <BreadcrumbBar crumbs={[{ label: 'Projects' }]} />
             <div className="page-content">
                 {isLoading && <div className="empty-state"><p>Loading projects…</p></div>}
@@ -28,7 +38,10 @@ export default function ProjectsPage() {
                 )}
                 {!isLoading && !isError && projects.length === 0 && (
                     <div className="empty-state">
-                        <p>No projects yet. Use + New project in the sidebar to create one.</p>
+                        <p>No projects yet.</p>
+                        <button type="button" className="btn btn-primary" onClick={() => setShowCreate(true)}>
+                            + New project
+                        </button>
                     </div>
                 )}
                 {!isLoading && !isError && projects.length > 0 && (
@@ -62,6 +75,17 @@ export default function ProjectsPage() {
                     </div>
                 )}
             </div>
+            {showCreate && (
+                <ProjectForm
+                    mode="create"
+                    workspaceId={defaultWorkspaceId}
+                    onClose={() => setShowCreate(false)}
+                    onSaved={(project) => {
+                        setShowCreate(false)
+                        if (project?.sys_id) navigate(`/projects/${project.sys_id}`)
+                    }}
+                />
+            )}
         </>
     )
 }

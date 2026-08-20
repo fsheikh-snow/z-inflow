@@ -89,6 +89,7 @@ export default function ProjectForm({ mode = 'create', project, portfolio, works
 
     const handleSubmit = async (event) => {
         event.preventDefault()
+        event.stopPropagation()
         if (!form.name.trim()) return
 
         const resolvedWorkspace =
@@ -101,13 +102,23 @@ export default function ProjectForm({ mode = 'create', project, portfolio, works
                   portfolioId: portfolio?.sys_id,
               })
 
-        const saved = await mutation.mutateAsync(payload)
-        onSaved?.(saved)
-        onClose?.()
+        try {
+            const saved = await mutation.mutateAsync(payload)
+            if (!saved?.sys_id) return
+            onSaved?.(saved)
+            onClose?.()
+        } catch {
+            // mutation.isError renders the server message
+        }
     }
 
     return (
-        <div className="field-create-modal">
+        <div
+            className="field-create-modal"
+            onMouseDown={(e) => {
+                if (e.target === e.currentTarget) onClose?.()
+            }}
+        >
             <form className="field-create-content project-create-form" onSubmit={handleSubmit}>
                 <h3>{isEdit ? 'Edit project' : 'New project'}</h3>
 

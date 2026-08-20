@@ -2,7 +2,26 @@ var PortfolioService = Class.create();
 PortfolioService.prototype = {
     // Lazy deps: listPortfolios must not fail if ViewDataService/UserService
     // Script Includes are unavailable or throw during construction.
-    initialize: function () {},
+    initialize: function () {
+        this._bindClassMethods();
+    },
+
+    // Rhino ESM `new` can yield a host object that does not inherit Class.create
+    // prototype methods. Copy own prototype functions onto the instance.
+    _bindClassMethods: function () {
+        var proto = PortfolioService.prototype;
+        for (var name in proto) {
+            if (!proto.hasOwnProperty(name)) {
+                continue;
+            }
+            if (name === 'initialize' || name === '_bindClassMethods' || name === 'type' || name === 'constructor') {
+                continue;
+            }
+            if (typeof proto[name] === 'function' && typeof this[name] !== 'function') {
+                this[name] = proto[name];
+            }
+        }
+    },
 
     _access: function () {
         if (!this.__access) {
@@ -456,5 +475,6 @@ PortfolioService.prototype = {
         return gr.insert();
     },
 
+    constructor: PortfolioService,
     type: 'PortfolioService',
 };

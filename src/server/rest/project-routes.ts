@@ -9,14 +9,26 @@ export function listProjects(request: any, response: any) {
 }
 
 export function createProject(request: any, response: any) {
-    const body = parseBody(request)
-    const svc = projectTaskService()
-    const project = svc.createProject(body)
-    if (!project) {
-        sendError(response, 'Unable to create project. Name is required, and a workspace/team must be resolvable.', 400)
-        return
+    try {
+        const body = parseBody(request)
+        const svc = projectTaskService()
+        if (!svc || typeof svc.createProject !== 'function') {
+            sendError(response, 'ProjectTaskService.createProject is not available on the Script Include instance.', 500)
+            return
+        }
+        const project = svc.createProject(body)
+        if (!project) {
+            sendError(
+                response,
+                'Unable to create project. Name is required, and a workspace/team must be resolvable.',
+                400
+            )
+            return
+        }
+        sendJson(response, project, 201)
+    } catch (error: any) {
+        sendError(response, error && error.message ? String(error.message) : String(error || 'Create project failed'), 500)
     }
-    sendJson(response, project, 201)
 }
 
 export function updateProject(request: any, response: any) {

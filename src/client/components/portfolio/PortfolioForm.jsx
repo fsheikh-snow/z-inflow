@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import DateField from '../fields/DateField'
 import MembersEditor, { membersToPayload, primaryOwnerId } from '../shared/MembersEditor'
 import { useCreatePortfolio, useUpdatePortfolio } from '../../services/hooks'
 import '../../components/rules/rules.css'
@@ -7,7 +6,6 @@ import '../project/project.css'
 
 const EMPTY_FORM = {
     name: '',
-    due_date: '',
     description: '',
 }
 
@@ -15,7 +13,6 @@ function buildInitialForm(portfolio) {
     if (!portfolio) return EMPTY_FORM
     return {
         name: portfolio.name || '',
-        due_date: portfolio.due_date || '',
         description: portfolio.description || '',
     }
 }
@@ -40,7 +37,6 @@ function buildInitialMembers(portfolio) {
 function buildPayload(form, members, workspaceId) {
     const payload = { name: form.name.trim() }
     if (workspaceId) payload.workspace_id = workspaceId
-    if (form.due_date) payload.due_date = form.due_date
     if (form.description.trim()) payload.description = form.description.trim()
 
     const memberPayload = membersToPayload(members)
@@ -68,16 +64,27 @@ export default function PortfolioForm({ mode = 'create', portfolio, workspaceId,
 
     const handleSubmit = async (event) => {
         event.preventDefault()
+        event.stopPropagation()
         if (!form.name.trim()) return
 
-        const payload = buildPayload(form, members, workspaceId || portfolio?.workspace_id)
-        const saved = await mutation.mutateAsync(payload)
-        onSaved?.(saved)
-        onClose?.()
+        try {
+            const payload = buildPayload(form, members, workspaceId || portfolio?.workspace_id)
+            const saved = await mutation.mutateAsync(payload)
+            if (!saved?.sys_id) return
+            onSaved?.(saved)
+            onClose?.()
+        } catch {
+            // mutation.isError renders the server message
+        }
     }
 
     return (
-        <div className="field-create-modal">
+        <div
+            className="field-create-modal"
+            onMouseDown={(e) => {
+                if (e.target === e.currentTarget) onClose?.()
+            }}
+        >
             <form className="field-create-content project-create-form" onSubmit={handleSubmit}>
                 <h3>{isEdit ? 'Edit portfolio' : 'New portfolio'}</h3>
 
@@ -96,15 +103,6 @@ export default function PortfolioForm({ mode = 'create', portfolio, workspaceId,
                 </label>
 
                 <MembersEditor members={members} onChange={setMembers} disabled={mutation.isPending} />
-
-                <label htmlFor="portfolio-due-date">
-                    Due date
-                    <DateField
-                        id="portfolio-due-date"
-                        value={form.due_date}
-                        onChange={(value) => setField('due_date', value)}
-                    />
-                </label>
 
                 <label htmlFor="portfolio-description">
                     Description

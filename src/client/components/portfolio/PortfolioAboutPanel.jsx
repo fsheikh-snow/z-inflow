@@ -44,10 +44,6 @@ export default function PortfolioAboutPanel({ portfolio, onUpdated }) {
                             <UserChip user={portfolio.owner} />
                         </dd>
                     </div>
-                    <div className="about-field">
-                        <dt>Due date</dt>
-                        <dd>{portfolio.due_date || '—'}</dd>
-                    </div>
                 </dl>
                 <div className="about-description">
                     {portfolio.description || <span className="about-placeholder">Click to add portfolio description…</span>}
