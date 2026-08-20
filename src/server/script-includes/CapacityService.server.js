@@ -17,7 +17,7 @@ CapacityService.prototype = {
 
     listPlans: function (workspaceId) {
         var results = [];
-        var gr = new GlideRecord('x_gzi_z_ppm_capacity_plan');
+        var gr = new GlideRecord('x_gzi_zflow_capacity_plan');
         if (workspaceId) {
             gr.addQuery('workspace_id', workspaceId);
         }
@@ -30,15 +30,15 @@ CapacityService.prototype = {
     },
 
     getPlanGrid: function (planId) {
-        var planGr = new GlideRecord('x_gzi_z_ppm_capacity_plan');
+        var planGr = new GlideRecord('x_gzi_zflow_capacity_plan');
         if (!planGr.get(planId)) {
             return null;
         }
 
         var buckets = {};
-        var alloc = new GlideRecord('x_gzi_z_ppm_proj_res_alloc');
+        var alloc = new GlideRecord('x_gzi_zflow_proj_res_alloc');
         if (planGr.getValue('portfolio_id')) {
-            var pp = new GlideRecord('x_gzi_z_ppm_portfolio_project');
+            var pp = new GlideRecord('x_gzi_zflow_portfolio_project');
             pp.addQuery('portfolio_id', planGr.getValue('portfolio_id'));
             pp.query();
             var projectIds = [];
@@ -66,14 +66,14 @@ CapacityService.prototype = {
     },
 
     getPlanAllocations: function (planId) {
-        var planGr = new GlideRecord('x_gzi_z_ppm_capacity_plan');
+        var planGr = new GlideRecord('x_gzi_zflow_capacity_plan');
         if (!planGr.get(planId)) {
             return null;
         }
         var allocations = [];
-        var alloc = new GlideRecord('x_gzi_z_ppm_proj_res_alloc');
+        var alloc = new GlideRecord('x_gzi_zflow_proj_res_alloc');
         if (planGr.getValue('portfolio_id')) {
-            var pp = new GlideRecord('x_gzi_z_ppm_portfolio_project');
+            var pp = new GlideRecord('x_gzi_zflow_portfolio_project');
             pp.addQuery('portfolio_id', planGr.getValue('portfolio_id'));
             pp.query();
             var projectIds = [];

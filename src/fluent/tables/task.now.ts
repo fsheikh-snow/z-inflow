@@ -11,8 +11,8 @@ import {
     ChoiceColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_z_ppm_task = Table({
-    name: 'x_gzi_z_ppm_task',
+export const x_gzi_zflow_task = Table({
+    name: 'x_gzi_zflow_task',
     label: 'Task',
     display: 'name',
     allowWebServiceAccess: true,
@@ -20,7 +20,7 @@ export const x_gzi_z_ppm_task = Table({
     schema: {
         workspace_id: ReferenceColumn({
             label: 'Workspace',
-            referenceTable: 'x_gzi_z_ppm_workspace',
+            referenceTable: 'x_gzi_zflow_workspace',
             mandatory: true,
             cascadeRule: 'delete',
         }),
@@ -46,7 +46,7 @@ export const x_gzi_z_ppm_task = Table({
         notes: StringColumn({ label: 'Notes', maxLength: 4000 }),
         parent_task_id: ReferenceColumn({
             label: 'Parent Task',
-            referenceTable: 'x_gzi_z_ppm_task',
+            referenceTable: 'x_gzi_zflow_task',
             cascadeRule: 'none',
         }),
         start_date: DateColumn({ label: 'Start Date' }),

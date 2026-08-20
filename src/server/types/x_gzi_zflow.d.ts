@@ -1,7 +1,7 @@
 export {}
 
 declare global {
-    namespace x_gzi_z_ppm {
+    namespace x_gzi_zflow {
         class AccessService {
             canReadProject(projectId: string, userId?: string): boolean
             canWriteProject(projectId: string, userId?: string): boolean

@@ -14,7 +14,7 @@ export function getView(request: any, response: any) {
 
 export function listCustomFields(request: any, response: any) {
     const results = []
-    const gr = new GlideRecord('x_gzi_z_ppm_custom_field_def')
+    const gr = new GlideRecord('x_gzi_zflow_custom_field_def')
     gr.orderBy('name')
     gr.query()
     while (gr.next()) {
@@ -31,7 +31,7 @@ export function listCustomFields(request: any, response: any) {
 
 export function listCustomFieldValues(request: any, response: any) {
     const body = parseBody(request)
-    const gr = new GlideRecord('x_gzi_z_ppm_custom_field_value')
+    const gr = new GlideRecord('x_gzi_zflow_custom_field_value')
     if (body.task_id) gr.addQuery('task_id', String(body.task_id))
     if (body.project_id) gr.addQuery('project_id', String(body.project_id))
     if (body.portfolio_id) gr.addQuery('portfolio_id', String(body.portfolio_id))
@@ -57,7 +57,7 @@ export function upsertCustomFieldValues(request: any, response: any) {
     const values = (body.values as Record<string, unknown>[]) || []
     const saved = []
     for (const value of values) {
-        const gr = new GlideRecord('x_gzi_z_ppm_custom_field_value')
+        const gr = new GlideRecord('x_gzi_zflow_custom_field_value')
         const sysId = value.sys_id ? String(value.sys_id) : ''
         if (sysId && gr.get(sysId)) {
             if (value.value_string !== undefined) gr.setValue('value_string', String(value.value_string))

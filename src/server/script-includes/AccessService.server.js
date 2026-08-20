@@ -6,7 +6,7 @@ AccessService.prototype = {
         if (!projectId || !userId) {
             return false;
         }
-        var gr = new GlideRecord('x_gzi_z_ppm_project_member');
+        var gr = new GlideRecord('x_gzi_zflow_project_member');
         gr.addQuery('project_id', projectId);
         gr.addQuery('user_id', userId);
         gr.addQuery('role', 'IN', roles.join(','));
@@ -35,7 +35,7 @@ AccessService.prototype = {
         if (!portfolioId) {
             return false;
         }
-        var pp = new GlideRecord('x_gzi_z_ppm_portfolio_project');
+        var pp = new GlideRecord('x_gzi_zflow_portfolio_project');
         pp.addQuery('portfolio_id', portfolioId);
         pp.query();
         while (pp.next()) {

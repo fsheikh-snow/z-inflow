@@ -1,4 +1,4 @@
-const API_BASE = '/api/x_gzi_z_ppm/v1'
+const API_BASE = '/api/x_gzi_zflow/v1'
 
 function getAuthHeaders() {
     const headers = {

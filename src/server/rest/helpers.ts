@@ -1,4 +1,4 @@
-/// <reference path="../types/x_gzi_z_ppm.d.ts" />
+/// <reference path="../types/x_gzi_zflow.d.ts" />
 import { gs } from '@servicenow/glide'
 
 export function parseBody(request: { body: { dataString: string } }): Record<string, unknown> {
@@ -42,21 +42,21 @@ export function requireAuth(): string {
 }
 
 export function portfolioService() {
-    return new x_gzi_z_ppm.PortfolioService()
+    return new x_gzi_zflow.PortfolioService()
 }
 
 export function viewDataService() {
-    return new x_gzi_z_ppm.ViewDataService()
+    return new x_gzi_zflow.ViewDataService()
 }
 
 export function projectTaskService() {
-    return new x_gzi_z_ppm.ProjectTaskService()
+    return new x_gzi_zflow.ProjectTaskService()
 }
 
 export function capacityService() {
-    return new x_gzi_z_ppm.CapacityService()
+    return new x_gzi_zflow.CapacityService()
 }
 
 export function userService() {
-    return new x_gzi_z_ppm.UserService()
+    return new x_gzi_zflow.UserService()
 }

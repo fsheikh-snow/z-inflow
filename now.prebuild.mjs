@@ -59,7 +59,8 @@ export default async ({ rootDir, config, fs, path, logger, registerExplicitId })
     // including source maps for JavaScript files
     const rollupOutput = await rollupBundle.write({
         dir: staticContentDir,
-        sourcemap: true,
+        sourcemap: false,
+        compact: true,
     })
     // Print the build results
     rollupOutput.output.forEach((file) => {

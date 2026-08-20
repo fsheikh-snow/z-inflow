@@ -6,15 +6,15 @@ import {
     DateColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_z_ppm_proj_res_alloc = Table({
-    name: 'x_gzi_z_ppm_proj_res_alloc',
+export const x_gzi_zflow_proj_res_alloc = Table({
+    name: 'x_gzi_zflow_proj_res_alloc',
     label: 'Project Resource Allocation',
     allowWebServiceAccess: true,
     createAccessControls: true,
     schema: {
         project_id: ReferenceColumn({
             label: 'Project',
-            referenceTable: 'x_gzi_z_ppm_project',
+            referenceTable: 'x_gzi_zflow_project',
             mandatory: true,
             cascadeRule: 'delete',
         }),
@@ -26,7 +26,7 @@ export const x_gzi_z_ppm_proj_res_alloc = Table({
         }),
         role_id: ReferenceColumn({
             label: 'Resource Role',
-            referenceTable: 'x_gzi_z_ppm_resource_role',
+            referenceTable: 'x_gzi_zflow_resource_role',
             mandatory: true,
             cascadeRule: 'none',
         }),

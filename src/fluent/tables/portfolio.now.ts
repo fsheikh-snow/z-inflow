@@ -7,8 +7,8 @@ import {
     HtmlColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_z_ppm_portfolio = Table({
-    name: 'x_gzi_z_ppm_portfolio',
+export const x_gzi_zflow_portfolio = Table({
+    name: 'x_gzi_zflow_portfolio',
     label: 'Portfolio',
     display: 'name',
     allowWebServiceAccess: true,
@@ -16,7 +16,7 @@ export const x_gzi_z_ppm_portfolio = Table({
     schema: {
         workspace_id: ReferenceColumn({
             label: 'Workspace',
-            referenceTable: 'x_gzi_z_ppm_workspace',
+            referenceTable: 'x_gzi_zflow_workspace',
             mandatory: true,
             cascadeRule: 'delete',
         }),

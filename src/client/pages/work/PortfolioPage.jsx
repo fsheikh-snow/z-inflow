@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { lazy, Suspense, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import TopBar from '../../layout/TopBar'
 import BreadcrumbBar from '../../layout/BreadcrumbBar'
@@ -8,9 +8,10 @@ import ViewColumnEditor from '../../components/shared/ViewColumnEditor'
 import DynamicDataGrid from '../../components/grid/DynamicDataGrid'
 import PortfolioKanbanGrid from '../../components/portfolio/PortfolioKanbanGrid'
 import VirtualizedGantt from '../../components/gantt/VirtualizedGantt'
-import PortfolioDashboardWidgets from '../../components/portfolio/PortfolioDashboardWidgets'
 import PortfolioProgressView from '../../components/portfolio/PortfolioProgressView'
 import PortfolioWorkloadGrid from '../../components/portfolio/PortfolioWorkloadGrid'
+
+const PortfolioDashboardWidgets = lazy(() => import('../../components/portfolio/PortfolioDashboardWidgets'))
 import {
     usePortfolio,
     usePortfolioViews,
@@ -78,7 +79,11 @@ export default function PortfolioPage() {
                     />
                 )
             case 'dashboard':
-                return <PortfolioDashboardWidgets data={dashboard} loading={dashboardLoading} />
+                return (
+                    <Suspense fallback={<div className="portfolio-loading">Loading dashboard…</div>}>
+                        <PortfolioDashboardWidgets data={dashboard} loading={dashboardLoading} />
+                    </Suspense>
+                )
             case 'progress':
                 return <PortfolioProgressView data={progress} loading={progressLoading} />
             case 'workload':

@@ -8,6 +8,7 @@
     },
     "scripts": {
         "build": "now-sdk build",
+        "pack": "now-sdk pack",
         "deploy": "now-sdk install",
         "transform": "now-sdk transform",
         "types": "now-sdk dependencies",

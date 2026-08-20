@@ -1,9 +1,9 @@
 var PortfolioService = Class.create();
 PortfolioService.prototype = {
     initialize: function () {
-        this.access = new x_gzi_z_ppm.AccessService();
-        this.viewData = new x_gzi_z_ppm.ViewDataService();
-        this.userService = new x_gzi_z_ppm.UserService();
+        this.access = new x_gzi_zflow.AccessService();
+        this.viewData = new x_gzi_zflow.ViewDataService();
+        this.userService = new x_gzi_zflow.UserService();
     },
 
     _serializePortfolio: function (gr) {
@@ -20,7 +20,7 @@ PortfolioService.prototype = {
 
     listPortfolios: function (workspaceId) {
         var results = [];
-        var gr = new GlideRecord('x_gzi_z_ppm_portfolio');
+        var gr = new GlideRecord('x_gzi_zflow_portfolio');
         if (workspaceId) {
             gr.addQuery('workspace_id', workspaceId);
         }
@@ -33,7 +33,7 @@ PortfolioService.prototype = {
     },
 
     getPortfolio: function (portfolioId) {
-        var gr = new GlideRecord('x_gzi_z_ppm_portfolio');
+        var gr = new GlideRecord('x_gzi_zflow_portfolio');
         if (!gr.get(portfolioId)) {
             return null;
         }
@@ -76,7 +76,7 @@ PortfolioService.prototype = {
             return null;
         }
         var updates = [];
-        var gr = new GlideRecord('x_gzi_z_ppm_status_update');
+        var gr = new GlideRecord('x_gzi_zflow_status_update');
         gr.addQuery('entity_type', 'portfolio');
         gr.addQuery('entity_id', portfolioId);
         gr.orderByDesc('sys_created_on');
@@ -99,11 +99,11 @@ PortfolioService.prototype = {
 
     getWorkload: function (portfolioId) {
         var matrix = {};
-        var pp = new GlideRecord('x_gzi_z_ppm_portfolio_project');
+        var pp = new GlideRecord('x_gzi_zflow_portfolio_project');
         pp.addQuery('portfolio_id', portfolioId);
         pp.query();
         while (pp.next()) {
-            var pt = new GlideRecord('x_gzi_z_ppm_project_task');
+            var pt = new GlideRecord('x_gzi_zflow_project_task');
             pt.addQuery('project_id', pp.getValue('project_id'));
             pt.query();
             while (pt.next()) {
@@ -126,7 +126,7 @@ PortfolioService.prototype = {
     },
 
     linkProject: function (portfolioId, projectId) {
-        var gr = new GlideRecord('x_gzi_z_ppm_portfolio_project');
+        var gr = new GlideRecord('x_gzi_zflow_portfolio_project');
         gr.addQuery('portfolio_id', portfolioId);
         gr.addQuery('project_id', projectId);
         gr.query();
@@ -142,7 +142,7 @@ PortfolioService.prototype = {
     },
 
     unlinkProject: function (portfolioId, projectId) {
-        var gr = new GlideRecord('x_gzi_z_ppm_portfolio_project');
+        var gr = new GlideRecord('x_gzi_zflow_portfolio_project');
         gr.addQuery('portfolio_id', portfolioId);
         gr.addQuery('project_id', projectId);
         gr.query();
@@ -154,7 +154,7 @@ PortfolioService.prototype = {
 
     getProjectPortfolios: function (projectId) {
         var results = [];
-        var gr = new GlideRecord('x_gzi_z_ppm_portfolio_project');
+        var gr = new GlideRecord('x_gzi_zflow_portfolio_project');
         gr.addQuery('project_id', projectId);
         gr.query();
         while (gr.next()) {
@@ -167,7 +167,7 @@ PortfolioService.prototype = {
     },
 
     _defaultViewId: function (portfolioId) {
-        var gr = new GlideRecord('x_gzi_z_ppm_custom_view');
+        var gr = new GlideRecord('x_gzi_zflow_custom_view');
         gr.addQuery('portfolio_id', portfolioId);
         gr.addQuery('is_default', true);
         gr.setLimit(1);

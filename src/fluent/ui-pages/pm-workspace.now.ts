@@ -4,7 +4,7 @@ import pmWorkspacePage from '../../client/index.html'
 
 UiPage({
     $id: Now.ID['pm-workspace-page'],
-    endpoint: 'x_gzi_z_ppm_workspace.do',
+    endpoint: 'x_gzi_zflow_workspace.do',
     description: 'Z-Inflow PM Workspace UI Page',
     category: 'general',
     html: pmWorkspacePage,

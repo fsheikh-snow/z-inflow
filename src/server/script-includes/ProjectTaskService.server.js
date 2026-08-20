@@ -1,9 +1,9 @@
 var ProjectTaskService = Class.create();
 ProjectTaskService.prototype = {
     initialize: function () {
-        this.access = new x_gzi_z_ppm.AccessService();
-        this.userService = new x_gzi_z_ppm.UserService();
-        this.viewData = new x_gzi_z_ppm.ViewDataService();
+        this.access = new x_gzi_zflow.AccessService();
+        this.userService = new x_gzi_zflow.UserService();
+        this.viewData = new x_gzi_zflow.ViewDataService();
     },
 
     _serializeProject: function (gr) {
@@ -47,7 +47,7 @@ ProjectTaskService.prototype = {
 
     listProjects: function (workspaceId) {
         var results = [];
-        var gr = new GlideRecord('x_gzi_z_ppm_project');
+        var gr = new GlideRecord('x_gzi_zflow_project');
         if (workspaceId) {
             gr.addQuery('workspace_id', workspaceId);
         }
@@ -61,7 +61,7 @@ ProjectTaskService.prototype = {
 
     getProjectSections: function (projectId) {
         var sections = [];
-        var gr = new GlideRecord('x_gzi_z_ppm_section');
+        var gr = new GlideRecord('x_gzi_zflow_section');
         gr.addQuery('project_id', projectId);
         gr.orderBy('order_index');
         gr.query();
@@ -86,7 +86,7 @@ ProjectTaskService.prototype = {
         }
         columns.unsectioned = { section: null, tasks: [] };
 
-        var pt = new GlideRecord('x_gzi_z_ppm_project_task');
+        var pt = new GlideRecord('x_gzi_zflow_project_task');
         pt.addQuery('project_id', projectId);
         pt.orderBy('order_index');
         pt.query();
@@ -107,7 +107,7 @@ ProjectTaskService.prototype = {
 
     getProjectTasks: function (projectId) {
         var tasks = [];
-        var pt = new GlideRecord('x_gzi_z_ppm_project_task');
+        var pt = new GlideRecord('x_gzi_zflow_project_task');
         pt.addQuery('project_id', projectId);
         pt.orderBy('order_index');
         pt.query();
@@ -121,7 +121,7 @@ ProjectTaskService.prototype = {
     },
 
     getTask: function (taskId) {
-        var gr = new GlideRecord('x_gzi_z_ppm_task');
+        var gr = new GlideRecord('x_gzi_zflow_task');
         if (!gr.get(taskId)) {
             return null;
         }
@@ -130,7 +130,7 @@ ProjectTaskService.prototype = {
 
     getTaskProjects: function (taskId) {
         var projects = [];
-        var pt = new GlideRecord('x_gzi_z_ppm_project_task');
+        var pt = new GlideRecord('x_gzi_zflow_project_task');
         pt.addQuery('task_id', taskId);
         pt.query();
         while (pt.next()) {
