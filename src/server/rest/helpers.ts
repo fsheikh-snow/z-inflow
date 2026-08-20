@@ -1,5 +1,12 @@
 /// <reference path="../types/x_gzi_zflow.d.ts" />
 import { gs } from '@servicenow/glide'
+import {
+    CapacityService,
+    PortfolioService,
+    ProjectTaskService,
+    UserService,
+    ViewDataService,
+} from '@servicenow/glide/x_gzi_zflow'
 
 export function parseBody(request: { body: { dataString: string } }): Record<string, unknown> {
     if (!request.body || !request.body.dataString) {
@@ -92,31 +99,31 @@ function safeService<T>(name: string, factory: () => T): T {
 
 export function portfolioService() {
     return safeService('PortfolioService', function () {
-        return new x_gzi_zflow.PortfolioService()
+        return new PortfolioService()
     })
 }
 
 export function viewDataService() {
     return safeService('ViewDataService', function () {
-        return new x_gzi_zflow.ViewDataService()
+        return new ViewDataService()
     })
 }
 
 export function projectTaskService() {
     return safeService('ProjectTaskService', function () {
-        return new x_gzi_zflow.ProjectTaskService()
+        return new ProjectTaskService()
     })
 }
 
 export function capacityService() {
     return safeService('CapacityService', function () {
-        return new x_gzi_zflow.CapacityService()
+        return new CapacityService()
     })
 }
 
 export function userService() {
     return safeService('UserService', function () {
-        return new x_gzi_zflow.UserService()
+        return new UserService()
     })
 }
 
