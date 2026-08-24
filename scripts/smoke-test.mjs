@@ -41,8 +41,8 @@ const CHECKS = /** @type {Check[]} */ ([
         kind: 'api',
     },
     {
-        name: 'GET workspace.do',
-        path: '/x_gzi_ppm_workspace.do',
+        name: 'GET app.do',
+        path: '/x_gzi_ppm_app.do',
         kind: 'html',
         failOn: ({ status, body }) => {
             if (status >= 500) return `HTTP ${status}`

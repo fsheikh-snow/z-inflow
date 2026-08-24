@@ -3,7 +3,7 @@
 Source on **`main`** targets scope **`x_gzi_ppm`** (`ca99d331333687509937d1382e5c7be5`).
 
 - REST API: `/api/x_gzi_ppm/v1`
-- Workspace UI: `x_gzi_ppm_workspace.do`
+- Workspace UI: `x_gzi_ppm_app.do`
 
 ## Config files
 
@@ -57,7 +57,7 @@ There is no “partial install” flag. Smaller deploys require aligning local s
 3. **Compare sys_ids**, not just table names — see [Troubleshooting](#troubleshooting-rollbackcontext-is-in-invalid-state).
 4. `npm run build` must pass locally.
 5. Deploy: `npm run deploy:ppm`
-6. Verify: `npm run smoke` (REST + `x_gzi_ppm_workspace.do`).
+6. Verify: `npm run smoke` (REST + `x_gzi_ppm_app.do`).
 
 ## Branch roles
 
@@ -208,3 +208,5 @@ As of 2026-08-24, **24/24 table sys_ids mismatch** between `main` and `instance-
 | Zip size / records | ~804 KB, 487 files, 24 tables |
 | `npm run deploy:ppm` | **Fails** — stuck rollback + sys_id mismatch |
 | Retry after user clears rollback only | **Will fail again** until sys_ids aligned |
+
+**After sys_id alignment commit:** Clear rollback in Studio (Step 1 above), then run `npm run deploy:ppm`.

@@ -5,9 +5,344 @@ declare global {
         namespace Internal {
             interface Keys extends KeysRegistry {
                 explicit: {
+                    '01492d723260419693e7d734dcf6daaf': {
+                        table: 'sys_security_acl'
+                        id: '01492d723260419693e7d734dcf6daaf'
+                        deleted: true
+                    }
+                    '026643c644f64433bc531c90d187296a': {
+                        table: 'sys_security_acl'
+                        id: '026643c644f64433bc531c90d187296a'
+                        deleted: true
+                    }
+                    '05ffe28a34ca4542b1b42893baffd6c5': {
+                        table: 'sys_security_acl'
+                        id: '05ffe28a34ca4542b1b42893baffd6c5'
+                        deleted: true
+                    }
+                    '0bb3fbed275a46f5a684f89152673b11': {
+                        table: 'sys_script_include'
+                        id: '0bb3fbed275a46f5a684f89152673b11'
+                        deleted: true
+                    }
+                    '0cf93166a7a2427d80083e2e4090c519': {
+                        table: 'sys_security_acl'
+                        id: '0cf93166a7a2427d80083e2e4090c519'
+                        deleted: true
+                    }
+                    '0de54ae95f6c4a40a9511f3882830b84': {
+                        table: 'sys_security_acl'
+                        id: '0de54ae95f6c4a40a9511f3882830b84'
+                        deleted: true
+                    }
+                    '13b78b4b0c1d431189ffbd789bb660ac': {
+                        table: 'sys_script'
+                        id: '13b78b4b0c1d431189ffbd789bb660ac'
+                        deleted: true
+                    }
+                    '17a671d7f6af4e78add1f167eac2e7b0': {
+                        table: 'sys_security_acl'
+                        id: '17a671d7f6af4e78add1f167eac2e7b0'
+                        deleted: true
+                    }
+                    '183c5908c3b7445984493597a12ed259': {
+                        table: 'sys_security_acl'
+                        id: '183c5908c3b7445984493597a12ed259'
+                        deleted: true
+                    }
+                    '21b2f69b2d0f4d21ac71350ec8105b2d': {
+                        table: 'sys_security_acl'
+                        id: '21b2f69b2d0f4d21ac71350ec8105b2d'
+                        deleted: true
+                    }
+                    '22a761cdd0544ddb812bc3165526742a': {
+                        table: 'sys_security_acl'
+                        id: '22a761cdd0544ddb812bc3165526742a'
+                        deleted: true
+                    }
+                    '28effcf82dfd43e9aaff2d1fd444acaa': {
+                        table: 'sys_script_include'
+                        id: '28effcf82dfd43e9aaff2d1fd444acaa'
+                        deleted: true
+                    }
+                    '2f362039701d46789366ff27ba4bf555': {
+                        table: 'sys_security_acl'
+                        id: '2f362039701d46789366ff27ba4bf555'
+                        deleted: true
+                    }
+                    '3013efa05bcd440ab3b068ac4622337e': {
+                        table: 'sys_script'
+                        id: '3013efa05bcd440ab3b068ac4622337e'
+                        deleted: true
+                    }
+                    '30ebd9d37de54623a6cb1016fc926d86': {
+                        table: 'sys_security_acl'
+                        id: '30ebd9d37de54623a6cb1016fc926d86'
+                        deleted: true
+                    }
+                    '33bdde8e315c43e58f45f1a188babc76': {
+                        table: 'sys_script'
+                        id: '33bdde8e315c43e58f45f1a188babc76'
+                        deleted: true
+                    }
+                    '33cffe7f59dd4768b629ff63b1c56ba7': {
+                        table: 'sys_app_module'
+                        id: '33cffe7f59dd4768b629ff63b1c56ba7'
+                        deleted: true
+                    }
+                    '39aa08c1c05448d3804b63f822537b53': {
+                        table: 'sys_script_include'
+                        id: '39aa08c1c05448d3804b63f822537b53'
+                        deleted: true
+                    }
+                    '3c233a865eaa4c84a6e70f2265a1f35c': {
+                        table: 'sys_security_acl'
+                        id: '3c233a865eaa4c84a6e70f2265a1f35c'
+                        deleted: true
+                    }
+                    '3c37ff7d71194e60ae7a9938a529cec6': {
+                        table: 'sys_security_acl'
+                        id: '3c37ff7d71194e60ae7a9938a529cec6'
+                        deleted: true
+                    }
+                    '3d2e2948da054bd6aded06775edc8451': {
+                        table: 'sys_security_acl'
+                        id: '3d2e2948da054bd6aded06775edc8451'
+                        deleted: true
+                    }
+                    '426d6787612945d9ba6e55baa85ad003': {
+                        table: 'sys_script_include'
+                        id: '426d6787612945d9ba6e55baa85ad003'
+                        deleted: true
+                    }
+                    '4ad3ff5ba50f449a855631f0b3042ef0': {
+                        table: 'sys_security_acl'
+                        id: '4ad3ff5ba50f449a855631f0b3042ef0'
+                        deleted: true
+                    }
+                    '4cd82d12b7014386b138e27f170c6e4f': {
+                        table: 'sys_security_acl'
+                        id: '4cd82d12b7014386b138e27f170c6e4f'
+                        deleted: true
+                    }
+                    '58b60f206b18425394dbbbbdc0e86954': {
+                        table: 'sys_security_acl'
+                        id: '58b60f206b18425394dbbbbdc0e86954'
+                        deleted: true
+                    }
+                    '5b8f65c1b4bd4774a2e63c3a7c024b85': {
+                        table: 'sys_security_acl'
+                        id: '5b8f65c1b4bd4774a2e63c3a7c024b85'
+                        deleted: true
+                    }
+                    '5cd0fbd68601432ab206dfd22ae50338': {
+                        table: 'sys_security_acl'
+                        id: '5cd0fbd68601432ab206dfd22ae50338'
+                        deleted: true
+                    }
+                    '5ea8e1ce129b42d8bc26ea61acaaf362': {
+                        table: 'sys_security_acl'
+                        id: '5ea8e1ce129b42d8bc26ea61acaaf362'
+                        deleted: true
+                    }
+                    '5fb8593c4ef146cab8ad62a011dae4cb': {
+                        table: 'sys_app_application'
+                        id: '5fb8593c4ef146cab8ad62a011dae4cb'
+                        deleted: true
+                    }
+                    '60c76e9883314422acdfc0ec6c52edc4': {
+                        table: 'sys_security_acl'
+                        id: '60c76e9883314422acdfc0ec6c52edc4'
+                        deleted: true
+                    }
+                    '6197b062cc684555ba07b44bf5513f6f': {
+                        table: 'sys_security_acl'
+                        id: '6197b062cc684555ba07b44bf5513f6f'
+                        deleted: true
+                    }
+                    '63b2066db2f34941be1af990fa996ad5': {
+                        table: 'sys_security_acl'
+                        id: '63b2066db2f34941be1af990fa996ad5'
+                        deleted: true
+                    }
+                    '679e5842540e44df902036879f2eb23b': {
+                        table: 'sys_security_acl'
+                        id: '679e5842540e44df902036879f2eb23b'
+                        deleted: true
+                    }
+                    '68d117d64f2c40aabd78a18fa3cc286c': {
+                        table: 'sys_security_acl'
+                        id: '68d117d64f2c40aabd78a18fa3cc286c'
+                        deleted: true
+                    }
+                    '68e223b3ad3c4da88f59ae8df025c6a8': {
+                        table: 'sys_app_module'
+                        id: '68e223b3ad3c4da88f59ae8df025c6a8'
+                        deleted: true
+                    }
+                    '70636b2be5694e75b2497c970a515433': {
+                        table: 'sys_security_acl'
+                        id: '70636b2be5694e75b2497c970a515433'
+                        deleted: true
+                    }
+                    '70d0a03557114c8aab132ab05329cdbc': {
+                        table: 'sys_security_acl'
+                        id: '70d0a03557114c8aab132ab05329cdbc'
+                        deleted: true
+                    }
+                    '710c9a5d5b324f8eaf305ab2bdc21544': {
+                        table: 'sys_security_acl'
+                        id: '710c9a5d5b324f8eaf305ab2bdc21544'
+                        deleted: true
+                    }
+                    '759832d62ac843738adcccd8a56ee5e5': {
+                        table: 'sys_security_acl'
+                        id: '759832d62ac843738adcccd8a56ee5e5'
+                        deleted: true
+                    }
+                    '773b97b9c06d42779db9fda1a183937f': {
+                        table: 'sys_security_acl'
+                        id: '773b97b9c06d42779db9fda1a183937f'
+                        deleted: true
+                    }
+                    '7aef8339def8458895ae82e2f9c43048': {
+                        table: 'sys_security_acl'
+                        id: '7aef8339def8458895ae82e2f9c43048'
+                        deleted: true
+                    }
+                    '7e0bf384e01f4f368b06f73e4a4eb849': {
+                        table: 'sys_security_acl'
+                        id: '7e0bf384e01f4f368b06f73e4a4eb849'
+                        deleted: true
+                    }
+                    '8353d9b069de4b69aba68679c0014544': {
+                        table: 'sys_security_acl'
+                        id: '8353d9b069de4b69aba68679c0014544'
+                        deleted: true
+                    }
+                    '8b76902d00224542a9a802d1a7b15958': {
+                        table: 'sys_security_acl'
+                        id: '8b76902d00224542a9a802d1a7b15958'
+                        deleted: true
+                    }
+                    '8c792021f0754c49a0bad2f2391d0fda': {
+                        table: 'sys_security_acl'
+                        id: '8c792021f0754c49a0bad2f2391d0fda'
+                        deleted: true
+                    }
+                    '90a8832c5d5b44d88736f65d134065df': {
+                        table: 'sys_security_acl'
+                        id: '90a8832c5d5b44d88736f65d134065df'
+                        deleted: true
+                    }
+                    '92a22379337687509937d1382e5c7b42': {
+                        table: 'sys_app_info'
+                        id: '92a22379337687509937d1382e5c7b42'
+                        deleted: true
+                    }
+                    '9550d11c0cce4857b04425210209eb77': {
+                        table: 'sys_security_acl'
+                        id: '9550d11c0cce4857b04425210209eb77'
+                        deleted: true
+                    }
+                    '98566ef37e8f48d59d0d6285fe7ab5ef': {
+                        table: 'sys_security_acl'
+                        id: '98566ef37e8f48d59d0d6285fe7ab5ef'
+                        deleted: true
+                    }
+                    '989613c058214fffb4f71b9b3d4ca39c': {
+                        table: 'sys_security_acl'
+                        id: '989613c058214fffb4f71b9b3d4ca39c'
+                        deleted: true
+                    }
+                    '98aca17668dd423f88fb9905cec08c47': {
+                        table: 'sys_security_acl'
+                        id: '98aca17668dd423f88fb9905cec08c47'
+                        deleted: true
+                    }
+                    '994b4c5669d14c9889341b13493d71a0': {
+                        table: 'sys_app_module'
+                        id: '994b4c5669d14c9889341b13493d71a0'
+                        deleted: true
+                    }
+                    '996735df62514a91abae56cf8c0be3f0': {
+                        table: 'sys_app_module'
+                        id: '996735df62514a91abae56cf8c0be3f0'
+                        deleted: true
+                    }
+                    '9e1bad6123fc45138eba1b38d46c3b30': {
+                        table: 'sys_security_acl'
+                        id: '9e1bad6123fc45138eba1b38d46c3b30'
+                        deleted: true
+                    }
+                    a1a6af8fa4e440a4a3addb6d65ed279c: {
+                        table: 'sys_security_acl'
+                        id: 'a1a6af8fa4e440a4a3addb6d65ed279c'
+                        deleted: true
+                    }
+                    a271541ebd1743a1918072d54697ba0a: {
+                        table: 'sys_security_acl'
+                        id: 'a271541ebd1743a1918072d54697ba0a'
+                        deleted: true
+                    }
+                    a2bd4e71efc64d819a9a9d991d55b896: {
+                        table: 'sys_app_module'
+                        id: 'a2bd4e71efc64d819a9a9d991d55b896'
+                        deleted: true
+                    }
+                    a3d91cefb1bb4206b305716fd41af22f: {
+                        table: 'sys_security_acl'
+                        id: 'a3d91cefb1bb4206b305716fd41af22f'
+                        deleted: true
+                    }
                     'access-service': {
                         table: 'sys_script_include'
                         id: '11d16c3ef279464bbf15e1055d3d1242'
+                    }
+                    ad2d0364eb8e420fa7c776ff25288c16: {
+                        table: 'sys_security_acl'
+                        id: 'ad2d0364eb8e420fa7c776ff25288c16'
+                        deleted: true
+                    }
+                    ad3354666487418f94e5f32493c90e7d: {
+                        table: 'sys_security_acl'
+                        id: 'ad3354666487418f94e5f32493c90e7d'
+                        deleted: true
+                    }
+                    b5cbd3fee13140219d532dcd1de480b9: {
+                        table: 'sys_script_include'
+                        id: 'b5cbd3fee13140219d532dcd1de480b9'
+                        deleted: true
+                    }
+                    b73ed5fe47bd4566912e1d43fc6eeb82: {
+                        table: 'sys_security_acl'
+                        id: 'b73ed5fe47bd4566912e1d43fc6eeb82'
+                        deleted: true
+                    }
+                    ba439480bfba4d39a67756a40d1a09a7: {
+                        table: 'sys_security_acl'
+                        id: 'ba439480bfba4d39a67756a40d1a09a7'
+                        deleted: true
+                    }
+                    baed430f055644e69e097e94ef5e794c: {
+                        table: 'sys_script_include'
+                        id: 'baed430f055644e69e097e94ef5e794c'
+                        deleted: true
+                    }
+                    bc71079598114f3a816d06e97bd8c941: {
+                        table: 'sys_security_acl'
+                        id: 'bc71079598114f3a816d06e97bd8c941'
+                        deleted: true
+                    }
+                    bd56218badfb46928483caf8536606b8: {
+                        table: 'sys_security_acl'
+                        id: 'bd56218badfb46928483caf8536606b8'
+                        deleted: true
+                    }
+                    befd7715087249d2b359d52ef3431276: {
+                        table: 'sys_security_acl'
+                        id: 'befd7715087249d2b359d52ef3431276'
+                        deleted: true
                     }
                     bom_json: {
                         table: 'sys_module'
@@ -21,6 +356,26 @@ declare global {
                         table: 'sys_script'
                         id: '1ccce43d99034b419bf4e3b2db7da08f'
                     }
+                    c0380eac745446fd831806f964474cf5: {
+                        table: 'sys_security_acl'
+                        id: 'c0380eac745446fd831806f964474cf5'
+                        deleted: true
+                    }
+                    c1911a4d7d9e497589815b64b10e3457: {
+                        table: 'sys_security_acl'
+                        id: 'c1911a4d7d9e497589815b64b10e3457'
+                        deleted: true
+                    }
+                    c39eef9c18ff4fcc9e1227af47d0bad0: {
+                        table: 'sys_security_acl'
+                        id: 'c39eef9c18ff4fcc9e1227af47d0bad0'
+                        deleted: true
+                    }
+                    ca8ca5c56054470fa825f5c4381deb33: {
+                        table: 'sys_security_acl'
+                        id: 'ca8ca5c56054470fa825f5c4381deb33'
+                        deleted: true
+                    }
                     ca99d331333687509937d1382e5c7be5: {
                         table: 'sys_app_info'
                         id: 'ca99d331333687509937d1382e5c7be5'
@@ -28,6 +383,81 @@ declare global {
                     'capacity-service': {
                         table: 'sys_script_include'
                         id: 'bc8afd28061f4e0e9330c9693d16b997'
+                    }
+                    d2aa2bb97c474a048d269be3aa8d3f4c: {
+                        table: 'sys_security_acl'
+                        id: 'd2aa2bb97c474a048d269be3aa8d3f4c'
+                        deleted: true
+                    }
+                    d51bb83157b74f1f88461bb9f883f90b: {
+                        table: 'sys_script'
+                        id: 'd51bb83157b74f1f88461bb9f883f90b'
+                        deleted: true
+                    }
+                    dc43c9ef31534cdd8b3bc18ce1e1d151: {
+                        table: 'sys_security_acl'
+                        id: 'dc43c9ef31534cdd8b3bc18ce1e1d151'
+                        deleted: true
+                    }
+                    e1ffb9b246e94a798b1906de326f6905: {
+                        table: 'sys_security_acl'
+                        id: 'e1ffb9b246e94a798b1906de326f6905'
+                        deleted: true
+                    }
+                    e2117f8ae90f4e5c8dc1069203fa51ef: {
+                        table: 'sys_security_acl'
+                        id: 'e2117f8ae90f4e5c8dc1069203fa51ef'
+                        deleted: true
+                    }
+                    e639e5febaa242e0b1307a9bc2ebdfc9: {
+                        table: 'sys_security_acl'
+                        id: 'e639e5febaa242e0b1307a9bc2ebdfc9'
+                        deleted: true
+                    }
+                    e70664fcae6542518758fefbdf0e95a9: {
+                        table: 'sys_security_acl'
+                        id: 'e70664fcae6542518758fefbdf0e95a9'
+                        deleted: true
+                    }
+                    e8ed824cec8742b5b574224dfbfdd766: {
+                        table: 'sys_script_include'
+                        id: 'e8ed824cec8742b5b574224dfbfdd766'
+                        deleted: true
+                    }
+                    e8f22737592c4aa6850b98c492f253c0: {
+                        table: 'sys_security_acl'
+                        id: 'e8f22737592c4aa6850b98c492f253c0'
+                        deleted: true
+                    }
+                    ec94a2d8bee642adaf1ae5a8bf2aff66: {
+                        table: 'sys_security_acl'
+                        id: 'ec94a2d8bee642adaf1ae5a8bf2aff66'
+                        deleted: true
+                    }
+                    ee014cf0b3344caeb9c018fa98e7c464: {
+                        table: 'sys_security_acl'
+                        id: 'ee014cf0b3344caeb9c018fa98e7c464'
+                        deleted: true
+                    }
+                    ef1c6549e279498eaee631fc7888ff28: {
+                        table: 'sys_security_acl'
+                        id: 'ef1c6549e279498eaee631fc7888ff28'
+                        deleted: true
+                    }
+                    f082eddd81684a0887c0ffb531f48f36: {
+                        table: 'sys_security_acl'
+                        id: 'f082eddd81684a0887c0ffb531f48f36'
+                        deleted: true
+                    }
+                    f240ce7f692e4cb681f062b4277da04f: {
+                        table: 'sys_security_acl'
+                        id: 'f240ce7f692e4cb681f062b4277da04f'
+                        deleted: true
+                    }
+                    f6613991b16d48e28bb97ff348198bf7: {
+                        table: 'sys_security_acl'
+                        id: 'f6613991b16d48e28bb97ff348198bf7'
+                        deleted: true
                     }
                     'member-service': {
                         table: 'sys_script_include'
@@ -47,195 +477,195 @@ declare global {
                     }
                     'route-automations-get': {
                         table: 'sys_ws_operation'
-                        id: 'a1b2c3d4e5f6478990a1b2c3d4e5f601'
+                        id: '6289e9caae7f41be8bc9d5b9d53a23f1'
                     }
                     'route-capacity-plan-allocation-patch': {
                         table: 'sys_ws_operation'
-                        id: '3471788d48e54e2289302c0874bbf39a'
+                        id: '65fed3fbba8940f7bdfd238300c0d704'
                     }
                     'route-capacity-plan-allocations-get': {
                         table: 'sys_ws_operation'
-                        id: '66a38338e38d4d87902c7b7b7da10c8a'
+                        id: '6b32571d76ae457bb40cdd3f3ab43aaa'
                     }
                     'route-capacity-plan-get': {
                         table: 'sys_ws_operation'
-                        id: '95f6c44c969e4622b2cb4c130d74ad4f'
+                        id: '547b1b97f5cb40edb0357e3cf9ca8a01'
                     }
                     'route-capacity-plan-grid-get': {
                         table: 'sys_ws_operation'
-                        id: '596a03da329648db9bf1d5d2fbdb6aba'
+                        id: '6889ea1aec3445b6bea11b7dac722e20'
                     }
                     'route-capacity-plans-get': {
                         table: 'sys_ws_operation'
-                        id: '544778a49ce14fc6b4c073d6c3b7ba3a'
+                        id: '1a6c6f093c2b4be2a78b05857afdaf14'
                     }
                     'route-custom-field-values-get': {
                         table: 'sys_ws_operation'
-                        id: '5b6e7db7eac542afa6bdba9fafe3712a'
+                        id: 'f0d303ab2c694be7af08aa0cba558a68'
                     }
                     'route-custom-field-values-post': {
                         table: 'sys_ws_operation'
-                        id: '5cfad2e994ed4aa3ae0acbf42ea33ba9'
+                        id: '2b62f4f624ac43b6beb910b2ba1d9098'
                     }
                     'route-custom-fields-get': {
                         table: 'sys_ws_operation'
-                        id: '26fa643fbe1f4965a9cb4308d154149b'
+                        id: '91719bba4c674fb68fc5e5e5bdcb3fa8'
                     }
                     'route-groups-search-get': {
                         table: 'sys_ws_operation'
-                        id: 'fcb609ee42954c75b01f9d54f64324a1'
+                        id: '799340f0c752491fbc2998dc2a239c57'
                     }
                     'route-intake-forms-get': {
                         table: 'sys_ws_operation'
-                        id: 'b2c3d4e5f6a74890b1c2d3e4f5a6b702'
+                        id: 'c0fb377951f8443f86b6192414d9fd73'
                     }
                     'route-portfolio-dashboard-get': {
                         table: 'sys_ws_operation'
-                        id: 'cfc3fc83f8a04f88bb9777775a42a900'
+                        id: '439454b5a6534be4a163aa55a59ab2e4'
                     }
                     'route-portfolio-get': {
                         table: 'sys_ws_operation'
-                        id: '4af1aa4c77134adf975c04ec71302a9b'
+                        id: 'f7f0bee203834d5195967e801ac93979'
                     }
                     'route-portfolio-member-delete': {
                         table: 'sys_ws_operation'
-                        id: '1e7a23a6e35b4a7cb6c56e99c28e24ff'
+                        id: '913ddc3f65e643b28c11ce2a0ee9b321'
                     }
                     'route-portfolio-member-patch': {
                         table: 'sys_ws_operation'
-                        id: '79caf851235244bdaca7074a24f07ded'
+                        id: '44ab4993fc8e474099d6106519f95f57'
                     }
                     'route-portfolio-members-get': {
                         table: 'sys_ws_operation'
-                        id: '01f109016c6c48c88ed2492081eac0f9'
+                        id: '89316c921f514c90987bb418fb1318b6'
                     }
                     'route-portfolio-members-post': {
                         table: 'sys_ws_operation'
-                        id: '13623f850e714f89aee5feeb9b989556'
+                        id: 'a6b04fc715064e609ff122b506caa91d'
                     }
                     'route-portfolio-patch': {
                         table: 'sys_ws_operation'
-                        id: '82d88f86f7b34a4784ce182854a5e134'
+                        id: 'e2d0b6830c484fabbe103e64f5832503'
                     }
                     'route-portfolio-progress-get': {
                         table: 'sys_ws_operation'
-                        id: 'f4d9dcd0ef6b42e4a58b5664b8b50a8b'
+                        id: '2ac2a6e243794bbebe78dc984a026b6b'
                     }
                     'route-portfolio-projects-delete': {
                         table: 'sys_ws_operation'
-                        id: 'db215633311643a291f8f5c85a6abab3'
+                        id: '8c133342b04849b79fc037b6d6a93614'
                     }
                     'route-portfolio-projects-post': {
                         table: 'sys_ws_operation'
-                        id: '4b580a5d3d0a47c0957174f063f5bcf9'
+                        id: '7e681d52e82645b3b31be86bbdec090f'
                     }
                     'route-portfolio-timeline-get': {
                         table: 'sys_ws_operation'
-                        id: '215ef579e5f04379a2c8d6b56644da0d'
+                        id: '0d0a6bfbf08e434f8de82ddd341f617e'
                     }
                     'route-portfolio-view-data-get': {
                         table: 'sys_ws_operation'
-                        id: '57302e7abafe499ca9ad3883036cd939'
+                        id: '970ed6eddbbd4346b8a4bd481b44068b'
                     }
                     'route-portfolio-views-get': {
                         table: 'sys_ws_operation'
-                        id: '390e0b73771d4e039e055226033e6077'
+                        id: '0f0d63d6969544f1b60548c85876737f'
                     }
                     'route-portfolio-workload-get': {
                         table: 'sys_ws_operation'
-                        id: '51c32da0d0ce42be95892c0e68a5654a'
+                        id: '266a9b3a563e49cbbc69bf8d997ec07a'
                     }
                     'route-portfolios-get': {
                         table: 'sys_ws_operation'
-                        id: 'e27407735cb549909926d9665c1404be'
+                        id: 'e740fdc1a2ad4279b18b5cc6cdc2bdd6'
                     }
                     'route-portfolios-post': {
                         table: 'sys_ws_operation'
-                        id: '65e43d30b6d44e51ab73e55d57d07e35'
+                        id: '1fd93eee3d76415395a8dcad7e85b1c4'
                     }
                     'route-project-board-get': {
                         table: 'sys_ws_operation'
-                        id: 'e5e19f6011de4c1099943e07fd9220ba'
+                        id: '496dbb37bf1d4de58acb23f4a7febefb'
                     }
                     'route-project-board-patch': {
                         table: 'sys_ws_operation'
-                        id: '62df5d565e354851a3dd779e219e58b4'
+                        id: 'ad73181c65974cb1810363ffb4e3c073'
                     }
                     'route-project-get': {
                         table: 'sys_ws_operation'
-                        id: '924ba6cb6433418cbe5224958b038b21'
+                        id: '269222a3412a4737a1f46589da31e755'
                     }
                     'route-project-member-delete': {
                         table: 'sys_ws_operation'
-                        id: '612fdcd2eb9e462db5bb3e789105cb68'
+                        id: 'f3b1424a65974d628ee10ad229ee1d2c'
                     }
                     'route-project-member-patch': {
                         table: 'sys_ws_operation'
-                        id: 'a38b57bb57394709870ecfdd1c877e1d'
+                        id: '6336c1799c3a44338fc061626bd61cf0'
                     }
                     'route-project-members-get': {
                         table: 'sys_ws_operation'
-                        id: '015c85d385c34ac0800b2c0e9213893a'
+                        id: '267a52a0d30d49b1ac39c6344f6881eb'
                     }
                     'route-project-members-post': {
                         table: 'sys_ws_operation'
-                        id: '74936f11d89943beb14e54d03905129c'
+                        id: '9826ad090d1241d4ab477706e12e0544'
                     }
                     'route-project-patch': {
                         table: 'sys_ws_operation'
-                        id: '3c84f157f263422dbe88c9c5da4773b8'
+                        id: 'acba90380dd94ff183553fed2a1c3322'
                     }
                     'route-project-portfolios-get': {
                         table: 'sys_ws_operation'
-                        id: '8349a828a435415cb763962d0202b705'
+                        id: 'b6b61a5a260543b5b4b6f16f7fa333bc'
                     }
                     'route-project-sections-get': {
                         table: 'sys_ws_operation'
-                        id: 'd389a3d34c7147299392b4ddbcda4b08'
+                        id: 'c9245c055e294e2da2fd8890b415d788'
                     }
                     'route-project-tasks-get': {
                         table: 'sys_ws_operation'
-                        id: '8c6c46b606634a3fb632c61564d12a8e'
+                        id: '30d8464601e0476f86980dba8f42a86c'
                     }
                     'route-project-tasks-post': {
                         table: 'sys_ws_operation'
-                        id: '615db9eb539849b9a0cc4e927bfdadee'
+                        id: 'f6b9971cbf884cdfb276621db0d66199'
                     }
                     'route-projects-get': {
                         table: 'sys_ws_operation'
-                        id: '056e0592d4724bf7a47cd1b4c1c69a02'
+                        id: '2bc63bea19684d3993fd5df76f4a0f80'
                     }
                     'route-projects-post': {
                         table: 'sys_ws_operation'
-                        id: '64256419fe7b4445814c6db139ecf8c9'
+                        id: '29bceae6edf74e92b994be08d4740b30'
                     }
                     'route-task-get': {
                         table: 'sys_ws_operation'
-                        id: '742799610a874ab1b953054aef7a0c9f'
+                        id: '77b7025f948f4df38cf9ef00a8d64bde'
                     }
                     'route-task-patch': {
                         table: 'sys_ws_operation'
-                        id: 'a423e7aa04044a5c8b0e3a474aac79fb'
+                        id: '941011255436464098aef3898319d739'
                     }
                     'route-task-projects-get': {
                         table: 'sys_ws_operation'
-                        id: '7ffd7d8686b14a9ea88464dc9f9f0034'
+                        id: '1007080e563c477fbdb4651835c22bad'
                     }
                     'route-team-members-get': {
                         table: 'sys_ws_operation'
-                        id: '074a7b3c4d89470497ef5a096223c857'
+                        id: 'acee11a22f584e29916babc5eae757e4'
                     }
                     'route-users-search-get': {
                         table: 'sys_ws_operation'
-                        id: 'd566993eab374b46b877fb0ec62e5a1f'
+                        id: '318a494adb93481f8f570fdb5902cc14'
                     }
                     'route-view-get': {
                         table: 'sys_ws_operation'
-                        id: '2748ece1d8974df4b4e3a4960c9dfb3f'
+                        id: 'c7d919a3a81c44bfa8ad8b0d616f6ac9'
                     }
                     'route-view-patch': {
                         table: 'sys_ws_operation'
-                        id: '1f32143f84854bc8bb250ac9e31b4090'
+                        id: 'b1a38ba476414e778672dad3c069ece0'
                     }
                     'src_server_business-rules_enforce-eav-xor_ts': {
                         table: 'sys_module'
@@ -311,7 +741,7 @@ declare global {
                     }
                     'z-inflow-rest-api': {
                         table: 'sys_ws_definition'
-                        id: '141ef836cbd744daa2509f711d6f7915'
+                        id: '496dbb37bf1d4de58acb23f4a7febefb'
                     }
                 }
                 composite: [
@@ -385,11 +815,25 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact'
+                        id: '0423ed01f5fe4f4e8c633d15936e63a5'
+                        key: {
+                            name: 'x_gzi_ppm_app.do - BYOUI Files'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '04ed1c659a4b42fd8b08a9a5004f5aa7'
                         key: {
                             name: 'x_gzi_ppm_portfolio_member'
                             element: 'user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '05536a388fb8475cbc57ace3d1b53d6d'
+                        key: {
+                            name: 'x_gzi_ppm_capacity_plan'
                         }
                     },
                     {
@@ -514,6 +958,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '0a3887594cee45229466f6baccf94191'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_project_task'
+                            col_name_string: 'task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '0a92abb12b7e8750d80afdabf291bfcb'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'ba439480bfba4d39a67756a40d1a09a7'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_section'
                         id: '0b138e3133ba07509937d1382e5c7b12'
                         key: {
@@ -617,13 +1084,6 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '0d63f587a11b476b899db807e17d332e'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                        }
-                    },
-                    {
                         table: 'sys_index'
                         id: '0d79aacddf7a465fa96d9c60bb944ed9'
                         deleted: true
@@ -690,6 +1150,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '1011800439cd44f78818bc28184bc3e3'
+                        key: {
+                            application_file: 'efce0001869d47f088c3daafdba3d36a'
+                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '10ca58f890ea41baa0bae5167f84996d'
+                        key: {
+                            name: 'x_gzi_ppm_resource_role'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '1176f54a40da48ae840932e3f208ef66'
                         key: {
@@ -704,6 +1179,71 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_user_capacity'
                             element: 'baseline_hours_per_week'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '11926bb12b7e8750d80afdabf291bf26'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '05ffe28a34ca4542b1b42893baffd6c5'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '11926bb12b7e8750d80afdabf291bf2c'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '0cf93166a7a2427d80083e2e4090c519'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '11926bb12b7e8750d80afdabf291bf32'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '0de54ae95f6c4a40a9511f3882830b84'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '1239bea265604fa6a94ec8c7dc4bb920'
+                        deleted: true
+                        key: {
+                            application_file: 'd1b615c22f124edcb3b9b35d00a325eb'
+                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '1292ebb12b7e8750d80afdabf291bf24'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'dc43c9ef31534cdd8b3bc18ce1e1d151'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -793,6 +1333,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '15926bb12b7e8750d80afdabf291bf94'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '30ebd9d37de54623a6cb1016fc926d86'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_index'
                         id: '15a47b4c2e0c4eff9aeb2cecf79350f2'
                         deleted: true
@@ -868,6 +1422,48 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_project_task'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '1a92ebb12b7e8750d80afdabf291bf06'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'c39eef9c18ff4fcc9e1227af47d0bad0'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '1a92ebb12b7e8750d80afdabf291bf6c'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'e70664fcae6542518758fefbdf0e95a9'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '1a92ebb12b7e8750d80afdabf291bfa7'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'f240ce7f692e4cb681f062b4277da04f'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -959,13 +1555,6 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '1d5c833bcbc847df8cb2f611dc27aebc'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                        }
-                    },
-                    {
                         table: 'sys_choice_set'
                         id: '1d9aebfa30ef4ff0919698ff115c8c50'
                         key: {
@@ -1023,6 +1612,15 @@ declare global {
                     },
                     {
                         table: 'sys_index'
+                        id: '20175103da874d42acc39662217ffb1d'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_project_task'
+                            col_name_string: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
                         id: '20691dffe4574249b1f1a8cca3f1f7b9'
                         deleted: true
                         key: {
@@ -1047,6 +1645,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '21926bb12b7e8750d80afdabf291bfed'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '6197b062cc684555ba07b44bf5513f6f'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '21bd8c140c9e4b0c876c42bdeea4ed26'
                         key: {
@@ -1061,6 +1673,15 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_custom_view'
                             element: 'is_default'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '2294dbc42f3441e0a6c3456bd521fd74'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_portfolio_member'
+                            col_name_string: 'portfolio_id'
                         }
                     },
                     {
@@ -1094,6 +1715,34 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_task'
                             element: 'task_type'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '25926bb12b7e8750d80afdabf291bf9a'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '3c233a865eaa4c84a6e70f2265a1f35c'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '25926bb12b7e8750d80afdabf291bfd6'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '5b8f65c1b4bd4774a2e63c3a7c024b85'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -1220,6 +1869,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '2b157f1ccf644ccea8d295204634a8c3'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_workspace_user'
+                            col_name_string: 'user_id'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '2b23067133ba07509937d1382e5c7b2f'
                         key: {
@@ -1311,13 +1969,6 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '2ec233f6742840d795b8a75a14581c49'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                        }
-                    },
-                    {
                         table: 'sys_index'
                         id: '2ef2ae1f94564cc48439cc163a49b484'
                         deleted: true
@@ -1379,6 +2030,43 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '31645e080f7249a092fb249e94cbc3b4'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_portfolio_project'
+                            col_name_string: 'portfolio_id'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3192abb12b7e8750d80afdabf291bf63'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '8b76902d00224542a9a802d1a7b15958'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '32d2e58164af4e8ca999bc6526d8e282'
+                        key: {
+                            name: 'x_gzi_ppm_portfolio'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '33569d04311047ffb616527876452bd2'
+                        key: {
+                            name: 'x_gzi_ppm_workspace'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '337eb3daeb7244fd9abc3e9c70075eb3'
                         key: {
@@ -1429,6 +2117,34 @@ declare global {
                             name: 'x_gzi_ppm_custom_field_def'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3592abb12b7e8750d80afdabf291bf4c'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '773b97b9c06d42779db9fda1a183937f'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3592abb12b7e8750d80afdabf291bf97'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '9e1bad6123fc45138eba1b38d46c3b30'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -1511,6 +2227,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '389e86b1661b449298faf322f65f6b33'
+                        key: {
+                            name: 'x_gzi_ppm_project_task'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '38ece7ee431049009efbfa92baa4b336'
+                        key: {
+                            name: 'x_gzi_ppm_custom_view_column'
+                        }
+                    },
+                    {
                         table: 'sys_index'
                         id: '390140c80ff14014bd259cbea064bd43'
                         key: {
@@ -1531,6 +2261,20 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_user_res_profile'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3992abb12b7e8750d80afdabf291bf80'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '9550d11c0cce4857b04425210209eb77'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -1587,8 +2331,16 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '3b1d7f70f9644401b070be6532e84b55'
+                        key: {
+                            name: 'x_gzi_ppm_status_update'
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '3b23f3215c2a4db8a65180d0f0709cdf'
+                        deleted: true
                         key: {
                             application_file: '7c96e2863ecc4cc6be05275b0d635fb1'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
@@ -1601,13 +2353,6 @@ declare global {
                             name: 'x_gzi_ppm_goal'
                             element: 'status'
                             language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '3bc44e687f53442f88477d6cac461086'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
                         }
                     },
                     {
@@ -1666,13 +2411,6 @@ declare global {
                             name: 'x_gzi_ppm_cust_field_setting'
                             element: 'field_def_id'
                             language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '3ea17479761d42f8b159f97108aff757'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
                         }
                     },
                     {
@@ -1856,6 +2594,15 @@ declare global {
                     },
                     {
                         table: 'sys_index'
+                        id: '478128385b0840e39e7571566256f8d9'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_portfolio_member'
+                            col_name_string: 'user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
                         id: '47877b90bfdc4bb8977adde6a1ce6718'
                         deleted: true
                         key: {
@@ -1872,6 +2619,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '48ec98954b294149932630e22d6207ed'
+                        key: {
+                            name: 'x_gzi_ppm_goal'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '48fc9c65b07d472ab2a009075892488c'
                         deleted: true
@@ -1885,6 +2639,20 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_custom_view_column'
                             element: 'field_path'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '4a92abb12b7e8750d80afdabf291bfdc'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'befd7715087249d2b359d52ef3431276'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -1941,17 +2709,25 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '4e5def7668a4421aa10deb49b5836b95'
+                        table: 'sn_glider_source_artifact'
+                        id: '4e8e46929bde432790cfcb7104335322'
+                        deleted: true
                         key: {
-                            name: 'x_gzi_ppm_project'
+                            name: 'x_gzi_ppm_workspace.do - BYOUI Files'
                         }
                     },
                     {
-                        table: 'sn_glider_source_artifact'
-                        id: '4e8e46929bde432790cfcb7104335322'
+                        table: 'sys_security_acl_role'
+                        id: '4e92abb12b7e8750d80afdabf291bfc5'
+                        deleted: true
                         key: {
-                            name: 'x_gzi_ppm_workspace.do - BYOUI Files'
+                            sys_security_acl: 'b73ed5fe47bd4566912e1d43fc6eeb82'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -1960,13 +2736,6 @@ declare global {
                         deleted: true
                         key: {
                             name: 'x_gzi_ppm/rules'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '4ef3f887f9e84d7dbf6e51ee06fc6bd3'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
                         }
                     },
                     {
@@ -1987,17 +2756,17 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '50fe35fc432e4969bb8f02b8e61bdfc2'
+                        table: 'sys_security_acl_role'
+                        id: '51926bb12b7e8750d80afdabf291bf38'
+                        deleted: true
                         key: {
-                            name: 'x_gzi_ppm_user_res_profile'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '520b1cfcf0c84518a60488cd9d46b11b'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
+                            sys_security_acl: '17a671d7f6af4e78add1f167eac2e7b0'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -2121,11 +2890,34 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '5692ebb12b7e8750d80afdabf291bf1e'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'd2aa2bb97c474a048d269be3aa8d3f4c'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '570ebe10b1f646dba2a04ef94d0401a1'
                         deleted: true
                         key: {
                             name: 'x_gzi_ppm/rules.js.map'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '5746b148039940f6b74ed1c14cc4fc11'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_task_dependency'
+                            col_name_string: 'predecessor_id'
                         }
                     },
                     {
@@ -2178,6 +2970,20 @@ declare global {
                             name: 'x_gzi_ppm_portfolio'
                             element: 'description'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '5a92ebb12b7e8750d80afdabf291bf7d'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'ee014cf0b3344caeb9c018fa98e7c464'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -2268,6 +3074,34 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '5e92ebb12b7e8750d80afdabf291bf66'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'e639e5febaa242e0b1307a9bc2ebdfc9'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '5e92ebb12b7e8750d80afdabf291bfa1'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'f082eddd81684a0887c0ffb531f48f36'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '5f01aa682bf04edeaf4d8550e1c8caaf'
                         deleted: true
@@ -2293,6 +3127,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '60f6a946fa754d08a40265e75b940888'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_workspace_team'
+                            col_name_string: 'group_id'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '6146a65623274ab286e03ed16dad6e1c'
                         key: {
@@ -2301,6 +3144,20 @@ declare global {
                             value: 'week'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '61926bb12b7e8750d80afdabf291bffe'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '68d117d64f2c40aabd78a18fa3cc286c'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -2326,6 +3183,14 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_task'
                             element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '636a571f929c4e22a406467712c3d54f'
+                        key: {
+                            application_file: '7d36591a7ccd44d880e4250ee571f519'
+                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
                         }
                     },
                     {
@@ -2360,11 +3225,27 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '6492cb21cea846a690e0e43fdafee83d'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_task_dependency'
+                            col_name_string: 'successor_id'
+                        }
+                    },
+                    {
                         table: 'sys_choice_set'
                         id: '65318d47920d40bdbba0a2ea134f18a7'
                         key: {
                             name: 'x_gzi_ppm_custom_view'
                             element: 'view_type'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '653a31c5a92445acbbe2456afe4d96eb'
+                        key: {
+                            name: 'x_gzi_ppm_workspace_team'
                         }
                     },
                     {
@@ -2374,6 +3255,34 @@ declare global {
                             name: 'x_gzi_ppm_capacity_plan'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '65926bb12b7e8750d80afdabf291bfe7'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '60c76e9883314422acdfc0ec6c52edc4'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '6592abb12b7e8750d80afdabf291bf22'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '70d0a03557114c8aab132ab05329cdbc'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -2404,17 +3313,34 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '6651a10ac71d424680e0932f68d3d6a4'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                        }
-                    },
-                    {
                         table: 'sys_ux_lib_asset'
                         id: '6884c59aa62d4204b6bd94ce560cba08'
                         key: {
                             name: 'x_gzi_ppm/index'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '695813da6d3e4a7ebe06a21da82ea96d'
+                        deleted: true
+                        key: {
+                            name: 'x_gzi_ppm_task_dependency'
+                            element: 'successor_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '69926bb12b7e8750d80afdabf291bfd0'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '58b60f206b18425394dbbbbdc0e86954'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -2606,6 +3532,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '6ff05c95f2884d1ab38ee163776ec57c'
+                        deleted: true
+                        key: {
+                            name: 'x_gzi_ppm_task_dependency'
+                            element: 'predecessor_id'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '7026f5c128c04a27a1efd5d15e2e396c'
                         key: {
@@ -2655,10 +3590,38 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '754516dcdfcf433bacc32e375807a928'
-                        deleted: false
+                        deleted: true
                         key: {
                             application_file: 'a7b33fbdadbf43ceb5d8a31bfaf223d9'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '7592abb12b7e8750d80afdabf291bf5d'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '8353d9b069de4b69aba68679c0014544'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '7592abb12b7e8750d80afdabf291bfa8'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'a3d91cefb1bb4206b305716fd41af22f'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -2668,13 +3631,6 @@ declare global {
                             name: 'x_gzi_ppm_task'
                             element: 'watch_list'
                             language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '77c795e258cf4c809e5d05d8d35f8db6'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_team'
                         }
                     },
                     {
@@ -2689,6 +3645,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '77ce7370247e4bbda8de272a4d0c8a01'
+                        deleted: true
                         key: {
                             application_file: '7d36591a7ccd44d880e4250ee571f519'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
@@ -2736,6 +3693,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '7992abb12b7e8750d80afdabf291bf91'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '98aca17668dd423f88fb9905cec08c47'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_choice_set'
                         id: '79a288e1ef0640db9d9657e23f682de4'
                         key: {
@@ -2759,6 +3730,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '7a94b8eff4e345b6a44468d1d64c424b'
+                        key: {
+                            name: 'x_gzi_ppm_workspace_user'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '7aba6a80993a4de48bae8a800c7ca06a'
                         key: {
@@ -2776,6 +3754,13 @@ declare global {
                             name: 'x_gzi_ppm_project_member'
                             element: 'project_id'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '7b35be9364cf4216b48fa92c793311ac'
+                        key: {
+                            name: 'x_gzi_ppm_user_res_profile'
                         }
                     },
                     {
@@ -2799,6 +3784,7 @@ declare global {
                     {
                         table: 'sys_ui_page'
                         id: '7c96e2863ecc4cc6be05275b0d635fb1'
+                        deleted: true
                         key: {
                             endpoint: 'x_gzi_ppm_workspace.do'
                         }
@@ -2856,10 +3842,11 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '8059d979766543b8b1e2cb9bac6e359b'
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '80228e5be67d479b8f4862eb62a6f222'
                         key: {
-                            name: 'x_gzi_ppm_task_dependency'
+                            application_file: 'cf781f6abe8b400b9f173086e544e1f3'
+                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
                         }
                     },
                     {
@@ -2897,13 +3884,6 @@ declare global {
                             value: 'portfolio'
                             language: 'en'
                             dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '842a5df7830648d19fc742a49a2f74f1'
-                        key: {
-                            name: 'x_gzi_ppm_task'
                         }
                     },
                     {
@@ -3015,13 +3995,6 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '8b2386927b8a40f48c4fdb7cfda8884e'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                        }
-                    },
-                    {
                         table: 'sys_index'
                         id: '8b23d5ac42084027bec594284ef1d425'
                         key: {
@@ -3116,6 +4089,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '8e92abb12b7e8750d80afdabf291bfd6'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'bd56218badfb46928483caf8536606b8'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_index'
                         id: '8ec76b56d58a4cdd9255fb1c7b566b89'
                         deleted: true
@@ -3150,13 +4137,6 @@ declare global {
                             value: 'on_track'
                             language: 'en'
                             dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '90ac76b53e1d49f3b84dc33ef94e3913'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
                         }
                     },
                     {
@@ -3206,6 +4186,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '91f23848d85640adb0185bcf8c21a728'
+                        key: {
+                            name: 'x_gzi_ppm_proj_res_alloc'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '91fbd4ee975f4139bc2965ccaa98bf55'
                         deleted: true
@@ -3239,6 +4226,34 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_capacity_plan'
                             element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '9292ebb12b7e8750d80afdabf291bf61'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'e2117f8ae90f4e5c8dc1069203fa51ef'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '9292ebb12b7e8750d80afdabf291bf9c'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'ef1c6549e279498eaee631fc7888ff28'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -3315,6 +4330,34 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '95926bb12b7e8750d80afdabf291bf6f'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '22a761cdd0544ddb812bc3165526742a'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '95926bb12b7e8750d80afdabf291bf75'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '2f362039701d46789366ff27ba4bf555'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: '9655eb24fc79442a81c51420bd50d445'
                         key: {
@@ -3328,6 +4371,20 @@ declare global {
                         key: {
                             application_file: 'cd7704c4b4154feab853217f8ce9e354'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '9692abb12b7e8750d80afdabf291bff4'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'c1911a4d7d9e497589815b64b10e3457'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -3374,6 +4431,23 @@ declare global {
                             name: 'x_gzi_ppm_task'
                             element: 'approval_state'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '982fb46b865a4506834c3e1beaca5dd8'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_portfolio_project'
+                            col_name_string: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '9898b193cf8841af80106eeef2bde130'
+                        key: {
+                            application_file: 'a7b33fbdadbf43ceb5d8a31bfaf223d9'
+                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
                         }
                     },
                     {
@@ -3443,6 +4517,15 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_portfolio'
                             element: 'due_date'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '9bba37f20628459e8b5984af35ae82a1'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_workspace_team'
+                            col_name_string: 'workspace_id'
                         }
                     },
                     {
@@ -3521,10 +4604,17 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: '9da0fedc449949a68120dda2f9090fd6'
+                        table: 'sys_security_acl_role'
+                        id: '9e92ebb12b7e8750d80afdabf291bf77'
+                        deleted: true
                         key: {
-                            name: 'x_gzi_ppm_resource_role'
+                            sys_security_acl: 'ec94a2d8bee642adaf1ae5a8bf2aff66'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -3554,9 +4644,72 @@ declare global {
                     },
                     {
                         table: 'sys_db_object'
-                        id: 'a1b4070851a8416c8e9ff788694e5a6d'
+                        id: 'a0f759bf09c041f382f77fe3e916b9c8'
                         key: {
                             name: 'x_gzi_ppm_project_member'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'a1926bb12b7e8750d80afdabf291bfb9'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '3c37ff7d71194e60ae7a9938a529cec6'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'a1926bb12b7e8750d80afdabf291bfbf'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '3d2e2948da054bd6aded06775edc8451'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'a1926bb12b7e8750d80afdabf291bfc5'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '4ad3ff5ba50f449a855631f0b3042ef0'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'a192abb12b7e8750d80afdabf291bf3a'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '759832d62ac843738adcccd8a56ee5e5'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'a20355505b634c59a1259d6a33f3bf17'
+                        key: {
+                            name: 'x_gzi_ppm_custom_field_def'
                         }
                     },
                     {
@@ -3611,12 +4764,36 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'a5926bb12b7e8750d80afdabf291bff8'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '679e5842540e44df902036879f2eb23b'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_index'
                         id: 'a5b3e1655a474b08b78602d52f9deece'
                         deleted: true
                         key: {
                             logical_table_name: 'x_gzi_ppm_custom_field_value'
                             col_name_string: 'task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a60407e291ee4720a941111b15c0c196'
+                        deleted: true
+                        key: {
+                            name: 'x_gzi_ppm_task_dependency'
+                            element: 'predecessor_id'
+                            language: 'en'
                         }
                     },
                     {
@@ -3712,6 +4889,34 @@ declare global {
                         key: {
                             logical_table_name: 'x_gzi_ppm_portfolio'
                             col_name_string: 'owner_id'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'a9926bb12b7e8750d80afdabf291bfe1'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '5ea8e1ce129b42d8bc26ea61acaaf362'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'a992abb12b7e8750d80afdabf291bf1c'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '70636b2be5694e75b2497c970a515433'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -3837,6 +5042,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'ad926bb12b7e8750d80afdabf291bfca'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '4cd82d12b7014386b138e27f170c6e4f'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: 'af23067133ba07509937d1382e5c7b30'
                         key: {
@@ -3912,6 +5131,20 @@ declare global {
                             name: 'x_gzi_ppm_portfolio_project'
                             element: 'added_by'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'b192abb12b7e8750d80afdabf291bfc0'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'ad3354666487418f94e5f32493c90e7d'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -4004,6 +5237,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'b592abb12b7e8750d80afdabf291bf6e'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '90a8832c5d5b44d88736f65d134065df'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'b5f7f1f6f32243adb211daabd1bebfba'
                         key: {
@@ -4021,18 +5268,18 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: 'b669b126845b4df9bb52ef12f53cf2f7'
+                        key: {
+                            name: 'x_gzi_ppm_project'
+                        }
+                    },
+                    {
                         table: 'sys_choice_set'
                         id: 'b6d6b70030ac45f6aa7ea86bfc5924aa'
                         key: {
                             name: 'x_gzi_ppm_custom_field_def'
                             element: 'type'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'b705d50b27624fee9040b958ec946991'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
                         }
                     },
                     {
@@ -4057,6 +5304,15 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_custom_view_column'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b8babd16cf8847c6af49b48308cec96f'
+                        deleted: true
+                        key: {
+                            name: 'x_gzi_ppm_task_dependency'
+                            element: 'successor_id'
                         }
                     },
                     {
@@ -4086,12 +5342,47 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'b992abb12b7e8750d80afdabf291bf57'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '7e0bf384e01f4f368b06f73e4a4eb849'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'b992abb12b7e8750d80afdabf291bfa2'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'a271541ebd1743a1918072d54697ba0a'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'bb5b1d0a28104dada940258fa15167cf'
                         key: {
                             name: 'x_gzi_ppm_status_update'
                             element: 'entity_id'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'bbbd63ca801d44ec85e61e3863af6fa7'
+                        key: {
+                            name: 'x_gzi_ppm_portfolio_project'
                         }
                     },
                     {
@@ -4128,11 +5419,32 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: 'bcaf0fc0bc4843d29e3d0fa4687078df'
+                        key: {
+                            name: 'x_gzi_ppm_section'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'bcb5209eb9004728ae753073b896aab4'
                         key: {
                             name: 'x_gzi_ppm_project_task'
                             element: 'task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'bd92abb12b7e8750d80afdabf291bf8b'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '989613c058214fffb4f71b9b3d4ca39c'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -4200,6 +5512,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: 'c24df5cce95d42c4a1bb2364f5730b7d'
+                        deleted: true
                         key: {
                             application_file: 'cf781f6abe8b400b9f173086e544e1f3'
                             source_artifact: '4e8e46929bde432790cfcb7104335322'
@@ -4212,6 +5525,20 @@ declare global {
                             name: 'x_gzi_ppm_task'
                             element: 'priority'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'c292abb12b7e8750d80afdabf291bfd1'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'bc71079598114f3a816d06e97bd8c941'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -4233,13 +5560,6 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: 'c306981d5c44402380bdbc462b51870c'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                        }
-                    },
-                    {
                         table: 'sys_documentation'
                         id: 'c33f23164b854100aed54ece68d42bfc'
                         key: {
@@ -4257,6 +5577,13 @@ declare global {
                             value: 'complete'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'c3d24f69502f4c9588fa15826e087c06'
+                        key: {
+                            name: 'x_gzi_ppm_task_dependency'
                         }
                     },
                     {
@@ -4282,6 +5609,13 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_user_res_profile'
                             element: 'user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'c476448d956c45a3be58d93290855086'
+                        key: {
+                            name: 'x_gzi_ppm_custom_field_value'
                         }
                     },
                     {
@@ -4323,6 +5657,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'c6daf477e4da4e6a83abea1a7ab9b9ca'
+                        deleted: true
+                        key: {
+                            application_file: '50a28b95307a425ba1aa9ca27a0623b6'
+                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: 'c7138e3133ba07509937d1382e5c7b1a'
                         key: {
@@ -4337,6 +5680,13 @@ declare global {
                             }
                             element: 'is_default'
                             position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'c7c2b5ed188a45ae9e42a0a9d2943ed8'
+                        key: {
+                            name: 'x_gzi_ppm_portfolio_member'
                         }
                     },
                     {
@@ -4364,6 +5714,15 @@ declare global {
                             name: 'x_gzi_ppm_project'
                             element: 'assignment_group'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'ca33ca5d31b3477cbac353d7c11642b5'
+                        deleted: true
+                        key: {
+                            logical_table_name: 'x_gzi_ppm_workspace_user'
+                            col_name_string: 'workspace_id'
                         }
                     },
                     {
@@ -4578,6 +5937,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'd1922bb12b7e8750d80afdabf291bfff'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '01492d723260419693e7d734dcf6daaf'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd1fb171fb39641d9a6993d2bd465f074'
                         key: {
@@ -4600,6 +5973,48 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_task'
                             element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'd292ebb12b7e8750d80afdabf291bf0c'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'ca8ca5c56054470fa825f5c4381deb33'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'd292ebb12b7e8750d80afdabf291bf72'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'e8f22737592c4aa6850b98c492f253c0'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'd292ebb12b7e8750d80afdabf291bfad'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'f6613991b16d48e28bb97ff348198bf7'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -4631,13 +6046,6 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: 'd3228b473d364669babc11a5be3e2c64'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                        }
-                    },
-                    {
                         table: 'sys_choice'
                         id: 'd36c24c3c71546c4a7d524e38d0c3990'
                         key: {
@@ -4650,9 +6058,9 @@ declare global {
                     },
                     {
                         table: 'sys_db_object'
-                        id: 'd67048ce571c47deac36af9afcfefe47'
+                        id: 'd68264b54ad14906bedb0fb163cbb8f7'
                         key: {
-                            name: 'x_gzi_ppm_workspace'
+                            name: 'x_gzi_ppm_custom_view'
                         }
                     },
                     {
@@ -4715,6 +6123,41 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: 'd8fcd45fb84442e5bbe59e80fae96d1c'
+                        key: {
+                            name: 'x_gzi_ppm_task'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'da92abb12b7e8750d80afdabf291bfee'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'c0380eac745446fd831806f964474cf5'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'da92ebb12b7e8750d80afdabf291bf29'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'e1ffb9b246e94a798b1906de326f6905'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact_m2m'
                         id: 'dadc536c13fb4aab817bce1b93ec2fe1'
                         deleted: true
@@ -4735,18 +6178,18 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: 'db8b246be332436fa8da6b99591dc509'
-                        key: {
-                            name: 'x_gzi_ppm_user_capacity'
-                        }
-                    },
-                    {
                         table: 'sys_dictionary'
                         id: 'dc2ec2b6a3e44ab5aef82a5f829bbcf6'
                         key: {
                             name: 'x_gzi_ppm_custom_field_def'
                             element: 'is_global_library'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'dccdc2f786944edcaaad26441c1a420b'
+                        key: {
+                            name: 'x_gzi_ppm_cust_field_setting'
                         }
                     },
                     {
@@ -4756,6 +6199,48 @@ declare global {
                             name: 'x_gzi_ppm_custom_field_value'
                             element: 'value_date'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'dd926bb12b7e8750d80afdabf291bf1f'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '026643c644f64433bc531c90d187296a'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'dd926bb12b7e8750d80afdabf291bf56'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '183c5908c3b7445984493597a12ed259'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'dd926bb12b7e8750d80afdabf291bf5c'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '21b2f69b2d0f4d21ac71350ec8105b2d'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -4837,6 +6322,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: 'e21e7eeaccc84797bb8c6d210d8864ea'
+                        key: {
+                            name: 'x_gzi_ppm_user_capacity'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'e2b75120f9044d39b125682c491da360'
                         key: {
@@ -4892,6 +6384,20 @@ declare global {
                         key: {
                             name: 'x_gzi_ppm_status_update'
                             element: 'entity_id'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'e592abb12b7e8750d80afdabf291bf34'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '710c9a5d5b324f8eaf305ab2bdc21544'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -4971,6 +6477,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'e9926bb12b7e8750d80afdabf291bff2'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '63b2066db2f34941be1af990fa996ad5'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: 'e9e79410f8a1452794ac5b2fdda81875'
                         key: {
@@ -5038,6 +6558,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'ed926bb12b7e8750d80afdabf291bfdb'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '5cd0fbd68601432ab206dfd22ae50338'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'ede7a74b44d04f08aecaf863103873a0'
                         key: {
@@ -5060,6 +6594,27 @@ declare global {
                             name: 'x_gzi_ppm_workspace_team'
                             element: 'group_id'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_page'
+                        id: 'efce0001869d47f088c3daafdba3d36a'
+                        key: {
+                            endpoint: 'x_gzi_ppm_app.do'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'f192abb12b7e8750d80afdabf291bf86'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '98566ef37e8f48d59d0d6285fe7ab5ef'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -5105,6 +6660,20 @@ declare global {
                             name: 'x_gzi_ppm_status_update'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'f592abb12b7e8750d80afdabf291bfba'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'ad2d0364eb8e420fa7c776ff25288c16'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -5170,6 +6739,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'f992abb12b7e8750d80afdabf291bf68'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '8c792021f0754c49a0bad2f2391d0fda'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: 'fa3a931ed8ad46b288f4a4a7ca3d4c2f'
                         key: {
@@ -5195,18 +6778,39 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: 'fb7fa1cbbd4a4d70afa6aba53e642cb4'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                        }
-                    },
-                    {
                         table: 'sys_dictionary'
                         id: 'fd4feaeac7e0478c858e2e5c744d3031'
                         key: {
                             name: 'x_gzi_ppm_workspace_team'
                             element: 'group_id'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'fd92abb12b7e8750d80afdabf291bf51'
+                        deleted: true
+                        key: {
+                            sys_security_acl: '7aef8339def8458895ae82e2f9c43048'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'fd92abb12b7e8750d80afdabf291bf9c'
+                        deleted: true
+                        key: {
+                            sys_security_acl: 'a1a6af8fa4e440a4a3addb6d65ed279c'
+                            sys_user_role: {
+                                id: '7fcaa702933002009c8579b4f47ffbde'
+                                key: {
+                                    name: 'snc_internal'
+                                }
+                            }
                         }
                     },
                     {
@@ -5288,13 +6892,6 @@ declare global {
                         key: {
                             logical_table_name: 'x_gzi_ppm_portfolio'
                             col_name_string: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'ff3876bc33a54c6b87b881aec6a27dd3'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_user'
                         }
                     },
                     {
