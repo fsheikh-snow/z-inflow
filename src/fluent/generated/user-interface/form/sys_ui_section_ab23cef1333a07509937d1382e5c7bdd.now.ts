@@ -5,7 +5,7 @@ Record({
     table: 'sys_ui_section',
     data: {
         header: false,
-        name: 'x_gzi_zflow_capacity_plan',
+        name: 'x_gzi_ppm_capacity_plan',
         sys_domain: 'global',
         sys_domain_path: '/',
         title: true,

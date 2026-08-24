@@ -6,7 +6,7 @@ AccessService.prototype = {
         if (!projectId || !userId) {
             return false;
         }
-        var gr = new GlideRecord('x_gzi_zflow_project_member');
+        var gr = new GlideRecord('x_gzi_ppm_project_member');
         gr.addQuery('project_id', projectId);
         gr.addQuery('user_id', userId);
         gr.addQuery('role', 'IN', roles.join(','));
@@ -19,7 +19,7 @@ AccessService.prototype = {
         if (!portfolioId || !userId) {
             return false;
         }
-        var gr = new GlideRecord('x_gzi_zflow_portfolio_member');
+        var gr = new GlideRecord('x_gzi_ppm_portfolio_member');
         if (!gr.isValid()) {
             return false;
         }
@@ -55,7 +55,7 @@ AccessService.prototype = {
             return true;
         }
         // Fallback: membership on any linked project still grants portfolio read
-        var pp = new GlideRecord('x_gzi_zflow_portfolio_project');
+        var pp = new GlideRecord('x_gzi_ppm_portfolio_project');
         pp.addQuery('portfolio_id', portfolioId);
         pp.query();
         while (pp.next()) {

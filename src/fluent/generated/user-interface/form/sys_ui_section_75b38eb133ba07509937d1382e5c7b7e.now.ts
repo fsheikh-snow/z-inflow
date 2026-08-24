@@ -5,7 +5,7 @@ Record({
     table: 'sys_ui_section',
     data: {
         header: false,
-        name: 'x_gzi_zflow_workspace',
+        name: 'x_gzi_ppm_workspace',
         sys_domain: 'global',
         sys_domain_path: '/',
         title: true,

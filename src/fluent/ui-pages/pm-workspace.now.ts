@@ -4,8 +4,8 @@ import pmWorkspacePage from '../../client/index.html'
 
 UiPage({
     $id: Now.ID['pm-workspace-page'],
-    endpoint: 'x_gzi_zflow_workspace.do',
-    description: 'Z-Inflow PM Workspace UI Page',
+    endpoint: 'x_gzi_ppm_workspace.do',
+    description: 'PM Workspace BYOUI React page',
     category: 'general',
     html: pmWorkspacePage,
     direct: true,

@@ -7,8 +7,8 @@ import {
     JsonColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_zflow_capacity_plan = Table({
-    name: 'x_gzi_zflow_capacity_plan',
+export const x_gzi_ppm_capacity_plan = Table({
+    name: 'x_gzi_ppm_capacity_plan',
     label: 'Capacity Plan',
     display: 'name',
     allowWebServiceAccess: true,
@@ -16,7 +16,7 @@ export const x_gzi_zflow_capacity_plan = Table({
     schema: {
         workspace_id: ReferenceColumn({
             label: 'Workspace',
-            referenceTable: 'x_gzi_zflow_workspace',
+            referenceTable: 'x_gzi_ppm_workspace',
             mandatory: true,
             cascadeRule: 'delete',
         }),
@@ -28,7 +28,7 @@ export const x_gzi_zflow_capacity_plan = Table({
         }),
         portfolio_id: ReferenceColumn({
             label: 'Portfolio',
-            referenceTable: 'x_gzi_zflow_portfolio',
+            referenceTable: 'x_gzi_ppm_portfolio',
             cascadeRule: 'none',
         }),
         group_id: ReferenceColumn({

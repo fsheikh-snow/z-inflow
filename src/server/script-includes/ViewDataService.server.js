@@ -4,20 +4,20 @@ ViewDataService.prototype = {
 
     _access: function () {
         if (!this.__access) {
-            this.__access = new x_gzi_zflow.AccessService();
+            this.__access = new x_gzi_ppm.AccessService();
         }
         return this.__access;
     },
 
     _userService: function () {
         if (!this.__userService) {
-            this.__userService = new x_gzi_zflow.UserService();
+            this.__userService = new x_gzi_ppm.UserService();
         }
         return this.__userService;
     },
 
     _getView: function (viewId) {
-        var gr = new GlideRecord('x_gzi_zflow_custom_view');
+        var gr = new GlideRecord('x_gzi_ppm_custom_view');
         if (!gr.get(viewId)) {
             return null;
         }
@@ -49,7 +49,7 @@ ViewDataService.prototype = {
 
     getViewColumns: function (viewId) {
         var columns = [];
-        var gr = new GlideRecord('x_gzi_zflow_custom_view_column');
+        var gr = new GlideRecord('x_gzi_ppm_custom_view_column');
         gr.addQuery('view_id', viewId);
         gr.orderBy('order_index');
         gr.query();
@@ -67,7 +67,7 @@ ViewDataService.prototype = {
 
     getPortfolioViews: function (portfolioId) {
         var views = [];
-        var gr = new GlideRecord('x_gzi_zflow_custom_view');
+        var gr = new GlideRecord('x_gzi_ppm_custom_view');
         gr.addQuery('portfolio_id', portfolioId);
         gr.orderBy('name');
         gr.query();
@@ -82,7 +82,7 @@ ViewDataService.prototype = {
         if (!entityId) {
             return values;
         }
-        var gr = new GlideRecord('x_gzi_zflow_custom_field_value');
+        var gr = new GlideRecord('x_gzi_ppm_custom_field_value');
         gr.addQuery(entityField, entityId);
         if (fieldDefIds && fieldDefIds.length) {
             gr.addQuery('field_def_id', 'IN', fieldDefIds.join(','));
@@ -193,7 +193,7 @@ ViewDataService.prototype = {
 
         var rows = [];
         var userIds = [];
-        var pp = new GlideRecord('x_gzi_zflow_portfolio_project');
+        var pp = new GlideRecord('x_gzi_ppm_portfolio_project');
         pp.addQuery('portfolio_id', portfolioId);
         pp.orderBy('order_index');
         pp.query();

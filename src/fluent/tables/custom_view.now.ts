@@ -8,8 +8,8 @@ import {
     JsonColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_zflow_custom_view = Table({
-    name: 'x_gzi_zflow_custom_view',
+export const x_gzi_ppm_custom_view = Table({
+    name: 'x_gzi_ppm_custom_view',
     label: 'Custom View',
     display: 'name',
     allowWebServiceAccess: true,
@@ -17,12 +17,12 @@ export const x_gzi_zflow_custom_view = Table({
     schema: {
         project_id: ReferenceColumn({
             label: 'Project',
-            referenceTable: 'x_gzi_zflow_project',
+            referenceTable: 'x_gzi_ppm_project',
             cascadeRule: 'delete',
         }),
         portfolio_id: ReferenceColumn({
             label: 'Portfolio',
-            referenceTable: 'x_gzi_zflow_portfolio',
+            referenceTable: 'x_gzi_ppm_portfolio',
             cascadeRule: 'delete',
         }),
         user_id: ReferenceColumn({

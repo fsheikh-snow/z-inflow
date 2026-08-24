@@ -62,7 +62,7 @@ RestApi({
     $id: Now.ID['z-inflow-rest-api'],
     name: 'Z-Inflow REST API',
     serviceId: 'v1',
-    namespace: 'x_gzi_zflow',
+    namespace: 'x_gzi_ppm',
     consumes: 'application/json',
     produces: 'application/json',
     shortDescription: 'Scoped REST API for Z-Inflow portfolio, project, capacity, and identity operations',

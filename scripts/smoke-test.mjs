@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Post-deploy API/UI smoke checks for x_gzi_zflow on ServiceNow.
+ * Post-deploy API/UI smoke checks for x_gzi_ppm on ServiceNow.
  *
  * Auth: reuses now-sdk stored credentials (same keychain as `now-sdk auth` /
  * `npm run deploy`). Override alias with SN_SDK_AUTH_ALIAS or --alias.
@@ -27,22 +27,22 @@ const TIMEOUT_MS = Number(process.env.SMOKE_TIMEOUT_MS || 30000)
 const CHECKS = /** @type {Check[]} */ ([
     {
         name: 'GET portfolios',
-        path: '/api/x_gzi_zflow/v1/portfolios',
+        path: '/api/x_gzi_ppm/v1/portfolios',
         kind: 'api',
     },
     {
         name: 'GET projects',
-        path: '/api/x_gzi_zflow/v1/projects',
+        path: '/api/x_gzi_ppm/v1/projects',
         kind: 'api',
     },
     {
         name: 'GET users/search',
-        path: '/api/x_gzi_zflow/v1/users/search?q=a',
+        path: '/api/x_gzi_ppm/v1/users/search?q=a',
         kind: 'api',
     },
     {
         name: 'GET workspace.do',
-        path: '/x_gzi_zflow_workspace.do',
+        path: '/x_gzi_ppm_workspace.do',
         kind: 'html',
         failOn: ({ status, body }) => {
             if (status >= 500) return `HTTP ${status}`
@@ -246,7 +246,7 @@ async function main() {
         // leave default; user/env may already set 0 via shell profile used by now-sdk
     }
 
-    console.log('ZFlow smoke test')
+    console.log('PPM smoke test')
     console.log(`Alias: ${args.alias || '(now-sdk default)'}`)
 
     const credentialProvider = await loadCredentialProvider()

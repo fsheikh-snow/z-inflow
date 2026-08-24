@@ -22,28 +22,28 @@ ProjectTaskService.prototype = {
 
     _access: function () {
         if (!this.__access) {
-            this.__access = new x_gzi_zflow.AccessService();
+            this.__access = new x_gzi_ppm.AccessService();
         }
         return this.__access;
     },
 
     _userService: function () {
         if (!this.__userService) {
-            this.__userService = new x_gzi_zflow.UserService();
+            this.__userService = new x_gzi_ppm.UserService();
         }
         return this.__userService;
     },
 
     _viewData: function () {
         if (!this.__viewData) {
-            this.__viewData = new x_gzi_zflow.ViewDataService();
+            this.__viewData = new x_gzi_ppm.ViewDataService();
         }
         return this.__viewData;
     },
 
     _members: function () {
         if (!this.__members) {
-            this.__members = new x_gzi_zflow.MemberService();
+            this.__members = new x_gzi_ppm.MemberService();
         }
         return this.__members;
     },
@@ -92,9 +92,9 @@ ProjectTaskService.prototype = {
     listProjects: function (workspaceId) {
         var results = [];
         try {
-            var gr = new GlideRecord('x_gzi_zflow_project');
+            var gr = new GlideRecord('x_gzi_ppm_project');
             if (!gr.isValid()) {
-                gs.warn('ProjectTaskService.listProjects: table x_gzi_zflow_project is invalid');
+                gs.warn('ProjectTaskService.listProjects: table x_gzi_ppm_project is invalid');
                 return results;
             }
             if (workspaceId) {
@@ -113,7 +113,7 @@ ProjectTaskService.prototype = {
     },
 
     getProject: function (projectId) {
-        var gr = new GlideRecord('x_gzi_zflow_project');
+        var gr = new GlideRecord('x_gzi_ppm_project');
         if (!gr.isValid() || !gr.get(projectId)) {
             return null;
         }
@@ -135,14 +135,14 @@ ProjectTaskService.prototype = {
         if (workspaceId) {
             return workspaceId;
         }
-        var gr = new GlideRecord('x_gzi_zflow_workspace');
+        var gr = new GlideRecord('x_gzi_ppm_workspace');
         gr.orderBy('sys_created_on');
         gr.setLimit(1);
         gr.query();
         if (gr.next()) {
             return gr.getUniqueValue();
         }
-        var created = new GlideRecord('x_gzi_zflow_workspace');
+        var created = new GlideRecord('x_gzi_ppm_workspace');
         created.initialize();
         created.setValue('name', 'Default Workspace');
         return created.insert() || '';
@@ -152,7 +152,7 @@ ProjectTaskService.prototype = {
         if (!workspaceId) {
             return '';
         }
-        var wt = new GlideRecord('x_gzi_zflow_workspace_team');
+        var wt = new GlideRecord('x_gzi_ppm_workspace_team');
         wt.addQuery('workspace_id', workspaceId);
         wt.setLimit(1);
         wt.query();
@@ -216,7 +216,7 @@ ProjectTaskService.prototype = {
         var candidate = base;
         var n = 1;
         while (n < 1000) {
-            var check = new GlideRecord('x_gzi_zflow_project');
+            var check = new GlideRecord('x_gzi_ppm_project');
             check.addQuery('project_key', candidate);
             check.setLimit(1);
             check.query();
@@ -243,7 +243,7 @@ ProjectTaskService.prototype = {
             return null;
         }
 
-        var gr = new GlideRecord('x_gzi_zflow_project');
+        var gr = new GlideRecord('x_gzi_ppm_project');
         gr.initialize();
         gr.setValue('name', name);
         gr.setValue('workspace_id', workspaceId);
@@ -270,7 +270,7 @@ ProjectTaskService.prototype = {
 
         var portfolioId = String(data.portfolio_id || '');
         if (portfolioId) {
-            var portfolioService = new x_gzi_zflow.PortfolioService();
+            var portfolioService = new x_gzi_ppm.PortfolioService();
             portfolioService.linkProject(portfolioId, sysId);
         }
 
@@ -279,7 +279,7 @@ ProjectTaskService.prototype = {
     },
 
     updateProject: function (projectId, data) {
-        var gr = new GlideRecord('x_gzi_zflow_project');
+        var gr = new GlideRecord('x_gzi_ppm_project');
         if (!gr.get(projectId)) {
             return null;
         }
@@ -322,7 +322,7 @@ ProjectTaskService.prototype = {
             return null;
         }
 
-        var gr = new GlideRecord('x_gzi_zflow_task');
+        var gr = new GlideRecord('x_gzi_ppm_task');
         gr.initialize();
         gr.setValue('name', name);
         gr.setValue('workspace_id', project.workspace_id);
@@ -349,7 +349,7 @@ ProjectTaskService.prototype = {
             return null;
         }
 
-        var pt = new GlideRecord('x_gzi_zflow_project_task');
+        var pt = new GlideRecord('x_gzi_ppm_project_task');
         pt.initialize();
         pt.setValue('project_id', projectId);
         pt.setValue('task_id', taskId);
@@ -361,7 +361,7 @@ ProjectTaskService.prototype = {
 
     getProjectSections: function (projectId) {
         var sections = [];
-        var gr = new GlideRecord('x_gzi_zflow_section');
+        var gr = new GlideRecord('x_gzi_ppm_section');
         gr.addQuery('project_id', projectId);
         gr.orderBy('order_index');
         gr.query();
@@ -401,7 +401,7 @@ ProjectTaskService.prototype = {
         columns.push(unsectioned);
         columnById.unsectioned = unsectioned;
 
-        var pt = new GlideRecord('x_gzi_zflow_project_task');
+        var pt = new GlideRecord('x_gzi_ppm_project_task');
         pt.addQuery('project_id', projectId);
         pt.orderBy('order_index');
         pt.query();
@@ -422,7 +422,7 @@ ProjectTaskService.prototype = {
 
     getProjectTasks: function (projectId) {
         var tasks = [];
-        var pt = new GlideRecord('x_gzi_zflow_project_task');
+        var pt = new GlideRecord('x_gzi_ppm_project_task');
         pt.addQuery('project_id', projectId);
         pt.orderBy('order_index');
         pt.query();
@@ -436,7 +436,7 @@ ProjectTaskService.prototype = {
     },
 
     getTask: function (taskId) {
-        var gr = new GlideRecord('x_gzi_zflow_task');
+        var gr = new GlideRecord('x_gzi_ppm_task');
         if (!gr.get(taskId)) {
             return null;
         }
@@ -450,7 +450,7 @@ ProjectTaskService.prototype = {
 
     getTaskProjects: function (taskId) {
         var projects = [];
-        var pt = new GlideRecord('x_gzi_zflow_project_task');
+        var pt = new GlideRecord('x_gzi_ppm_project_task');
         pt.addQuery('task_id', taskId);
         pt.query();
         while (pt.next()) {
@@ -463,7 +463,7 @@ ProjectTaskService.prototype = {
     },
 
     updateTask: function (taskId, data) {
-        var gr = new GlideRecord('x_gzi_zflow_task');
+        var gr = new GlideRecord('x_gzi_ppm_task');
         if (!gr.get(taskId)) {
             return null;
         }
@@ -481,7 +481,7 @@ ProjectTaskService.prototype = {
 
         var linkGr = null;
         if (data.section_id !== undefined || data.order_index !== undefined || data.project_id) {
-            var pt = new GlideRecord('x_gzi_zflow_project_task');
+            var pt = new GlideRecord('x_gzi_ppm_project_task');
             pt.addQuery('task_id', taskId);
             if (data.project_id) {
                 pt.addQuery('project_id', String(data.project_id));
@@ -505,7 +505,7 @@ ProjectTaskService.prototype = {
     reorderBoard: function (projectId, columnId, taskIds) {
         var sectionId = columnId === 'unsectioned' ? '' : String(columnId);
         for (var i = 0; i < taskIds.length; i++) {
-            var pt = new GlideRecord('x_gzi_zflow_project_task');
+            var pt = new GlideRecord('x_gzi_ppm_project_task');
             pt.addQuery('project_id', projectId);
             pt.addQuery('task_id', String(taskIds[i]));
             pt.query();

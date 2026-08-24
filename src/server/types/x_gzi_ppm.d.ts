@@ -1,4 +1,4 @@
-declare module '@servicenow/glide/x_gzi_zflow' {
+declare module '@servicenow/glide/x_gzi_ppm' {
     export class AccessService {
         canReadProject(projectId: string, userId?: string): boolean
         canWriteProject(projectId: string, userId?: string): boolean

@@ -16,11 +16,11 @@ After deploy, Cursor should run **`npm run smoke`** (or `npm run ship`) instead 
 
 Requirements:
 
-- `now.config.json` **`scopeId`** must match the live app sys_id on the instance (`4bfbf57d333a07509937d1382e5c7bfa` for `x_gzi_zflow` on zscalerai).
+- `now.config.json` **`scopeId`** must match the live app sys_id on the instance (`ca99d331333687509937d1382e5c7be5` for `x_gzi_ppm` on zscalerai).
 - Authenticated Now SDK alias (e.g. `sdk-ai-admin`) against `zscalerai.service-now.com`.
 - If install previously failed with `application was null`, fix `scopeId` first — do not fall back to Build Agent rebuild for that.
 
-Scope is **`x_gzi_zflow`** (not `x_gzi_z_ppm`). Workspace UI: `x_gzi_zflow_workspace.do`.
+Scope is **`x_gzi_ppm`** (not `x_gzi_z_ppm`). Workspace UI: `x_gzi_ppm_workspace.do`.
 
 ## Build Agent (optional fallback)
 
@@ -48,7 +48,7 @@ If those are removed, the UI Page HTML stays on “PM Workspace loading...” be
 
 - **Never use `@servicenow/react-components`** — it pulls in a second React instance and triggers React error #321 (invalid hook call) in the BYOUI page.
 - **Instance Table API hotfix is bootstrap-only** — direct `/api/now/table/...` calls were a temporary workaround; do not add new features against raw Table API.
-- **Shaped REST at `/api/x_gzi_zflow/v1` is the target architecture** — all new client/server work should go through the scoped scripted REST API in `src/fluent/scripted-rest-api/z-inflow-api.now.ts` and its route handlers in `src/server/rest/`.
+- **Shaped REST at `/api/x_gzi_ppm/v1` is the target architecture** — all new client/server work should go through the scoped scripted REST API in `src/fluent/scripted-rest-api/z-inflow-api.now.ts` and its route handlers in `src/server/rest/`.
 - **Typed forms** (UserPicker, ChoiceSelect, DateField, GroupPicker) live in `src/client/components/fields/` — do not regress to string-only forms from instance transform.
 
 ## Fluent module resolution (vs Build Agent / instance-sync)
@@ -60,14 +60,14 @@ If those are removed, the UI Page HTML stays on “PM Workspace loading...” be
 | Layer | Pattern | Notes |
 |-------|---------|--------|
 | Fluent `.now.ts` → handler | `import { listPortfolios } from '../../server/rest/portfolio-routes'` then `script: listPortfolios` | **Build-time only.** SDK emits glue with the full package path. |
-| Generated `sys_ws_operation` glue | `require('x_gzi_zflow/z-inflow/0.0.1/src/server/rest/portfolio-routes.ts')` | Path always includes **`.ts` / `.js`**. |
+| Generated `sys_ws_operation` glue | `require('x_gzi_ppm/z-inflow/0.0.1/src/server/rest/portfolio-routes.ts')` | Path always includes **`.ts` / `.js`**. |
 | Module ↔ module (runtime) | `import { … } from './helpers.ts'` | Relative specs **must include the extension**. Instance `sys_module.path` is registered as `…/helpers.ts`; `./helpers` resolves to `…/helpers` → **ModuleResolutionException**. |
-| ES module → Script Include | `import { UserService } from '@servicenow/glide/x_gzi_zflow'` then `new UserService()` | Scoped globals like `x_gzi_zflow` are **not** defined in ES modules. |
-| Script Include class file (`*.server.js`) | `new x_gzi_zflow.AccessService()` inside `Class.create` | Correct here — SI execution context has the scope global. |
+| ES module → Script Include | `import { UserService } from '@servicenow/glide/x_gzi_ppm'` then `new UserService()` | Scoped globals like `x_gzi_ppm` are **not** defined in ES modules. |
+| Script Include class file (`*.server.js`) | `new x_gzi_ppm.AccessService()` inside `Class.create` | Correct here — SI execution context has the scope global. |
 
 Registered runtime modules (after `npm run build`) look like:
 
-`x_gzi_zflow/z-inflow/0.0.1/src/server/rest/helpers.ts`
+`x_gzi_ppm/z-inflow/0.0.1/src/server/rest/helpers.ts`
 
 ### What Build Agent / `instance-sync` leaves behind
 
@@ -81,9 +81,9 @@ Registered runtime modules (after `npm run build`) look like:
 
 | Module path | Local (main) | Instance / Build Agent | Status |
 |-------------|--------------|------------------------|--------|
-| `src/server/rest/helpers.ts` | Imported as `./helpers.ts`; SI via `@servicenow/glide/x_gzi_zflow` | Was `./helpers` (no ext) → MRE; SI via `new x_gzi_zflow.*` → undefined | **fixed** |
+| `src/server/rest/helpers.ts` | Imported as `./helpers.ts`; SI via `@servicenow/glide/x_gzi_ppm` | Was `./helpers` (no ext) → MRE; SI via `new x_gzi_ppm.*` → undefined | **fixed** |
 | `src/server/rest/*-routes.ts` | Only cross-import is `./helpers.ts` | Glue `require(…/*-routes.ts)` | **ok** |
 | `src/server/business-rules/*.ts` | No relative cross-imports; `@servicenow/glide` only | Glue `require(…/*.ts)` | **ok** |
-| `src/server/script-includes/*.server.js` | `new x_gzi_zflow.*` (Class.create) | Same SI + sys_module `.server.js` path | **ok** (SI context) |
+| `src/server/script-includes/*.server.js` | `new x_gzi_ppm.*` (Class.create) | Same SI + sys_module `.server.js` path | **ok** (SI context) |
 | Fluent `.now.ts` → routes | Extensionless import (build-time) | N/A at runtime | **ok** |
 | BA `Now.include(sys_ws_operation_*.js)` | Absent on `main` | Present on `instance-sync` only | **ok** if unused; **risk** if deployed from mirror |

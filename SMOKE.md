@@ -31,28 +31,28 @@ SN_SDK_AUTH_ALIAS=sdk-ai-admin npm run smoke
 
 Smoke hits (auth = same now-sdk keychain as deploy):
 
-- `GET /api/x_gzi_zflow/v1/portfolios`
-- `GET /api/x_gzi_zflow/v1/projects`
-- `GET /api/x_gzi_zflow/v1/users/search?q=a`
-- `GET /x_gzi_zflow_workspace.do` — fails on HTTP 5xx or body text `PM Workspace failed`
+- `GET /api/x_gzi_ppm/v1/portfolios`
+- `GET /api/x_gzi_ppm/v1/projects`
+- `GET /api/x_gzi_ppm/v1/users/search?q=a`
+- `GET /x_gzi_ppm_workspace.do` — fails on HTTP 5xx or body text `PM Workspace failed`
 
 After creating a project/portfolio, optionally verify members:
 
-- `GET /api/x_gzi_zflow/v1/projects/{id}/members`
-- `GET /api/x_gzi_zflow/v1/portfolios/{id}/members`
+- `GET /api/x_gzi_ppm/v1/projects/{id}/members`
+- `GET /api/x_gzi_ppm/v1/portfolios/{id}/members`
 
 (`POST/PATCH/DELETE …/members` are available; smoke list endpoints stay read-only.)
 
 Any **5xx** (or auth/hard failure) → exit code **1** and a PASS/FAIL table with status + body snippet.
 
-`npm run smoke` / `npm run ship` first run **`npm run audit:modules`** so extensionless relative imports and illegal `new x_gzi_zflow.*` in ES modules fail before hitting the instance.
+`npm run smoke` / `npm run ship` first run **`npm run audit:modules`** so extensionless relative imports and illegal `new x_gzi_ppm.*` in ES modules fail before hitting the instance.
 
 ### Diagnosing REST 500s
 
 | Body / syslog hint | Likely cause | Fix |
 |--------------------|--------------|-----|
 | `ModuleResolutionException` for `…/src/server/rest/helpers` (no `.ts`) | Relative import `./helpers` without extension | Use `./helpers.ts` (see **BUILD_AGENT.md** § Fluent module resolution) |
-| `"x_gzi_zflow" is not defined` | ES module used `new x_gzi_zflow.UserService()` | `import { UserService } from '@servicenow/glide/x_gzi_zflow'` |
+| `"x_gzi_ppm" is not defined` | ES module used `new x_gzi_ppm.UserService()` | `import { UserService } from '@servicenow/glide/x_gzi_ppm'` |
 | Empty `result: []` on list routes with syslog errors | `safeList` swallowed a construction/list error | Check syslog; do not treat empty list as healthy without smoke on a non-`safeList` route (e.g. users/search) |
 
 ## Ideal loop (no console paste)

@@ -1,8 +1,8 @@
 import { gs, GlideRecord } from '@servicenow/glide'
 
 export function enforceSingleAssignee(
-    current: GlideRecord<'x_gzi_zflow_task'>,
-    _previous: GlideRecord<'x_gzi_zflow_task'>,
+    current: GlideRecord<'x_gzi_ppm_task'>,
+    _previous: GlideRecord<'x_gzi_ppm_task'>,
 ) {
     const assigneeId = current.getValue('assignee_id')
     const watchList = current.getValue('watch_list') || ''

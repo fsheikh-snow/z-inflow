@@ -1,4 +1,4 @@
-/// <reference path="../types/x_gzi_zflow.d.ts" />
+/// <reference path="../types/x_gzi_ppm.d.ts" />
 import { gs } from '@servicenow/glide'
 import {
     CapacityService,
@@ -7,7 +7,7 @@ import {
     ProjectTaskService,
     UserService,
     ViewDataService,
-} from '@servicenow/glide/x_gzi_zflow'
+} from '@servicenow/glide/x_gzi_ppm'
 
 export function parseBody(request: { body: { dataString: string } }): Record<string, unknown> {
     if (!request.body || !request.body.dataString) {

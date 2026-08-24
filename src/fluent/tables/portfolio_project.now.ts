@@ -6,8 +6,8 @@ import {
     DateTimeColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_zflow_portfolio_project = Table({
-    name: 'x_gzi_zflow_portfolio_project',
+export const x_gzi_ppm_portfolio_project = Table({
+    name: 'x_gzi_ppm_portfolio_project',
     label: 'Portfolio Project',
     allowWebServiceAccess: true,
     createAccessControls: true,
@@ -21,14 +21,14 @@ export const x_gzi_zflow_portfolio_project = Table({
     schema: {
         portfolio_id: ReferenceColumn({
             label: 'Portfolio',
-            referenceTable: 'x_gzi_zflow_portfolio',
+            referenceTable: 'x_gzi_ppm_portfolio',
             mandatory: true,
             primary: true,
             cascadeRule: 'delete',
         }),
         project_id: ReferenceColumn({
             label: 'Project',
-            referenceTable: 'x_gzi_zflow_project',
+            referenceTable: 'x_gzi_ppm_project',
             mandatory: true,
             primary: true,
             cascadeRule: 'delete',

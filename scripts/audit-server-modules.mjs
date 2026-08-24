@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 /**
  * Fail closed on ServiceNow Fluent module patterns that cause runtime
- * ModuleResolutionException / "x_gzi_zflow is not defined" on the instance.
+ * ModuleResolutionException / "x_gzi_ppm is not defined" on the instance.
  *
  * Runtime sys_module paths are registered WITH file extensions
  * (e.g. …/src/server/rest/helpers.ts). Extensionless relative imports like
  * `./helpers` resolve to `…/helpers` and throw ModuleResolutionException.
  *
  * ES modules must import Script Includes via `@servicenow/glide/<scope>`.
- * `new x_gzi_zflow.Foo()` only works inside Class.create Script Include files.
+ * `new x_gzi_ppm.Foo()` only works inside Class.create Script Include files.
  */
 
 import fs from 'node:fs'
@@ -41,7 +41,7 @@ function walk(dir) {
 
 const relativeImport = /(?:from|import)\s+['"](\.[^'"]+)['"]/g
 const requireRelative = /require\(\s*['"](\.[^'"]+)['"]\s*\)/g
-const scopedGlobalNew = /\bnew\s+x_gzi_zflow\./g
+const scopedGlobalNew = /\bnew\s+x_gzi_ppm\./g
 
 for (const file of walk(serverRoot)) {
     const rel = path.relative(root, file)
@@ -62,7 +62,7 @@ for (const file of walk(serverRoot)) {
 
     if (!isScriptIncludeClass && scopedGlobalNew.test(text)) {
         errors.push(
-            `${rel}: use import { X } from '@servicenow/glide/x_gzi_zflow' — new x_gzi_zflow.X() is undefined in ES modules`
+            `${rel}: use import { X } from '@servicenow/glide/x_gzi_ppm' — new x_gzi_ppm.X() is undefined in ES modules`
         )
     }
 }
@@ -76,4 +76,4 @@ if (errors.length) {
     process.exit(1)
 }
 
-console.log('Server module audit OK (relative imports use extensions; ES modules avoid x_gzi_zflow.* globals).')
+console.log('Server module audit OK (relative imports use extensions; ES modules avoid x_gzi_ppm.* globals).')

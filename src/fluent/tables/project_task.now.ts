@@ -1,8 +1,8 @@
 import '@servicenow/sdk/global'
 import { Table, ReferenceColumn, IntegerColumn } from '@servicenow/sdk/core'
 
-export const x_gzi_zflow_project_task = Table({
-    name: 'x_gzi_zflow_project_task',
+export const x_gzi_ppm_project_task = Table({
+    name: 'x_gzi_ppm_project_task',
     label: 'Project Task',
     allowWebServiceAccess: true,
     createAccessControls: true,
@@ -16,21 +16,21 @@ export const x_gzi_zflow_project_task = Table({
     schema: {
         project_id: ReferenceColumn({
             label: 'Project',
-            referenceTable: 'x_gzi_zflow_project',
+            referenceTable: 'x_gzi_ppm_project',
             mandatory: true,
             primary: true,
             cascadeRule: 'delete',
         }),
         task_id: ReferenceColumn({
             label: 'Task',
-            referenceTable: 'x_gzi_zflow_task',
+            referenceTable: 'x_gzi_ppm_task',
             mandatory: true,
             primary: true,
             cascadeRule: 'delete',
         }),
         section_id: ReferenceColumn({
             label: 'Section',
-            referenceTable: 'x_gzi_zflow_section',
+            referenceTable: 'x_gzi_ppm_section',
             cascadeRule: 'clear',
         }),
         order_index: IntegerColumn({ label: 'Order Index', default: 0 }),

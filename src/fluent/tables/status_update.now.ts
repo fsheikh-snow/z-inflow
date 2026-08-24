@@ -7,8 +7,8 @@ import {
     HtmlColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_zflow_status_update = Table({
-    name: 'x_gzi_zflow_status_update',
+export const x_gzi_ppm_status_update = Table({
+    name: 'x_gzi_ppm_status_update',
     label: 'Status Update',
     allowWebServiceAccess: true,
     createAccessControls: true,

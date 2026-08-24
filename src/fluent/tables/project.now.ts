@@ -10,8 +10,8 @@ import {
     BooleanColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_zflow_project = Table({
-    name: 'x_gzi_zflow_project',
+export const x_gzi_ppm_project = Table({
+    name: 'x_gzi_ppm_project',
     label: 'Project',
     display: 'name',
     allowWebServiceAccess: true,
@@ -19,7 +19,7 @@ export const x_gzi_zflow_project = Table({
     schema: {
         workspace_id: ReferenceColumn({
             label: 'Workspace',
-            referenceTable: 'x_gzi_zflow_workspace',
+            referenceTable: 'x_gzi_ppm_workspace',
             mandatory: true,
             cascadeRule: 'delete',
         }),

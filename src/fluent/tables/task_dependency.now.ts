@@ -1,8 +1,8 @@
 import '@servicenow/sdk/global'
 import { Table, ReferenceColumn, ChoiceColumn } from '@servicenow/sdk/core'
 
-export const x_gzi_zflow_task_dependency = Table({
-    name: 'x_gzi_zflow_task_dependency',
+export const x_gzi_ppm_task_dependency = Table({
+    name: 'x_gzi_ppm_task_dependency',
     label: 'Task Dependency',
     allowWebServiceAccess: true,
     createAccessControls: true,
@@ -16,13 +16,13 @@ export const x_gzi_zflow_task_dependency = Table({
     schema: {
         predecessor_task_id: ReferenceColumn({
             label: 'Predecessor Task',
-            referenceTable: 'x_gzi_zflow_task',
+            referenceTable: 'x_gzi_ppm_task',
             mandatory: true,
             cascadeRule: 'delete',
         }),
         successor_task_id: ReferenceColumn({
             label: 'Successor Task',
-            referenceTable: 'x_gzi_zflow_task',
+            referenceTable: 'x_gzi_ppm_task',
             mandatory: true,
             cascadeRule: 'delete',
         }),

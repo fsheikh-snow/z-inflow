@@ -10,6 +10,8 @@
         "build": "now-sdk build",
         "pack": "now-sdk pack",
         "deploy": "now-sdk install",
+        "deploy:ppm": "cp now.config.ppm.json now.config.json && now-sdk install",
+        "deploy:zflow": "cp now.config.zflow.json now.config.json && now-sdk install",
         "transform": "now-sdk transform",
         "types": "now-sdk dependencies",
         "dev": "now-sdk run dev",

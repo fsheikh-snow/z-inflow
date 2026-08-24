@@ -1,8 +1,8 @@
 import '@servicenow/sdk/global'
 import { Table, ReferenceColumn, ChoiceColumn } from '@servicenow/sdk/core'
 
-export const x_gzi_zflow_project_member = Table({
-    name: 'x_gzi_zflow_project_member',
+export const x_gzi_ppm_project_member = Table({
+    name: 'x_gzi_ppm_project_member',
     label: 'Project Member',
     allowWebServiceAccess: true,
     createAccessControls: true,
@@ -16,7 +16,7 @@ export const x_gzi_zflow_project_member = Table({
     schema: {
         project_id: ReferenceColumn({
             label: 'Project',
-            referenceTable: 'x_gzi_zflow_project',
+            referenceTable: 'x_gzi_ppm_project',
             mandatory: true,
             cascadeRule: 'delete',
         }),
