@@ -1,0 +1,56 @@
+.ppm-app {
+  font-family: var(--now-font-family, 'Source Sans Pro', Arial, sans-serif);
+  min-height: 100vh;
+  background: rgb(var(--now-color--neutral-2, 245, 245, 245));
+}
+
+.ppm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: rgb(var(--now-color--neutral-0, 255, 255, 255));
+  border-bottom: 1px solid rgb(var(--now-color--divider-tertiary, 218, 218, 218));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.ppm-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(var(--now-color--text-primary, 41, 41, 41));
+  margin: 0;
+}
+
+.ppm-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.ppm-nav-btn {
+  padding: 8px 16px;
+  border: 1px solid rgb(var(--now-color--divider-tertiary, 218, 218, 218));
+  border-radius: 4px;
+  background: rgb(var(--now-color--neutral-0, 255, 255, 255));
+  color: rgb(var(--now-color--text-primary, 41, 41, 41));
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.ppm-nav-btn:hover {
+  background: rgb(var(--now-color--neutral-2, 245, 245, 245));
+  border-color: rgb(var(--now-color--neutral-7, 100, 100, 100));
+}
+
+.ppm-nav-btn.active {
+  background: rgb(var(--now-actionable--primary--background-color, 0, 128, 163));
+  color: rgb(255, 255, 255);
+  border-color: rgb(var(--now-actionable--primary--background-color, 0, 128, 163));
+}
+
+.ppm-content {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
