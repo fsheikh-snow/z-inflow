@@ -36,6 +36,45 @@ export const projectService = {
         return apiRequest(`/projects/${projectId}/sections`)
     },
 
+    createSection(projectId, data) {
+        return apiRequest(`/projects/${projectId}/section`, {
+            method: 'POST',
+            body: JSON.stringify(data),
+        })
+    },
+
+    updateSection(projectId, sectionId, data) {
+        return apiRequest(`/projects/${projectId}/sections/${sectionId}`, {
+            method: 'PATCH',
+            body: JSON.stringify(data),
+        })
+    },
+
+    reorderSections(projectId, sectionIds) {
+        return apiRequest(`/projects/${projectId}/sections/reorder`, {
+            method: 'PATCH',
+            body: JSON.stringify({ section_ids: sectionIds }),
+        })
+    },
+
+    reorderTaskList(projectId, sectionId, taskIds) {
+        return apiRequest(`/projects/${projectId}/task-list`, {
+            method: 'PATCH',
+            body: JSON.stringify({ section_id: sectionId, task_ids: taskIds }),
+        })
+    },
+
+    getTask(taskId, projectId) {
+        const params = projectId ? `?project_id=${encodeURIComponent(projectId)}` : ''
+        return apiRequest(`/tasks/${taskId}${params}`)
+    },
+
+    deleteSection(projectId, sectionId) {
+        return apiRequest(`/projects/${projectId}/sections/${sectionId}`, {
+            method: 'DELETE',
+        })
+    },
+
     getBoard(projectId) {
         return apiRequest(`/projects/${projectId}/board`)
     },

@@ -72,6 +72,58 @@ export function getProjectSections(request: any, response: any) {
     sendJson(response, svc.getProjectSections(projectId))
 }
 
+export function createProjectSection(request: any, response: any) {
+    const projectId = getPathParam(request, 'id')
+    const body = parseBody(request)
+    const svc = projectTaskService()
+    const section = svc.createSection(projectId, body)
+    if (!section) {
+        sendError(response, 'Unable to create section. Name and project are required.', 400)
+        return
+    }
+    sendJson(response, section, 201)
+}
+
+export function updateProjectSection(request: any, response: any) {
+    const projectId = getPathParam(request, 'id')
+    const sectionId = getPathParam(request, 'sectionId')
+    const body = parseBody(request)
+    const svc = projectTaskService()
+    const section = svc.updateSection(projectId, sectionId, body)
+    if (!section) {
+        sendError(response, 'Section not found', 404)
+        return
+    }
+    sendJson(response, section)
+}
+
+export function deleteProjectSection(request: any, response: any) {
+    const projectId = getPathParam(request, 'id')
+    const sectionId = getPathParam(request, 'sectionId')
+    const svc = projectTaskService()
+    const removed = svc.deleteSection(projectId, sectionId)
+    if (!removed) {
+        sendError(response, 'Section not found', 404)
+        return
+    }
+    sendJson(response, { removed: true })
+}
+
+export function reorderProjectSections(request: any, response: any) {
+    const projectId = getPathParam(request, 'id')
+    const body = parseBody(request)
+    const sectionIds = (body.section_ids as string[]) || []
+    const svc = projectTaskService()
+    sendJson(response, svc.reorderSections(projectId, sectionIds))
+}
+
+export function reorderTaskList(request: any, response: any) {
+    const projectId = getPathParam(request, 'id')
+    const body = parseBody(request)
+    const svc = projectTaskService()
+    sendJson(response, svc.reorderTaskList(projectId, body))
+}
+
 export function getProjectBoard(request: any, response: any) {
     const projectId = getPathParam(request, 'id')
     const svc = projectTaskService()
@@ -86,8 +138,9 @@ export function getProjectTasks(request: any, response: any) {
 
 export function getTask(request: any, response: any) {
     const taskId = getPathParam(request, 'id')
+    const projectId = getQueryParam(request, 'project_id')
     const svc = projectTaskService()
-    const task = svc.getTask(taskId)
+    const task = svc.getTask(taskId, projectId || undefined)
     if (!task) {
         sendError(response, 'Task not found', 404)
         return

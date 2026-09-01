@@ -1,6 +1,6 @@
 {
-    "scope": "x_gzi_ppm",
-    "scopeId": "ca99d331333687509937d1382e5c7be5",
-    "name": "x_gzi_ppm",
+    "scope": "x_gzi_zscaler_ppm",
+    "scopeId": "00000000000000000000000000000001",
+    "name": "x_gzi_zscaler_ppm",
     "packageSourceCodeOnInstance": true
 }

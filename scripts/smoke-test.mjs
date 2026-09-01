@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Post-deploy API/UI smoke checks for x_gzi_ppm on ServiceNow.
+ * Post-deploy API/UI smoke checks for x_gzi_zscaler_ppm on ServiceNow.
  *
  * Auth: reuses now-sdk stored credentials (same keychain as `now-sdk auth` /
  * `npm run deploy`). Override alias with SN_SDK_AUTH_ALIAS or --alias.
@@ -17,7 +17,7 @@ import path from 'node:path'
 
 const require = createRequire(import.meta.url)
 
-/** @typedef {{ name: string, method?: string, path: string, kind: 'api' | 'html', failOn?: (ctx: CheckContext) => string | null }} Check */
+/** @typedef {{ name: string, method?: string, path: string, kind: 'api' | 'html', body?: () => Record<string, unknown>, failOn?: (ctx: CheckContext) => string | null }} Check */
 /** @typedef {{ status: number, body: string, ok: boolean, contentType: string }} CheckContext */
 
 const DEFAULT_ALIAS = process.env.SN_SDK_AUTH_ALIAS || undefined
@@ -27,22 +27,46 @@ const TIMEOUT_MS = Number(process.env.SMOKE_TIMEOUT_MS || 30000)
 const CHECKS = /** @type {Check[]} */ ([
     {
         name: 'GET portfolios',
-        path: '/api/x_gzi_ppm/v1/portfolios',
+        path: '/api/x_gzi_zscaler_ppm/v1/portfolios',
         kind: 'api',
     },
     {
         name: 'GET projects',
-        path: '/api/x_gzi_ppm/v1/projects',
+        path: '/api/x_gzi_zscaler_ppm/v1/projects',
         kind: 'api',
     },
     {
+        name: 'POST portfolio',
+        method: 'POST',
+        path: '/api/x_gzi_zscaler_ppm/v1/portfolios',
+        kind: 'api',
+        body: () => ({ name: `Smoke Portfolio ${Date.now()}` }),
+        failOn: ({ status, body }) => {
+            if (status >= 500) return `HTTP ${status}`
+            if (status === 201 || status === 200) return null
+            return `HTTP ${status}: ${snippet(body, 120)}`
+        },
+    },
+    {
+        name: 'POST project',
+        method: 'POST',
+        path: '/api/x_gzi_zscaler_ppm/v1/projects',
+        kind: 'api',
+        body: () => ({ name: `Smoke Project ${Date.now()}` }),
+        failOn: ({ status, body }) => {
+            if (status >= 500) return `HTTP ${status}`
+            if (status === 201 || status === 200) return null
+            return `HTTP ${status}: ${snippet(body, 120)}`
+        },
+    },
+    {
         name: 'GET users/search',
-        path: '/api/x_gzi_ppm/v1/users/search?q=a',
+        path: '/api/x_gzi_zscaler_ppm/v1/users/search?q=a',
         kind: 'api',
     },
     {
         name: 'GET app.do',
-        path: '/x_gzi_ppm_app.do',
+        path: '/x_gzi_zscaler_ppm_app.do',
         kind: 'html',
         failOn: ({ status, body }) => {
             if (status >= 500) return `HTTP ${status}`
@@ -152,8 +176,10 @@ async function runCheck(cred, check) {
             method: check.method || 'GET',
             headers: {
                 Accept: check.kind === 'html' ? 'text/html,application/xhtml+xml' : 'application/json',
+                ...(check.body ? { 'Content-Type': 'application/json' } : {}),
                 ...authHeaders,
             },
+            body: check.body ? JSON.stringify(check.body()) : undefined,
             redirect: 'follow',
             signal: controller.signal,
         })
@@ -179,7 +205,7 @@ async function runCheck(cred, check) {
             reason = reason || `HTTP ${ctx.status}`
         }
 
-        const pass = !reason && ctx.status < 400
+        const pass = !reason
 
         return {
             name: check.name,
@@ -234,6 +260,132 @@ function printTable(rows) {
     }
 }
 
+async function runTaskCreateCheck(cred) {
+    const base = cred.getUrl().origin.replace(/\/$/, '')
+    const name = `Smoke Task ${Date.now()}`
+
+    try {
+        const authHeaders = await cred.getHeaders()
+        const jsonHeaders = { Accept: 'application/json', 'Content-Type': 'application/json', ...authHeaders }
+
+        const projectRes = await fetch(`${base}/api/x_gzi_zscaler_ppm/v1/projects`, {
+            method: 'POST',
+            headers: jsonHeaders,
+            body: JSON.stringify({ name: `Smoke Task Project ${Date.now()}` }),
+        })
+        const projectBody = await projectRes.text()
+        if (projectRes.status >= 500) {
+            return failRow('POST project task', '/projects/{id}/tasks', projectRes.status, `project create HTTP ${projectRes.status}`, projectBody)
+        }
+        let projectId = ''
+        try {
+            const parsed = JSON.parse(projectBody)
+            const data = parsed?.result ?? parsed
+            projectId = data?.sys_id || ''
+        } catch {
+            return failRow('POST project task', '/projects/{id}/tasks', projectRes.status, 'project create returned non-JSON', projectBody)
+        }
+        if (!projectId) {
+            return failRow('POST project task', '/projects/{id}/tasks', projectRes.status, 'project create missing sys_id', projectBody)
+        }
+
+        const sectionPath = `/api/x_gzi_zscaler_ppm/v1/projects/${projectId}/section`
+        const sectionRes = await fetch(`${base}${sectionPath}`, {
+            method: 'POST',
+            headers: jsonHeaders,
+            body: JSON.stringify({ name: 'Smoke Section' }),
+        })
+        const sectionBody = await sectionRes.text()
+        if (sectionRes.status >= 500) {
+            return failRow('POST project task', sectionPath, sectionRes.status, `section create HTTP ${sectionRes.status}`, sectionBody)
+        }
+        if (sectionRes.status !== 201 && sectionRes.status !== 200) {
+            return failRow('POST project task', sectionPath, sectionRes.status, `section create HTTP ${sectionRes.status}`, sectionBody)
+        }
+
+        const taskPath = `/api/x_gzi_zscaler_ppm/v1/projects/${projectId}/tasks`
+        const taskRes = await fetch(`${base}${taskPath}`, {
+            method: 'POST',
+            headers: jsonHeaders,
+            body: JSON.stringify({ name }),
+        })
+        const taskBody = await taskRes.text()
+        if (taskRes.status >= 500) {
+            return failRow('POST project task', taskPath, taskRes.status, `task create HTTP ${taskRes.status}`, taskBody)
+        }
+        if (taskRes.status !== 201 && taskRes.status !== 200) {
+            return failRow('POST project task', taskPath, taskRes.status, `HTTP ${taskRes.status}`, taskBody)
+        }
+
+        let taskId = ''
+        try {
+            const parsed = JSON.parse(taskBody)
+            taskId = (parsed?.result ?? parsed)?.sys_id || ''
+        } catch {
+            return failRow('POST project task', taskPath, taskRes.status, 'task create returned non-JSON', taskBody)
+        }
+
+        if (taskId) {
+            const patchRes = await fetch(`${base}/api/x_gzi_zscaler_ppm/v1/tasks/${taskId}`, {
+                method: 'PATCH',
+                headers: jsonHeaders,
+                body: JSON.stringify({ completed: true, project_id: projectId }),
+            })
+            if (patchRes.status >= 500) {
+                return failRow('POST project task', `/tasks/${taskId}`, patchRes.status, `task patch HTTP ${patchRes.status}`, await patchRes.text())
+            }
+        }
+
+        const boardRes = await fetch(`${base}/api/x_gzi_zscaler_ppm/v1/projects/${projectId}/board`, { headers: authHeaders })
+        if (boardRes.status >= 500) {
+            return failRow('POST project task', `/projects/${projectId}/board`, boardRes.status, `board HTTP ${boardRes.status}`, await boardRes.text())
+        }
+
+        return { name: 'POST project task', path: taskPath, status: taskRes.status, pass: true, reason: '', snippet: snippet(taskBody) }
+    } catch (e) {
+        return failRow('POST project task', '/projects/{id}/tasks', 0, e?.message || String(e), '')
+    }
+}
+
+function failRow(name, path, status, reason, body) {
+    return { name, path, status, pass: false, reason, snippet: snippet(body) }
+}
+
+async function runPortfolioDashboardCheck(cred) {
+    const base = cred.getUrl().origin.replace(/\/$/, '')
+    try {
+        const authHeaders = await cred.getHeaders()
+        const listRes = await fetch(`${base}/api/x_gzi_zscaler_ppm/v1/portfolios`, { headers: authHeaders })
+        const listBody = await listRes.text()
+        if (listRes.status >= 500) {
+            return failRow('GET portfolio dashboard', '/portfolios/{id}/dashboard', listRes.status, `portfolios HTTP ${listRes.status}`, listBody)
+        }
+        let portfolioId = ''
+        try {
+            const parsed = JSON.parse(listBody)
+            const rows = parsed?.result ?? parsed
+            portfolioId = Array.isArray(rows) && rows[0]?.sys_id ? rows[0].sys_id : ''
+        } catch {
+            return failRow('GET portfolio dashboard', '/portfolios/{id}/dashboard', listRes.status, 'portfolios non-JSON', listBody)
+        }
+        if (!portfolioId) {
+            return { name: 'GET portfolio dashboard', path: '/portfolios/{id}/dashboard', status: listRes.status, pass: true, reason: '', snippet: 'no portfolios to test' }
+        }
+        const dashPath = `/api/x_gzi_zscaler_ppm/v1/portfolios/${portfolioId}/dashboard`
+        const dashRes = await fetch(`${base}${dashPath}`, { headers: authHeaders })
+        const dashBody = await dashRes.text()
+        if (dashRes.status >= 500) {
+            return failRow('GET portfolio dashboard', dashPath, dashRes.status, `HTTP ${dashRes.status}`, dashBody)
+        }
+        if (dashRes.status >= 400) {
+            return failRow('GET portfolio dashboard', dashPath, dashRes.status, `HTTP ${dashRes.status}`, dashBody)
+        }
+        return { name: 'GET portfolio dashboard', path: dashPath, status: dashRes.status, pass: true, reason: '', snippet: snippet(dashBody) }
+    } catch (e) {
+        return failRow('GET portfolio dashboard', '/portfolios/{id}/dashboard', 0, e?.message || String(e), '')
+    }
+}
+
 async function main() {
     const args = parseArgs(process.argv.slice(2))
     if (args.help) {
@@ -271,6 +423,16 @@ async function main() {
         results.push(row)
         console.log(row.pass ? 'PASS' : 'FAIL')
     }
+
+    process.stdout.write('… POST project task ')
+    const taskRow = await runTaskCreateCheck(cred)
+    results.push(taskRow)
+    console.log(taskRow.pass ? 'PASS' : 'FAIL')
+
+    process.stdout.write('… GET portfolio dashboard ')
+    const dashRow = await runPortfolioDashboardCheck(cred)
+    results.push(dashRow)
+    console.log(dashRow.pass ? 'PASS' : 'FAIL')
 
     console.log('')
     printTable(results)

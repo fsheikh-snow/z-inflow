@@ -4,7 +4,7 @@ MemberService.prototype = {
 
     _userService: function () {
         if (!this.__userService) {
-            this.__userService = new x_gzi_ppm.UserService();
+            this.__userService = new x_gzi_zscaler_ppm.UserService();
         }
         return this.__userService;
     },
@@ -20,15 +20,15 @@ MemberService.prototype = {
     _config: function (entityType) {
         if (entityType === 'portfolio') {
             return {
-                table: 'x_gzi_ppm_portfolio_member',
+                table: 'x_gzi_zscaler_ppm_portfolio_member',
                 parentField: 'portfolio_id',
-                parentTable: 'x_gzi_ppm_portfolio',
+                parentTable: 'x_gzi_zscaler_ppm_portfolio',
             };
         }
         return {
-            table: 'x_gzi_ppm_project_member',
+            table: 'x_gzi_zscaler_ppm_project_member',
             parentField: 'project_id',
-            parentTable: 'x_gzi_ppm_project',
+            parentTable: 'x_gzi_zscaler_ppm_project',
         };
     },
 

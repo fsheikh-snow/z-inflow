@@ -7,15 +7,15 @@ import {
     BooleanColumn,
 } from '@servicenow/sdk/core'
 
-export const x_gzi_ppm_custom_view_column = Table({
-    name: 'x_gzi_ppm_custom_view_column',
+export const x_gzi_zscaler_ppm_custom_view_column = Table({
+    name: 'x_gzi_zscaler_ppm_custom_view_column',
     label: 'Custom View Column',
     allowWebServiceAccess: true,
     createAccessControls: true,
     schema: {
         view_id: ReferenceColumn({
             label: 'View',
-            referenceTable: 'x_gzi_ppm_custom_view',
+            referenceTable: 'x_gzi_zscaler_ppm_custom_view',
             mandatory: true,
             cascadeRule: 'delete',
         }),

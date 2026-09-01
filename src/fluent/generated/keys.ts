@@ -5,2544 +5,778 @@ declare global {
         namespace Internal {
             interface Keys extends KeysRegistry {
                 explicit: {
-                    '01492d723260419693e7d734dcf6daaf': {
-                        table: 'sys_security_acl'
-                        id: '01492d723260419693e7d734dcf6daaf'
-                        deleted: true
-                    }
-                    '026643c644f64433bc531c90d187296a': {
-                        table: 'sys_security_acl'
-                        id: '026643c644f64433bc531c90d187296a'
-                        deleted: true
-                    }
-                    '05ffe28a34ca4542b1b42893baffd6c5': {
-                        table: 'sys_security_acl'
-                        id: '05ffe28a34ca4542b1b42893baffd6c5'
-                        deleted: true
-                    }
-                    '0bb3fbed275a46f5a684f89152673b11': {
-                        table: 'sys_script_include'
-                        id: '0bb3fbed275a46f5a684f89152673b11'
-                        deleted: true
-                    }
-                    '0cf93166a7a2427d80083e2e4090c519': {
-                        table: 'sys_security_acl'
-                        id: '0cf93166a7a2427d80083e2e4090c519'
-                        deleted: true
-                    }
-                    '0de54ae95f6c4a40a9511f3882830b84': {
-                        table: 'sys_security_acl'
-                        id: '0de54ae95f6c4a40a9511f3882830b84'
-                        deleted: true
-                    }
-                    '13b78b4b0c1d431189ffbd789bb660ac': {
-                        table: 'sys_script'
-                        id: '13b78b4b0c1d431189ffbd789bb660ac'
-                        deleted: true
-                    }
-                    '17a671d7f6af4e78add1f167eac2e7b0': {
-                        table: 'sys_security_acl'
-                        id: '17a671d7f6af4e78add1f167eac2e7b0'
-                        deleted: true
-                    }
-                    '183c5908c3b7445984493597a12ed259': {
-                        table: 'sys_security_acl'
-                        id: '183c5908c3b7445984493597a12ed259'
-                        deleted: true
-                    }
-                    '21b2f69b2d0f4d21ac71350ec8105b2d': {
-                        table: 'sys_security_acl'
-                        id: '21b2f69b2d0f4d21ac71350ec8105b2d'
-                        deleted: true
-                    }
-                    '22a761cdd0544ddb812bc3165526742a': {
-                        table: 'sys_security_acl'
-                        id: '22a761cdd0544ddb812bc3165526742a'
-                        deleted: true
-                    }
-                    '28effcf82dfd43e9aaff2d1fd444acaa': {
-                        table: 'sys_script_include'
-                        id: '28effcf82dfd43e9aaff2d1fd444acaa'
-                        deleted: true
-                    }
-                    '2f362039701d46789366ff27ba4bf555': {
-                        table: 'sys_security_acl'
-                        id: '2f362039701d46789366ff27ba4bf555'
-                        deleted: true
-                    }
-                    '3013efa05bcd440ab3b068ac4622337e': {
-                        table: 'sys_script'
-                        id: '3013efa05bcd440ab3b068ac4622337e'
-                        deleted: true
-                    }
-                    '30ebd9d37de54623a6cb1016fc926d86': {
-                        table: 'sys_security_acl'
-                        id: '30ebd9d37de54623a6cb1016fc926d86'
-                        deleted: true
-                    }
-                    '33bdde8e315c43e58f45f1a188babc76': {
-                        table: 'sys_script'
-                        id: '33bdde8e315c43e58f45f1a188babc76'
-                        deleted: true
-                    }
-                    '33cffe7f59dd4768b629ff63b1c56ba7': {
-                        table: 'sys_app_module'
-                        id: '33cffe7f59dd4768b629ff63b1c56ba7'
-                        deleted: true
-                    }
-                    '39aa08c1c05448d3804b63f822537b53': {
-                        table: 'sys_script_include'
-                        id: '39aa08c1c05448d3804b63f822537b53'
-                        deleted: true
-                    }
-                    '3c233a865eaa4c84a6e70f2265a1f35c': {
-                        table: 'sys_security_acl'
-                        id: '3c233a865eaa4c84a6e70f2265a1f35c'
-                        deleted: true
-                    }
-                    '3c37ff7d71194e60ae7a9938a529cec6': {
-                        table: 'sys_security_acl'
-                        id: '3c37ff7d71194e60ae7a9938a529cec6'
-                        deleted: true
-                    }
-                    '3d2e2948da054bd6aded06775edc8451': {
-                        table: 'sys_security_acl'
-                        id: '3d2e2948da054bd6aded06775edc8451'
-                        deleted: true
-                    }
-                    '426d6787612945d9ba6e55baa85ad003': {
-                        table: 'sys_script_include'
-                        id: '426d6787612945d9ba6e55baa85ad003'
-                        deleted: true
-                    }
-                    '4ad3ff5ba50f449a855631f0b3042ef0': {
-                        table: 'sys_security_acl'
-                        id: '4ad3ff5ba50f449a855631f0b3042ef0'
-                        deleted: true
-                    }
-                    '4cd82d12b7014386b138e27f170c6e4f': {
-                        table: 'sys_security_acl'
-                        id: '4cd82d12b7014386b138e27f170c6e4f'
-                        deleted: true
-                    }
-                    '58b60f206b18425394dbbbbdc0e86954': {
-                        table: 'sys_security_acl'
-                        id: '58b60f206b18425394dbbbbdc0e86954'
-                        deleted: true
-                    }
-                    '5b8f65c1b4bd4774a2e63c3a7c024b85': {
-                        table: 'sys_security_acl'
-                        id: '5b8f65c1b4bd4774a2e63c3a7c024b85'
-                        deleted: true
-                    }
-                    '5cd0fbd68601432ab206dfd22ae50338': {
-                        table: 'sys_security_acl'
-                        id: '5cd0fbd68601432ab206dfd22ae50338'
-                        deleted: true
-                    }
-                    '5ea8e1ce129b42d8bc26ea61acaaf362': {
-                        table: 'sys_security_acl'
-                        id: '5ea8e1ce129b42d8bc26ea61acaaf362'
-                        deleted: true
-                    }
-                    '5fb8593c4ef146cab8ad62a011dae4cb': {
-                        table: 'sys_app_application'
-                        id: '5fb8593c4ef146cab8ad62a011dae4cb'
-                        deleted: true
-                    }
-                    '60c76e9883314422acdfc0ec6c52edc4': {
-                        table: 'sys_security_acl'
-                        id: '60c76e9883314422acdfc0ec6c52edc4'
-                        deleted: true
-                    }
-                    '6197b062cc684555ba07b44bf5513f6f': {
-                        table: 'sys_security_acl'
-                        id: '6197b062cc684555ba07b44bf5513f6f'
-                        deleted: true
-                    }
-                    '63b2066db2f34941be1af990fa996ad5': {
-                        table: 'sys_security_acl'
-                        id: '63b2066db2f34941be1af990fa996ad5'
-                        deleted: true
-                    }
-                    '679e5842540e44df902036879f2eb23b': {
-                        table: 'sys_security_acl'
-                        id: '679e5842540e44df902036879f2eb23b'
-                        deleted: true
-                    }
-                    '68d117d64f2c40aabd78a18fa3cc286c': {
-                        table: 'sys_security_acl'
-                        id: '68d117d64f2c40aabd78a18fa3cc286c'
-                        deleted: true
-                    }
-                    '68e223b3ad3c4da88f59ae8df025c6a8': {
-                        table: 'sys_app_module'
-                        id: '68e223b3ad3c4da88f59ae8df025c6a8'
-                        deleted: true
-                    }
-                    '70636b2be5694e75b2497c970a515433': {
-                        table: 'sys_security_acl'
-                        id: '70636b2be5694e75b2497c970a515433'
-                        deleted: true
-                    }
-                    '70d0a03557114c8aab132ab05329cdbc': {
-                        table: 'sys_security_acl'
-                        id: '70d0a03557114c8aab132ab05329cdbc'
-                        deleted: true
-                    }
-                    '710c9a5d5b324f8eaf305ab2bdc21544': {
-                        table: 'sys_security_acl'
-                        id: '710c9a5d5b324f8eaf305ab2bdc21544'
-                        deleted: true
-                    }
-                    '759832d62ac843738adcccd8a56ee5e5': {
-                        table: 'sys_security_acl'
-                        id: '759832d62ac843738adcccd8a56ee5e5'
-                        deleted: true
-                    }
-                    '773b97b9c06d42779db9fda1a183937f': {
-                        table: 'sys_security_acl'
-                        id: '773b97b9c06d42779db9fda1a183937f'
-                        deleted: true
-                    }
-                    '7aef8339def8458895ae82e2f9c43048': {
-                        table: 'sys_security_acl'
-                        id: '7aef8339def8458895ae82e2f9c43048'
-                        deleted: true
-                    }
-                    '7e0bf384e01f4f368b06f73e4a4eb849': {
-                        table: 'sys_security_acl'
-                        id: '7e0bf384e01f4f368b06f73e4a4eb849'
-                        deleted: true
-                    }
-                    '8353d9b069de4b69aba68679c0014544': {
-                        table: 'sys_security_acl'
-                        id: '8353d9b069de4b69aba68679c0014544'
-                        deleted: true
-                    }
-                    '8b76902d00224542a9a802d1a7b15958': {
-                        table: 'sys_security_acl'
-                        id: '8b76902d00224542a9a802d1a7b15958'
-                        deleted: true
-                    }
-                    '8c792021f0754c49a0bad2f2391d0fda': {
-                        table: 'sys_security_acl'
-                        id: '8c792021f0754c49a0bad2f2391d0fda'
-                        deleted: true
-                    }
-                    '90a8832c5d5b44d88736f65d134065df': {
-                        table: 'sys_security_acl'
-                        id: '90a8832c5d5b44d88736f65d134065df'
-                        deleted: true
-                    }
-                    '92a22379337687509937d1382e5c7b42': {
-                        table: 'sys_app_info'
-                        id: '92a22379337687509937d1382e5c7b42'
-                        deleted: true
-                    }
-                    '9550d11c0cce4857b04425210209eb77': {
-                        table: 'sys_security_acl'
-                        id: '9550d11c0cce4857b04425210209eb77'
-                        deleted: true
-                    }
-                    '98566ef37e8f48d59d0d6285fe7ab5ef': {
-                        table: 'sys_security_acl'
-                        id: '98566ef37e8f48d59d0d6285fe7ab5ef'
-                        deleted: true
-                    }
-                    '989613c058214fffb4f71b9b3d4ca39c': {
-                        table: 'sys_security_acl'
-                        id: '989613c058214fffb4f71b9b3d4ca39c'
-                        deleted: true
-                    }
-                    '98aca17668dd423f88fb9905cec08c47': {
-                        table: 'sys_security_acl'
-                        id: '98aca17668dd423f88fb9905cec08c47'
-                        deleted: true
-                    }
-                    '994b4c5669d14c9889341b13493d71a0': {
-                        table: 'sys_app_module'
-                        id: '994b4c5669d14c9889341b13493d71a0'
-                        deleted: true
-                    }
-                    '996735df62514a91abae56cf8c0be3f0': {
-                        table: 'sys_app_module'
-                        id: '996735df62514a91abae56cf8c0be3f0'
-                        deleted: true
-                    }
-                    '9e1bad6123fc45138eba1b38d46c3b30': {
-                        table: 'sys_security_acl'
-                        id: '9e1bad6123fc45138eba1b38d46c3b30'
-                        deleted: true
-                    }
-                    a1a6af8fa4e440a4a3addb6d65ed279c: {
-                        table: 'sys_security_acl'
-                        id: 'a1a6af8fa4e440a4a3addb6d65ed279c'
-                        deleted: true
-                    }
-                    a271541ebd1743a1918072d54697ba0a: {
-                        table: 'sys_security_acl'
-                        id: 'a271541ebd1743a1918072d54697ba0a'
-                        deleted: true
-                    }
-                    a2bd4e71efc64d819a9a9d991d55b896: {
-                        table: 'sys_app_module'
-                        id: 'a2bd4e71efc64d819a9a9d991d55b896'
-                        deleted: true
-                    }
-                    a3d91cefb1bb4206b305716fd41af22f: {
-                        table: 'sys_security_acl'
-                        id: 'a3d91cefb1bb4206b305716fd41af22f'
-                        deleted: true
-                    }
                     'access-service': {
                         table: 'sys_script_include'
-                        id: '11d16c3ef279464bbf15e1055d3d1242'
+                        id: '10530086c6b3039560ffa53b821a4342'
                     }
-                    ad2d0364eb8e420fa7c776ff25288c16: {
+                    'acl-capacity_plan-create': {
                         table: 'sys_security_acl'
-                        id: 'ad2d0364eb8e420fa7c776ff25288c16'
-                        deleted: true
+                        id: '73b467e8d54e470f9b8e30e8c81f0d56'
                     }
-                    ad3354666487418f94e5f32493c90e7d: {
+                    'acl-capacity_plan-delete': {
                         table: 'sys_security_acl'
-                        id: 'ad3354666487418f94e5f32493c90e7d'
-                        deleted: true
+                        id: 'd567737f4d6a4247a3af0b2a4d27aed6'
                     }
-                    b5cbd3fee13140219d532dcd1de480b9: {
-                        table: 'sys_script_include'
-                        id: 'b5cbd3fee13140219d532dcd1de480b9'
-                        deleted: true
-                    }
-                    b73ed5fe47bd4566912e1d43fc6eeb82: {
+                    'acl-capacity_plan-read': {
                         table: 'sys_security_acl'
-                        id: 'b73ed5fe47bd4566912e1d43fc6eeb82'
-                        deleted: true
+                        id: '69329d70e5b7436082caf91fbf082c8a'
                     }
-                    ba439480bfba4d39a67756a40d1a09a7: {
+                    'acl-capacity_plan-write': {
                         table: 'sys_security_acl'
-                        id: 'ba439480bfba4d39a67756a40d1a09a7'
-                        deleted: true
+                        id: 'a8eeff1c45784981a0abcf48fd8c13f1'
                     }
-                    baed430f055644e69e097e94ef5e794c: {
-                        table: 'sys_script_include'
-                        id: 'baed430f055644e69e097e94ef5e794c'
-                        deleted: true
-                    }
-                    bc71079598114f3a816d06e97bd8c941: {
+                    'acl-custom_field_def-create': {
                         table: 'sys_security_acl'
-                        id: 'bc71079598114f3a816d06e97bd8c941'
-                        deleted: true
+                        id: '136cc98b353a4c3aba36b7cad0cfc154'
                     }
-                    bd56218badfb46928483caf8536606b8: {
+                    'acl-custom_field_def-delete': {
                         table: 'sys_security_acl'
-                        id: 'bd56218badfb46928483caf8536606b8'
-                        deleted: true
+                        id: '28fefea7d88544888d41f4e73007c6b7'
                     }
-                    befd7715087249d2b359d52ef3431276: {
+                    'acl-custom_field_def-read': {
                         table: 'sys_security_acl'
-                        id: 'befd7715087249d2b359d52ef3431276'
-                        deleted: true
+                        id: 'e4c2dacbb11941ce9845d917b3851011'
+                    }
+                    'acl-custom_field_def-write': {
+                        table: 'sys_security_acl'
+                        id: '28abed8987db4198b0db604a4e2911bc'
+                    }
+                    'acl-custom_field_setting-create': {
+                        table: 'sys_security_acl'
+                        id: '56f0a7b2692a4315bd536254ce2ad455'
+                    }
+                    'acl-custom_field_setting-delete': {
+                        table: 'sys_security_acl'
+                        id: 'ac684a292bc94ee7b4f4803bf1ca91c9'
+                    }
+                    'acl-custom_field_setting-read': {
+                        table: 'sys_security_acl'
+                        id: 'e27e14f8d05e4610807f2b5a8c64a852'
+                    }
+                    'acl-custom_field_setting-write': {
+                        table: 'sys_security_acl'
+                        id: 'bb9b233e644042e484e5948fddaab552'
+                    }
+                    'acl-custom_field_value-create': {
+                        table: 'sys_security_acl'
+                        id: '19b956ae13044510a80fb845a62a9d28'
+                    }
+                    'acl-custom_field_value-delete': {
+                        table: 'sys_security_acl'
+                        id: '89d2849feb8746a3a0418a0e6dddd4c9'
+                    }
+                    'acl-custom_field_value-read': {
+                        table: 'sys_security_acl'
+                        id: 'c8c59dfed7bb4eaab77295bd6d9dfa2e'
+                    }
+                    'acl-custom_field_value-write': {
+                        table: 'sys_security_acl'
+                        id: '717eca5281de4c828cb7949c44279441'
+                    }
+                    'acl-custom_view_column-create': {
+                        table: 'sys_security_acl'
+                        id: 'c8bb503c93fa4b85930cac5b1cab3611'
+                    }
+                    'acl-custom_view_column-delete': {
+                        table: 'sys_security_acl'
+                        id: 'c5c08bd6d7674d4eab6e3bba148172d0'
+                    }
+                    'acl-custom_view_column-read': {
+                        table: 'sys_security_acl'
+                        id: '8d8ad53fdd25472ea96873fd50e751f8'
+                    }
+                    'acl-custom_view_column-write': {
+                        table: 'sys_security_acl'
+                        id: '4bdb43c54c7e47e59152d5e9e70597a9'
+                    }
+                    'acl-custom_view-create': {
+                        table: 'sys_security_acl'
+                        id: 'c510984554af4508b791cecd37f63ab7'
+                    }
+                    'acl-custom_view-delete': {
+                        table: 'sys_security_acl'
+                        id: '157516f3a2a94ab0a2e93a24b0903086'
+                    }
+                    'acl-custom_view-read': {
+                        table: 'sys_security_acl'
+                        id: '7ca55cedc7c240acac78d5db32d4a363'
+                    }
+                    'acl-custom_view-write': {
+                        table: 'sys_security_acl'
+                        id: 'ef904786de2f4398a48a862b4285fab1'
+                    }
+                    'acl-goal-create': {
+                        table: 'sys_security_acl'
+                        id: '0764f2837e8846ccb21bec627d836bdd'
+                    }
+                    'acl-goal-delete': {
+                        table: 'sys_security_acl'
+                        id: 'd9d2f3e43cd749ff9896b42c38b3702a'
+                    }
+                    'acl-goal-read': {
+                        table: 'sys_security_acl'
+                        id: '12c6129a819a4822b81a1cc83304debf'
+                    }
+                    'acl-goal-write': {
+                        table: 'sys_security_acl'
+                        id: '1261c1826e5d47a0a963732afd58e954'
+                    }
+                    'acl-portfolio_member-create': {
+                        table: 'sys_security_acl'
+                        id: '88da84cbe2a84022bee9f0a9c6e437e7'
+                    }
+                    'acl-portfolio_member-delete': {
+                        table: 'sys_security_acl'
+                        id: '2598579aa48c4fc581647d80ac113779'
+                    }
+                    'acl-portfolio_member-read': {
+                        table: 'sys_security_acl'
+                        id: '1a488d67371541d193ed0c8f853cbfdd'
+                    }
+                    'acl-portfolio_member-write': {
+                        table: 'sys_security_acl'
+                        id: 'bbfefaf459d745e59e617a0222c69793'
+                    }
+                    'acl-portfolio_project-create': {
+                        table: 'sys_security_acl'
+                        id: '7f40f35184204fc9bd4a129721ce1605'
+                    }
+                    'acl-portfolio_project-delete': {
+                        table: 'sys_security_acl'
+                        id: 'f0832c0807d9418ebae47a0a946fa827'
+                    }
+                    'acl-portfolio_project-read': {
+                        table: 'sys_security_acl'
+                        id: '502457d9c3b04ad4a15b37da3abedb1d'
+                    }
+                    'acl-portfolio_project-write': {
+                        table: 'sys_security_acl'
+                        id: 'b073a6487235430f9b0b00f5893b4c05'
+                    }
+                    'acl-portfolio-create': {
+                        table: 'sys_security_acl'
+                        id: '23483f0fae5c47b1aa7949a7382d5676'
+                    }
+                    'acl-portfolio-delete': {
+                        table: 'sys_security_acl'
+                        id: 'c70c98937e4b46a2acef75757d4a7d6a'
+                    }
+                    'acl-portfolio-read': {
+                        table: 'sys_security_acl'
+                        id: '7cf88512d14246319406759bd62703c3'
+                    }
+                    'acl-portfolio-write': {
+                        table: 'sys_security_acl'
+                        id: 'b3d4f78786414d0e9ae945fb52c31fc6'
+                    }
+                    'acl-project_member-create': {
+                        table: 'sys_security_acl'
+                        id: '684dbbf23c744f0ea03e953f10c9c057'
+                    }
+                    'acl-project_member-delete': {
+                        table: 'sys_security_acl'
+                        id: 'b4bbc84446b64608bfc35560b898a649'
+                    }
+                    'acl-project_member-read': {
+                        table: 'sys_security_acl'
+                        id: '0d934aaf4c0a4f24afc0c25c3782a38b'
+                    }
+                    'acl-project_member-write': {
+                        table: 'sys_security_acl'
+                        id: '060adb2ba6ba4a50a269a77e0a665932'
+                    }
+                    'acl-project_resource_allocation-create': {
+                        table: 'sys_security_acl'
+                        id: 'dd88d3558a434184b964ac10b267c73a'
+                    }
+                    'acl-project_resource_allocation-delete': {
+                        table: 'sys_security_acl'
+                        id: 'df41ba0d3b9a4ee893be7be6137901a5'
+                    }
+                    'acl-project_resource_allocation-read': {
+                        table: 'sys_security_acl'
+                        id: 'fee0dd16e87a4ef19398818a0a685a5f'
+                    }
+                    'acl-project_resource_allocation-write': {
+                        table: 'sys_security_acl'
+                        id: 'da49f28099a74cb4b2a14b56a6fe0c3f'
+                    }
+                    'acl-project_task-create': {
+                        table: 'sys_security_acl'
+                        id: '4d6b4452ef344e3596c84da1e452b2d4'
+                    }
+                    'acl-project_task-delete': {
+                        table: 'sys_security_acl'
+                        id: '2a49e5f7172548dab56f5ca8fae31636'
+                    }
+                    'acl-project_task-read': {
+                        table: 'sys_security_acl'
+                        id: '2280f4c934ae4933b3ed4aed11cb7e98'
+                    }
+                    'acl-project_task-write': {
+                        table: 'sys_security_acl'
+                        id: '1b57d45b5c99463eae7694595628640f'
+                    }
+                    'acl-project-create': {
+                        table: 'sys_security_acl'
+                        id: '0bf8e062cd1d492fb855a5713203c228'
+                    }
+                    'acl-project-delete': {
+                        table: 'sys_security_acl'
+                        id: '1b2b7c91330e459982e7b067de6d882a'
+                    }
+                    'acl-project-read': {
+                        table: 'sys_security_acl'
+                        id: '07f7b22f8bcb484b89b2838f02344d51'
+                    }
+                    'acl-project-write': {
+                        table: 'sys_security_acl'
+                        id: 'd10d6df6f1814cf9accacb2be6654f3e'
+                    }
+                    'acl-resource_role-create': {
+                        table: 'sys_security_acl'
+                        id: '257d3bb4ebdb4559930b09da8d094773'
+                    }
+                    'acl-resource_role-delete': {
+                        table: 'sys_security_acl'
+                        id: '9646e81dab6e424d8d0f2450b5e79841'
+                    }
+                    'acl-resource_role-read': {
+                        table: 'sys_security_acl'
+                        id: '528cce346f5d438dad0a016a3b6822ef'
+                    }
+                    'acl-resource_role-write': {
+                        table: 'sys_security_acl'
+                        id: '754b482f10cf412cac03bdbb3e806650'
+                    }
+                    'acl-rest-api-execute': {
+                        table: 'sys_security_acl'
+                        id: '394476b417334d878204409689b50624'
+                    }
+                    'acl-section-create': {
+                        table: 'sys_security_acl'
+                        id: 'af1635a2477d4f3996282293586a7afb'
+                    }
+                    'acl-section-delete': {
+                        table: 'sys_security_acl'
+                        id: '821220e6860d42d4b1586b9aa75a6e1f'
+                    }
+                    'acl-section-read': {
+                        table: 'sys_security_acl'
+                        id: 'bbdf1271e1264237accb782157c2d2f9'
+                    }
+                    'acl-section-write': {
+                        table: 'sys_security_acl'
+                        id: 'cd7b390bf5764ce6a18325ed49ee28c5'
+                    }
+                    'acl-status_update-create': {
+                        table: 'sys_security_acl'
+                        id: 'bec4c6622735483ebef9d24077c90ff6'
+                    }
+                    'acl-status_update-delete': {
+                        table: 'sys_security_acl'
+                        id: 'da8c7cd413114280a11503937819e496'
+                    }
+                    'acl-status_update-read': {
+                        table: 'sys_security_acl'
+                        id: 'c7d81370707e4f91abf9c607fcf858f2'
+                    }
+                    'acl-status_update-write': {
+                        table: 'sys_security_acl'
+                        id: 'ee4a6f0a2024425dbbf7d59e15c89822'
+                    }
+                    'acl-task_dependency-create': {
+                        table: 'sys_security_acl'
+                        id: '4b29767ecdc444d495ebd00988726fd2'
+                    }
+                    'acl-task_dependency-delete': {
+                        table: 'sys_security_acl'
+                        id: '57b741beb3c0471fbbc137bfad113221'
+                    }
+                    'acl-task_dependency-read': {
+                        table: 'sys_security_acl'
+                        id: '3b91effc6d5d4685bd9e3a852959d7e4'
+                    }
+                    'acl-task_dependency-write': {
+                        table: 'sys_security_acl'
+                        id: '89c75b4c80424f51a37abe07d7dfea8c'
+                    }
+                    'acl-task-create': {
+                        table: 'sys_security_acl'
+                        id: 'cd65dbc086d345138f38ceaed40cfd21'
+                    }
+                    'acl-task-delete': {
+                        table: 'sys_security_acl'
+                        id: '8e8c98f96fb3464381bebad70a1e407d'
+                    }
+                    'acl-task-read': {
+                        table: 'sys_security_acl'
+                        id: '13342f54b1484a57936bc9faca8dc75e'
+                    }
+                    'acl-task-write': {
+                        table: 'sys_security_acl'
+                        id: 'ffd421cf42dd433ab2e3c2f13622c016'
+                    }
+                    'acl-user_capacity-create': {
+                        table: 'sys_security_acl'
+                        id: 'd155fb3c487e46e8be2db6526ac4c519'
+                    }
+                    'acl-user_capacity-delete': {
+                        table: 'sys_security_acl'
+                        id: 'c62842461f074fad969f6f42cccce841'
+                    }
+                    'acl-user_capacity-read': {
+                        table: 'sys_security_acl'
+                        id: 'e5f5cdb24757494ca88812fcf8031466'
+                    }
+                    'acl-user_capacity-write': {
+                        table: 'sys_security_acl'
+                        id: '3e672ac479c644a59a5609f0939ae994'
+                    }
+                    'acl-user_resource_profile-create': {
+                        table: 'sys_security_acl'
+                        id: '9dfe20371e8548c9bf6401082a084cd9'
+                    }
+                    'acl-user_resource_profile-delete': {
+                        table: 'sys_security_acl'
+                        id: 'e3d898f3501848d6bce8d34c0a7986bd'
+                    }
+                    'acl-user_resource_profile-read': {
+                        table: 'sys_security_acl'
+                        id: '05c7a5c5d5ac45b08230865cdf1832c0'
+                    }
+                    'acl-user_resource_profile-write': {
+                        table: 'sys_security_acl'
+                        id: 'cd7ad140672f45fbb501945b81bc784e'
+                    }
+                    'acl-workspace_team-create': {
+                        table: 'sys_security_acl'
+                        id: 'cedd39571d134b0d80a27a4ce3d41e74'
+                    }
+                    'acl-workspace_team-delete': {
+                        table: 'sys_security_acl'
+                        id: 'cbea80d485eb49e98de64cd4f68a6eb8'
+                    }
+                    'acl-workspace_team-read': {
+                        table: 'sys_security_acl'
+                        id: 'd54135add8f743e199fe12e8bfb117e0'
+                    }
+                    'acl-workspace_team-write': {
+                        table: 'sys_security_acl'
+                        id: '193446031f8349cc86ce9129fb40de41'
+                    }
+                    'acl-workspace_user-create': {
+                        table: 'sys_security_acl'
+                        id: '439b18e6a89e4b73ac0e6f8910c430b5'
+                    }
+                    'acl-workspace_user-delete': {
+                        table: 'sys_security_acl'
+                        id: 'd9bc3ab51095402eade3b5238d879a8c'
+                    }
+                    'acl-workspace_user-read': {
+                        table: 'sys_security_acl'
+                        id: 'a1be0a7cfbd442d7b0078c2ed61738a9'
+                    }
+                    'acl-workspace_user-write': {
+                        table: 'sys_security_acl'
+                        id: '2ffae2a065b7470a84cd1c82c3600f86'
+                    }
+                    'acl-workspace-create': {
+                        table: 'sys_security_acl'
+                        id: 'b44003bf6d4847e1854c86acf2d612a0'
+                    }
+                    'acl-workspace-delete': {
+                        table: 'sys_security_acl'
+                        id: '04b9b2060d104519ab424bdfe7880bb4'
+                    }
+                    'acl-workspace-read': {
+                        table: 'sys_security_acl'
+                        id: '37c03e0eec50418882255ff961655304'
+                    }
+                    'acl-workspace-write': {
+                        table: 'sys_security_acl'
+                        id: 'c828281e1d1c4f5281b473abf56c39b2'
                     }
                     bom_json: {
                         table: 'sys_module'
-                        id: '5330e272647147aba9b2c9648e4be61f'
+                        id: '33ab2012bf9f43c19e799fada2128c63'
                     }
                     'br-eav-xor-validation': {
                         table: 'sys_script'
-                        id: '523cf064a7084f7487720c907739cf1c'
+                        id: '04b4a3fa5b140d042fb5a0da309c89d4'
                     }
                     'br-task-single-assignee': {
                         table: 'sys_script'
-                        id: '1ccce43d99034b419bf4e3b2db7da08f'
-                    }
-                    c0380eac745446fd831806f964474cf5: {
-                        table: 'sys_security_acl'
-                        id: 'c0380eac745446fd831806f964474cf5'
-                        deleted: true
-                    }
-                    c1911a4d7d9e497589815b64b10e3457: {
-                        table: 'sys_security_acl'
-                        id: 'c1911a4d7d9e497589815b64b10e3457'
-                        deleted: true
-                    }
-                    c39eef9c18ff4fcc9e1227af47d0bad0: {
-                        table: 'sys_security_acl'
-                        id: 'c39eef9c18ff4fcc9e1227af47d0bad0'
-                        deleted: true
-                    }
-                    ca8ca5c56054470fa825f5c4381deb33: {
-                        table: 'sys_security_acl'
-                        id: 'ca8ca5c56054470fa825f5c4381deb33'
-                        deleted: true
-                    }
-                    ca99d331333687509937d1382e5c7be5: {
-                        table: 'sys_app_info'
-                        id: 'ca99d331333687509937d1382e5c7be5'
+                        id: 'cb550c14e22ef818f33c0cbf132472f7'
                     }
                     'capacity-service': {
                         table: 'sys_script_include'
-                        id: 'bc8afd28061f4e0e9330c9693d16b997'
+                        id: '4b64599a376433db319910d94095e91d'
                     }
-                    d2aa2bb97c474a048d269be3aa8d3f4c: {
-                        table: 'sys_security_acl'
-                        id: 'd2aa2bb97c474a048d269be3aa8d3f4c'
-                        deleted: true
-                    }
-                    d51bb83157b74f1f88461bb9f883f90b: {
-                        table: 'sys_script'
-                        id: 'd51bb83157b74f1f88461bb9f883f90b'
-                        deleted: true
-                    }
-                    dc43c9ef31534cdd8b3bc18ce1e1d151: {
-                        table: 'sys_security_acl'
-                        id: 'dc43c9ef31534cdd8b3bc18ce1e1d151'
-                        deleted: true
-                    }
-                    e1ffb9b246e94a798b1906de326f6905: {
-                        table: 'sys_security_acl'
-                        id: 'e1ffb9b246e94a798b1906de326f6905'
-                        deleted: true
-                    }
-                    e2117f8ae90f4e5c8dc1069203fa51ef: {
-                        table: 'sys_security_acl'
-                        id: 'e2117f8ae90f4e5c8dc1069203fa51ef'
-                        deleted: true
-                    }
-                    e639e5febaa242e0b1307a9bc2ebdfc9: {
-                        table: 'sys_security_acl'
-                        id: 'e639e5febaa242e0b1307a9bc2ebdfc9'
-                        deleted: true
-                    }
-                    e70664fcae6542518758fefbdf0e95a9: {
-                        table: 'sys_security_acl'
-                        id: 'e70664fcae6542518758fefbdf0e95a9'
-                        deleted: true
-                    }
-                    e8ed824cec8742b5b574224dfbfdd766: {
-                        table: 'sys_script_include'
-                        id: 'e8ed824cec8742b5b574224dfbfdd766'
-                        deleted: true
-                    }
-                    e8f22737592c4aa6850b98c492f253c0: {
-                        table: 'sys_security_acl'
-                        id: 'e8f22737592c4aa6850b98c492f253c0'
-                        deleted: true
-                    }
-                    ec94a2d8bee642adaf1ae5a8bf2aff66: {
-                        table: 'sys_security_acl'
-                        id: 'ec94a2d8bee642adaf1ae5a8bf2aff66'
-                        deleted: true
-                    }
-                    ee014cf0b3344caeb9c018fa98e7c464: {
-                        table: 'sys_security_acl'
-                        id: 'ee014cf0b3344caeb9c018fa98e7c464'
-                        deleted: true
-                    }
-                    ef1c6549e279498eaee631fc7888ff28: {
-                        table: 'sys_security_acl'
-                        id: 'ef1c6549e279498eaee631fc7888ff28'
-                        deleted: true
-                    }
-                    f082eddd81684a0887c0ffb531f48f36: {
-                        table: 'sys_security_acl'
-                        id: 'f082eddd81684a0887c0ffb531f48f36'
-                        deleted: true
-                    }
-                    f240ce7f692e4cb681f062b4277da04f: {
-                        table: 'sys_security_acl'
-                        id: 'f240ce7f692e4cb681f062b4277da04f'
-                        deleted: true
-                    }
-                    f6613991b16d48e28bb97ff348198bf7: {
-                        table: 'sys_security_acl'
-                        id: 'f6613991b16d48e28bb97ff348198bf7'
-                        deleted: true
+                    'default-workspace': {
+                        table: 'x_gzi_zscaler_ppm_workspace'
+                        id: '48755ffd29e84b0da3cf355f554608ef'
                     }
                     'member-service': {
                         table: 'sys_script_include'
-                        id: 'a4525a9317c142d99178ffab73fb16d8'
+                        id: '059490787fe46f27e6b17a53ea752b28'
                     }
                     package_json: {
                         table: 'sys_module'
-                        id: '9e1a9cf0e1f24986a1af1b57dc9439e1'
+                        id: '368389212d8b41958e54b3bbfd7e9d14'
                     }
                     'portfolio-service': {
                         table: 'sys_script_include'
-                        id: '223bbe5989944bf38b12d14a42fe21d4'
+                        id: 'e25b79d83b0ff260c3ff576e1f9e0311'
                     }
                     'project-task-service': {
                         table: 'sys_script_include'
-                        id: 'b4508803cf3d4b84a24c99d572f09778'
+                        id: '96a8d09a4bd299afbe0c23105360859e'
                     }
                     'route-automations-get': {
                         table: 'sys_ws_operation'
-                        id: '6289e9caae7f41be8bc9d5b9d53a23f1'
+                        id: '51fceeae66607affdfc8b19f6e135a4e'
                     }
                     'route-capacity-plan-allocation-patch': {
                         table: 'sys_ws_operation'
-                        id: '65fed3fbba8940f7bdfd238300c0d704'
+                        id: '34d686e8b7da971f9a5566a1628e071c'
                     }
                     'route-capacity-plan-allocations-get': {
                         table: 'sys_ws_operation'
-                        id: '6b32571d76ae457bb40cdd3f3ab43aaa'
+                        id: 'ba9844284a3bea933dd3612ed8b1788d'
                     }
                     'route-capacity-plan-get': {
                         table: 'sys_ws_operation'
-                        id: '547b1b97f5cb40edb0357e3cf9ca8a01'
+                        id: 'f4b2b17a1185d2ae85d55c99c75e0159'
                     }
                     'route-capacity-plan-grid-get': {
                         table: 'sys_ws_operation'
-                        id: '6889ea1aec3445b6bea11b7dac722e20'
+                        id: '6979eb2ed75fc4b963f8931c8771d41c'
                     }
                     'route-capacity-plans-get': {
                         table: 'sys_ws_operation'
-                        id: '1a6c6f093c2b4be2a78b05857afdaf14'
+                        id: 'db56de0f4afb18e8ef5719abc39cecc0'
                     }
                     'route-custom-field-values-get': {
                         table: 'sys_ws_operation'
-                        id: 'f0d303ab2c694be7af08aa0cba558a68'
+                        id: '0b71c5cbce45b1b2f27b619ee1f5ffc2'
                     }
                     'route-custom-field-values-post': {
                         table: 'sys_ws_operation'
-                        id: '2b62f4f624ac43b6beb910b2ba1d9098'
+                        id: '31b65c57e0ca123a2cf6a582cf432139'
                     }
                     'route-custom-fields-get': {
                         table: 'sys_ws_operation'
-                        id: '91719bba4c674fb68fc5e5e5bdcb3fa8'
+                        id: 'd458d9d671b892b9d1cf62bd1eede0c4'
                     }
                     'route-groups-search-get': {
                         table: 'sys_ws_operation'
-                        id: '799340f0c752491fbc2998dc2a239c57'
+                        id: 'c5de6c5f2f6f36c32b4aea3e3235f802'
                     }
                     'route-intake-forms-get': {
                         table: 'sys_ws_operation'
-                        id: 'c0fb377951f8443f86b6192414d9fd73'
+                        id: 'c1cb9b7207de4e9951064d8f9017bd42'
                     }
                     'route-portfolio-dashboard-get': {
                         table: 'sys_ws_operation'
-                        id: '439454b5a6534be4a163aa55a59ab2e4'
+                        id: 'f6e113d516061f8614a0f8556efdb9a7'
                     }
                     'route-portfolio-get': {
                         table: 'sys_ws_operation'
-                        id: 'f7f0bee203834d5195967e801ac93979'
+                        id: 'dcfc64b48653cc815eac22cce72e0038'
                     }
                     'route-portfolio-member-delete': {
                         table: 'sys_ws_operation'
-                        id: '913ddc3f65e643b28c11ce2a0ee9b321'
+                        id: '31e1b6e7e7c33d41dbaafa505c24fa69'
                     }
                     'route-portfolio-member-patch': {
                         table: 'sys_ws_operation'
-                        id: '44ab4993fc8e474099d6106519f95f57'
+                        id: 'b7342da899f6267486cb0fa65d06546a'
                     }
                     'route-portfolio-members-get': {
                         table: 'sys_ws_operation'
-                        id: '89316c921f514c90987bb418fb1318b6'
+                        id: '9bd150c1cd469e3cc8ff83175d56e1b6'
                     }
                     'route-portfolio-members-post': {
                         table: 'sys_ws_operation'
-                        id: 'a6b04fc715064e609ff122b506caa91d'
+                        id: '68f7f554d2d38ed1c52d97c16f5f4883'
                     }
                     'route-portfolio-patch': {
                         table: 'sys_ws_operation'
-                        id: 'e2d0b6830c484fabbe103e64f5832503'
+                        id: 'b8a77a697557679828ca145cd4b3c380'
                     }
                     'route-portfolio-progress-get': {
                         table: 'sys_ws_operation'
-                        id: '2ac2a6e243794bbebe78dc984a026b6b'
+                        id: '5a5cd91c0a1d109937606e7a04e782db'
                     }
                     'route-portfolio-projects-delete': {
                         table: 'sys_ws_operation'
-                        id: '8c133342b04849b79fc037b6d6a93614'
+                        id: 'e9875ec36dba18b7c9be7844f12c2c39'
                     }
                     'route-portfolio-projects-post': {
                         table: 'sys_ws_operation'
-                        id: '7e681d52e82645b3b31be86bbdec090f'
+                        id: '2f0c0c0b9b44d193c7bea9417beaa8d4'
                     }
                     'route-portfolio-timeline-get': {
                         table: 'sys_ws_operation'
-                        id: '0d0a6bfbf08e434f8de82ddd341f617e'
+                        id: 'e96cc825dfffa9b4784c5d5a7e75fd37'
                     }
                     'route-portfolio-view-data-get': {
                         table: 'sys_ws_operation'
-                        id: '970ed6eddbbd4346b8a4bd481b44068b'
+                        id: 'fc54200f142967595c751d2d47efce17'
                     }
                     'route-portfolio-views-get': {
                         table: 'sys_ws_operation'
-                        id: '0f0d63d6969544f1b60548c85876737f'
+                        id: '8fb40508232aea25f8e4c110c5e89b35'
                     }
                     'route-portfolio-workload-get': {
                         table: 'sys_ws_operation'
-                        id: '266a9b3a563e49cbbc69bf8d997ec07a'
+                        id: '9b9ba5f13a9e000d246c292a193b7e4a'
                     }
                     'route-portfolios-get': {
                         table: 'sys_ws_operation'
-                        id: 'e740fdc1a2ad4279b18b5cc6cdc2bdd6'
+                        id: 'b720d573b3e7c90c6395f896cff36f1d'
                     }
                     'route-portfolios-post': {
                         table: 'sys_ws_operation'
-                        id: '1fd93eee3d76415395a8dcad7e85b1c4'
+                        id: 'dbe69c89e750be77a57a4387c129bdf2'
                     }
                     'route-project-board-get': {
                         table: 'sys_ws_operation'
-                        id: '496dbb37bf1d4de58acb23f4a7febefb'
+                        id: '5417f5d9ed6896e8b058ef7a18341cae'
                     }
                     'route-project-board-patch': {
                         table: 'sys_ws_operation'
-                        id: 'ad73181c65974cb1810363ffb4e3c073'
+                        id: 'e8f8ee78715bf37e67c1e2cb177d514c'
                     }
                     'route-project-get': {
                         table: 'sys_ws_operation'
-                        id: '269222a3412a4737a1f46589da31e755'
+                        id: '170eb71d7bb502c40d8e776eac40f1c1'
                     }
                     'route-project-member-delete': {
                         table: 'sys_ws_operation'
-                        id: 'f3b1424a65974d628ee10ad229ee1d2c'
+                        id: 'fe12511a3a566f92b68032301f16e4cc'
                     }
                     'route-project-member-patch': {
                         table: 'sys_ws_operation'
-                        id: '6336c1799c3a44338fc061626bd61cf0'
+                        id: '5efde3a0ef48bd74070c86f02b8cf258'
                     }
                     'route-project-members-get': {
                         table: 'sys_ws_operation'
-                        id: '267a52a0d30d49b1ac39c6344f6881eb'
+                        id: 'c9e9be3f123b87ea9f1a5ece7a7a03a3'
                     }
                     'route-project-members-post': {
                         table: 'sys_ws_operation'
-                        id: '9826ad090d1241d4ab477706e12e0544'
+                        id: '5c369744306ccff521bcbfa1094b6b29'
                     }
                     'route-project-patch': {
                         table: 'sys_ws_operation'
-                        id: 'acba90380dd94ff183553fed2a1c3322'
+                        id: '5a194090e9664b4a6ab23e848c3ea9fa'
                     }
                     'route-project-portfolios-get': {
                         table: 'sys_ws_operation'
-                        id: 'b6b61a5a260543b5b4b6f16f7fa333bc'
+                        id: 'f74b6c713c6019fe5a725e9ff31ff3a7'
+                    }
+                    'route-project-section-delete': {
+                        table: 'sys_ws_operation'
+                        id: 'c7a4bf38c143446682d8e388038de02b'
+                    }
+                    'route-project-section-patch': {
+                        table: 'sys_ws_operation'
+                        id: '8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e'
+                    }
+                    'route-project-section-post': {
+                        table: 'sys_ws_operation'
+                        id: '980e83efe52140068f650e03fad7f3da'
                     }
                     'route-project-sections-get': {
                         table: 'sys_ws_operation'
-                        id: 'c9245c055e294e2da2fd8890b415d788'
+                        id: 'fd91e902b3044b3965875b630745705a'
+                    }
+                    'route-project-sections-post': {
+                        table: 'sys_ws_operation'
+                        id: '7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d'
+                    }
+                    'route-project-sections-reorder-patch': {
+                        table: 'sys_ws_operation'
+                        id: '9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f'
+                    }
+                    'route-project-task-list-patch': {
+                        table: 'sys_ws_operation'
+                        id: '1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a'
                     }
                     'route-project-tasks-get': {
                         table: 'sys_ws_operation'
-                        id: '30d8464601e0476f86980dba8f42a86c'
+                        id: 'a051b06c9aa15fb46c56282aa8cec08a'
                     }
                     'route-project-tasks-post': {
                         table: 'sys_ws_operation'
-                        id: 'f6b9971cbf884cdfb276621db0d66199'
+                        id: 'bebd76de5dc1fd60ea61f5026c9dbaf7'
                     }
                     'route-projects-get': {
                         table: 'sys_ws_operation'
-                        id: '2bc63bea19684d3993fd5df76f4a0f80'
+                        id: '311c17c8c94aa390cef65fa111083dba'
                     }
                     'route-projects-post': {
                         table: 'sys_ws_operation'
-                        id: '29bceae6edf74e92b994be08d4740b30'
+                        id: 'a20e4097cba31d056e45db8ec4fb3b9b'
                     }
                     'route-task-get': {
                         table: 'sys_ws_operation'
-                        id: '77b7025f948f4df38cf9ef00a8d64bde'
+                        id: 'cbe51aae66b056923276fa91e7526d96'
                     }
                     'route-task-patch': {
                         table: 'sys_ws_operation'
-                        id: '941011255436464098aef3898319d739'
+                        id: 'bc61b07fe83dc68a9d7888e408a3edec'
                     }
                     'route-task-projects-get': {
                         table: 'sys_ws_operation'
-                        id: '1007080e563c477fbdb4651835c22bad'
+                        id: 'd04d5c1fe5e0f38346c42ceffbae8b01'
                     }
                     'route-team-members-get': {
                         table: 'sys_ws_operation'
-                        id: 'acee11a22f584e29916babc5eae757e4'
+                        id: '113038c544cb42f4683d2c4eb748156a'
                     }
                     'route-users-search-get': {
                         table: 'sys_ws_operation'
-                        id: '318a494adb93481f8f570fdb5902cc14'
+                        id: 'eb1e9da4845f158b4a88c1c951d92917'
                     }
                     'route-view-get': {
                         table: 'sys_ws_operation'
-                        id: 'c7d919a3a81c44bfa8ad8b0d616f6ac9'
+                        id: 'bd14d839115a3935552e76009f6cd7c5'
                     }
                     'route-view-patch': {
                         table: 'sys_ws_operation'
-                        id: 'b1a38ba476414e778672dad3c069ece0'
+                        id: 'cd369eaacf7d50de91000fe63e6285e4'
                     }
                     'src_server_business-rules_enforce-eav-xor_ts': {
                         table: 'sys_module'
-                        id: '581d507d2f404750941cd7979b1389bd'
+                        id: 'a079119e4b4a4f2682dcad6421488215'
                     }
                     'src_server_business-rules_enforce-single-assignee_ts': {
                         table: 'sys_module'
-                        id: '69043685587248dc9bfe3cb5019d27f4'
+                        id: '84ebde4fbb124283a76de210545dd49a'
                     }
                     'src_server_rest_capacity-routes_ts': {
                         table: 'sys_module'
-                        id: 'd16dfe64d746440b926108344e71c2e2'
+                        id: '3cd932643bf549b8aabb7278009290d7'
                     }
                     'src_server_rest_config-routes_ts': {
                         table: 'sys_module'
-                        id: 'c3d4e5f6a7b84901c2d3e4f5a6b7c803'
+                        id: 'f33d53b9f79346d98c0c92d19fef5fcd'
                     }
                     src_server_rest_helpers_ts: {
                         table: 'sys_module'
-                        id: '634584b0d581430b8124d18e299b0120'
+                        id: 'fbb56351c07148c8b0ecd9b73cba2dbd'
                     }
                     'src_server_rest_member-routes_ts': {
                         table: 'sys_module'
-                        id: '444db5cea7b84e488d3e688c78c3fa7b'
+                        id: '103e762845c74655a6f846322e4fdf7e'
                     }
                     'src_server_rest_portfolio-routes_ts': {
                         table: 'sys_module'
-                        id: '22af65307a3d4da1a442be0292a50abe'
+                        id: '41e5447c62bb4e39b4fc4000488d73b7'
                     }
                     'src_server_rest_project-routes_ts': {
                         table: 'sys_module'
-                        id: 'cff63451ebd645c7bdfa42dd78df432b'
+                        id: '3846763683204d5988e9dc65f4d54f85'
                     }
                     'src_server_rest_view-routes_ts': {
                         table: 'sys_module'
-                        id: '881ed2c71838437aacd09c29510a917d'
+                        id: '3a9c35fe21db4bec9abd22a5964cb9ef'
                     }
                     'src_server_script-includes_AccessService_server_js': {
                         table: 'sys_module'
-                        id: 'e1ce70511d2b40488a8e1cb4c18b3a15'
+                        id: '5c8ad6e4f4b34fc6a8165dc94049dbe0'
                     }
                     'src_server_script-includes_CapacityService_server_js': {
                         table: 'sys_module'
-                        id: '3bba0f50b8a947268d4c4991890b74eb'
+                        id: 'bc47624edede4d4faaaf5b1cc9944f75'
                     }
                     'src_server_script-includes_MemberService_server_js': {
                         table: 'sys_module'
-                        id: 'e546befa87574cc2b415af5799ecbe20'
+                        id: 'be98b5030d60494496ca900f611412b2'
                     }
                     'src_server_script-includes_PortfolioService_server_js': {
                         table: 'sys_module'
-                        id: 'e5fe3addb10f43bfa4df9b7335f377f2'
+                        id: 'd761cc151cf241428dfeb357b2e5dcb4'
                     }
                     'src_server_script-includes_ProjectTaskService_server_js': {
                         table: 'sys_module'
-                        id: '8d8ede5323054f14b53be54420ee9b88'
+                        id: '19dd7f9de69c43c58e31ba3253553b0e'
                     }
                     'src_server_script-includes_UserService_server_js': {
                         table: 'sys_module'
-                        id: '9d15ecc90b944bff9fe0b6539972600b'
+                        id: '444b4e808e334f25967d0ef2cc43ebdd'
                     }
                     'src_server_script-includes_ViewDataService_server_js': {
                         table: 'sys_module'
-                        id: 'e39b2db9f07b460c903bcd8fbf9db07b'
+                        id: 'e751004fb3fe49ec908bb328697837ef'
                     }
                     'user-service': {
                         table: 'sys_script_include'
-                        id: 'da74d14806714aca979adc11f447baec'
+                        id: '56f0297711b7633f6acd168eca01a955'
                     }
                     'view-data-service': {
                         table: 'sys_script_include'
-                        id: '6cf113f88114428699823570fdc9628f'
+                        id: 'a2f5860e11ce00722835985d97b3f747'
                     }
                     'z-inflow-rest-api': {
                         table: 'sys_ws_definition'
-                        id: '496dbb37bf1d4de58acb23f4a7febefb'
+                        id: 'ea866f2d081d748f4dcd6ade45500e7d'
                     }
                 }
                 composite: [
                     {
-                        table: 'sys_choice'
-                        id: '000f82f5d923405099ffce2d4132caa2'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                            value: 'multi_select'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
                         table: 'sys_documentation'
-                        id: '004016ac96824753a58620aeeea77dd4'
+                        id: '001723abdcd846d18a7babb0fadba413'
                         key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                            element: 'project_id'
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'user_id'
                             language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '006db349fd244786afdbccbace92bdc7'
-                        deleted: true
-                        key: {
-                            application_file: 'ee7cd12cd45b4c07a511c587305a8e7f'
-                            source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '0088d5942a3746c0b3df1b3e9147b29b'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '00a5c917656045f79e70085d7631457b'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_user_res_profile'
-                            col_name_string: 'user_id'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: '0101adf189ad4cf1981d9b45f2d92a1c'
+                        id: '002a3f8d452c4641a8e6cc02fd96fcdf'
                         key: {
-                            name: 'x_gzi_ppm_goal'
+                            name: 'x_gzi_zscaler_ppm_status_update'
                             element: 'status'
-                            value: 'on_hold'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '040ece2250ec48c091ce3d84b1601567'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'priority'
-                            value: 'high'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact'
-                        id: '0423ed01f5fe4f4e8c633d15936e63a5'
-                        key: {
-                            name: 'x_gzi_ppm_app.do - BYOUI Files'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '04ed1c659a4b42fd8b08a9a5004f5aa7'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '05536a388fb8475cbc57ace3d1b53d6d'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '05d24bfad31d444bb95ca182705dceeb'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '0609190b75704b0897507ecefc5eee08'
-                        key: {
-                            name: 'x_gzi_ppm_user_res_profile'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '063baa897b124e8ab1f9113292a24504'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/RuleBuilderPage.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '06d4567160c94589b81faa761086cb43'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'order_index'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '06d977b9a6bb42ebb642ed1025c51360'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '06db640180ab4abf8b76d0a87d36f192'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'assignment_group'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '07138e3133ba07509937d1382e5c7b66'
-                        key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'name'
-                            position: '1'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '0754f63bb0324c0ba0ac62800e981ee5'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'added_by'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '07667bf2e7294c20841ca0039b6458d5'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '083bc154ba164d4f82a297ece3b02a4d'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'workspace_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '08576e68448141d0b302d6052cfd6868'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'notes'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '08827af9122543df8461b6190a031b3e'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'start_date'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '0a0bdf7200234e33910ebcbd90299a0e'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'status'
-                            value: 'off_track'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '0a3887594cee45229466f6baccf94191'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project_task'
-                            col_name_string: 'task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '0a92abb12b7e8750d80afdabf291bfcb'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'ba439480bfba4d39a67756a40d1a09a7'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ui_section'
-                        id: '0b138e3133ba07509937d1382e5c7b12'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            caption: 'NULL'
-                            view: {
-                                id: 'Default view'
-                                key: {
-                                    name: 'NULL'
-                                }
-                            }
-                            sys_domain: 'global'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '0b138e3133ba07509937d1382e5c7b69'
-                        key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'project_id'
-                            position: '5'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '0b15563e048a475081e9eb5de9eb2249'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'approval_state'
-                            value: 'request_changes'
+                            value: 'no_recent_updates'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: '0b77c7f316034037b1213013ff88ce6b'
+                        id: '014fc8d4aa5c437da4269561b265fcad'
                         key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'text'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '0ba2ba10d8fb472890522ab88ad1b417'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/CapacityPlanPage'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '0c1d86aa4e9e4865a681908a6fef71ae'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                            element: 'field_def_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '0c33e01ce145491dac29543f9b137d5f'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'width'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '0c7bd464661f4f128b717f14238066a2'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_task_dependency'
-                            col_name_string: 'successor_task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '0c89dabe6e9e462abdc81be1ca83018a'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'description'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '0c9bc9cd948e458c82c3fbe9222ab8da'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_task'
-                            col_name_string: 'assignee_id'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '0d79aacddf7a465fa96d9c60bb944ed9'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_proj_res_alloc'
-                            col_name_string: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '0dc4ef657d714744bd04a8ff9cc55c3d'
-                        key: {
-                            name: 'x_gzi_ppm_user_capacity'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '0e89b16829f14e0791c75c3ec034acc2'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'author_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '0ee1d6b30793433db1d69d1e5df62ff6'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '0ee4d01369ac4ae4a0ceb9f8637ceaa8'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'assignee_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '0f9f31fdbee348028fb019e4b1ee846a'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'owner_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '0fa3bbae753a408e8886ab0b60240a2e'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'order_index'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '0fd14c543a0643f58e30c95a0eb1c1e9'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'workspace_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '1011800439cd44f78818bc28184bc3e3'
-                        key: {
-                            application_file: 'efce0001869d47f088c3daafdba3d36a'
-                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '10ca58f890ea41baa0bae5167f84996d'
-                        key: {
-                            name: 'x_gzi_ppm_resource_role'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '1176f54a40da48ae840932e3f208ef66'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '118def9ccdd24b5396e0528dfa55703f'
-                        key: {
-                            name: 'x_gzi_ppm_user_capacity'
-                            element: 'baseline_hours_per_week'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '11926bb12b7e8750d80afdabf291bf26'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '05ffe28a34ca4542b1b42893baffd6c5'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '11926bb12b7e8750d80afdabf291bf2c'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '0cf93166a7a2427d80083e2e4090c519'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '11926bb12b7e8750d80afdabf291bf32'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '0de54ae95f6c4a40a9511f3882830b84'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '1239bea265604fa6a94ec8c7dc4bb920'
-                        deleted: true
-                        key: {
-                            application_file: 'd1b615c22f124edcb3b9b35d00a325eb'
-                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '1292ebb12b7e8750d80afdabf291bf24'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'dc43c9ef31534cdd8b3bc18ce1e1d151'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '13138e3133ba07509937d1382e5c7b6c'
-                        key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'user_id'
-                            position: '8'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '132c2526dddc4440a6ac569f95577842'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '136598d03f384291b44477d3a5dc0bb5'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'description'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '1374a928566547d283c09ffe198b742b'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'role'
-                            value: 'viewer'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '13ad53ac1ee34019891875049d7f775e'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '13b80be457f54c7bbe9c663cc21c59a3'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'color'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '14ca87674dc44445813e9232a93e727a'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_custom_field_value'
-                            col_name_string: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '14e386f133ba07509937d1382e5c7bc9'
-                        key: {
-                            sys_ui_section: {
-                                id: '5ce38eb133ba07509937d1382e5c7be5'
-                                key: {
-                                    name: 'x_gzi_ppm_task_dependency'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.begin_split'
-                            position: '0'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '15926bb12b7e8750d80afdabf291bf94'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '30ebd9d37de54623a6cb1016fc926d86'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '15a47b4c2e0c4eff9aeb2cecf79350f2'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_capacity_plan'
-                            col_name_string: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '15a8e03ed1474218a2da0dca2faa9eb6'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'project_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '162a3c469a9c4ccca4110de82af2f79e'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'role'
-                            value: 'viewer'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '16c6e49b1d4a428aafd6f115d55afdf2'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'due_date'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '1734be47ea294d11a7ee1bbec67e7546'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'owner_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '1881f02ac3e149bd97a4cb7d3fc79bdb'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'name'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '18e386f133ba07509937d1382e5c7bca'
-                        key: {
-                            sys_ui_section: {
-                                id: '5ce38eb133ba07509937d1382e5c7be5'
-                                key: {
-                                    name: 'x_gzi_ppm_task_dependency'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'dependency_type'
-                            position: '2'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '1a4519a13cf14767989f0f316c360b47'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '1a92ebb12b7e8750d80afdabf291bf06'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'c39eef9c18ff4fcc9e1227af47d0bad0'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '1a92ebb12b7e8750d80afdabf291bf6c'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'e70664fcae6542518758fefbdf0e95a9'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '1a92ebb12b7e8750d80afdabf291bfa7'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'f240ce7f692e4cb681f062b4277da04f'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '1ae3a55044024fd5a7cacc3fff8cfa9e'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'group_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '1b147853bca341caafd9e026e5e96f2f'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
                             element: 'time_granularity'
-                            value: 'month'
                             language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '1b5d879053d34c33aea4dda91198293a'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_task'
-                            col_name_string: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '1bb5787433374d45ab9239c77e6feb51'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'dependency_type'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '1be3cb365ed94b93a7ff0ceb2daca95e'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '1c3c2a452ea046fe924c760b5ef67e18'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '1cb0b5bf3cd54206b1c11a40706461b2'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                            value: 'on_track'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '1ce386f133ba07509937d1382e5c7bcb'
-                        key: {
-                            sys_ui_section: {
-                                id: '5ce38eb133ba07509937d1382e5c7be5'
-                                key: {
-                                    name: 'x_gzi_ppm_task_dependency'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'successor_task_id'
-                            position: '4'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '1d3686cbdfd54d20a71a8faae6aae5a0'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/vendor-react-router--5b9989d8'
                         }
                     },
                     {
                         table: 'sys_choice_set'
-                        id: '1d9aebfa30ef4ff0919698ff115c8c50'
+                        id: '018be35ebbfe4499a58c0f3d12c0b0cb'
                         key: {
-                            name: 'x_gzi_ppm_task'
+                            name: 'x_gzi_zscaler_ppm_task'
                             element: 'task_type'
                         }
                     },
                     {
-                        table: 'sys_choice'
-                        id: '1e77b095efc7484691993660ba22c755'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'dependency_type'
-                            value: 'finish_to_start'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
                         table: 'sys_dictionary'
-                        id: '1e79c10a118e4faf947e355d1f1cd50f'
+                        id: '026e29eb4b6641579e760120bbe27884'
                         key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'is_visible'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '1e7ace4f4c39439c94d8458762f78cc0'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_team'
-                            element: 'workspace_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '1f529d3706694d05a36013667c725b99'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'group_by'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '1fc90a4a28e847759085d1758ac07c1a'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'time_granularity'
-                            value: 'day'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '20175103da874d42acc39662217ffb1d'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project_task'
-                            col_name_string: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '20691dffe4574249b1f1a8cca3f1f7b9'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_custom_field_def'
-                            col_name_string: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '20931af42959447da7360892051237da'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'section_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '20f3213a45f44a4bab5ff2c529f57d27'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'entity_type'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '21926bb12b7e8750d80afdabf291bfed'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '6197b062cc684555ba07b44bf5513f6f'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '21bd8c140c9e4b0c876c42bdeea4ed26'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'sort_config'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '224ef811e08b42a4a8354b2e42474d39'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'is_default'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '2294dbc42f3441e0a6c3456bd521fd74'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio_member'
-                            col_name_string: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '2323067133ba07509937d1382e5c7b34'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'time_granularity'
-                            position: '7'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '23d91cff3213414ba6551313e8eb3ea4'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/vendor-react-dom--7d9070e7.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '23ff8f25c62041a4a6a1534f873058dd'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'task_type'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '25926bb12b7e8750d80afdabf291bf9a'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '3c233a865eaa4c84a6e70f2265a1f35c'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '25926bb12b7e8750d80afdabf291bfd6'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '5b8f65c1b4bd4774a2e63c3a7c024b85'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '259ff735074d45508acc49907e867ec2'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'name'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '25cf1febd5b84113b618201913190490'
-                        deleted: true
-                        key: {
-                            application_file: '365629789f4247a7bf3916e5888bf82b'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '26c39d71333d4549a13e9ba82b8d4b11'
-                        deleted: true
-                        key: {
-                            application_file: '1d3686cbdfd54d20a71a8faae6aae5a0'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '2723067133ba07509937d1382e5c7b30'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'group_id'
-                            position: '1'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '2723067133ba07509937d1382e5c7b35'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.end_split'
-                            position: '9'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '2817bc029630440b8acbfc05858ccc3c'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '28b50b243a854e87abc46eb10712c0cd'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'status'
-                            value: 'open'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '28fa4dc7cbb54923aa92d07dfe57b5f4'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'sync_with_jira'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '297b2b379bbc48519878f0ebcf707446'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'description'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '29cb1e4170a048dd8e7eee9a58f4d826'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'entity_type'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '2ad6ddc64f7a4d98bdd3ea4ce730a110'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'role'
-                            value: 'editor'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '2ae96ee0220f4fe08d2c8519ccb05a34'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'description'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '2b157f1ccf644ccea8d295204634a8c3'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_workspace_user'
-                            col_name_string: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '2b23067133ba07509937d1382e5c7b2f'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'name'
-                            position: '0'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '2b23067133ba07509937d1382e5c7b31'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.begin_split'
-                            position: '3'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '2b68d22f8223450eb868e8767c078df5'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/VirtualizedGantt.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '2c37102939804b7799e6b663dfca3a19'
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_task_dependency'
-                            col_name_string: 'predecessor_task_id,successor_task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '2d03a16fd59f40cfb0d45671b57fabda'
-                        key: {
-                            name: 'x_gzi_ppm_user_capacity'
-                            element: 'user_profile_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '2d783b1bfd814e5eabe3d1c16676ceb7'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_user'
-                            element: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '2df10909cf554d6a8a2aad737b84f328'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
                             element: 'project_id'
                         }
                     },
                     {
-                        table: 'sys_dictionary'
-                        id: '2e51a36ac74c49309b5e253ba9b9bed8'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'time_granularity'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '2e8a0bb03c204c41b6efcd0fd2992f9c'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                            element: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '2ef2ae1f94564cc48439cc163a49b484'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_goal'
-                            col_name_string: 'owner_id'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '2f23067133ba07509937d1382e5c7b32'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'workspace_id'
-                            position: '5'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '2fcafef84d8f4b199f938f92ac4523e7'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'portfolio_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '3017d88e60d446ed948aecef5eb427dc'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'NULL'
-                        }
-                    },
-                    {
                         table: 'sys_choice'
-                        id: '30bbb13cf1a94a55b8833a26dfafb1c3'
+                        id: '0300b4e8d1da4734a326d5284811f6dc'
                         key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                            value: 'at_risk'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '3118de4fcd31487db5bf5667c6aa2137'
-                        key: {
-                            name: 'x_gzi_ppm_resource_role'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '31645e080f7249a092fb249e94cbc3b4'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio_project'
-                            col_name_string: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '3192abb12b7e8750d80afdabf291bf63'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '8b76902d00224542a9a802d1a7b15958'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '32d2e58164af4e8ca999bc6526d8e282'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '33569d04311047ffb616527876452bd2'
-                        key: {
-                            name: 'x_gzi_ppm_workspace'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '337eb3daeb7244fd9abc3e9c70075eb3'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'notes'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '33c35c708f55421aa0f7a476d116621c'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'due_date'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '33d490a187e04b168d3567230397fb15'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'due_date'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '341585b461f845f48482f84944962d11'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                            value: 'date'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '349c500805f0413b835776c2c977121f'
-                        key: {
-                            name: 'x_gzi_ppm_resource_role'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '3543b36c4de2444cac42db627627aaaf'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '3592abb12b7e8750d80afdabf291bf4c'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '773b97b9c06d42779db9fda1a183937f'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '3592abb12b7e8750d80afdabf291bf97'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '9e1bad6123fc45138eba1b38d46c3b30'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '35c3bb8c627449b093f635d583db1fd9'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                            value: 'timeline'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '365629789f4247a7bf3916e5888bf82b'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/vendor-react-dom--7d9070e7'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '366f3b224f0344b7ae18f36a0898f149'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                            element: 'project_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '3675be3d4f4342358e6157dff7a7023f'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '36b2e214c4f445478e90f5567059c4e0'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '3703b45d64924752b19863007c24a560'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '37c131c2316d424f8f9a480c477327c3'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project_member'
-                            col_name_string: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '38889594aa7547f99ac78a4b93640d59'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'value_string'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '388e72ae645048eca44f3ed8bf757211'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'entity_type'
-                            value: 'goal'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '389e86b1661b449298faf322f65f6b33'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '38ece7ee431049009efbfa92baa4b336'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '390140c80ff14014bd259cbea064bd43'
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio_project'
-                            col_name_string: 'portfolio_id,project_id'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '3917305323ac42bf814350467da35e31'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '392c7641b76e4dd7ab544fec03dcf7d0'
-                        key: {
-                            name: 'x_gzi_ppm_user_res_profile'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '3992abb12b7e8750d80afdabf291bf80'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '9550d11c0cce4857b04425210209eb77'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ui_section'
-                        id: '39b3ceb133ba07509937d1382e5c7b00'
-                        key: {
-                            name: 'x_gzi_ppm_workspace'
-                            caption: 'NULL'
-                            view: {
-                                id: 'Default view'
-                                key: {
-                                    name: 'NULL'
-                                }
-                            }
-                            sys_domain: 'global'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '3a11aaea3be445b38f0156b5f0ba05dd'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '3a432b5c7e7c46b78edd5a2917d347d3'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                            value: 'progress'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '3a8b42be3e1046f684a33e480c9460c7'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'status'
-                            value: 'on_track'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '3b1995729dd84e7f92971c0a6ee80e6a'
-                        key: {
-                            name: 'x_gzi_ppm_user_res_profile'
-                            element: 'role_id'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '3b1d7f70f9644401b070be6532e84b55'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '3b23f3215c2a4db8a65180d0f0709cdf'
-                        deleted: true
-                        key: {
-                            application_file: '7c96e2863ecc4cc6be05275b0d635fb1'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '3b476a0388f64e9a9bbd42cd59902cef'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'status'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '3c6cc4660b2b4746a9097d2460a09211'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '3ca7ebc652104aaa8223f613dd653704'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'start_date'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '3cc6aa967701403abf0483f3edeb7d5e'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'name'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '3cdae95b12f640d1bc37b1f338ea13ea'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'priority'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '3d11aa90ab7f4d43bdb477949d00a13b'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/vendor-react-dom--74c096a2'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '3db08c65863e4762a6b596b0e970f06c'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '3e2d3b92fd02437d9e1199195073cfcc'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                            element: 'field_def_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '3f04aa9a51a440d596f7eb193c0c58f3'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'completed'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '3fae837bd66845c38db7e1460ca21887'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '40129a3cffe94264a99fa349458773fa'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'priority'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '4025175a1d4a4fa9a608615a903dbc96'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'field_path'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '4118f9bc107b49c880954978cb3e337d'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '414eeca859694c369bf059565ffb6cd1'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'approval_state'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '417a1eebe1dc404194a1bfe03414458c'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'role'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '421329d7e8d746d882e55e7ca1633058'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_custom_view_column'
-                            col_name_string: 'view_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '42570db9396747b0a81217442723e32b'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'status'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '42f1d1cc28484c5a91460ac68add1a95'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '42fdfa39b6fd420db02b97c4fcb08fef'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                            element: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '43138e3133ba07509937d1382e5c7b67'
-                        key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'filter_query'
-                            position: '2'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '4330d1bb3a5942f5acd4aee18650218a'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'width'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '43d5c82683c6486d9d519463b727ed77'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '445be83d2dd04c4f8c7f637452284307'
-                        key: {
-                            name: 'x_gzi_ppm_task'
+                            name: 'x_gzi_zscaler_ppm_task'
                             element: 'approval_state'
                             value: 'reject'
                             language: 'en'
@@ -2550,1364 +784,26 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_dictionary'
-                        id: '4528cdf662944d3484f51d4f3f5de9a6'
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '03bfe121cb074162a97bdeaf2b40855c'
                         key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'predecessor_task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '457deee8a4e7499ebd53b513c1dfba38'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'user_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '45953465481a4fa3bcacd0f6129c6495'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'owner_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '45b8e92d2be74e66973a90502d3212d7'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'notes'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '463a14b503524760ab8c1694cdadd652'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'name'
-                            language: 'en'
+                            application_file: 'f4a7d551b68745afb3c6f7473cc04760'
+                            source_artifact: '3fb176d7543f4b1cbac9d047cf854d49'
                         }
                     },
                     {
                         table: 'sys_index'
-                        id: '478128385b0840e39e7571566256f8d9'
-                        deleted: true
+                        id: '03eecdd1eb6647dab8e63bfc8bf0ba40'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio_member'
-                            col_name_string: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '47877b90bfdc4bb8977adde6a1ce6718'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_capacity_plan'
-                            col_name_string: 'group_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '489486e43fb244c594218b521a31eefc'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'notes'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '48ec98954b294149932630e22d6207ed'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '48fc9c65b07d472ab2a009075892488c'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/RuleBuilderPage'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '49fcd58c4b664a51a1a1e3acb0fce063'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'field_path'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '4a92abb12b7e8750d80afdabf291bfdc'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'befd7715087249d2b359d52ef3431276'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '4af4023a74d848c6a55761b08f2abcdb'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project'
-                            col_name_string: 'assignment_group'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '4b91f53979b54b4f8adf7108ffabf242'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '4cabc1aeca144d108123a0a499889f69'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project_task'
-                            col_name_string: 'section_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '4d55964d10414586bd107a80711effdd'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                            element: 'order_index'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '4e0ded28e6fa476499253c3bb80b9b9d'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'order_index'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '4e2e60e0f81b446e9e533b50a008aeac'
-                        key: {
-                            name: 'x_gzi_ppm_workspace'
-                            element: 'name'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact'
-                        id: '4e8e46929bde432790cfcb7104335322'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm_workspace.do - BYOUI Files'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '4e92abb12b7e8750d80afdabf291bfc5'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'b73ed5fe47bd4566912e1d43fc6eeb82'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '4ee2d870c4804876bd1f079570afe669'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/rules'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '4fa8aa0451f14c2aaf24880047caaa43'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'completed'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '5049334af46a4fa09df2ed7c99d03794'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'task_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '51926bb12b7e8750d80afdabf291bf38'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '17a671d7f6af4e78add1f167eac2e7b0'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '52628ec6e2774c5ba594621c77ebaef6'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/vendor-react-router--5b9989d8.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '52fd7745d70f4bd383ae8fd3212bd560'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'NULL'
-                            language: 'en'
+                            logical_table_name: 'x_gzi_zscaler_ppm_user_res_profile'
+                            col_name_string: 'user_id,role_id'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: '5356a8ae89534469ac42ebca9633c8da'
+                        id: '06537988515a470a996453c72943f85d'
                         key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'status'
-                            value: 'at_risk'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '53730601ecf44569b94fd15f48cb40ae'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'name'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '537307d3f12a44e6a3e0e1a2d9f5d2b4'
-                        deleted: true
-                        key: {
-                            application_file: 'bd5eb67e526a4f79805ada1c45173286'
-                            source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '5378fdc7005e4215ade6d7e73bf09588'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'role_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '53de6327c34b40eb99a38adf18ecb0b4'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'start_date'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '54934cc45e514f73a2663ca6bb837b9b'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'project_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '550449546f2343e7b234843dcfdce8bf'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'priority'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '555cb6f7f3144ced94ec681cb0b6cc8c'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'portfolio_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '55743e16bfd646adb50f6321f0779ab3'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'status'
-                            value: 'complete'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '55cbb29c55ea4b90b066550d1065bc2f'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'priority'
-                            value: 'low'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '5690d5dffe9b4076a1012f8f0ecf906f'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_team'
-                            element: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '5692ebb12b7e8750d80afdabf291bf1e'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'd2aa2bb97c474a048d269be3aa8d3f4c'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '570ebe10b1f646dba2a04ef94d0401a1'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/rules.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '5746b148039940f6b74ed1c14cc4fc11'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_task_dependency'
-                            col_name_string: 'predecessor_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '57c081c181b04e9d9db2ae9f23d67363'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'status'
-                            value: 'in_progress'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '58cd48c90f6446a6b7ea8256d5179d2e'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'role_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '59b42773f5f54d6b9227d72adf7ed7d2'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                            element: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '59cd259e6dbd4e65818a5c55f3665d86'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '59e7afe5c7ff4211b2c160127d3868bf'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'work_notes'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '59f91a860e2d42de9314d50bf438d094'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'description'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '5a92ebb12b7e8750d80afdabf291bf7d'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'ee014cf0b3344caeb9c018fa98e7c464'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '5bfe211dbeda41fd98026a13a9864a3b'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                            value: 'workload'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '5cb417a2752d422a860206ca9d3a1749'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'value_string'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_section'
-                        id: '5ce38eb133ba07509937d1382e5c7be5'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            caption: 'NULL'
-                            view: {
-                                id: 'Default view'
-                                key: {
-                                    name: 'NULL'
-                                }
-                            }
-                            sys_domain: 'global'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '5cee2413466b4dcbb22ee1a9a6c0a273'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '5d6ba8fcdc8f46c5b2f654d5509cc234'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'watch_list'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '5e0cdeeca7fe43d191577a6dea7b2b9a'
-                        deleted: true
-                        key: {
-                            application_file: '5f01aa682bf04edeaf4d8550e1c8caaf'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '5e1f8b83a7dc49f5a34c9b6c243e9cd4'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '5e34603f604f4292870848f09caad799'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'priority'
-                            value: 'high'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '5e7ca36cffbb45608193332b902d2cf5'
-                        deleted: true
-                        key: {
-                            application_file: 'd20dbb3984a841af80a74e38211e9fa6'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '5e92ebb12b7e8750d80afdabf291bf66'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'e639e5febaa242e0b1307a9bc2ebdfc9'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '5e92ebb12b7e8750d80afdabf291bfa1'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'f082eddd81684a0887c0ffb531f48f36'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '5f01aa682bf04edeaf4d8550e1c8caaf'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/main.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '5f138e3133ba07509937d1382e5c7b6c'
-                        key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.end_split'
-                            position: '9'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '60f6a946fa754d08a40265e75b940888'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_workspace_team'
-                            col_name_string: 'group_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '6146a65623274ab286e03ed16dad6e1c'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'time_granularity'
-                            value: 'week'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '61926bb12b7e8750d80afdabf291bffe'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '68d117d64f2c40aabd78a18fa3cc286c'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '619cbf95cf804ac0a37fae269d2a889d'
-                        key: {
-                            name: 'x_gzi_ppm_user_capacity'
-                            element: 'baseline_hours_per_week'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '62a6f3e9fdea4995936a1319bab5c4a8'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'order_index'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '62d1f5b83f5543bf8a2ea2ac14aa95ff'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'status'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '636a571f929c4e22a406467712c3d54f'
-                        key: {
-                            application_file: '7d36591a7ccd44d880e4250ee571f519'
-                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '63b1c3b468ef4d56948925fb1236c85c'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'parent_task_id'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '63bc020c353b45b1aeb920828d49efdc'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_user'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '63c6d17c341e43acbc09c63273b545c5'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'role'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '6492a68780af45dbb97db3ed5f7b3f50'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'percent_complete'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '6492cb21cea846a690e0e43fdafee83d'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_task_dependency'
-                            col_name_string: 'successor_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '65318d47920d40bdbba0a2ea134f18a7'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '653a31c5a92445acbbe2456afe4d96eb'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_team'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '658fb4cdda6a436aa5ad29fd3a36788b'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '65926bb12b7e8750d80afdabf291bfe7'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '60c76e9883314422acdfc0ec6c52edc4'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '6592abb12b7e8750d80afdabf291bf22'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '70d0a03557114c8aab132ab05329cdbc'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '65ced62be366424f8c9296b26f5366fb'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'dependency_type'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '65e825843f0643d9be4f9c5be51cb7ee'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '6633836b11054c34b847135a33cd8a36'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'status'
-                            value: 'off_track'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '6884c59aa62d4204b6bd94ce560cba08'
-                        key: {
-                            name: 'x_gzi_ppm/index'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '695813da6d3e4a7ebe06a21da82ea96d'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'successor_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '69926bb12b7e8750d80afdabf291bfd0'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '58b60f206b18425394dbbbbdc0e86954'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '69b673f72e494976b69481e5fc0a1f16'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '6a292e42f21348a4a691f59b9cd6e222'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '6a33538302cf45cd8a1f84f880ad5d7a'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/PortfolioDashboardWidgets'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '6a9513504c0d4f47910149b3609fef18'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'workspace_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '6abe9a98dceb40bba68a119d950037bb'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'time_granularity'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '6ac7a312abcb4d5d9310a33bf701bd37'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'filter_config'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '6af27e51006040fc872b8ddd22b51d0c'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'task_type'
-                            value: 'approval'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '6b265c0b29264c6080af55f157bfe6da'
-                        key: {
-                            name: 'x_gzi_ppm_resource_role'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '6ba6e198fd364cffb7681c1ab48c339c'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '6bd9d0fd82194bf69c25718285447a4d'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '6c3f0dcfe89447669a256cf3914668b7'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'role'
-                            value: 'editor'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '6c9565723b714ad191ff4b01ccbe264f'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'portfolio_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '6cb76cb6222144eb8c6837f40a28d709'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '6d04cba1ccc94dafa2707ba114305c37'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'task_type'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '6d4d042a9ed4426f8134be848e25cf6d'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'role'
-                            value: 'commenter'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '6dd5fec1db5549e6ba59ab6a9ddbdef5'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'task_type'
-                            value: 'task'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '6e8bb0ee94fa45efb67ddca30b40a343'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                            value: 'currency'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '6ec257b6ef35455aa43e83380a48b0be'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'name'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '6f4d4558eb744be2aac621edf6b1b9cb'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '6f86e578cc6645c2a9acb016035643c6'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '6f8cb96a343644c6aaca5a10508d9f25'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '6ff05c95f2884d1ab38ee163776ec57c'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'predecessor_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '7026f5c128c04a27a1efd5d15e2e396c'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                            value: 'text'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '7183f5bc0e22449c86a023f3dd9a1078'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'priority'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '71fa15924e8a48deb01005f5ef30ee06'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_user'
-                            element: 'workspace_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '72b303624179424da1c7509f917efcf8'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                            value: 'dashboard'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '739a0b7275714502a578c076fb00cf36'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'value_number'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '754516dcdfcf433bacc32e375807a928'
-                        deleted: true
-                        key: {
-                            application_file: 'a7b33fbdadbf43ceb5d8a31bfaf223d9'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '7592abb12b7e8750d80afdabf291bf5d'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '8353d9b069de4b69aba68679c0014544'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '7592abb12b7e8750d80afdabf291bfa8'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'a3d91cefb1bb4206b305716fd41af22f'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '77025942cc16435794407e951bce8ad9'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'watch_list'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '77ca476744fe4ab0be63c011a9d26894'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_proj_res_alloc'
-                            col_name_string: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '77ce7370247e4bbda8de272a4d0c8a01'
-                        deleted: true
-                        key: {
-                            application_file: '7d36591a7ccd44d880e4250ee571f519'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '7876a790e5fb404a91a4bd907d6fdf00'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'field_def_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '78c283afa8294fca95ad737eb662e7bf'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'order_index'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '79097cd046d044289929063ab4ff6a46'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/CapacityPlanPage.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '7934f31e14cb415f8cb5bf4665d4de06'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'status'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '7988743e53e84142bd2ed4300e9348eb'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '7992abb12b7e8750d80afdabf291bf91'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '98aca17668dd423f88fb9905cec08c47'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: '79a288e1ef0640db9d9657e23f682de4'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'approval_state'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '7a05c81c8f2442e88a2976ccd5c8dc64'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'comments'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '7a25bd2bd8854ee3b443829183646574'
-                        key: {
-                            name: 'x_gzi_ppm_user_res_profile'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '7a94b8eff4e345b6a44468d1d64c424b'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_user'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '7aba6a80993a4de48bae8a800c7ca06a'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                            value: 'off_track'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '7aff6bc38da0465b81dd951ffd7b2d1d'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'project_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '7b35be9364cf4216b48fa92c793311ac'
-                        key: {
-                            name: 'x_gzi_ppm_user_res_profile'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '7b730b8707eb485385fa439ff3133c39'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project'
-                            col_name_string: 'owner_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '7b8508a505bd473f9110ba33cc7e4410'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'is_visible'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_page'
-                        id: '7c96e2863ecc4cc6be05275b0d635fb1'
-                        deleted: true
-                        key: {
-                            endpoint: 'x_gzi_ppm_workspace.do'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '7c98e1b761ed4ff7af34bd72ff4e95af'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/ProjectsPage'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '7d36591a7ccd44d880e4250ee571f519'
-                        key: {
-                            name: 'x_gzi_ppm/main'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '7d6de009068d467d91c292eea8becfaf'
-                        deleted: true
-                        key: {
-                            application_file: '2edb688f05014e9cb89b2f88a8a055d5'
-                            source_artifact: '9b67b1e8d6db45a3a33b8247c9f568c4'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '7ec973da18ec4059a8f27291203ea47e'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_team'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '800b0b1141844d05a909944bb065c4bf'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/ProjectPage.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '801a50498724468b9a7e60779d1fab2e'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'task_type'
-                            value: 'milestone'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '80228e5be67d479b8f4862eb62a6f222'
-                        key: {
-                            application_file: 'cf781f6abe8b400b9f173086e544e1f3'
-                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '80bd782c13a24ec88f8e7372fe80d9e5'
-                        deleted: true
-                        key: {
-                            application_file: 'b98483645745433fa11ca8f944c92b8e'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '81bea36d13dd4d0596be71441e744f74'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '8218c81cc8ca43c1ab60e72bbdf9d21e'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'project_key'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '8419430c142c45919051c191eb7f9990'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'entity_type'
-                            value: 'portfolio'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '846dc52535cc49b7bb3701c7d230fbb7'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'sort_config'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '849b96dac23b4b4ea9954f31e7952920'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '855df80f8cad4b2d9874afe66f65ca0d'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
+                            name: 'x_gzi_zscaler_ppm_status_update'
                             element: 'entity_type'
                             value: 'project'
                             language: 'en'
@@ -3916,223 +812,233 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
-                        id: '8594057db13042b6bde59176298eb374'
+                        id: '06c737620c2843c8ad6f84030a7578a0'
                         key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'NULL'
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'field_path'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: '85d45679d48d4f57b0390942dd276bda'
+                        id: '0914f882eb9a49f2bd66aa7fc4c80c21'
                         key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'project_id'
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'name'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_ui_element'
-                        id: '87138e3133ba07509937d1382e5c7b6a'
-                        key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'portfolio_id'
-                            position: '6'
-                        }
-                    },
-                    {
                         table: 'sys_documentation'
-                        id: '873f1edd9b0b4dd1b728d1f01156c9a7'
+                        id: '091cf3a60ee94d228bc5f82d6143f432'
                         key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'value_number'
+                            name: 'x_gzi_zscaler_ppm_workspace_user'
+                            element: 'workspace_id'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: '881798a2fca54d358018b409a8e58872'
+                        id: '09354fc92ae6442f91add76b881ba6bf'
                         key: {
-                            name: 'x_gzi_ppm_workspace'
-                            element: 'NULL'
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'status'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: '892f3f3940f440ae84a7a6cba7e646d1'
-                        deleted: true
+                        table: 'sys_db_object'
+                        id: '09cdafc34c324040a3897c33cb3fd1e8'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_proj_res_alloc'
-                            col_name_string: 'role_id'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '89af06fd44374176be8334ad05443624'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/MyTasksPage.js.map'
+                            name: 'x_gzi_zscaler_ppm_user_res_profile'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: '8a4ab735e9984c2d971e080364b1dc02'
+                        id: '0ac639c04bc04f7a868e3516d0bc8e0c'
                         key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                            value: 'settings'
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'status'
+                            value: 'in_progress'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: '8b23d5ac42084027bec594284ef1d425'
+                        table: 'sys_dictionary'
+                        id: '0ae890a3b97c4d089493a069968e371d'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio_member'
-                            col_name_string: 'portfolio_id,user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '8b8c42943ff048858542624affc9b7e3'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'is_global_library'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '8b9a8d6bb4794045b5eb9daf43630a47'
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_workspace_team'
-                            col_name_string: 'workspace_id,group_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '8c14266d4fd1406591277512cbb61d3d'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'section_id'
-                            language: 'en'
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'portfolio_id'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: '8cb59056d63249189005f801a821ec73'
+                        id: '0af979c593af4ec29476ce485b94f063'
                         key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'predecessor_task_id'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: '8d505e194b174661ada4214089515df6'
+                        id: '0b7d662fdb6d4925a5ec50e4dc7ff57d'
                         key: {
-                            name: 'x_gzi_ppm_project'
+                            name: 'x_gzi_zscaler_ppm_portfolio'
                             element: 'owner_id'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_choice'
-                        id: '8d82fc41b07049c1a6875adbef93fcd6'
+                        table: 'sys_documentation'
+                        id: '0c04b5805baf44419409fa2d645cd5ad'
                         key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'status'
-                            value: 'on_hold'
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '0c47f7a389e1426f951b0883849d631b'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'predecessor_task_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '0c65fedeca19486ba2e229ec82871074'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'priority'
+                            value: 'low'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_ux_lib_asset'
-                        id: '8d8c8055cdcf4a28ad3a0a370c83f14f'
-                        deleted: true
+                        table: 'sys_dictionary'
+                        id: '0c74f49977414dc396e5bb5fdcddf4f7'
                         key: {
-                            name: 'x_gzi_ppm/ProjectForm'
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                            element: 'field_def_id'
                         }
                     },
                     {
-                        table: 'sys_ux_lib_asset'
-                        id: '8de2b203dfe243bfb219b6fef55450a9'
-                        deleted: true
+                        table: 'sys_documentation'
+                        id: '0cbae148a9f74859a6cd18bceb6aadcf'
                         key: {
-                            name: 'x_gzi_ppm/MyTasksPage'
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                            element: 'project_id'
+                            language: 'en'
                         }
                     },
                     {
-                        table: 'sys_ux_lib_asset'
-                        id: '8e37a9bd42014206aa628c95d92a2eab'
-                        deleted: true
+                        table: 'sys_documentation'
+                        id: '0cecfcaee85b4457a813e181ddf3e12c'
                         key: {
-                            name: 'x_gzi_ppm/PortfolioPage.js.map'
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'start_date'
+                            language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: '8e3ac8d95ef14920a9b53944b7616373'
+                        id: '0d99b5d6b98f40858340ff2ac6968596'
                         key: {
-                            name: 'x_gzi_ppm_user_capacity'
-                            element: 'user_profile_id'
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'status'
                         }
                     },
                     {
-                        table: 'sys_security_acl_role'
-                        id: '8e92abb12b7e8750d80afdabf291bfd6'
-                        deleted: true
+                        table: 'sys_dictionary'
+                        id: '0db9509476834b5da6d4d8ece08ea1aa'
                         key: {
-                            sys_security_acl: 'bd56218badfb46928483caf8536606b8'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'project_id'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: '8ec76b56d58a4cdd9255fb1c7b566b89'
-                        deleted: true
+                        table: 'sys_documentation'
+                        id: '0e4fc4647a3f42e188a6434ff6e2f2c4'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_project_member'
-                            col_name_string: 'user_id'
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'sync_with_jira'
+                            language: 'en'
                         }
                     },
                     {
-                        table: 'sys_ui_element'
-                        id: '8f138e3133ba07509937d1382e5c7b67'
+                        table: 'sys_documentation'
+                        id: '0e9d1a3650cc491aa396e78d315ee78b'
                         key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'group_by'
-                            position: '3'
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'value_number'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '1073d9fe259d48c58b1605a626d26ddb'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '111d8c3af66b4d099d2c1551254c9f5c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'added_by'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1152423a0f56438babd805f6719b3410'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'start_date'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '115afa080da0487d833c5df8584ec74c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '119b952cae16437f874ecd335e241eb3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'status'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '11e62b5a4b7a4e82adf44455f5e93715'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '1248552e6acf4cc7ad53f565915cc713'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'due_date'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: '8fa33cbb8f06475ba0e462dbacb9ec9a'
+                        id: '12cd3fd13f46443881045445d621a3ae'
                         key: {
-                            name: 'x_gzi_ppm_goal'
+                            name: 'x_gzi_zscaler_ppm_status_update'
                             element: 'status'
                             value: 'on_track'
                             language: 'en'
@@ -4140,267 +1046,27 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_choice'
-                        id: '90d7ab294679469999155da5be4db359'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                            value: 'board'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '90e386f133ba07509937d1382e5c7bcb'
-                        key: {
-                            sys_ui_section: {
-                                id: '5ce38eb133ba07509937d1382e5c7be5'
-                                key: {
-                                    name: 'x_gzi_ppm_task_dependency'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.split'
-                            position: '3'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '910f70a91bc84b1888a525bb4bc9302a'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'due_date'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '91a98efa962349cc9cb64dce1ac800c6'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'percent_complete'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: '91f23848d85640adb0185bcf8c21a728'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: '91fbd4ee975f4139bc2965ccaa98bf55'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/PortfolioPage'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '920f96db893e4cdcae64b1da7ebe25cc'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_custom_view'
-                            col_name_string: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '92133c603ca9411783f53db8489e65a6'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                            value: 'number'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
                         table: 'sys_dictionary'
-                        id: '922713d6a2d6402692b0a70e191fd041'
+                        id: '13f11e34c1664aa98529c3298c58dca3'
                         key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'name'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '9292ebb12b7e8750d80afdabf291bf61'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'e2117f8ae90f4e5c8dc1069203fa51ef'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '9292ebb12b7e8750d80afdabf291bf9c'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'ef1c6549e279498eaee631fc7888ff28'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '92d7c2e61d914b3ab1aa093f5b1c5f24'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'end_date'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '92fbbacf3ffa45f989d3c1035b9522c4'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'owner_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '93077a6db2464624889d16d261a34525'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'parent_task_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '9400b6b1635c4a9ea1eaac6c4b0d0e33'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_capacity_plan'
-                            col_name_string: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: '948a3a7daa6d47e48b8ac92884fbe960'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'role'
-                            value: 'commenter'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '94bbee697ff84769a1293e502978063d'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'workspace_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '94e386f133ba07509937d1382e5c7bcc'
-                        key: {
-                            sys_ui_section: {
-                                id: '5ce38eb133ba07509937d1382e5c7be5'
-                                key: {
-                                    name: 'x_gzi_ppm_task_dependency'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.end_split'
-                            position: '5'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '95926bb12b7e8750d80afdabf291bf6f'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '22a761cdd0544ddb812bc3165526742a'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '95926bb12b7e8750d80afdabf291bf75'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '2f362039701d46789366ff27ba4bf555'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '9655eb24fc79442a81c51420bd50d445'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '96577bb41f3c4752acc496d3c8d700fb'
-                        deleted: true
-                        key: {
-                            application_file: 'cd7704c4b4154feab853217f8ce9e354'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '9692abb12b7e8750d80afdabf291bff4'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'c1911a4d7d9e497589815b64b10e3457'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '96d55345eca74c71ae7b69e3722584db'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
+                            name: 'x_gzi_zscaler_ppm_project_member'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '15764f73b70643f7a0c2290d36a6241f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'group_by'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: '9700a5a2ed8a46ca9d5816d1d9d42d96'
+                        id: '1617c7701e1b45beb4b2f05c4e059084'
                         key: {
-                            name: 'x_gzi_ppm_task'
+                            name: 'x_gzi_zscaler_ppm_task'
                             element: 'approval_state'
                             value: 'approve'
                             language: 'en'
@@ -4408,579 +1074,748 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_dictionary'
-                        id: '979a36455eee440988e379207dfc6392'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'workspace_id'
-                        }
-                    },
-                    {
                         table: 'sys_documentation'
-                        id: '97fae925a0a34ef89436599c5944b6b7'
+                        id: '166380d0dc84433381364193ba5ee579'
                         key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'user_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '98032525595a4c228bdbc79715ac80e0'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'approval_state'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '982fb46b865a4506834c3e1beaca5dd8'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio_project'
-                            col_name_string: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: '9898b193cf8841af80106eeef2bde130'
-                        key: {
-                            application_file: 'a7b33fbdadbf43ceb5d8a31bfaf223d9'
-                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '98e6b303356a4d1bb1fd6aa2b2ff94ad'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'role'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '997ad07780b344a3bcd708d50511033d'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_task'
-                            col_name_string: 'parent_task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '9a673b0788f7409e82895f74a53543d4'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_status_update'
-                            col_name_string: 'author_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: '9aa8c385a3f342d0b1d6c9846118f391'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
                             element: 'NULL'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_ui_element'
-                        id: '9b138e3133ba07509937d1382e5c7b6d'
+                        table: 'sys_documentation'
+                        id: '166f4731d42544028e4650dd954150f1'
                         key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'sort_config'
-                            position: '10'
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'start_date'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '168c16e53f084fd38967ef3574ac5de4'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '1695ec85193e44a9aea4465c9aa78bb2'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '16e357d4255047c39416b6ec0360d04f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'filter_query'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '172d6f7f7f5a48bdb9b3f16308e5c917'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_capacity'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: '9b13948f3a4342e38c4d5f18aec93da4'
+                        id: '1894428aeb72467fb1437c135849df7c'
                         key: {
-                            name: 'x_gzi_ppm_capacity_plan'
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'status'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: '190dd691cfd14932b6ebd65d7f9c0aa1'
+                        key: {
+                            logical_table_name: 'x_gzi_zscaler_ppm_workspace_user'
+                            col_name_string: 'workspace_id,user_id'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '19a5b0fdb8fb4b5b8bdbd4ec779b27be'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1a0c6681e9e440e4a2c5922e48c1a0a2'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1a4acfd4c218499fa5a52f3adf9b3652'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'role'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1a4ca5327fa24b6692fdb488921ac7d3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'dependency_type'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1a6ff1e684454ca0b7f9e80fa2f2bd9f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_capacity'
+                            element: 'user_profile_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1aaf4a2955074590a2e2de857727acb3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'work_notes'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '1ad3cd2264eb432a8e718eb760a7b79a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'work_notes'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '1bfcf54021354aada432d5e6d672cce1'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '1cb8dcf013f0434ca2f19e6c7d467b4a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'sort_config'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '1d940bc75da348499c76039bce70c0ea'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'workspace_id'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '1db4aca0a73b4819b6bf65335ce3fb8c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'role'
+                            value: 'editor'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '1dcfad95a7844bb69d82c79736511175'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                            element: 'portfolio_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '20cb1e00b43e434eb4f746a189c95101'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'workspace_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '2134fcbf10074811b84ab112e8eaf8a3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
                             element: 'owner_id'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_dictionary'
-                        id: '9b7d9ff5c7d04ca794ddf895cfbdef9e'
+                        table: 'sys_choice_set'
+                        id: '214be7e6718c4efda1d4ff8c318d455a'
                         key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'due_date'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '9bba37f20628459e8b5984af35ae82a1'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_workspace_team'
-                            col_name_string: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '9c085fd69a374417ab73ea07d54efae3'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'approval_state'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: '9c172e2aadcc494d8fdcacb7b6478c23'
+                        id: '24265bead2214f6290b916b61198f1e9'
                         key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'is_default'
+                            name: 'x_gzi_zscaler_ppm_user_capacity'
+                            element: 'baseline_hours_per_week'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_documentation'
-                        id: '9c67f01dddeb49ca805998b39ef02ec8'
+                        table: 'sys_dictionary'
+                        id: '2544cc269b6549d7bb31811e8915e2e5'
                         key: {
-                            name: 'x_gzi_ppm_workspace_user'
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'is_visible'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '2609d616fb834be09b9465009ad72649'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '27cb13306f924e66bd6f65a722318b5d'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '27def55eee8047ae84b0adca37d47f3a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'priority'
+                            value: 'strategic'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '282dcda9939f4012813cf764be204fdf'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'status'
+                            value: 'on_hold'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '282f3d36e6bc4bb382560497e4a17981'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'is_default'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '2858c1a300294166bb7d89ddbf8cc5f2'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'description'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '29d5ac501cd44938a7cd4657919719ec'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'filter_config'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '2a20255b019845d582f294f22165e016'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'due_date'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '2b3aac8fee374f11a38ad32651fb1a8f'
+                        key: {
+                            application_file: '7e165175d3963cf698f74a0e0042d7e4'
+                            source_artifact: '3fb176d7543f4b1cbac9d047cf854d49'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '2b460f6ffb484296a9869d749ab8855e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'value_string'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '2bf3ad03481a4cc6a2c51fa072617d5f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'task_type'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '2de4bb397d04455f9919d1c046cccbb1'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'text'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '2e567ddc214e469da73933e9dab3d912'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'owner_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '2f59616afa7344a1a9f9c01a5413f1a6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '2feae0a8c0d643ef89a074ed3b9a6270'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '30648851df7e4c1dba834bde548fd77f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_resource_role'
                             element: 'NULL'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: '9ca403c020854761a780b33e63ed1438'
+                        id: '311e9b5ad0104b49a6a7be60becc50bc'
                         key: {
-                            name: 'x_gzi_ppm_workspace'
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'owner_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '337990075eca4e2b96fdc8b6ed34ca3f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '33c9a1c721fd4de8bd09cf897e2a80e0'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'assignment_group'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '34a06315e94d4d4898a879b8160aeac6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'time_granularity'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '3508cf763db64b1889577b05aa8e4472'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_res_profile'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '35988894c73044d6b7e05f17eca138cd'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '36029a1e183142a9afbab216e8f8e1e9'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'comments'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '361da7d429274e1e96091304a149231a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace'
                             element: 'name'
                         }
                     },
                     {
                         table: 'sn_glider_source_artifact_m2m'
-                        id: '9ca5e07068c142cb973ef1abf927389d'
-                        deleted: true
+                        id: '36cc17317d334af7b14f88a4fdb0e1b0'
                         key: {
-                            application_file: '52628ec6e2774c5ba594621c77ebaef6'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '9caa6827e4d84643a394f1ceb1dbaae4'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'group_by'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: '9cae403ca62d41e28869a7e29dc9ef1a'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: '9ce386f133ba07509937d1382e5c7bc9'
-                        key: {
-                            sys_ui_section: {
-                                id: '5ce38eb133ba07509937d1382e5c7be5'
-                                key: {
-                                    name: 'x_gzi_ppm_task_dependency'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'predecessor_task_id'
-                            position: '1'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: '9e92ebb12b7e8750d80afdabf291bf77'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'ec94a2d8bee642adaf1ae5a8bf2aff66'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: '9e93f76a89df4b3c8d901e2d2cb2f3bd'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_user_capacity'
-                            col_name_string: 'user_profile_id'
+                            application_file: '5ce97744a7d34256ac37f14a739e1377'
+                            source_artifact: '3fb176d7543f4b1cbac9d047cf854d49'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: '9f3ec95d1d2340979809e579ba8f8af3'
+                        id: '36daef2761774a049a8a5c2bbacd7998'
                         key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'portfolio_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: '9f880beb874647d683297beb4356e4ba'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'a0f759bf09c041f382f77fe3e916b9c8'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'a1926bb12b7e8750d80afdabf291bfb9'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '3c37ff7d71194e60ae7a9938a529cec6'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'a1926bb12b7e8750d80afdabf291bfbf'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '3d2e2948da054bd6aded06775edc8451'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'a1926bb12b7e8750d80afdabf291bfc5'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '4ad3ff5ba50f449a855631f0b3042ef0'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'a192abb12b7e8750d80afdabf291bf3a'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '759832d62ac843738adcccd8a56ee5e5'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'a20355505b634c59a1259d6a33f3bf17'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'a204c913a4c64a9e811d9504fc6e9984'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: 'a323067133ba07509937d1382e5c7b32'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'owner_id'
-                            position: '4'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: 'a4f02ba8f0794d7091bbae5ed4e066b6'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/ProjectPage'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'a50da091d6c54667bac0e762659a6b40'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'filter_config'
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'entity_type'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'a56e60c9869e497fb67bcbbdf5e68411'
+                        id: '373a4c39f73a45a6990bc06a8f5ce41b'
                         key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'a5926bb12b7e8750d80afdabf291bff8'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '679e5842540e44df902036879f2eb23b'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'a5b3e1655a474b08b78602d52f9deece'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_custom_field_value'
-                            col_name_string: 'task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'a60407e291ee4720a941111b15c0c196'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'predecessor_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'a6dd2b4f623d44f9adac274dfc557be0'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'allocation_percentage'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'a6ff4ad3b9b7493fa40a9bf5b2015d05'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'color'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: 'a723067133ba07509937d1382e5c7b33'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.split'
-                            position: '6'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'a748089ee8ad414392298fb5f82d9621'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'a770f20da92049d5b1f44368cd8b5bd1'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'order_index'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'a787896d650c4670b55412589892cf5c'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_section'
-                            col_name_string: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: 'a7b33fbdadbf43ceb5d8a31bfaf223d9'
-                        deleted: false
-                        key: {
-                            name: 'x_gzi_ppm/vendor-react-dom--d9c8d218'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'a7c03fd0abcd419e9dd9878d5edd6265'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'user_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'a7ce06380301410cb4aae0b3c310d065'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
+                            name: 'x_gzi_zscaler_ppm_status_update'
                             element: 'status'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'a8d970b9d82144baba37f00e36ca3d7a'
-                        deleted: true
+                        table: 'ua_table_licensing_config'
+                        id: '3770136967864e3aad5df178d41d6c0a'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio'
-                            col_name_string: 'owner_id'
+                            name: 'x_gzi_zscaler_ppm_portfolio'
                         }
                     },
                     {
-                        table: 'sys_security_acl_role'
-                        id: 'a9926bb12b7e8750d80afdabf291bfe1'
-                        deleted: true
+                        table: 'sys_db_object'
+                        id: '380f2a41349e42ecac0d3e25a18580ac'
                         key: {
-                            sys_security_acl: '5ea8e1ce129b42d8bc26ea61acaaf362'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
+                            name: 'x_gzi_zscaler_ppm_project_task'
                         }
                     },
                     {
-                        table: 'sys_security_acl_role'
-                        id: 'a992abb12b7e8750d80afdabf291bf1c'
-                        deleted: true
+                        table: 'sys_dictionary'
+                        id: '388ca40b1bc8444e939ff7e9fc54b2e1'
                         key: {
-                            sys_security_acl: '70636b2be5694e75b2497c970a515433'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
+                            name: 'x_gzi_zscaler_ppm_workspace_team'
+                            element: 'group_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '3895a6a8949c453abe65da13762f6d9c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'description'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'aa5b2c6fa62849e69baf875a3f1adb09'
+                        id: '38d24d056b514678ae461861853d93af'
                         key: {
-                            name: 'x_gzi_ppm_capacity_plan'
+                            name: 'x_gzi_zscaler_ppm_workspace_team'
                             element: 'group_id'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'aaf68c4c22cf41dca13f30a324fdcac5'
+                        id: '3953d6d0c1ce458aadcce69ef157066c'
                         key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'project_id'
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'user_id'
                         }
                     },
                     {
-                        table: 'sys_choice_set'
-                        id: 'ab05c851de8e4353bfcd06bf9ae5184b'
+                        table: 'sys_documentation'
+                        id: '3a02747ea4cd445b82729abdc8fc1125'
                         key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'status'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: 'ab23067133ba07509937d1382e5c7b34'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'portfolio_id'
-                            position: '8'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_section'
-                        id: 'ab23cef1333a07509937d1382e5c7bdd'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            caption: 'NULL'
-                            view: {
-                                id: 'Default view'
-                                key: {
-                                    name: 'NULL'
-                                }
-                            }
-                            sys_domain: 'global'
+                            name: 'x_gzi_zscaler_ppm_workspace_user'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'ab334c2cf3b34ca4b0d12211f791c198'
+                        id: '3a310e19e4564150b578c2284b4bc8a2'
                         key: {
-                            name: 'x_gzi_ppm_goal'
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'status'
+                            value: 'on_track'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '3a487daf116b407dad7b5b42441fb853'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'group_by'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '3a4a4a7c1c6448bda72181c0c2a59d8d'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '3b09a723fbf745d1bfa4db2e79027f47'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'due_date'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '3b2dca4f826f4655821578ff141e3370'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '3b6ccb1323344839ae7f7cc830f0b2d4'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '3caa3210758a47979d448a1f7f2fcc77'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'portfolio_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '3ee0456c775e433e8714c808b5e8a955'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'entity_type'
+                            value: 'goal'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '3f1a6e3a38554dd5b435ecbab7f675c0'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact'
+                        id: '3fb176d7543f4b1cbac9d047cf854d49'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_app.do - BYOUI Files'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '3fd3382d917342109fe367fb0f567ad7'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '4007151323a348f0a3a0a6b6873eae38'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
+                            value: 'text'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '4015369f0cbf404297cdcffc57628751'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'priority'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '413240bd8ee8473eb24c788ec033b2d1'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'project_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '41fa57c7229d49798c091a873aba4344'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'workspace_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '443b24bb681c40fdaf54a3ad90357d79'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'width'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: '4456e0f1ef7e4ca786270cabd7d00cf5'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm/vendor-react-dom--d9c8d218'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '44c4237af32d48bcb9538a3a256a2bce'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_res_profile'
+                            element: 'user_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '450fb4184fa44ad6a8f925e2204dcafc'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'portfolio_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '452111d30e354cee800f3a0a79f82e0e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '4627e71c7515481485fe0e198199d81a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'role'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '464ee7d22f5b41ba8a039e4ad4247aff'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'time_granularity'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '4798ffdaebc445729553d05f70c26d29'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '47adb7db42a34c768efb3f8569ba5b01'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'assignee_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '484db06e687148af9a74a0f63de17523'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_user'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '4a20eda050f94d4aac8b6c5e245ae60b'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'view_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '4a89b1aa908c41128af848b8dc31d840'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'task_type'
+                            value: 'milestone'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '4b98b0edf97c43e28b569c7ea11d553b'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_resource_role'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '4bdb9699009642f9868549c6473efb0c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'start_date'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '4c044216397e4be5bd71aaef44bab9a5'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
                             element: 'status'
                             value: 'at_risk'
                             language: 'en'
@@ -4988,119 +1823,79 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_documentation'
-                        id: 'ab58b9aab9c747da93c4723e89319973'
+                        table: 'sys_choice_set'
+                        id: '4c3a7b0a11d6432387791888852863f0'
                         key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'role'
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '4c795508256b481fb85626d883ebd3df'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'NULL'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'ab915155f5c34e2c93fb3b7e49f11da2'
+                        id: '4c94b515f000413ab0e00dda85f5481b'
                         key: {
-                            name: 'x_gzi_ppm_portfolio'
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'completed'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '4d727b868ff54bf298dbd02e86f5fefe'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '4da490d86dd44f04bf715db156c5489c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '4db3b92d3cf5458692086586b4344aaa'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_res_profile'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '4e1add440eab47528560557b2585c776'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
                             element: 'name'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_dictionary'
-                        id: 'abaa7ec0ba714322b62485f699b5c7bb'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'ac089a7b0fdc4e84b8848b43ca44b60b'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'added_at'
-                        }
-                    },
-                    {
                         table: 'sys_choice'
-                        id: 'acb424e6dce14fb6b0711c40af54e81e'
+                        id: '4f3469bb24314fdb8e4c536d8b6416f2'
                         key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'time_granularity'
-                            value: 'year'
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'role'
+                            value: 'viewer'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_documentation'
-                        id: 'ad3237d93a65460f81da6e36a3af8d6e'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'ad926bb12b7e8750d80afdabf291bfca'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '4cd82d12b7014386b138e27f170c6e4f'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: 'af23067133ba07509937d1382e5c7b30'
-                        key: {
-                            sys_ui_section: {
-                                id: 'ab23cef1333a07509937d1382e5c7bdd'
-                                key: {
-                                    name: 'x_gzi_ppm_capacity_plan'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'filter_config'
-                            position: '2'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: 'af3e67d9a5e546479e029e213afebbf5'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/FieldLibraryPage'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: 'afe8f4fd68a4459cbfb35e54cbbda1d4'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/BreadcrumbBar'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'b021f14e652e432fbb4a2e145475aaa2'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'role'
-                        }
-                    },
-                    {
                         table: 'sys_choice'
-                        id: 'b06eece7fe674de19b9d051d06178d53'
+                        id: '4fe0e328eea24baa97dda4f5f7bd2d97'
                         key: {
-                            name: 'x_gzi_ppm_project_member'
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
                             element: 'role'
                             value: 'owner'
                             language: 'en'
@@ -5108,471 +1903,290 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_ux_lib_asset'
-                        id: 'b0f82bd7298e4baaaeb4efeb17846c25'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/FieldLibraryPage.js.map'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'b128e0552c904c65961b64a0cbe7ba27'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'b1566890c05e4a0cbaa333bcbffc79ac'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'added_by'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'b192abb12b7e8750d80afdabf291bfc0'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'ad3354666487418f94e5f32493c90e7d'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: 'b1b3ceb133ba07509937d1382e5c7b05'
-                        key: {
-                            sys_ui_section: {
-                                id: '39b3ceb133ba07509937d1382e5c7b00'
-                                key: {
-                                    name: 'x_gzi_ppm_workspace'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'name'
-                            position: '0'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: 'b2d48103f6994a0382aebcf4cb1d65e4'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'status'
-                        }
-                    },
-                    {
                         table: 'sys_dictionary'
-                        id: 'b36a05cafa614ccba1fb82a904e3bea3'
+                        id: '5009132923b64c079c603fdc91605806'
                         key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'project_key'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'b3968d61ae6142c0a67c7f7b88d1317b'
-                        key: {
-                            name: 'x_gzi_ppm_project_member'
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
                             element: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'b3a934c0e8354ab187a5583525e64a32'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project'
-                            col_name_string: 'workspace_id'
-                        }
-                    },
-                    {
                         table: 'sys_dictionary'
-                        id: 'b3f3399a268d4d35bd6d0ce2d1f18269'
+                        id: '500fb2c4bdc5406d98cb5893603d4863'
                         key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'entity_type'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'b3f3c6253e364ecfb7817b5d5389a8bd'
-                        deleted: true
+                        table: 'sys_documentation'
+                        id: '50d8e0444e174203852a8ec3f73c0364'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_custom_view'
-                            col_name_string: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'b40790532a48469abef616be5039ecb7'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                            value: 'complete'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'b4d73fd422b24569a0ccb26be54a31ac'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
+                            name: 'x_gzi_zscaler_ppm_custom_view'
                             element: 'view_type'
-                            value: 'brief'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '50ffc0cf9b8a41f6b4eb3cbace426a65'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'priority'
+                            value: 'high'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_security_acl_role'
-                        id: 'b592abb12b7e8750d80afdabf291bf6e'
-                        deleted: true
+                        table: 'sys_documentation'
+                        id: '5229fcb9fa3040f5b6ab6f6ae81784c4'
                         key: {
-                            sys_security_acl: '90a8832c5d5b44d88736f65d134065df'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'user_id'
+                            language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'b5f7f1f6f32243adb211daabd1bebfba'
+                        id: '5295f29f1ff9405693bc85e1343ebe3c'
                         key: {
-                            name: 'x_gzi_ppm_section'
-                            element: 'order_index'
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'value_number'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'b625e44a517146748ce903812423cd03'
+                        id: '53c9aff72cbf4c60b2e11d7d7edb500a'
                         key: {
-                            name: 'x_gzi_ppm_portfolio'
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'order_index'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '53d64f4869a544358a5750cb8df39f32'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '5430cb0bf186404889ce572e9ccac820'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '54375f51bc58469aa36e6b082856306e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '55d29cd8f46b46d292979ff59d3ca6cc'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'section_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '56457d82cf6c4ab8a55f645ae1cc5932'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '56d4a29f4d2e401aaba93f185beaee8a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'priority'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '577990626a9442f1bcc9708fd4b4f31b'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '5841edf8c93240c3b01ae239a3561e1a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'status'
+                            value: 'off_track'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '589a5d42b9774d1e93973128fde38e90'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'is_global_library'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '58eee188c35541c685b0d4a8e5267d19'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'owner_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '5933d8ad33234939b29fdcfdae21d967'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
                             element: 'due_date'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: 'b669b126845b4df9bb52ef12f53cf2f7'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: 'b6d6b70030ac45f6aa7ea86bfc5924aa'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'b7327a8c5c304e0585ccaabde8b7e473'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'end_date'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'b8026788541d4c808ce4d003bf4b7498'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'b87b76936af243409286a20aebe850f6'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'b8babd16cf8847c6af49b48308cec96f'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'successor_id'
-                        }
-                    },
-                    {
                         table: 'sys_index'
-                        id: 'b8d2a6e5082046d5b1a641a51affe2f8'
-                        deleted: true
+                        id: '595e98ffb18b43a685ab209137c96df8'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_custom_view'
-                            col_name_string: 'project_id'
+                            logical_table_name: 'x_gzi_zscaler_ppm_project_member'
+                            col_name_string: 'project_id,user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '59747b59b90e47a685063a80c6a79315'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'value_date'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'b8f1ae2c071d4564ac754ad4fc0087b5'
+                        id: '59b5c50aedd04a6b8cf225839d47791b'
                         key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'comments'
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'name'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '5ab896be182644e987d837b149c33a7c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'sort_config'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '5b490320d5e342c183b0a877c954fd83'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '5b5b6a5bca5c4c61aaa433bba10116f3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '5b5f27011afd45f38147478a29be083f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_capacity'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '5b75c64c7df04a21abc2874eb6b2c173'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'status'
+                            value: 'on_hold'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '5b8b90aca2884b158ab385cdf6a92bd3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'parent_task_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '5c98e72af176462db71772c913a72954'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
                         }
                     },
                     {
                         table: 'sys_ux_lib_asset'
-                        id: 'b98483645745433fa11ca8f944c92b8e'
-                        deleted: true
+                        id: '5ce97744a7d34256ac37f14a739e1377'
                         key: {
-                            name: 'x_gzi_ppm/vendor-react-router--9560cb75'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'b992abb12b7e8750d80afdabf291bf57'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '7e0bf384e01f4f368b06f73e4a4eb849'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'b992abb12b7e8750d80afdabf291bfa2'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'a271541ebd1743a1918072d54697ba0a'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
+                            name: 'x_gzi_zscaler_ppm/vendor-react-router--b9021bf5'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'bb5b1d0a28104dada940258fa15167cf'
+                        id: '5e8c93a6d654483eb47627b597957a2c'
                         key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'entity_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'bbbd63ca801d44ec85e61e3863af6fa7'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'bbe04a204140445c928bd05b38ea1b26'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'start_date'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'bbe6850842454d4fb523af7428c75f90'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'filter_query'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'bc061886dbe64994ad9de22b185c9d6f'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: 'bc815fba07034e56b48a373ee10055a8'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'bcaf0fc0bc4843d29e3d0fa4687078df'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'bcb5209eb9004728ae753073b896aab4'
-                        key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'bd92abb12b7e8750d80afdabf291bf8b'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '989613c058214fffb4f71b9b3d4ca39c'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'be6180b2f65c4afc883ddc113da8d67d'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'beb26034bd51462fb46c15cbd80a8d82'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'predecessor_task_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'bf10bdbf1a5f4646ae319c72f5c46e04'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_team'
+                            name: 'x_gzi_zscaler_ppm_custom_view'
                             element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'bf73134a8ae94ef9bad763ce7a49b759'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                            value: 'planning'
                             language: 'en'
-                            dependent_value: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_documentation'
-                        id: 'c0d87f883e56421889a989f0247fb65e'
+                        table: 'sys_dictionary'
+                        id: '5e8cd2f92b3041f9824884b26f3c4104'
                         key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
+                            name: 'x_gzi_zscaler_ppm_user_res_profile'
                             element: 'user_id'
-                            language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'c1dc3b2305114dcdacd019847f02afa7'
+                        id: '5f752f0e0d404bd5a421ea619dfce173'
                         key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'work_notes'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'c1ed26d73c6a46ea847ffc69eb05956c'
-                        key: {
-                            name: 'x_gzi_ppm_user_capacity'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: 'c24df5cce95d42c4a1bb2364f5730b7d'
-                        deleted: true
-                        key: {
-                            application_file: 'cf781f6abe8b400b9f173086e544e1f3'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'c27d9c102baa44108926470a7bc86d0e'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'priority'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'c292abb12b7e8750d80afdabf291bfd1'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'bc71079598114f3a816d06e97bd8c941'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: 'c2b48786a5b549e7af2db008511522fd'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_team'
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'field_def_id'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'c2eea0d062864f09af441c2314291a97'
+                        id: '60ff72321db444e3b5e9dd6aa432959a'
                         key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'priority'
-                            value: 'medium'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'c33f23164b854100aed54ece68d42bfc'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'successor_task_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'c34151ca70684b32a616d387f9976f29'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
+                            name: 'x_gzi_zscaler_ppm_task'
                             element: 'status'
                             value: 'complete'
                             language: 'en'
@@ -5580,263 +2194,461 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_db_object'
-                        id: 'c3d24f69502f4c9588fa15826e087c06'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: 'c409d99c45f346459dc538b16e94f847'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/VirtualizedGantt'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'c40f04a9a00c4534b06b6ef466519935'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_custom_field_value'
-                            col_name_string: 'field_def_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'c449bd7a09d2417fa99782d6391c117b'
-                        key: {
-                            name: 'x_gzi_ppm_user_res_profile'
-                            element: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'c476448d956c45a3be58d93290855086'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                        }
-                    },
-                    {
                         table: 'sys_documentation'
-                        id: 'c4a984f17835441699eab6055cc32e12'
+                        id: '616564479802412ca1e822ef60263868'
                         key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'status'
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'approval_state'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'c4f379bdd19e42f69abc948a6acc4efc'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_cust_field_setting'
-                            col_name_string: 'portfolio_id'
-                        }
-                    },
-                    {
                         table: 'sys_documentation'
-                        id: 'c53b4c64a7f34b9385a879fbce206752'
+                        id: '619d68af30d34e65821a5f96886622a5'
                         key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'status'
+                            name: 'x_gzi_zscaler_ppm_section'
+                            element: 'NULL'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'c680fe520dba486d9cfefc11d0859f07'
+                        id: '61ae38ce51ce4cf29e8c87efb46d272a'
                         key: {
-                            name: 'x_gzi_ppm_task_dependency'
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'role'
+                            value: 'commenter'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '621d15b509764e1d844bfa21849fc7b0'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'allocation_percentage'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '63ce3d00982844cba5f84bbba499cd6f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '660601c8cb82454dbccf04e0de3ec52f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'order_index'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '66087e190b8044648abaaa837ebbeab5'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'entity_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '66b7a4a831cc461c88e819b544e1f80e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_res_profile'
+                            element: 'role_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '681faf18d1134539ae95e1678e154f91'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'field_path'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '687c1edeee99467f8f63451142f0e019'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'group_id'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '68f7f040566a4cbd8b27ce3baaaa39f7'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'status'
+                            value: 'off_track'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '692822ddb8804601b7b8bc2a9e7e8ce2'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'filter_config'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '6af0093d38bf44e8a9c33213505d95e9'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'role_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '6b8aa44543394e75b37a6f7829aea6c6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '6d082f791d464edfb12c1d876eeade60'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'entity_type'
+                            value: 'portfolio'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '6d7a5d9f57f444c9a1212a9a72a4528e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
                             element: 'dependency_type'
-                            value: 'start_to_start'
-                            language: 'en'
-                            dependent_value: 'NULL'
                         }
                     },
                     {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: 'c6daf477e4da4e6a83abea1a7ab9b9ca'
-                        deleted: true
+                        table: 'sys_dictionary'
+                        id: '6e378bc33ef94d1396a8fbddb70f6412'
                         key: {
-                            application_file: '50a28b95307a425ba1aa9ca27a0623b6'
-                            source_artifact: '0423ed01f5fe4f4e8c633d15936e63a5'
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'order_index'
                         }
                     },
                     {
-                        table: 'sys_ui_element'
-                        id: 'c7138e3133ba07509937d1382e5c7b1a'
+                        table: 'sys_user_role'
+                        id: '6ec56a8879414fcab5bfc5505ce8eb70'
                         key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'is_default'
-                            position: '0'
+                            name: 'x_gzi_zscaler_ppm.admin'
                         }
                     },
                     {
                         table: 'sys_db_object'
-                        id: 'c7c2b5ed188a45ae9e42a0a9d2943ed8'
+                        id: '6ef4eb0bef814923a34e0ee32874bb7b'
                         key: {
-                            name: 'x_gzi_ppm_portfolio_member'
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'c7d2990a354342739be76733fb1ede5b'
-                        deleted: true
+                        table: 'ua_table_licensing_config'
+                        id: '6fd85d16d8c749d6b04528425982ef1a'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio_project'
-                            col_name_string: 'added_by'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'c8238fb6acde495697d7be0a377fc29a'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                            element: 'workspace_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'c8cb04e1ea8b46cdad991543adbbff86'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'assignment_group'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'ca33ca5d31b3477cbac353d7c11642b5'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_workspace_user'
-                            col_name_string: 'workspace_id'
+                            name: 'x_gzi_zscaler_ppm_project_task'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'ca909d08f5e54afab69eecb4e6139833'
-                        deleted: true
+                        id: '701cf19b943e49df93fedca9c8b8159c'
                         key: {
-                            name: 'x_gzi_ppm_project'
+                            name: 'x_gzi_zscaler_ppm_goal'
                             element: 'status'
-                            value: 'backlog'
+                            value: 'on_hold'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'caf7b5fc35a44b37bf21304a5b624539'
-                        deleted: true
+                        table: 'sys_choice_set'
+                        id: '70ab640ca8814993b5888670276d9f70'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_custom_field_value'
-                            col_name_string: 'portfolio_id'
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'role'
                         }
                     },
                     {
-                        table: 'sys_ui_element'
-                        id: 'cb138e3133ba07509937d1382e5c7b68'
+                        table: 'sys_dictionary'
+                        id: '7235ebd94a8343f99cc52735965abeac'
                         key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.begin_split'
-                            position: '4'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'cbe39180bf954633a63014cef6a11ab6'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'view_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'cc049971a5ce476fa1765ca92e7ea02a'
-                        key: {
-                            name: 'x_gzi_ppm_user_res_profile'
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
                             element: 'user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '7268a677113c440991c35fa4293e86be'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'order_index'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '72b987da019e44c9a28bca0e10b3745b'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'order_index'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '73c488b7e3e942a1a94c8405787e2b8f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '756fdbc357034ee8987daa140a0c54fb'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'task_type'
+                            value: 'approval'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '7595244ac7a64f5db5199220787d24ec'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'role'
+                            value: 'viewer'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '7648ee33325c4daab0fd4a48a2929944'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '77136e6a30614662ad976787e04b3e05'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'text'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'cc440c88fd6f473ca295ffb0f21a2ed0'
+                        id: '7741fe69332b4b34b4532a6a70de0dfb'
                         key: {
-                            name: 'x_gzi_ppm_workspace_user'
-                            element: 'NULL'
+                            name: 'x_gzi_zscaler_ppm_workspace_user'
+                            element: 'workspace_id'
                         }
                     },
                     {
-                        table: 'sys_documentation'
-                        id: 'ccbe73454fe84cfeb79314aa6e98bc3c'
+                        table: 'sys_db_object'
+                        id: '776e8c4c4d5c423bb6ec16295cde0e15'
                         key: {
-                            name: 'x_gzi_ppm_workspace'
-                            element: 'NULL'
-                            language: 'en'
+                            name: 'x_gzi_zscaler_ppm_resource_role'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '784a265811aa47ec9ef10d0887e1be2e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'ccbfb2c155664e31ab6288ae8ef3f835'
+                        id: '78c6e1a38e7544629ccb01481ed2caa8'
                         key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'portfolio_id'
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'role'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'cd340fb3551f4a0494fa6575f9082a4e'
+                        id: '791715fafa8e4a18be1aa06796660695'
                         key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'filter_query'
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'role'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'cd68227165ee4e78b8cb26adcd96e40f'
+                        id: '7a075cb8856749daacdc45adbe9e7082'
                         key: {
-                            name: 'x_gzi_ppm_portfolio_project'
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
                             element: 'project_id'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_ux_lib_asset'
-                        id: 'cd7704c4b4154feab853217f8ce9e354'
-                        deleted: true
+                        table: 'ua_table_licensing_config'
+                        id: '7a096e959fa84d6aaeeeea825232846d'
                         key: {
-                            name: 'x_gzi_ppm/vendor-react-router--bd0ba048'
+                            name: 'x_gzi_zscaler_ppm_workspace'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '7a357df121fc4f16b94b42e5eee226ff'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'workspace_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '7b1d0c022b7d40658a5350eede61562f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'workspace_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '7bc81fb26b464dd6877dbe74216dedcf'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'group_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '7bf25f9c619f479681b11f4647b93655'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'notes'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '7d8f05b99b7546cb83af1e526d122ade'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'owner_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_page'
+                        id: '7e165175d3963cf698f74a0e0042d7e4'
+                        key: {
+                            endpoint: 'x_gzi_zscaler_ppm_app.do'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'cd7a39cc27fa4f52ac85bc2aa752dbec'
+                        id: '7e3ea618eeff4766bb5d2d5d24f74f1a'
                         key: {
-                            name: 'x_gzi_ppm_task_dependency'
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'status'
+                            value: 'complete'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '7f724ec502f841cd912d1f5655672867'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'author_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '7f731cbce56a4660ab4ad6a8e5370132'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'portfolio_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '802b626b6cdc45cf9702a63199f73143'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'workspace_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '8106d8aa175a4d15b06a9dc824e08b10'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '811111000a3241acb204eef2e04063e4'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_team'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '814c36e331c744c6a2a8292ce2490330'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'value_string'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '81738dcfa1ad4be38451a186cc7eb637'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'parent_task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '81ce212e26cb48b39031706e966eb3c6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '820167d21a6740e4bda5440347d59ed1'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'user_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '83835ccd5a114204a5be6b34e97c536e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
                             element: 'dependency_type'
                             value: 'start_to_finish'
                             language: 'en'
@@ -5845,696 +2657,225 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'cd9c6469024341af867f6d1e805f0440'
+                        id: '83b2c35457ff4b7996cf878deafd8f0d'
                         key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'time_granularity'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'cdd7e50ee24c437ab00db9ae9eb8f09f'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'ce17a8716f624b369f7ee17031199bfb'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                            element: 'name'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: 'cf781f6abe8b400b9f173086e544e1f3'
-                        key: {
-                            name: 'x_gzi_ppm/vendor-react-router--b9021bf5'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'cfb154e8f1ee484fb8f393b9e8f40c50'
-                        key: {
-                            name: 'x_gzi_ppm_resource_role'
-                            element: 'name'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'd02d673117754fd0a75bb5028cdb74a8'
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project_member'
-                            col_name_string: 'project_id,user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'd034f5b3e76343d88e4024f5f9df815e'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'added_at'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'd07ad1fd955b4291ac7c4a420e3e059d'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'd0b252258e1b4440ae3a6b17e9d1ac4e'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'field_def_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'd108d95a3a86435fb34ad46ce6b5c438'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'status'
-                            value: 'no_recent_updates'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'd12e0e15ded3467ab451976365767969'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_cust_field_setting'
-                            col_name_string: 'project_id'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'd1922bb12b7e8750d80afdabf291bfff'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '01492d723260419693e7d734dcf6daaf'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'd1fb171fb39641d9a6993d2bd465f074'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'author_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ux_lib_asset'
-                        id: 'd20dbb3984a841af80a74e38211e9fa6'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/vendor-react-router--424f1484'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'd21b150c726d47569058cbcf73e2d97f'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'name'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'd292ebb12b7e8750d80afdabf291bf0c'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'ca8ca5c56054470fa825f5c4381deb33'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'd292ebb12b7e8750d80afdabf291bf72'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'e8f22737592c4aa6850b98c492f253c0'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'd292ebb12b7e8750d80afdabf291bfad'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'f6613991b16d48e28bb97ff348198bf7'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'd2b6c89c466444d1aeb2f98021bcffd9'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'type'
-                            value: 'dropdown'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: 'd3138e3133ba07509937d1382e5c7b6b'
-                        key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: '.split'
-                            position: '7'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'd36c24c3c71546c4a7d524e38d0c3990'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'role'
-                            value: 'owner'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'd68264b54ad14906bedb0fb163cbb8f7'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_element'
-                        id: 'd7138e3133ba07509937d1382e5c7b6e'
-                        key: {
-                            sys_ui_section: {
-                                id: '0b138e3133ba07509937d1382e5c7b12'
-                                key: {
-                                    name: 'x_gzi_ppm_custom_view'
-                                    caption: 'NULL'
-                                    view: 'Default view'
-                                    sys_domain: 'global'
-                                }
-                            }
-                            element: 'view_type'
-                            position: '11'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'd7c27f0df58d44fca38ab2b5a97b9b0a'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                            element: 'portfolio_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: 'd7d85b1d8ec34cf7920fcc7aeb8d849b'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'd7ddd1633c484019a576f065747726a3'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'portfolio_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'd89bb00676ea46c2a6e2cb969984875d'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'name'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'd8b7d74d025f4b57a7213f31d5b74066'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_cust_field_setting'
-                            col_name_string: 'field_def_id'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'd8fcd45fb84442e5bbe59e80fae96d1c'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'da92abb12b7e8750d80afdabf291bfee'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'c0380eac745446fd831806f964474cf5'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'da92ebb12b7e8750d80afdabf291bf29'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'e1ffb9b246e94a798b1906de326f6905'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: 'dadc536c13fb4aab817bce1b93ec2fe1'
-                        deleted: true
-                        key: {
-                            application_file: '23d91cff3213414ba6551313e8eb3ea4'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'db79360e4ee3408bb25b340a06b8544d'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'priority'
-                            value: 'medium'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'dc2ec2b6a3e44ab5aef82a5f829bbcf6'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'is_global_library'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'dccdc2f786944edcaaad26441c1a420b'
-                        key: {
-                            name: 'x_gzi_ppm_cust_field_setting'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'dcf499a8914048869e8f55377834c869'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'value_date'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'dd926bb12b7e8750d80afdabf291bf1f'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '026643c644f64433bc531c90d187296a'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'dd926bb12b7e8750d80afdabf291bf56'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '183c5908c3b7445984493597a12ed259'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'dd926bb12b7e8750d80afdabf291bf5c'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '21b2f69b2d0f4d21ac71350ec8105b2d'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'de8d0bd7119c45c0a69a8b69941f7a9b'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'assignee_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'debc0ce171074c9ab7ae2326e86ffc60'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'name'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'dee4a7ac4c754d8bb13b83286b72d111'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'allocation_percentage'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'dfe72d1f224844b4849e78ea4598fe95'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_member'
-                            element: 'role'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: 'e00e5036282d4fbfa83eb1a663d24161'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'e03f4d6ab8634eadbba1623b7e8dd701'
-                        key: {
-                            name: 'x_gzi_ppm_user_res_profile'
-                            element: 'role_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'e05585086217429999c3b3f1dfca76c6'
-                        key: {
-                            name: 'x_gzi_ppm_user_capacity'
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
                             element: 'NULL'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'e16721adfa7c45249ca53c0d81015442'
+                        table: 'sys_dictionary'
+                        id: '842b932b554847aea2f463768aa54453'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_workspace_user'
-                            col_name_string: 'workspace_id,user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'e1f0e8bbb9a64b7f99ece94ae38c3ed8'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                            value: 'on_hold'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_db_object'
-                        id: 'e21e7eeaccc84797bb8c6d210d8864ea'
-                        key: {
-                            name: 'x_gzi_ppm_user_capacity'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'e2b75120f9044d39b125682c491da360'
-                        key: {
-                            name: 'x_gzi_ppm_capacity_plan'
-                            element: 'name'
-                            language: 'en'
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'width'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'e2b7dd85b26a40f1a0164781306207b5'
+                        id: '847f972035424901afd657e2332bb6ab'
                         key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'e2edffe892714724a958db8824a607d1'
-                        key: {
-                            name: 'x_gzi_ppm_section'
-                            element: 'name'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'e2f0fae2f3f24ff0abc18b6428ad7eb5'
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_user_res_profile'
-                            col_name_string: 'user_id,role_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'e3cd79d4fce648d4baf48c4ccc069e78'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio'
-                            element: 'owner_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: 'e3d58f80941e4cf08a8770a1e92e90a7'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'e5052959cb9d47d19ab18dee9990962c'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'entity_id'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'e592abb12b7e8750d80afdabf291bf34'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '710c9a5d5b324f8eaf305ab2bdc21544'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'e5d05412619e4e62b9bce1d2f8013cd3'
-                        key: {
-                            name: 'x_gzi_ppm_resource_role'
-                            element: 'name'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'e62b635c77ff4a0583a3d9d79b7860ca'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'status'
-                            value: 'in_flight'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_choice'
-                        id: 'e66980f83b2f4994be8df9df72588a37'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'view_type'
-                            value: 'list'
-                            language: 'en'
-                            dependent_value: 'NULL'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'e6f24c4d9b23458e8f75e613ffe76ba2'
-                        key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'priority'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'e764d7e62c0e4a4d84d1d41642b81ed8'
-                        key: {
-                            name: 'x_gzi_ppm_goal'
+                            name: 'x_gzi_zscaler_ppm_goal'
                             element: 'owner_id'
                         }
                     },
                     {
-                        table: 'sys_documentation'
-                        id: 'e7e3136db6b845429687b1d1c39f197a'
+                        table: 'sys_dictionary'
+                        id: '856b3d561d3f406896c8049c25eb9caa'
                         key: {
-                            name: 'x_gzi_ppm_task'
-                            element: 'start_date'
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'priority'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '86694fe5f8764378b6ec68e7a9430889'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'notes'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_user_role'
+                        id: '8766f6c380794f248c59f86af096f28c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm.user'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '88438b41f89044d78d20276f9a125e05'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'NULL'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'e7efd68182704cc0a4e41c1ae10a991b'
+                        id: '8868c2e6e7464e999cbfcc107bfb40cb'
                         key: {
-                            name: 'x_gzi_ppm_task'
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '8887c9fe679d45079b4b2acafdd7ebe6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '89a1afaab72745fa8d0f737b0a4a4a9a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'status'
+                            value: 'off_track'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '8a70f284823449d989094b884033d4a4'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'due_date'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '8ad8f68ba15342ee9c8bf2825a9e261f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'status'
+                            value: 'at_risk'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '8b873e1ef30049628f3136663de1bdc5'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'end_date'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '8cbb933ccb094bf681dec0eea5cf59d3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_team'
                             element: 'workspace_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '8ce19548d1de4ea0a002428779325fb6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                            element: 'portfolio_id'
+                            language: 'en'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'e94af119901042fc9647dbfcfe7a89e3'
+                        id: '8d92e909165e437c8b4c3dde4c97412b'
                         key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'dependency_type'
-                            value: 'finish_to_finish'
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                            value: 'board'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_security_acl_role'
-                        id: 'e9926bb12b7e8750d80afdabf291bff2'
-                        deleted: true
+                        table: 'ua_table_licensing_config'
+                        id: '8ec0897661fa47d5901bcf1983dd95d3'
                         key: {
-                            sys_security_acl: '63b2066db2f34941be1af990fa996ad5'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '8f33d1bc4d8f42dfabaa71b5b4b1f0aa'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'allocation_percentage'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '904a16e1e33b473781a6e852460b2f64'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                            element: 'project_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '9082b99832ab48f7bf1379c7e04f73c3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'successor_task_id'
                         }
                     },
                     {
                         table: 'ua_table_licensing_config'
-                        id: 'e9e79410f8a1452794ac5b2fdda81875'
+                        id: '90ade66d909d4507a71d6565bb76f9a3'
                         key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'ea15533563b445ce8772fefbf42e22ab'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view_column'
-                            element: 'view_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'ea5fdc7964044b7c9af5cf57900cce0f'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'dependency_type'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'eaec5691bef84fb18ab0cf0564fb8e56'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_user_res_profile'
-                            col_name_string: 'role_id'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'eb5ebff359db4fce9996c56073c402ef'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'text'
+                            name: 'x_gzi_zscaler_ppm_status_update'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'ebba485e932248c3998c4179fb10f5d2'
+                        id: '9289bd1565d14097b6a4b02cbcb44a0f'
                         key: {
-                            name: 'x_gzi_ppm_task'
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'status'
+                            value: 'on_track'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '93505961c5a64056b701291e93cb0411'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                            element: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '93c7d235813b423bb55b3e220f3e9c48'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'section_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '945d33f02fd24537b8b1e6cb07c44478'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'approval_state'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '9663a3c866e24e38a3afb800addc27af'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
                             element: 'priority'
                             value: 'low'
                             language: 'en'
@@ -6542,315 +2883,922 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'ecebcb475a914a7ba3b385fa9b619659'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_capacity_plan'
-                            col_name_string: 'owner_id'
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: 'ed36d96e50bc4c2e9ea46d4e06893b2f'
-                        key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'ed926bb12b7e8750d80afdabf291bfdb'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '5cd0fbd68601432ab206dfd22ae50338'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
                         table: 'sys_dictionary'
-                        id: 'ede7a74b44d04f08aecaf863103873a0'
+                        id: '970ceef4e8b54f3c8ce447d343e38512'
                         key: {
-                            name: 'x_gzi_ppm_custom_field_value'
-                            element: 'value_date'
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'eed12cb0b1734b758d5fc052fd830a2f'
-                        key: {
-                            name: 'x_gzi_ppm_proj_res_alloc'
-                            element: 'user_id'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'ef5cd96700c241298c5ad20f4f2e6f46'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_team'
-                            element: 'group_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_ui_page'
-                        id: 'efce0001869d47f088c3daafdba3d36a'
-                        key: {
-                            endpoint: 'x_gzi_ppm_app.do'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'f192abb12b7e8750d80afdabf291bf86'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '98566ef37e8f48d59d0d6285fe7ab5ef'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'f26038c6b21c4db88c2ad9e2bd9814fd'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'sync_with_jira'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'f27f2c3a332d40d0a6573865609038be'
-                        key: {
-                            name: 'x_gzi_ppm_custom_view'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'f2a2f54ee04e442a80151728d2c44b47'
-                        key: {
-                            name: 'x_gzi_ppm_workspace_user'
-                            element: 'user_id'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'f5250e023a42405e8f619740ef5a3074'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'start_date'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'f572563a2f924f86a1b3a8fdc7d652c2'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'NULL'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'f592abb12b7e8750d80afdabf291bfba'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'ad2d0364eb8e420fa7c776ff25288c16'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'f643b1ed0b3a44cc8d05e98f77accc60'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_goal'
-                            col_name_string: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'f69047e7002f4fdfa1d2bd7cace511cb'
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_project_task'
-                            col_name_string: 'project_id,task_id'
-                        }
-                    },
-                    {
-                        table: 'sys_choice_set'
-                        id: 'f7155068cad848949cc18bcd3d3dfb07'
-                        key: {
-                            name: 'x_gzi_ppm_status_update'
-                            element: 'entity_type'
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'completed'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'f7e3153c0808446abea23ecce890f6ab'
+                        id: '9767ebbbee1d420f9c6d6b047b1fc0b4'
                         key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'priority'
-                            value: 'strategic'
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
+                            value: 'number'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '989237745a0448cdaba1253ab0bdb1f9'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'status'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '9900e9e78b5c40c7b966eb92457ded2e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_capacity'
+                            element: 'baseline_hours_per_week'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '993e17f06b2e4bccb06f36c3601e0468'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_user'
+                            element: 'user_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '9a30ccbae6a748d9a32d664e2edb9403'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '9aff6afbd249413286dad6e7d3f9c3d9'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'notes'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '9b3be6783194471b832437534c3538ee'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'status'
+                            value: 'at_risk'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '9b53843cc6b345c5973be6d940ab17bf'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'project_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '9bb07a5e4be5499ca7f9672d90ddd6fd'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'end_date'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '9d859e9d7726437495b0447c6d41f895'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'portfolio_id'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'a04317edcfdf491e89368b766c087999'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'a0549e1b15974f5395f3cbd4f9f802e9'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'portfolio_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a08d8322e2d647369e24cba5a1e3efa0'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a0aef513345e444d9b85195b42b44275'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                            element: 'field_def_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'a100047145d14b92ad51ba90d7425547'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'workspace_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'a339c10065cc425dacabf18e4ee9872e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'a360cefe16f547be809fbef61b1252e3'
+                        key: {
+                            logical_table_name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            col_name_string: 'portfolio_id,project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a3a5fd4cb67949ba8cc7932e428fc4da'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'value_date'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'a3e2c6fde9f9430f96bcf644a2a00f69'
+                        key: {
+                            logical_table_name: 'x_gzi_zscaler_ppm_task_dependency'
+                            col_name_string: 'predecessor_task_id,successor_task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a4331860172f438d8a7ce3eb11832dbe'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a45269d6efce457bb21939844c08124d'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'workspace_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a48fab48ab854e48b4e20552cf6907f0'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'workspace_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a49e4a06af704423a630422811dbda57'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'author_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'a54de9fa8d074d2ba896c9467604b995'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'dependency_type'
+                            value: 'finish_to_start'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a5ef482ff0074e8a93e60cda286d50f5'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'watch_list'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a68b86c8efbb4e3fb704ec7a4a17de07'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'a766f33c95b24b5cbecd984f60577274'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'status'
+                            value: 'open'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'a79636e02fe84f00909ca092eabd7c38'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'task_type'
+                            value: 'task'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'f824231838f340509cab7fb9d5f49b4b'
+                        id: 'a796aca0753c4e6db5da13334895d0e5'
                         key: {
-                            name: 'x_gzi_ppm_workspace_user'
-                            element: 'workspace_id'
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
                         }
                     },
                     {
-                        table: 'sn_glider_source_artifact_m2m'
-                        id: 'f85a5a71d0aa4a18bd3b755ee4590e74'
-                        deleted: true
+                        table: 'sys_db_object'
+                        id: 'a7acff33830143918ee7eea5629c1878'
                         key: {
-                            application_file: '3d11aa90ab7f4d43bdb477949d00a13b'
-                            source_artifact: '4e8e46929bde432790cfcb7104335322'
+                            name: 'x_gzi_zscaler_ppm_custom_view'
                         }
                     },
                     {
                         table: 'sys_documentation'
-                        id: 'f8af9a66ed514f42979486d0f457b7e5'
+                        id: 'a83c6f16b2ca40958230c23a44f797dd'
                         key: {
-                            name: 'x_gzi_ppm_custom_field_value'
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'field_def_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'a87e24de77f241c9b7b6b1000e37eb48'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'owner_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'a9dfb1fa427c4ae88001a0f2b0039912'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'view_id'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'ab21080153384d2b9018c589173726da'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'aba1454c76a34acf9ec2406c99ab484e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ac8dc5f325024262a5fdd1be426ca49a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_resource_role'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'ac987b763c8c4dc28e219acd95877b15'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_team'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'ad9bce8596f947cf91acea64d43fa5e6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                            value: 'timeline'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ae43bdd097804479807faac5f217564c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ae96f84834054fc6af166f9375863f4d'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'role_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'af529b7a81e34bc58d046fef74de039a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'added_by'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b1fe3d36b033426fb4702cabe282a981'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'start_date'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'b225e88d64fe498798dbbf40c5d2a59d'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
+                            value: 'multi_select'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b2c3dbbce40149a293597ca5ceef4339'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'role'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'b3d1e44e1ca14a01bb2d8fe351d6114f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b4d2435e276c445c815653bb2e7946ed'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'color'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b508ce827fc44fddb9c4e6236ffa79fc'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'watch_list'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'b5fe885b53bc4f15a7ec3d03154c46ec'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'priority'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b64b58b8fdbf48b2a81aae0a63469eca'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'b746bc65ddeb416c94f5243ed96ede05'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_user'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b8246a1a0c034e0990e0bafdc601ea90'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'b827712669754a13b0a389da6e9208e8'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'priority'
+                            value: 'high'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'b8c4633ebc9e4186b78f2a6a9391dfd7'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'b97e0c76bb704b6b9542e7645a7b1385'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_team'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'bb0987681e0b4cc88f9597491e05c738'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_user'
+                            element: 'user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'bb5845d24ba2457284c00ef2d025a97f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'percent_complete'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'bb90729b85c84b61ad5263ffa9f210f5'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'time_granularity'
+                            value: 'year'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'bc37226cd0f94822bddfc5e16d23acb1'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'bcdbf96ce267484cb38ed4aad1b7d165'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'priority'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'bd3f1f559876400bb3ad177f4a06f5ea'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                            value: 'list'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'bdade693b0f74b8cbe982e80bde79ce9'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'bdb8d5052f0246919d32ac27cae77371'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'bdc7a5c75b3a488f9eb6b5da7c6c6231'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'beec7c8738434affbc2bdcc75aca62c1'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'successor_task_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'bf38beacca884d52b72a0d9ad61c4de6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                            value: 'dashboard'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'bf989e38b69b4e97aee958edf61177f2'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_capacity'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'c020becc153845f2940f6166d801f30b'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'project_key'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'c078fb5b70b84ec6990761788a17b150'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                            element: 'order_index'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'c1d9355165be48829a22bd1dce459ed9'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'c39d31db20784cd8bde50b1da8669d88'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'c3f7258b454042d69d9bdaa24bfee1e0'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
+                            value: 'currency'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'c46059a0633f4147813fa24cd29c2f85'
+                        key: {
+                            logical_table_name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            col_name_string: 'portfolio_id,user_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'c4e5d9b3b32b46eb8ffab367ad37e123'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'c53a91b27edb41c2add418a64ef78dc0'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'percent_complete'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'c5fb76fb83ff46fab0dcbb7a1f12a9b9'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_res_profile'
+                            element: 'role_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'c781ef2b4dbc48768beb659dc4cdf1cd'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'c9e724f2e88147f4b1a5e18755285830'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'workspace_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'ca04edbd30c344c687704ad0ebe1ea8b'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'cb10a36392924ccabf701b4960ec6fc4'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_cust_field_setting'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'cb7ab39d407f4766981d9394b2868b99'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'cb942f59843b42f5bf4cf3dff60a8cb6'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'cbe540a4dd1f41d7bfc0d9b0cbd1d474'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'entity_type'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'cc14a035c5934493bcab3f4bf649eb98'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'is_default'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'cc2f7bf8f248441790d2c52f5f933a1c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'cc660e4c307442bb974a8f760ccd3fac'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_task'
                             element: 'task_id'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_security_acl_role'
-                        id: 'f992abb12b7e8750d80afdabf291bf68'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '8c792021f0754c49a0bad2f2391d0fda'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'ua_table_licensing_config'
-                        id: 'fa3a931ed8ad46b288f4a4a7ca3d4c2f'
-                        key: {
-                            name: 'x_gzi_ppm_workspace'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'fa5b960f0b4e443f8a560b8978baebd1'
-                        key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'description'
-                            language: 'en'
-                        }
-                    },
-                    {
-                        table: 'sys_documentation'
-                        id: 'fa7f97741c364e12a3c708c97436160a'
-                        key: {
-                            name: 'x_gzi_ppm_portfolio_project'
-                            element: 'portfolio_id'
-                            language: 'en'
-                        }
-                    },
-                    {
                         table: 'sys_dictionary'
-                        id: 'fd4feaeac7e0478c858e2e5c744d3031'
+                        id: 'cc99a39011fe4afca654c1da8c30ac78'
                         key: {
-                            name: 'x_gzi_ppm_workspace_team'
-                            element: 'group_id'
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'fd92abb12b7e8750d80afdabf291bf51'
-                        deleted: true
-                        key: {
-                            sys_security_acl: '7aef8339def8458895ae82e2f9c43048'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_security_acl_role'
-                        id: 'fd92abb12b7e8750d80afdabf291bf9c'
-                        deleted: true
-                        key: {
-                            sys_security_acl: 'a1a6af8fa4e440a4a3addb6d65ed279c'
-                            sys_user_role: {
-                                id: '7fcaa702933002009c8579b4f47ffbde'
-                                key: {
-                                    name: 'snc_internal'
-                                }
-                            }
-                        }
-                    },
-                    {
-                        table: 'sys_dictionary'
-                        id: 'fe2736ba0a5b44c1b51fc152b8919d74'
-                        key: {
-                            name: 'x_gzi_ppm_project'
+                            name: 'x_gzi_zscaler_ppm_status_update'
                             element: 'NULL'
                         }
                     },
                     {
-                        table: 'sys_ux_lib_asset'
-                        id: 'fe27afe67da14ce79807bf355fa52db0'
-                        deleted: true
-                        key: {
-                            name: 'x_gzi_ppm/BreadcrumbBar.js.map'
-                        }
-                    },
-                    {
                         table: 'sys_documentation'
-                        id: 'fe6a96bf27584f94b03d38943fa047c6'
+                        id: 'ccec9c8a619c4593aaa389054d423db0'
                         key: {
-                            name: 'x_gzi_ppm_custom_field_def'
-                            element: 'workspace_id'
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'NULL'
                             language: 'en'
                         }
                     },
                     {
-                        table: 'sys_dictionary'
-                        id: 'fe7521880a6d4700bd1a22431f54a809'
+                        table: 'sys_documentation'
+                        id: 'cdd233d0076e4c82898a3f635d72f184'
                         key: {
-                            name: 'x_gzi_ppm_custom_field_def'
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'ce35ece08c5a47fabd1b10a9a910e90e'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'due_date'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'cfb09129540d43358ebf4c7e50f51363'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd03f1a2b62104018b1faba64fc7c8db4'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd0fe15609a7942baa04303e950527b77'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'order_index'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'd12d62a9c39b45689d774bbcc859c9d1'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view_column'
+                            element: 'is_visible'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'd17dad8f36f64dbc8043c4d6df30a2d8'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'time_granularity'
+                            value: 'day'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'd220347c3aff4fe6afc2b2b6a0502fdf'
+                        key: {
+                            application_file: '4456e0f1ef7e4ca786270cabd7d00cf5'
+                            source_artifact: '3fb176d7543f4b1cbac9d047cf854d49'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'd2dccab2639c4cceb18d584f15e4ba5f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'dependency_type'
+                            value: 'start_to_start'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd3d08cf891614a968d03e6440c7cce3c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_section'
+                            element: 'order_index'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'd475034d4be1473381dca49f8c7a4611'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'approval_state'
+                            value: 'request_changes'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'd575c2b4155e4961bc6f4a01ede325c8'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_user'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'd6368a7ee5ee40228d0e0b75d937660b'
+                        key: {
+                            logical_table_name: 'x_gzi_zscaler_ppm_project_task'
+                            col_name_string: 'project_id,task_id'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'd678d906437d43beb8ab7e5e88433ad3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                            value: 'progress'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'd7acb30b073c488e9a68c6473b68a88a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'priority'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'd9b06e12fc5f4de696dd67cc489d542d'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'role'
+                            value: 'owner'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'd9c9931aad4441be848164e4a1dd11a2'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_resource_role'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd9e0d440a44e4a1cb025cdfb60e57c32'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
                             element: 'name'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'feb322177d974dd8ad3f12d674d92f53'
+                        id: 'da54bf07b1154f8d85e292ce7243bddb'
                         key: {
-                            name: 'x_gzi_ppm_capacity_plan'
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
                             element: 'time_granularity'
                             value: 'quarter'
                             language: 'en'
@@ -6858,27 +3806,479 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_dictionary'
-                        id: 'fec23b2698bc4539ac54c806b0fd4c4a'
-                        key: {
-                            name: 'x_gzi_ppm_task_dependency'
-                            element: 'successor_task_id'
-                        }
-                    },
-                    {
                         table: 'sys_documentation'
-                        id: 'ff206aceca894a7eb633c90a7208571f'
+                        id: 'da6d7b05a9e54e2c9633cc96eb640528'
                         key: {
-                            name: 'x_gzi_ppm_project_task'
-                            element: 'project_id'
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
                             language: 'en'
                         }
                     },
                     {
                         table: 'sys_choice'
-                        id: 'ff24d69f8e104d1ca0072065b9272262'
+                        id: 'daf1f4b3c65b4c60962a83bb5358e81f'
                         key: {
-                            name: 'x_gzi_ppm_custom_field_def'
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
+                            value: 'dropdown'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'db41968a588f4678b4cbea7d289c29f8'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm/index'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'dc5ec84fc2f443579c0aa1cf8f768cc7'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'time_granularity'
+                            value: 'week'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'dc72403af54842be8874f6bd244953f5'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'dc7520c535b24032b077e03d9a069035'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'dc9c1b836ad94b088b9ea3897b83a229'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'priority'
+                            value: 'medium'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'dccaf9d6fc024335b838adcebd2128bb'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'portfolio_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'dcfa34e2576e4a23928630686a495b37'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'type'
+                            value: 'date'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'dcfd09c6e3284c7b8a278d5e5bd6f318'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_member'
+                            element: 'role'
+                            value: 'editor'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'dd0ddba398e14a8bb1670b80a51d5574'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'dd68af9bd1ea4bd1b9234904054787b7'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_capacity'
+                            element: 'user_profile_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'dda0d3a515e141ad99570df95e92ae98'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'def02a964300467cbdba49c65cce260f'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'notes'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'dfb36e16917e4a2099c437bf13a5c4d2'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'dependency_type'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e00d2323bf744fc2a5b767ab91cd4b22'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_team'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e0ca69f681be451a8380792f7ba736ac'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_capacity'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e1817daa0d584d0a821bf0324cedbd90'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_resource_role'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e27e91e97296411d930209a7b2da15dc'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'project_key'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'e287702da374458b9f7148f05ee22c12'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'is_global_library'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e2e2955fb96747a1ade085e041ef1791'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'task_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'e3d1b8440a404ed39cfba514b761dccd'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                            element: 'dependency_type'
+                            value: 'finish_to_finish'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e561640baccb43159cdde91866074950'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'description'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'e5e2ed2d1d3643dc992e3da9451fad81'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                            value: 'workload'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'e5f132d1bb714130a52054f4da9b08a7'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'e896e0030b2e401f80184f59bb830357'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'priority'
+                            value: 'medium'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e942252c1c764a38b417dea7c70df812'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'project_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'ea0df20ef98b43548945df643aee1d2c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'color'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'ea1da450f5b54fb6a00a6444c65a9574'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'eb6ceb7ce7454ad7b8d30407c0e45eec'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'eb96acc5e91148f18470378bde68c628'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'workspace_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'ec2c1da4c083425f92ba3a22f545c388'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_status_update'
+                            element: 'entity_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'ed6931f0c41144d1a78afbef455e6212'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_proj_res_alloc'
+                            element: 'project_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'edc0ebc565eb4b799e73219a2774bea1'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ee17dcd816d7400ba8a626bfa8a58e0a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'eeffce1ab6844b83911daa541d3a4711'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'portfolio_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'efae6894150644c4bf3354a3d55b1702'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'description'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'efe8cbd8ab454d4bb723242d8ecd9f74'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'description'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f00da96eedcb44eab665030f95e6fd99'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'f085b59812b1499f873a4659401131a4'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                            value: 'settings'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f1826af3213f4d4f9a5fd2a664a5599a'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
+                            element: 'workspace_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f1959bbf856e4462b9029ef89c5e8353'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f1a97d8c530b4b70852f841f3bb40831'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'description'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'f1d9467bb6b349d1a1bf8c750ccf6a2c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f1fa82cf8c3049dcbb29cf338683a635'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_value'
+                            element: 'portfolio_id'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'f21f237425f94d3dae07dfd5d186e686'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'role'
+                            value: 'commenter'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f23e06c87f0b491aa326361972c72c13'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_member'
+                            element: 'user_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f27059a122ff4aae8f64992349b00536'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'project_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f2789db6f195429eb65b8ce843f9213c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'start_date'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f3880f5c35a34fc0bc85893801aa3489'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f39031de8b9545b9939b41075527c3cb'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'added_at'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f44718fc44794828a0703486539d02ce'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'comments'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'f4a7d551b68745afb3c6f7473cc04760'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm/main'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'f4f5ef85597b4bc8a7282ba5084656bc'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_field_def'
                             element: 'type'
                             value: 'people'
                             language: 'en'
@@ -6886,29 +4286,159 @@ declare global {
                         }
                     },
                     {
-                        table: 'sys_index'
-                        id: 'ff2aee219f5e4547b6a3311ee40c3444'
-                        deleted: true
+                        table: 'sys_documentation'
+                        id: 'f554af45b17d438e87bd95aed55f5b38'
                         key: {
-                            logical_table_name: 'x_gzi_ppm_portfolio'
-                            col_name_string: 'workspace_id'
-                        }
-                    },
-                    {
-                        table: 'sys_index'
-                        id: 'ff9ffd81c6304e81aa10e75121104e79'
-                        deleted: true
-                        key: {
-                            logical_table_name: 'x_gzi_ppm_task_dependency'
-                            col_name_string: 'predecessor_task_id'
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'filter_query'
+                            language: 'en'
                         }
                     },
                     {
                         table: 'sys_dictionary'
-                        id: 'ffd4e4cf18a3411bbb4010fef7b45b16'
+                        id: 'f5b7464e16d94dd8a10f0720a32c33bb'
                         key: {
-                            name: 'x_gzi_ppm_project'
-                            element: 'name'
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'portfolio_id'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'f5e9b9f497bc47fb9d5b8631aa8c6cdc'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'status'
+                            value: 'complete'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'f650bf4414e24a81bcd7c4972768d582'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_custom_view'
+                            element: 'view_type'
+                            value: 'brief'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f7d0c731239c49bc8dfade5e65019bfb'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'sync_with_jira'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'f8a8aa15a9a74eb3bbce9e8fc0aaf29b'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_user_res_profile'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'f940670b4beb44b5a4b9f29ffc7d326c'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_capacity_plan'
+                            element: 'time_granularity'
+                            value: 'month'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f9610d5bb83f4446a7719605f68794f2'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'f9ddf02094274f06ab0d2b81909a69eb'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task_dependency'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'fa1e881a54484c659421fae4daa0f5eb'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_goal'
+                            element: 'status'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'fb1afc64e54c4732b3b19765a4751d75'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'status'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'fb6a3ef5b6d746b28e60a5b790ba23b7'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'task_type'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'fbe33469e8624a7ba8b3fe0d33fb1bc5'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project_task'
+                            element: 'project_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'fbed07c9d0d04a0b990a73d1f41e2956'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_workspace_team'
+                            element: 'workspace_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'fc955e70a8b142c9840ac90684b4e7d3'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_project'
+                            element: 'assignment_group'
+                        }
+                    },
+                    {
+                        table: 'sys_index'
+                        id: 'ff01632a12de462284fd7a677d3a5724'
+                        key: {
+                            logical_table_name: 'x_gzi_zscaler_ppm_workspace_team'
+                            col_name_string: 'workspace_id,group_id'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ff99728b971645ad8ed13d9e8d4b1d07'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_task'
+                            element: 'assignee_id'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'fff6384280e24d919c2fe57bf7084dc0'
+                        key: {
+                            name: 'x_gzi_zscaler_ppm_portfolio_project'
+                            element: 'added_at'
+                            language: 'en'
                         }
                     },
                 ]

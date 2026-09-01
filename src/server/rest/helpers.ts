@@ -1,4 +1,4 @@
-/// <reference path="../types/x_gzi_ppm.d.ts" />
+/// <reference path="../types/x_gzi_zscaler_ppm.d.ts" />
 import { gs } from '@servicenow/glide'
 import {
     CapacityService,
@@ -7,17 +7,49 @@ import {
     ProjectTaskService,
     UserService,
     ViewDataService,
-} from '@servicenow/glide/x_gzi_ppm'
+} from '@servicenow/glide/x_gzi_zscaler_ppm'
 
-export function parseBody(request: { body: { dataString: string } }): Record<string, unknown> {
-    if (!request.body || !request.body.dataString) {
+function normalizeParsedBody(value: unknown): Record<string, unknown> {
+    if (value == null) {
         return {}
     }
-    try {
-        return JSON.parse(request.body.dataString) as Record<string, unknown>
-    } catch (_error) {
+    if (typeof value === 'string') {
+        if (!value.trim()) {
+            return {}
+        }
+        try {
+            const parsed = JSON.parse(value) as unknown
+            if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+                return parsed as Record<string, unknown>
+            }
+        } catch (_error) {
+            return {}
+        }
         return {}
     }
+    if (typeof value === 'object' && !Array.isArray(value)) {
+        return value as Record<string, unknown>
+    }
+    return {}
+}
+
+/** Read JSON POST body from Scripted REST (data OR dataString — stream is single-use). */
+export function parseBody(request: { body?: { dataString?: string; data?: unknown } }): Record<string, unknown> {
+    const body = request?.body
+    if (!body) {
+        return {}
+    }
+
+    const fromData = normalizeParsedBody(body.data)
+    if (Object.keys(fromData).length > 0) {
+        return fromData
+    }
+
+    if (body.dataString) {
+        return normalizeParsedBody(body.dataString)
+    }
+
+    return fromData
 }
 
 export function sendJson(response: { setBody: (body: unknown) => void; setStatus: (code: number) => void }, body: unknown, status?: number) {

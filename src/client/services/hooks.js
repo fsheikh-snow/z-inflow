@@ -17,7 +17,9 @@ export const queryKeys = {
     projects: ['projects'],
     project: (id) => ['projects', id],
     projectBoard: (id) => ['projects', id, 'board'],
+    projectSections: (id) => ['projects', id, 'sections'],
     projectTasks: (id) => ['projects', id, 'tasks'],
+    task: (id, projectId) => ['tasks', id, projectId || ''],
     projectPortfolios: (id) => ['projects', id, 'portfolios'],
     projectMembers: (id) => ['projects', id, 'members'],
     portfolioMembers: (id) => ['portfolios', id, 'members'],
@@ -273,6 +275,7 @@ export function useCreateTask(projectId) {
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
             queryClient.invalidateQueries({ queryKey: queryKeys.projectTasks(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectSections(projectId) })
         },
     })
 }
@@ -299,6 +302,70 @@ export function useReorderBoard(projectId) {
         mutationFn: ({ columnId, taskIds }) => projectService.reorderBoard(projectId, columnId, taskIds),
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectTasks(projectId) })
+        },
+    })
+}
+
+export function useCreateSection(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (data) => projectService.createSection(projectId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectSections(projectId) })
+        },
+    })
+}
+
+export function useUpdateSection(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: ({ sectionId, data }) => projectService.updateSection(projectId, sectionId, data),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectSections(projectId) })
+        },
+    })
+}
+
+export function useDeleteSection(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (sectionId) => projectService.deleteSection(projectId, sectionId),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectSections(projectId) })
+        },
+    })
+}
+
+export function useTask(taskId, projectId, options = {}) {
+    return useQuery({
+        queryKey: queryKeys.task(taskId, projectId),
+        queryFn: () => projectService.getTask(taskId, projectId),
+        enabled: Boolean(taskId) && (options.enabled ?? true),
+    })
+}
+
+export function useReorderSections(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: (sectionIds) => projectService.reorderSections(projectId, sectionIds),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectSections(projectId) })
+        },
+    })
+}
+
+export function useReorderTaskList(projectId) {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: ({ sectionId, taskIds }) => projectService.reorderTaskList(projectId, sectionId, taskIds),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
+            queryClient.invalidateQueries({ queryKey: queryKeys.projectTasks(projectId) })
         },
     })
 }
@@ -306,10 +373,14 @@ export function useReorderBoard(projectId) {
 export function useUpdateTask(projectId) {
     const queryClient = useQueryClient()
     return useMutation({
-        mutationFn: ({ taskId, data }) => projectService.updateTask(taskId, data),
-        onSuccess: () => {
+        mutationFn: ({ taskId, data }) =>
+            projectService.updateTask(taskId, { ...data, project_id: data.project_id || projectId }),
+        onSuccess: (_data, variables) => {
             queryClient.invalidateQueries({ queryKey: queryKeys.projectBoard(projectId) })
             queryClient.invalidateQueries({ queryKey: queryKeys.projectTasks(projectId) })
+            if (variables?.taskId) {
+                queryClient.invalidateQueries({ queryKey: queryKeys.task(variables.taskId, projectId) })
+            }
         },
     })
 }

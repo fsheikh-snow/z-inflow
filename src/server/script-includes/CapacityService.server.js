@@ -4,7 +4,7 @@ CapacityService.prototype = {
 
     _userService: function () {
         if (!this.__userService) {
-            this.__userService = new x_gzi_ppm.UserService();
+            this.__userService = new x_gzi_zscaler_ppm.UserService();
         }
         return this.__userService;
     },
@@ -27,9 +27,9 @@ CapacityService.prototype = {
 
     _collectPlanAllocations: function (planGr) {
         var allocations = [];
-        var alloc = new GlideRecord('x_gzi_ppm_proj_res_alloc');
+        var alloc = new GlideRecord('x_gzi_zscaler_ppm_proj_res_alloc');
         if (planGr.getValue('portfolio_id')) {
-            var pp = new GlideRecord('x_gzi_ppm_portfolio_project');
+            var pp = new GlideRecord('x_gzi_zscaler_ppm_portfolio_project');
             pp.addQuery('portfolio_id', planGr.getValue('portfolio_id'));
             pp.query();
             var projectIds = [];
@@ -70,7 +70,7 @@ CapacityService.prototype = {
 
     listPlans: function (workspaceId) {
         var results = [];
-        var gr = new GlideRecord('x_gzi_ppm_capacity_plan');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_capacity_plan');
         if (workspaceId) {
             gr.addQuery('workspace_id', workspaceId);
         }
@@ -83,7 +83,7 @@ CapacityService.prototype = {
     },
 
     getPlan: function (planId) {
-        var gr = new GlideRecord('x_gzi_ppm_capacity_plan');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_capacity_plan');
         if (!gr.get(planId)) {
             return null;
         }
@@ -91,7 +91,7 @@ CapacityService.prototype = {
     },
 
     getPlanGrid: function (planId) {
-        var planGr = new GlideRecord('x_gzi_ppm_capacity_plan');
+        var planGr = new GlideRecord('x_gzi_zscaler_ppm_capacity_plan');
         if (!planGr.get(planId)) {
             return null;
         }
@@ -141,7 +141,7 @@ CapacityService.prototype = {
 
         var projects = [];
         if (projectIds.length) {
-            var projectGr = new GlideRecord('x_gzi_ppm_project');
+            var projectGr = new GlideRecord('x_gzi_zscaler_ppm_project');
             projectGr.addQuery('sys_id', 'IN', projectIds.join(','));
             projectGr.query();
             while (projectGr.next()) {
@@ -176,7 +176,7 @@ CapacityService.prototype = {
     },
 
     getPlanAllocations: function (planId) {
-        var planGr = new GlideRecord('x_gzi_ppm_capacity_plan');
+        var planGr = new GlideRecord('x_gzi_zscaler_ppm_capacity_plan');
         if (!planGr.get(planId)) {
             return null;
         }
@@ -197,11 +197,11 @@ CapacityService.prototype = {
     },
 
     updateAllocation: function (planId, allocationId, data) {
-        var planGr = new GlideRecord('x_gzi_ppm_capacity_plan');
+        var planGr = new GlideRecord('x_gzi_zscaler_ppm_capacity_plan');
         if (!planGr.get(planId)) {
             return null;
         }
-        var alloc = new GlideRecord('x_gzi_ppm_proj_res_alloc');
+        var alloc = new GlideRecord('x_gzi_zscaler_ppm_proj_res_alloc');
         if (!alloc.get(allocationId)) {
             return null;
         }

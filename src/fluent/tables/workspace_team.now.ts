@@ -1,8 +1,8 @@
 import '@servicenow/sdk/global'
 import { Table, ReferenceColumn } from '@servicenow/sdk/core'
 
-export const x_gzi_ppm_workspace_team = Table({
-    name: 'x_gzi_ppm_workspace_team',
+export const x_gzi_zscaler_ppm_workspace_team = Table({
+    name: 'x_gzi_zscaler_ppm_workspace_team',
     label: 'Workspace Team',
     allowWebServiceAccess: true,
     createAccessControls: true,
@@ -16,16 +16,14 @@ export const x_gzi_ppm_workspace_team = Table({
     schema: {
         workspace_id: ReferenceColumn({
             label: 'Workspace',
-            referenceTable: 'x_gzi_ppm_workspace',
+            referenceTable: 'x_gzi_zscaler_ppm_workspace',
             mandatory: true,
-            primary: true,
             cascadeRule: 'delete',
         }),
         group_id: ReferenceColumn({
             label: 'Team',
             referenceTable: 'sys_user_group',
             mandatory: true,
-            primary: true,
             cascadeRule: 'delete',
         }),
     },

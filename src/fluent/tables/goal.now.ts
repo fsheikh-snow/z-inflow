@@ -1,8 +1,8 @@
 import '@servicenow/sdk/global'
 import { Table, StringColumn, ReferenceColumn, ChoiceColumn } from '@servicenow/sdk/core'
 
-export const x_gzi_ppm_goal = Table({
-    name: 'x_gzi_ppm_goal',
+export const x_gzi_zscaler_ppm_goal = Table({
+    name: 'x_gzi_zscaler_ppm_goal',
     label: 'Goal',
     display: 'name',
     allowWebServiceAccess: true,
@@ -10,7 +10,7 @@ export const x_gzi_ppm_goal = Table({
     schema: {
         workspace_id: ReferenceColumn({
             label: 'Workspace',
-            referenceTable: 'x_gzi_ppm_workspace',
+            referenceTable: 'x_gzi_zscaler_ppm_workspace',
             mandatory: true,
             cascadeRule: 'delete',
         }),

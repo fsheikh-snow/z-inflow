@@ -4,13 +4,13 @@ import TopBar from '../../layout/TopBar'
 import BreadcrumbBar from '../../layout/BreadcrumbBar'
 import EntityTabBar from '../../components/shared/EntityTabBar'
 import ViewToolbar from '../../components/shared/ViewToolbar'
-import DynamicDataGrid from '../../components/grid/DynamicDataGrid'
 import KanbanBoard from '../../components/board/KanbanBoard'
 import VirtualizedGantt from '../../components/gantt/VirtualizedGantt'
 import TaskDetailPanel from '../../components/project/TaskDetailPanel'
 import TaskForm from '../../components/project/TaskForm'
+import ProjectTaskList from '../../components/project/ProjectTaskList'
 import ProjectSettings from '../../components/project/ProjectSettings'
-import { useProject, useProjectBoard, useProjectTasks, useReorderBoard } from '../../services/hooks'
+import { useProject, useProjectBoard, useReorderBoard } from '../../services/hooks'
 
 const PROJECT_TABS = [
     { id: 'list', label: 'List', icon: '☰' },
@@ -27,7 +27,6 @@ export default function ProjectPage() {
 
     const { data: project } = useProject(projectId)
     const { data: board, isLoading: boardLoading } = useProjectBoard(projectId)
-    const { data: tasks, isLoading: tasksLoading } = useProjectTasks(projectId)
     const reorderMutation = useReorderBoard(projectId)
 
     const tasksByColumn = useMemo(() => {
@@ -47,10 +46,11 @@ export default function ProjectPage() {
         switch (activeTab) {
             case 'list':
                 return (
-                    <DynamicDataGrid
-                        rows={tasks || []}
-                        loading={tasksLoading}
-                        onRowClick={setSelectedTask}
+                    <ProjectTaskList
+                        projectId={projectId}
+                        loading={boardLoading}
+                        onTaskClick={setSelectedTask}
+                        onAddTask={() => setShowCreateTask(true)}
                     />
                 )
             case 'board':
@@ -67,10 +67,12 @@ export default function ProjectPage() {
                 return (
                     <VirtualizedGantt
                         mode="task"
-                        items={tasks || []}
+                        items={
+                            board?.columns?.flatMap((c) => c.tasks || []).filter((t) => t.start_date || t.due_date) || []
+                        }
                         startDate={project?.start_date}
                         endDate={project?.due_date}
-                        loading={tasksLoading}
+                        loading={boardLoading}
                         onBarClick={setSelectedTask}
                     />
                 )

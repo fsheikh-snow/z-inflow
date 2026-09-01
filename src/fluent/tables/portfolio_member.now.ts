@@ -1,8 +1,8 @@
 import '@servicenow/sdk/global'
 import { Table, ReferenceColumn, ChoiceColumn } from '@servicenow/sdk/core'
 
-export const x_gzi_ppm_portfolio_member = Table({
-    name: 'x_gzi_ppm_portfolio_member',
+export const x_gzi_zscaler_ppm_portfolio_member = Table({
+    name: 'x_gzi_zscaler_ppm_portfolio_member',
     label: 'Portfolio Member',
     allowWebServiceAccess: true,
     createAccessControls: true,
@@ -16,7 +16,7 @@ export const x_gzi_ppm_portfolio_member = Table({
     schema: {
         portfolio_id: ReferenceColumn({
             label: 'Portfolio',
-            referenceTable: 'x_gzi_ppm_portfolio',
+            referenceTable: 'x_gzi_zscaler_ppm_portfolio',
             mandatory: true,
             cascadeRule: 'delete',
         }),

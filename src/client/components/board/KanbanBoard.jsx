@@ -7,11 +7,23 @@ import {
     useSensor,
     useSensors,
     DragOverlay,
+    useDroppable,
 } from '@dnd-kit/core'
 import { SortableContext, sortableKeyboardCoordinates, verticalListSortingStrategy, useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import UserChip from '../shared/UserChip'
 import './board.css'
+
+const COLUMN_PREFIX = 'column:'
+
+function columnDropId(columnId) {
+    return `${COLUMN_PREFIX}${columnId}`
+}
+
+function parseColumnDropId(id) {
+    const value = String(id)
+    return value.startsWith(COLUMN_PREFIX) ? value.slice(COLUMN_PREFIX.length) : null
+}
 
 function SortableTaskCard({ task, onClick }) {
     const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: task.sys_id })
@@ -34,7 +46,9 @@ function SortableTaskCard({ task, onClick }) {
 }
 
 function BoardColumn({ column, tasks, onTaskClick }) {
+    const colId = column.sys_id || column.id
     const taskIds = tasks.map((t) => t.sys_id)
+    const { setNodeRef } = useDroppable({ id: columnDropId(colId) })
 
     return (
         <div className="board-column">
@@ -43,7 +57,7 @@ function BoardColumn({ column, tasks, onTaskClick }) {
                 <span className="board-column-count">{tasks.length}</span>
             </div>
             <SortableContext items={taskIds} strategy={verticalListSortingStrategy}>
-                <div className="board-column-cards">
+                <div className="board-column-cards" ref={setNodeRef}>
                     {tasks.map((task) => (
                         <SortableTaskCard key={task.sys_id} task={task} onClick={onTaskClick} />
                     ))}
@@ -80,6 +94,11 @@ export default function KanbanBoard({ columns = [], tasksByColumn = {}, loading,
         for (const colId of Object.keys(tasksByColumn)) {
             if ((tasksByColumn[colId] || []).some((t) => t.sys_id === active.id)) sourceColumn = colId
             if ((tasksByColumn[colId] || []).some((t) => t.sys_id === over.id)) targetColumn = colId
+        }
+
+        const overColumnId = parseColumnDropId(over.id)
+        if (overColumnId) {
+            targetColumn = overColumnId
         }
 
         if (sourceColumn && targetColumn && onReorder) {

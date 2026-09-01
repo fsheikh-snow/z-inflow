@@ -1,8 +1,8 @@
 import '@servicenow/sdk/global'
 import { Table, StringColumn } from '@servicenow/sdk/core'
 
-export const x_gzi_ppm_workspace = Table({
-    name: 'x_gzi_ppm_workspace',
+export const x_gzi_zscaler_ppm_workspace = Table({
+    name: 'x_gzi_zscaler_ppm_workspace',
     label: 'Workspace',
     display: 'name',
     allowWebServiceAccess: true,

@@ -1,4 +1,4 @@
-declare module '@servicenow/glide/x_gzi_ppm' {
+declare module '@servicenow/glide/x_gzi_zscaler_ppm' {
     export class AccessService {
         canReadProject(projectId: string, userId?: string): boolean
         canWriteProject(projectId: string, userId?: string): boolean
@@ -70,9 +70,14 @@ declare module '@servicenow/glide/x_gzi_ppm' {
         updateProject(projectId: string, data: Record<string, unknown>): Record<string, unknown> | null
         createTask(projectId: string, data: Record<string, unknown>): Record<string, unknown> | null
         getProjectSections(projectId: string): unknown[]
+        createSection(projectId: string, data: Record<string, unknown>): Record<string, unknown> | null
+        updateSection(projectId: string, sectionId: string, data: Record<string, unknown>): Record<string, unknown> | null
+        deleteSection(projectId: string, sectionId: string): boolean
+        reorderSections(projectId: string, sectionIds: string[]): unknown[]
+        reorderTaskList(projectId: string, payload: Record<string, unknown>): Record<string, unknown>
         getProjectBoard(projectId: string): Record<string, unknown>
         getProjectTasks(projectId: string): unknown[]
-        getTask(taskId: string): Record<string, unknown> | null
+        getTask(taskId: string, projectId?: string): Record<string, unknown> | null
         getTaskProjects(taskId: string): unknown[]
         updateTask(taskId: string, data: Record<string, unknown>): Record<string, unknown> | null
         reorderBoard(projectId: string, columnId: string, taskIds: string[]): Record<string, unknown>

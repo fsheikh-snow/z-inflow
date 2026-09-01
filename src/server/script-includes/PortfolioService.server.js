@@ -25,28 +25,28 @@ PortfolioService.prototype = {
 
     _access: function () {
         if (!this.__access) {
-            this.__access = new x_gzi_ppm.AccessService();
+            this.__access = new x_gzi_zscaler_ppm.AccessService();
         }
         return this.__access;
     },
 
     _viewData: function () {
         if (!this.__viewData) {
-            this.__viewData = new x_gzi_ppm.ViewDataService();
+            this.__viewData = new x_gzi_zscaler_ppm.ViewDataService();
         }
         return this.__viewData;
     },
 
     _userService: function () {
         if (!this.__userService) {
-            this.__userService = new x_gzi_ppm.UserService();
+            this.__userService = new x_gzi_zscaler_ppm.UserService();
         }
         return this.__userService;
     },
 
     _members: function () {
         if (!this.__members) {
-            this.__members = new x_gzi_ppm.MemberService();
+            this.__members = new x_gzi_zscaler_ppm.MemberService();
         }
         return this.__members;
     },
@@ -66,9 +66,9 @@ PortfolioService.prototype = {
     listPortfolios: function (workspaceId) {
         var results = [];
         try {
-            var gr = new GlideRecord('x_gzi_ppm_portfolio');
+            var gr = new GlideRecord('x_gzi_zscaler_ppm_portfolio');
             if (!gr.isValid()) {
-                gs.warn('PortfolioService.listPortfolios: table x_gzi_ppm_portfolio is invalid');
+                gs.warn('PortfolioService.listPortfolios: table x_gzi_zscaler_ppm_portfolio is invalid');
                 return results;
             }
             if (workspaceId) {
@@ -87,7 +87,7 @@ PortfolioService.prototype = {
     },
 
     getPortfolio: function (portfolioId) {
-        var gr = new GlideRecord('x_gzi_ppm_portfolio');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_portfolio');
         if (!gr.isValid() || !gr.get(portfolioId)) {
             return null;
         }
@@ -104,14 +104,14 @@ PortfolioService.prototype = {
         if (workspaceId) {
             return workspaceId;
         }
-        var gr = new GlideRecord('x_gzi_ppm_workspace');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_workspace');
         gr.orderBy('sys_created_on');
         gr.setLimit(1);
         gr.query();
         if (gr.next()) {
             return gr.getUniqueValue();
         }
-        var created = new GlideRecord('x_gzi_ppm_workspace');
+        var created = new GlideRecord('x_gzi_zscaler_ppm_workspace');
         created.initialize();
         created.setValue('name', 'Default Workspace');
         return created.insert() || '';
@@ -124,7 +124,7 @@ PortfolioService.prototype = {
             return null;
         }
 
-        var gr = new GlideRecord('x_gzi_ppm_portfolio');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_portfolio');
         gr.initialize();
         gr.setValue('name', name);
         gr.setValue('workspace_id', workspaceId);
@@ -146,7 +146,7 @@ PortfolioService.prototype = {
     },
 
     updatePortfolio: function (portfolioId, data) {
-        var gr = new GlideRecord('x_gzi_ppm_portfolio');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_portfolio');
         if (!gr.get(portfolioId)) {
             return null;
         }
@@ -213,7 +213,7 @@ PortfolioService.prototype = {
         if (!projectIds || !projectIds.length) {
             return ragMap;
         }
-        var gr = new GlideRecord('x_gzi_ppm_status_update');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_status_update');
         gr.addQuery('entity_type', 'project');
         gr.addQuery('entity_id', 'IN', projectIds.join(','));
         gr.orderByDesc('sys_created_on');
@@ -322,7 +322,7 @@ PortfolioService.prototype = {
 
         var updates = [];
         var authorIds = [];
-        var gr = new GlideRecord('x_gzi_ppm_status_update');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_status_update');
         gr.addQuery('entity_type', 'portfolio');
         gr.addQuery('entity_id', portfolioId);
         gr.orderByDesc('sys_created_on');
@@ -365,11 +365,11 @@ PortfolioService.prototype = {
     getWorkload: function (portfolioId) {
         var matrix = {};
         var daySet = {};
-        var pp = new GlideRecord('x_gzi_ppm_portfolio_project');
+        var pp = new GlideRecord('x_gzi_zscaler_ppm_portfolio_project');
         pp.addQuery('portfolio_id', portfolioId);
         pp.query();
         while (pp.next()) {
-            var pt = new GlideRecord('x_gzi_ppm_project_task');
+            var pt = new GlideRecord('x_gzi_zscaler_ppm_project_task');
             pt.addQuery('project_id', pp.getValue('project_id'));
             pt.query();
             while (pt.next()) {
@@ -418,7 +418,7 @@ PortfolioService.prototype = {
     },
 
     linkProject: function (portfolioId, projectId) {
-        var gr = new GlideRecord('x_gzi_ppm_portfolio_project');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_portfolio_project');
         gr.addQuery('portfolio_id', portfolioId);
         gr.addQuery('project_id', projectId);
         gr.query();
@@ -434,7 +434,7 @@ PortfolioService.prototype = {
     },
 
     unlinkProject: function (portfolioId, projectId) {
-        var gr = new GlideRecord('x_gzi_ppm_portfolio_project');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_portfolio_project');
         gr.addQuery('portfolio_id', portfolioId);
         gr.addQuery('project_id', projectId);
         gr.query();
@@ -446,7 +446,7 @@ PortfolioService.prototype = {
 
     getProjectPortfolios: function (projectId) {
         var results = [];
-        var gr = new GlideRecord('x_gzi_ppm_portfolio_project');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_portfolio_project');
         gr.addQuery('project_id', projectId);
         gr.query();
         while (gr.next()) {
@@ -459,7 +459,7 @@ PortfolioService.prototype = {
     },
 
     _defaultViewId: function (portfolioId) {
-        var gr = new GlideRecord('x_gzi_ppm_custom_view');
+        var gr = new GlideRecord('x_gzi_zscaler_ppm_custom_view');
         gr.addQuery('portfolio_id', portfolioId);
         gr.addQuery('is_default', true);
         gr.setLimit(1);

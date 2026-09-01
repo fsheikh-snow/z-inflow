@@ -1,8 +1,8 @@
 import { gs, GlideRecord } from '@servicenow/glide'
 
 export function enforceEavXor(
-    current: GlideRecord<'x_gzi_ppm_custom_field_value'>,
-    _previous: GlideRecord<'x_gzi_ppm_custom_field_value'>,
+    current: GlideRecord<'x_gzi_zscaler_ppm_custom_field_value'>,
+    _previous: GlideRecord<'x_gzi_zscaler_ppm_custom_field_value'>,
 ) {
     const refs = [
         current.getValue('task_id'),
